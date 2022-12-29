@@ -1,0 +1,7326 @@
+<session rank="0" class="Algorithmique1-CTD-0">
+	<startingSlot dailySlot="570" day="1" week="1" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="AMGHAR Tassadit" />
+	</teachers>
+</session>
+<session rank="1" class="Algorithmique1-CTD-0">
+	<startingSlot dailySlot="570" day="2" week="1" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="AMGHAR Tassadit" />
+	</teachers>
+</session>
+<session rank="2" class="Algorithmique1-CTD-0">
+	<startingSlot dailySlot="570" day="3" week="1" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="AMGHAR Tassadit" />
+	</teachers>
+</session>
+<session rank="3" class="Algorithmique1-CTD-0">
+	<startingSlot dailySlot="570" day="1" week="2" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="AMGHAR Tassadit" />
+	</teachers>
+</session>
+<session rank="4" class="Algorithmique1-CTD-0">
+	<startingSlot dailySlot="570" day="3" week="2" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="AMGHAR Tassadit" />
+	</teachers>
+</session>
+<session rank="5" class="Algorithmique1-CTD-0">
+	<startingSlot dailySlot="570" day="1" week="3" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="AMGHAR Tassadit" />
+	</teachers>
+</session>
+<session rank="6" class="Algorithmique1-CTD-0">
+	<startingSlot dailySlot="570" day="3" week="3" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="AMGHAR Tassadit" />
+	</teachers>
+</session>
+<session rank="7" class="Algorithmique1-CTD-0">
+	<startingSlot dailySlot="570" day="1" week="4" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="AMGHAR Tassadit" />
+	</teachers>
+</session>
+<session rank="8" class="Algorithmique1-CTD-0">
+	<startingSlot dailySlot="570" day="3" week="4" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="AMGHAR Tassadit" />
+	</teachers>
+</session>
+<session rank="9" class="Algorithmique1-CTD-0">
+	<startingSlot dailySlot="570" day="1" week="5" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="AMGHAR Tassadit" />
+	</teachers>
+</session>
+<session rank="10" class="Algorithmique1-CTD-0">
+	<startingSlot dailySlot="570" day="3" week="5" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="AMGHAR Tassadit" />
+	</teachers>
+</session>
+<session rank="11" class="Algorithmique1-CTD-0">
+	<startingSlot dailySlot="570" day="3" week="6" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="AMGHAR Tassadit" />
+	</teachers>
+</session>
+<session rank="0" class="Algorithmique1-CTD-1">
+	<startingSlot dailySlot="570" day="1" week="1" />
+	<rooms>
+		<room refId="Amphi-L004-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="BARICHARD Vincent" />
+	</teachers>
+</session>
+<session rank="1" class="Algorithmique1-CTD-1">
+	<startingSlot dailySlot="570" day="2" week="1" />
+	<rooms>
+		<room refId="Amphi-L004-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="BARICHARD Vincent" />
+	</teachers>
+</session>
+<session rank="2" class="Algorithmique1-CTD-1">
+	<startingSlot dailySlot="570" day="3" week="1" />
+	<rooms>
+		<room refId="Amphi-L004-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="BARICHARD Vincent" />
+	</teachers>
+</session>
+<session rank="3" class="Algorithmique1-CTD-1">
+	<startingSlot dailySlot="570" day="1" week="2" />
+	<rooms>
+		<room refId="Amphi-L004-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="BARICHARD Vincent" />
+	</teachers>
+</session>
+<session rank="4" class="Algorithmique1-CTD-1">
+	<startingSlot dailySlot="570" day="3" week="2" />
+	<rooms>
+		<room refId="Amphi-L004-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="BARICHARD Vincent" />
+	</teachers>
+</session>
+<session rank="5" class="Algorithmique1-CTD-1">
+	<startingSlot dailySlot="570" day="1" week="3" />
+	<rooms>
+		<room refId="Amphi-L004-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="BARICHARD Vincent" />
+	</teachers>
+</session>
+<session rank="6" class="Algorithmique1-CTD-1">
+	<startingSlot dailySlot="570" day="3" week="3" />
+	<rooms>
+		<room refId="Amphi-L004-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="BARICHARD Vincent" />
+	</teachers>
+</session>
+<session rank="7" class="Algorithmique1-CTD-1">
+	<startingSlot dailySlot="570" day="1" week="4" />
+	<rooms>
+		<room refId="Amphi-L004-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="BARICHARD Vincent" />
+	</teachers>
+</session>
+<session rank="8" class="Algorithmique1-CTD-1">
+	<startingSlot dailySlot="570" day="3" week="4" />
+	<rooms>
+		<room refId="Amphi-L004-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="BARICHARD Vincent" />
+	</teachers>
+</session>
+<session rank="9" class="Algorithmique1-CTD-1">
+	<startingSlot dailySlot="570" day="1" week="5" />
+	<rooms>
+		<room refId="Amphi-L004-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="BARICHARD Vincent" />
+	</teachers>
+</session>
+<session rank="10" class="Algorithmique1-CTD-1">
+	<startingSlot dailySlot="570" day="3" week="5" />
+	<rooms>
+		<room refId="Amphi-L004-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="BARICHARD Vincent" />
+	</teachers>
+</session>
+<session rank="11" class="Algorithmique1-CTD-1">
+	<startingSlot dailySlot="570" day="3" week="6" />
+	<rooms>
+		<room refId="Amphi-L004-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="BARICHARD Vincent" />
+	</teachers>
+</session>
+<session rank="0" class="Algorithmique1-CTD-2">
+	<startingSlot dailySlot="570" day="1" week="1" />
+	<rooms>
+		<room refId="Amphi-E-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="GENEST David" />
+	</teachers>
+</session>
+<session rank="1" class="Algorithmique1-CTD-2">
+	<startingSlot dailySlot="570" day="2" week="1" />
+	<rooms>
+		<room refId="Amphi-E-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="GENEST David" />
+	</teachers>
+</session>
+<session rank="2" class="Algorithmique1-CTD-2">
+	<startingSlot dailySlot="570" day="3" week="1" />
+	<rooms>
+		<room refId="Amphi-E-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="GENEST David" />
+	</teachers>
+</session>
+<session rank="3" class="Algorithmique1-CTD-2">
+	<startingSlot dailySlot="570" day="1" week="2" />
+	<rooms>
+		<room refId="Amphi-E-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="GENEST David" />
+	</teachers>
+</session>
+<session rank="4" class="Algorithmique1-CTD-2">
+	<startingSlot dailySlot="570" day="3" week="2" />
+	<rooms>
+		<room refId="Amphi-E-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="GENEST David" />
+	</teachers>
+</session>
+<session rank="5" class="Algorithmique1-CTD-2">
+	<startingSlot dailySlot="570" day="1" week="3" />
+	<rooms>
+		<room refId="Amphi-E-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="GENEST David" />
+	</teachers>
+</session>
+<session rank="6" class="Algorithmique1-CTD-2">
+	<startingSlot dailySlot="570" day="3" week="3" />
+	<rooms>
+		<room refId="Amphi-E-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="GENEST David" />
+	</teachers>
+</session>
+<session rank="7" class="Algorithmique1-CTD-2">
+	<startingSlot dailySlot="570" day="1" week="4" />
+	<rooms>
+		<room refId="Amphi-E-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="GENEST David" />
+	</teachers>
+</session>
+<session rank="8" class="Algorithmique1-CTD-2">
+	<startingSlot dailySlot="570" day="3" week="4" />
+	<rooms>
+		<room refId="Amphi-E-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="GENEST David" />
+	</teachers>
+</session>
+<session rank="9" class="Algorithmique1-CTD-2">
+	<startingSlot dailySlot="570" day="1" week="5" />
+	<rooms>
+		<room refId="Amphi-E-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="GENEST David" />
+	</teachers>
+</session>
+<session rank="10" class="Algorithmique1-CTD-2">
+	<startingSlot dailySlot="570" day="3" week="5" />
+	<rooms>
+		<room refId="Amphi-E-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="GENEST David" />
+	</teachers>
+</session>
+<session rank="11" class="Algorithmique1-CTD-2">
+	<startingSlot dailySlot="570" day="3" week="6" />
+	<rooms>
+		<room refId="Amphi-E-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="GENEST David" />
+	</teachers>
+</session>
+<session rank="0" class="Algorithmique1-CTD-3">
+	<startingSlot dailySlot="570" day="1" week="1" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="HAMIEZ Jean-Philippe" />
+	</teachers>
+</session>
+<session rank="1" class="Algorithmique1-CTD-3">
+	<startingSlot dailySlot="570" day="2" week="1" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="HAMIEZ Jean-Philippe" />
+	</teachers>
+</session>
+<session rank="2" class="Algorithmique1-CTD-3">
+	<startingSlot dailySlot="570" day="3" week="1" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="HAMIEZ Jean-Philippe" />
+	</teachers>
+</session>
+<session rank="3" class="Algorithmique1-CTD-3">
+	<startingSlot dailySlot="570" day="1" week="2" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="HAMIEZ Jean-Philippe" />
+	</teachers>
+</session>
+<session rank="4" class="Algorithmique1-CTD-3">
+	<startingSlot dailySlot="570" day="3" week="2" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="HAMIEZ Jean-Philippe" />
+	</teachers>
+</session>
+<session rank="5" class="Algorithmique1-CTD-3">
+	<startingSlot dailySlot="570" day="1" week="3" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="HAMIEZ Jean-Philippe" />
+	</teachers>
+</session>
+<session rank="6" class="Algorithmique1-CTD-3">
+	<startingSlot dailySlot="570" day="3" week="3" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="HAMIEZ Jean-Philippe" />
+	</teachers>
+</session>
+<session rank="7" class="Algorithmique1-CTD-3">
+	<startingSlot dailySlot="570" day="1" week="4" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="HAMIEZ Jean-Philippe" />
+	</teachers>
+</session>
+<session rank="8" class="Algorithmique1-CTD-3">
+	<startingSlot dailySlot="570" day="3" week="4" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="HAMIEZ Jean-Philippe" />
+	</teachers>
+</session>
+<session rank="9" class="Algorithmique1-CTD-3">
+	<startingSlot dailySlot="570" day="1" week="5" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="HAMIEZ Jean-Philippe" />
+	</teachers>
+</session>
+<session rank="10" class="Algorithmique1-CTD-3">
+	<startingSlot dailySlot="570" day="3" week="5" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="HAMIEZ Jean-Philippe" />
+	</teachers>
+</session>
+<session rank="11" class="Algorithmique1-CTD-3">
+	<startingSlot dailySlot="570" day="3" week="6" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="HAMIEZ Jean-Philippe" />
+	</teachers>
+</session>
+<session rank="0" class="Algorithmique1-CTD-4">
+	<startingSlot dailySlot="570" day="1" week="1" />
+	<rooms>
+		<room refId="A118" />
+	</rooms>
+	<teachers>
+		<teacher refId="LARDEUX Frederic" />
+	</teachers>
+</session>
+<session rank="1" class="Algorithmique1-CTD-4">
+	<startingSlot dailySlot="570" day="2" week="1" />
+	<rooms>
+		<room refId="A118" />
+	</rooms>
+	<teachers>
+		<teacher refId="LARDEUX Frederic" />
+	</teachers>
+</session>
+<session rank="2" class="Algorithmique1-CTD-4">
+	<startingSlot dailySlot="570" day="3" week="1" />
+	<rooms>
+		<room refId="A118" />
+	</rooms>
+	<teachers>
+		<teacher refId="LARDEUX Frederic" />
+	</teachers>
+</session>
+<session rank="3" class="Algorithmique1-CTD-4">
+	<startingSlot dailySlot="570" day="1" week="2" />
+	<rooms>
+		<room refId="A118" />
+	</rooms>
+	<teachers>
+		<teacher refId="LARDEUX Frederic" />
+	</teachers>
+</session>
+<session rank="4" class="Algorithmique1-CTD-4">
+	<startingSlot dailySlot="570" day="3" week="2" />
+	<rooms>
+		<room refId="A118" />
+	</rooms>
+	<teachers>
+		<teacher refId="LARDEUX Frederic" />
+	</teachers>
+</session>
+<session rank="5" class="Algorithmique1-CTD-4">
+	<startingSlot dailySlot="570" day="1" week="3" />
+	<rooms>
+		<room refId="A118" />
+	</rooms>
+	<teachers>
+		<teacher refId="LARDEUX Frederic" />
+	</teachers>
+</session>
+<session rank="6" class="Algorithmique1-CTD-4">
+	<startingSlot dailySlot="570" day="3" week="3" />
+	<rooms>
+		<room refId="A118" />
+	</rooms>
+	<teachers>
+		<teacher refId="LARDEUX Frederic" />
+	</teachers>
+</session>
+<session rank="7" class="Algorithmique1-CTD-4">
+	<startingSlot dailySlot="570" day="1" week="4" />
+	<rooms>
+		<room refId="A118" />
+	</rooms>
+	<teachers>
+		<teacher refId="LARDEUX Frederic" />
+	</teachers>
+</session>
+<session rank="8" class="Algorithmique1-CTD-4">
+	<startingSlot dailySlot="570" day="3" week="4" />
+	<rooms>
+		<room refId="A118" />
+	</rooms>
+	<teachers>
+		<teacher refId="LARDEUX Frederic" />
+	</teachers>
+</session>
+<session rank="9" class="Algorithmique1-CTD-4">
+	<startingSlot dailySlot="570" day="1" week="5" />
+	<rooms>
+		<room refId="A118" />
+	</rooms>
+	<teachers>
+		<teacher refId="LARDEUX Frederic" />
+	</teachers>
+</session>
+<session rank="10" class="Algorithmique1-CTD-4">
+	<startingSlot dailySlot="570" day="3" week="5" />
+	<rooms>
+		<room refId="A118" />
+	</rooms>
+	<teachers>
+		<teacher refId="LARDEUX Frederic" />
+	</teachers>
+</session>
+<session rank="11" class="Algorithmique1-CTD-4">
+	<startingSlot dailySlot="570" day="3" week="6" />
+	<rooms>
+		<room refId="A118" />
+	</rooms>
+	<teachers>
+		<teacher refId="LARDEUX Frederic" />
+	</teachers>
+</session>
+<session rank="0" class="Algorithmique1-CTD-5">
+	<startingSlot dailySlot="570" day="1" week="1" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="LEFEVRE Claire" />
+	</teachers>
+</session>
+<session rank="1" class="Algorithmique1-CTD-5">
+	<startingSlot dailySlot="570" day="2" week="1" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="LEFEVRE Claire" />
+	</teachers>
+</session>
+<session rank="2" class="Algorithmique1-CTD-5">
+	<startingSlot dailySlot="570" day="3" week="1" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="LEFEVRE Claire" />
+	</teachers>
+</session>
+<session rank="3" class="Algorithmique1-CTD-5">
+	<startingSlot dailySlot="570" day="1" week="2" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="LEFEVRE Claire" />
+	</teachers>
+</session>
+<session rank="4" class="Algorithmique1-CTD-5">
+	<startingSlot dailySlot="570" day="3" week="2" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="LEFEVRE Claire" />
+	</teachers>
+</session>
+<session rank="5" class="Algorithmique1-CTD-5">
+	<startingSlot dailySlot="570" day="1" week="3" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="LEFEVRE Claire" />
+	</teachers>
+</session>
+<session rank="6" class="Algorithmique1-CTD-5">
+	<startingSlot dailySlot="570" day="3" week="3" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="LEFEVRE Claire" />
+	</teachers>
+</session>
+<session rank="7" class="Algorithmique1-CTD-5">
+	<startingSlot dailySlot="570" day="1" week="4" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="LEFEVRE Claire" />
+	</teachers>
+</session>
+<session rank="8" class="Algorithmique1-CTD-5">
+	<startingSlot dailySlot="570" day="3" week="4" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="LEFEVRE Claire" />
+	</teachers>
+</session>
+<session rank="9" class="Algorithmique1-CTD-5">
+	<startingSlot dailySlot="570" day="1" week="5" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="LEFEVRE Claire" />
+	</teachers>
+</session>
+<session rank="10" class="Algorithmique1-CTD-5">
+	<startingSlot dailySlot="570" day="3" week="5" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="LEFEVRE Claire" />
+	</teachers>
+</session>
+<session rank="11" class="Algorithmique1-CTD-5">
+	<startingSlot dailySlot="570" day="3" week="6" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="LEFEVRE Claire" />
+	</teachers>
+</session>
+<session rank="0" class="Algorithmique1-TP-0A">
+	<startingSlot dailySlot="750" day="3" week="1" />
+	<rooms>
+		<room refId="Amphi-E" />
+	</rooms>
+	<teachers>
+		<teacher refId="AIT EL MEKKI Touria" />
+	</teachers>
+</session>
+<session rank="1" class="Algorithmique1-TP-0A">
+	<startingSlot dailySlot="570" day="2" week="2" />
+	<rooms>
+		<room refId="Amphi-E" />
+	</rooms>
+	<teachers>
+		<teacher refId="AIT EL MEKKI Touria" />
+	</teachers>
+</session>
+<session rank="2" class="Algorithmique1-TP-0A">
+	<startingSlot dailySlot="750" day="3" week="2" />
+	<rooms>
+		<room refId="Amphi-E" />
+	</rooms>
+	<teachers>
+		<teacher refId="AIT EL MEKKI Touria" />
+	</teachers>
+</session>
+<session rank="3" class="Algorithmique1-TP-0A">
+	<startingSlot dailySlot="570" day="2" week="3" />
+	<rooms>
+		<room refId="Amphi-E" />
+	</rooms>
+	<teachers>
+		<teacher refId="AIT EL MEKKI Touria" />
+	</teachers>
+</session>
+<session rank="4" class="Algorithmique1-TP-0A">
+	<startingSlot dailySlot="750" day="3" week="3" />
+	<rooms>
+		<room refId="Amphi-E" />
+	</rooms>
+	<teachers>
+		<teacher refId="AIT EL MEKKI Touria" />
+	</teachers>
+</session>
+<session rank="5" class="Algorithmique1-TP-0A">
+	<startingSlot dailySlot="570" day="2" week="4" />
+	<rooms>
+		<room refId="Amphi-E" />
+	</rooms>
+	<teachers>
+		<teacher refId="AIT EL MEKKI Touria" />
+	</teachers>
+</session>
+<session rank="6" class="Algorithmique1-TP-0A">
+	<startingSlot dailySlot="750" day="3" week="4" />
+	<rooms>
+		<room refId="Amphi-E" />
+	</rooms>
+	<teachers>
+		<teacher refId="AIT EL MEKKI Touria" />
+	</teachers>
+</session>
+<session rank="7" class="Algorithmique1-TP-0A">
+	<startingSlot dailySlot="570" day="2" week="5" />
+	<rooms>
+		<room refId="Amphi-E" />
+	</rooms>
+	<teachers>
+		<teacher refId="AIT EL MEKKI Touria" />
+	</teachers>
+</session>
+<session rank="8" class="Algorithmique1-TP-0A">
+	<startingSlot dailySlot="750" day="3" week="5" />
+	<rooms>
+		<room refId="Amphi-E" />
+	</rooms>
+	<teachers>
+		<teacher refId="AIT EL MEKKI Touria" />
+	</teachers>
+</session>
+<session rank="0" class="Algorithmique1-TP-0B">
+	<startingSlot dailySlot="750" day="3" week="1" />
+	<rooms>
+		<room refId="Amphi-L004-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="AMGHAR Tassadit" />
+	</teachers>
+</session>
+<session rank="1" class="Algorithmique1-TP-0B">
+	<startingSlot dailySlot="570" day="2" week="2" />
+	<rooms>
+		<room refId="Amphi-L004-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="AMGHAR Tassadit" />
+	</teachers>
+</session>
+<session rank="2" class="Algorithmique1-TP-0B">
+	<startingSlot dailySlot="750" day="3" week="2" />
+	<rooms>
+		<room refId="Amphi-L004-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="AMGHAR Tassadit" />
+	</teachers>
+</session>
+<session rank="3" class="Algorithmique1-TP-0B">
+	<startingSlot dailySlot="570" day="2" week="3" />
+	<rooms>
+		<room refId="Amphi-L004-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="AMGHAR Tassadit" />
+	</teachers>
+</session>
+<session rank="4" class="Algorithmique1-TP-0B">
+	<startingSlot dailySlot="750" day="3" week="3" />
+	<rooms>
+		<room refId="Amphi-L004-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="AMGHAR Tassadit" />
+	</teachers>
+</session>
+<session rank="5" class="Algorithmique1-TP-0B">
+	<startingSlot dailySlot="570" day="2" week="4" />
+	<rooms>
+		<room refId="Amphi-L004-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="AMGHAR Tassadit" />
+	</teachers>
+</session>
+<session rank="6" class="Algorithmique1-TP-0B">
+	<startingSlot dailySlot="750" day="3" week="4" />
+	<rooms>
+		<room refId="Amphi-L004-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="AMGHAR Tassadit" />
+	</teachers>
+</session>
+<session rank="7" class="Algorithmique1-TP-0B">
+	<startingSlot dailySlot="570" day="2" week="5" />
+	<rooms>
+		<room refId="Amphi-L004-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="AMGHAR Tassadit" />
+	</teachers>
+</session>
+<session rank="8" class="Algorithmique1-TP-0B">
+	<startingSlot dailySlot="750" day="3" week="5" />
+	<rooms>
+		<room refId="Amphi-L004-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="AMGHAR Tassadit" />
+	</teachers>
+</session>
+<session rank="0" class="Algorithmique1-TP-1A">
+	<startingSlot dailySlot="750" day="3" week="1" />
+	<rooms>
+		<room refId="Amphi-L004" />
+	</rooms>
+	<teachers>
+		<teacher refId="BAKKI Aicha" />
+	</teachers>
+</session>
+<session rank="1" class="Algorithmique1-TP-1A">
+	<startingSlot dailySlot="570" day="2" week="2" />
+	<rooms>
+		<room refId="Amphi-L004" />
+	</rooms>
+	<teachers>
+		<teacher refId="BAKKI Aicha" />
+	</teachers>
+</session>
+<session rank="2" class="Algorithmique1-TP-1A">
+	<startingSlot dailySlot="750" day="3" week="2" />
+	<rooms>
+		<room refId="Amphi-L004" />
+	</rooms>
+	<teachers>
+		<teacher refId="BAKKI Aicha" />
+	</teachers>
+</session>
+<session rank="3" class="Algorithmique1-TP-1A">
+	<startingSlot dailySlot="570" day="2" week="3" />
+	<rooms>
+		<room refId="Amphi-L004" />
+	</rooms>
+	<teachers>
+		<teacher refId="BAKKI Aicha" />
+	</teachers>
+</session>
+<session rank="4" class="Algorithmique1-TP-1A">
+	<startingSlot dailySlot="750" day="3" week="3" />
+	<rooms>
+		<room refId="Amphi-L004" />
+	</rooms>
+	<teachers>
+		<teacher refId="BAKKI Aicha" />
+	</teachers>
+</session>
+<session rank="5" class="Algorithmique1-TP-1A">
+	<startingSlot dailySlot="570" day="2" week="4" />
+	<rooms>
+		<room refId="Amphi-L004" />
+	</rooms>
+	<teachers>
+		<teacher refId="BAKKI Aicha" />
+	</teachers>
+</session>
+<session rank="6" class="Algorithmique1-TP-1A">
+	<startingSlot dailySlot="750" day="3" week="4" />
+	<rooms>
+		<room refId="Amphi-L004" />
+	</rooms>
+	<teachers>
+		<teacher refId="BAKKI Aicha" />
+	</teachers>
+</session>
+<session rank="7" class="Algorithmique1-TP-1A">
+	<startingSlot dailySlot="570" day="2" week="5" />
+	<rooms>
+		<room refId="Amphi-L004" />
+	</rooms>
+	<teachers>
+		<teacher refId="BAKKI Aicha" />
+	</teachers>
+</session>
+<session rank="8" class="Algorithmique1-TP-1A">
+	<startingSlot dailySlot="750" day="3" week="5" />
+	<rooms>
+		<room refId="Amphi-L004" />
+	</rooms>
+	<teachers>
+		<teacher refId="BAKKI Aicha" />
+	</teachers>
+</session>
+<session rank="0" class="Algorithmique1-TP-1B">
+	<startingSlot dailySlot="750" day="3" week="1" />
+	<rooms>
+		<room refId="Da107" />
+	</rooms>
+	<teachers>
+		<teacher refId="BARICHARD Vincent" />
+	</teachers>
+</session>
+<session rank="1" class="Algorithmique1-TP-1B">
+	<startingSlot dailySlot="570" day="2" week="2" />
+	<rooms>
+		<room refId="Da107" />
+	</rooms>
+	<teachers>
+		<teacher refId="BARICHARD Vincent" />
+	</teachers>
+</session>
+<session rank="2" class="Algorithmique1-TP-1B">
+	<startingSlot dailySlot="750" day="3" week="2" />
+	<rooms>
+		<room refId="Da107" />
+	</rooms>
+	<teachers>
+		<teacher refId="BARICHARD Vincent" />
+	</teachers>
+</session>
+<session rank="3" class="Algorithmique1-TP-1B">
+	<startingSlot dailySlot="570" day="2" week="3" />
+	<rooms>
+		<room refId="Da107" />
+	</rooms>
+	<teachers>
+		<teacher refId="BARICHARD Vincent" />
+	</teachers>
+</session>
+<session rank="4" class="Algorithmique1-TP-1B">
+	<startingSlot dailySlot="750" day="3" week="3" />
+	<rooms>
+		<room refId="Da107" />
+	</rooms>
+	<teachers>
+		<teacher refId="BARICHARD Vincent" />
+	</teachers>
+</session>
+<session rank="5" class="Algorithmique1-TP-1B">
+	<startingSlot dailySlot="570" day="2" week="4" />
+	<rooms>
+		<room refId="Da107" />
+	</rooms>
+	<teachers>
+		<teacher refId="BARICHARD Vincent" />
+	</teachers>
+</session>
+<session rank="6" class="Algorithmique1-TP-1B">
+	<startingSlot dailySlot="750" day="3" week="4" />
+	<rooms>
+		<room refId="Da107" />
+	</rooms>
+	<teachers>
+		<teacher refId="BARICHARD Vincent" />
+	</teachers>
+</session>
+<session rank="7" class="Algorithmique1-TP-1B">
+	<startingSlot dailySlot="570" day="2" week="5" />
+	<rooms>
+		<room refId="Da107" />
+	</rooms>
+	<teachers>
+		<teacher refId="BARICHARD Vincent" />
+	</teachers>
+</session>
+<session rank="8" class="Algorithmique1-TP-1B">
+	<startingSlot dailySlot="750" day="3" week="5" />
+	<rooms>
+		<room refId="Da107" />
+	</rooms>
+	<teachers>
+		<teacher refId="BARICHARD Vincent" />
+	</teachers>
+</session>
+<session rank="0" class="Algorithmique1-TP-2A">
+	<startingSlot dailySlot="750" day="3" week="1" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="GENEST David" />
+	</teachers>
+</session>
+<session rank="1" class="Algorithmique1-TP-2A">
+	<startingSlot dailySlot="570" day="2" week="2" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="GENEST David" />
+	</teachers>
+</session>
+<session rank="2" class="Algorithmique1-TP-2A">
+	<startingSlot dailySlot="750" day="3" week="2" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="GENEST David" />
+	</teachers>
+</session>
+<session rank="3" class="Algorithmique1-TP-2A">
+	<startingSlot dailySlot="570" day="2" week="3" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="GENEST David" />
+	</teachers>
+</session>
+<session rank="4" class="Algorithmique1-TP-2A">
+	<startingSlot dailySlot="750" day="3" week="3" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="GENEST David" />
+	</teachers>
+</session>
+<session rank="5" class="Algorithmique1-TP-2A">
+	<startingSlot dailySlot="570" day="2" week="4" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="GENEST David" />
+	</teachers>
+</session>
+<session rank="6" class="Algorithmique1-TP-2A">
+	<startingSlot dailySlot="750" day="3" week="4" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="GENEST David" />
+	</teachers>
+</session>
+<session rank="7" class="Algorithmique1-TP-2A">
+	<startingSlot dailySlot="570" day="2" week="5" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="GENEST David" />
+	</teachers>
+</session>
+<session rank="8" class="Algorithmique1-TP-2A">
+	<startingSlot dailySlot="750" day="3" week="5" />
+	<rooms>
+		<room refId="Amphi-D" />
+	</rooms>
+	<teachers>
+		<teacher refId="GENEST David" />
+	</teachers>
+</session>
+<session rank="0" class="Algorithmique1-TP-2B">
+	<startingSlot dailySlot="750" day="3" week="1" />
+	<rooms>
+		<room refId="Amphi-E-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="GOEFFON Adrien" />
+	</teachers>
+</session>
+<session rank="1" class="Algorithmique1-TP-2B">
+	<startingSlot dailySlot="570" day="2" week="2" />
+	<rooms>
+		<room refId="Amphi-E-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="GOEFFON Adrien" />
+	</teachers>
+</session>
+<session rank="2" class="Algorithmique1-TP-2B">
+	<startingSlot dailySlot="750" day="3" week="2" />
+	<rooms>
+		<room refId="Amphi-E-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="GOEFFON Adrien" />
+	</teachers>
+</session>
+<session rank="3" class="Algorithmique1-TP-2B">
+	<startingSlot dailySlot="570" day="2" week="3" />
+	<rooms>
+		<room refId="Amphi-E-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="GOEFFON Adrien" />
+	</teachers>
+</session>
+<session rank="4" class="Algorithmique1-TP-2B">
+	<startingSlot dailySlot="750" day="3" week="3" />
+	<rooms>
+		<room refId="Amphi-E-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="GOEFFON Adrien" />
+	</teachers>
+</session>
+<session rank="5" class="Algorithmique1-TP-2B">
+	<startingSlot dailySlot="570" day="2" week="4" />
+	<rooms>
+		<room refId="Amphi-E-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="GOEFFON Adrien" />
+	</teachers>
+</session>
+<session rank="6" class="Algorithmique1-TP-2B">
+	<startingSlot dailySlot="750" day="3" week="4" />
+	<rooms>
+		<room refId="Amphi-E-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="GOEFFON Adrien" />
+	</teachers>
+</session>
+<session rank="7" class="Algorithmique1-TP-2B">
+	<startingSlot dailySlot="570" day="2" week="5" />
+	<rooms>
+		<room refId="Amphi-E-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="GOEFFON Adrien" />
+	</teachers>
+</session>
+<session rank="8" class="Algorithmique1-TP-2B">
+	<startingSlot dailySlot="750" day="3" week="5" />
+	<rooms>
+		<room refId="Amphi-E-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="GOEFFON Adrien" />
+	</teachers>
+</session>
+<session rank="0" class="Algorithmique1-TP-3A">
+	<startingSlot dailySlot="750" day="3" week="1" />
+	<rooms>
+		<room refId="Amphi-L003" />
+	</rooms>
+	<teachers>
+		<teacher refId="GRELIER Cyril" />
+	</teachers>
+</session>
+<session rank="1" class="Algorithmique1-TP-3A">
+	<startingSlot dailySlot="570" day="2" week="2" />
+	<rooms>
+		<room refId="Amphi-L003" />
+	</rooms>
+	<teachers>
+		<teacher refId="GRELIER Cyril" />
+	</teachers>
+</session>
+<session rank="2" class="Algorithmique1-TP-3A">
+	<startingSlot dailySlot="750" day="3" week="2" />
+	<rooms>
+		<room refId="Amphi-L003" />
+	</rooms>
+	<teachers>
+		<teacher refId="GRELIER Cyril" />
+	</teachers>
+</session>
+<session rank="3" class="Algorithmique1-TP-3A">
+	<startingSlot dailySlot="570" day="2" week="3" />
+	<rooms>
+		<room refId="Amphi-L003" />
+	</rooms>
+	<teachers>
+		<teacher refId="GRELIER Cyril" />
+	</teachers>
+</session>
+<session rank="4" class="Algorithmique1-TP-3A">
+	<startingSlot dailySlot="750" day="3" week="3" />
+	<rooms>
+		<room refId="Amphi-L003" />
+	</rooms>
+	<teachers>
+		<teacher refId="GRELIER Cyril" />
+	</teachers>
+</session>
+<session rank="5" class="Algorithmique1-TP-3A">
+	<startingSlot dailySlot="570" day="2" week="4" />
+	<rooms>
+		<room refId="Amphi-L003" />
+	</rooms>
+	<teachers>
+		<teacher refId="GRELIER Cyril" />
+	</teachers>
+</session>
+<session rank="6" class="Algorithmique1-TP-3A">
+	<startingSlot dailySlot="750" day="3" week="4" />
+	<rooms>
+		<room refId="Amphi-L003" />
+	</rooms>
+	<teachers>
+		<teacher refId="GRELIER Cyril" />
+	</teachers>
+</session>
+<session rank="7" class="Algorithmique1-TP-3A">
+	<startingSlot dailySlot="570" day="2" week="5" />
+	<rooms>
+		<room refId="Amphi-L003" />
+	</rooms>
+	<teachers>
+		<teacher refId="GRELIER Cyril" />
+	</teachers>
+</session>
+<session rank="8" class="Algorithmique1-TP-3A">
+	<startingSlot dailySlot="750" day="3" week="5" />
+	<rooms>
+		<room refId="Amphi-L003" />
+	</rooms>
+	<teachers>
+		<teacher refId="GRELIER Cyril" />
+	</teachers>
+</session>
+<session rank="0" class="Algorithmique1-TP-3B">
+	<startingSlot dailySlot="750" day="3" week="1" />
+	<rooms>
+		<room refId="Amphi-D-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="HAMIEZ Jean-Philippe" />
+	</teachers>
+</session>
+<session rank="1" class="Algorithmique1-TP-3B">
+	<startingSlot dailySlot="570" day="2" week="2" />
+	<rooms>
+		<room refId="Amphi-D-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="HAMIEZ Jean-Philippe" />
+	</teachers>
+</session>
+<session rank="2" class="Algorithmique1-TP-3B">
+	<startingSlot dailySlot="750" day="3" week="2" />
+	<rooms>
+		<room refId="Amphi-D-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="HAMIEZ Jean-Philippe" />
+	</teachers>
+</session>
+<session rank="3" class="Algorithmique1-TP-3B">
+	<startingSlot dailySlot="570" day="2" week="3" />
+	<rooms>
+		<room refId="Amphi-D-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="HAMIEZ Jean-Philippe" />
+	</teachers>
+</session>
+<session rank="4" class="Algorithmique1-TP-3B">
+	<startingSlot dailySlot="750" day="3" week="3" />
+	<rooms>
+		<room refId="Amphi-D-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="HAMIEZ Jean-Philippe" />
+	</teachers>
+</session>
+<session rank="5" class="Algorithmique1-TP-3B">
+	<startingSlot dailySlot="570" day="2" week="4" />
+	<rooms>
+		<room refId="Amphi-D-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="HAMIEZ Jean-Philippe" />
+	</teachers>
+</session>
+<session rank="6" class="Algorithmique1-TP-3B">
+	<startingSlot dailySlot="750" day="3" week="4" />
+	<rooms>
+		<room refId="Amphi-D-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="HAMIEZ Jean-Philippe" />
+	</teachers>
+</session>
+<session rank="7" class="Algorithmique1-TP-3B">
+	<startingSlot dailySlot="570" day="2" week="5" />
+	<rooms>
+		<room refId="Amphi-D-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="HAMIEZ Jean-Philippe" />
+	</teachers>
+</session>
+<session rank="8" class="Algorithmique1-TP-3B">
+	<startingSlot dailySlot="750" day="3" week="5" />
+	<rooms>
+		<room refId="Amphi-D-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="HAMIEZ Jean-Philippe" />
+	</teachers>
+</session>
+<session rank="0" class="Algorithmique1-TP-4A">
+	<startingSlot dailySlot="750" day="3" week="1" />
+	<rooms>
+		<room refId="A118" />
+	</rooms>
+	<teachers>
+		<teacher refId="LARDEUX Frederic" />
+	</teachers>
+</session>
+<session rank="1" class="Algorithmique1-TP-4A">
+	<startingSlot dailySlot="570" day="2" week="2" />
+	<rooms>
+		<room refId="A118" />
+	</rooms>
+	<teachers>
+		<teacher refId="LARDEUX Frederic" />
+	</teachers>
+</session>
+<session rank="2" class="Algorithmique1-TP-4A">
+	<startingSlot dailySlot="750" day="3" week="2" />
+	<rooms>
+		<room refId="A118" />
+	</rooms>
+	<teachers>
+		<teacher refId="LARDEUX Frederic" />
+	</teachers>
+</session>
+<session rank="3" class="Algorithmique1-TP-4A">
+	<startingSlot dailySlot="570" day="2" week="3" />
+	<rooms>
+		<room refId="A118" />
+	</rooms>
+	<teachers>
+		<teacher refId="LARDEUX Frederic" />
+	</teachers>
+</session>
+<session rank="4" class="Algorithmique1-TP-4A">
+	<startingSlot dailySlot="750" day="3" week="3" />
+	<rooms>
+		<room refId="A118" />
+	</rooms>
+	<teachers>
+		<teacher refId="LARDEUX Frederic" />
+	</teachers>
+</session>
+<session rank="5" class="Algorithmique1-TP-4A">
+	<startingSlot dailySlot="570" day="2" week="4" />
+	<rooms>
+		<room refId="A118" />
+	</rooms>
+	<teachers>
+		<teacher refId="LARDEUX Frederic" />
+	</teachers>
+</session>
+<session rank="6" class="Algorithmique1-TP-4A">
+	<startingSlot dailySlot="750" day="3" week="4" />
+	<rooms>
+		<room refId="A118" />
+	</rooms>
+	<teachers>
+		<teacher refId="LARDEUX Frederic" />
+	</teachers>
+</session>
+<session rank="7" class="Algorithmique1-TP-4A">
+	<startingSlot dailySlot="570" day="2" week="5" />
+	<rooms>
+		<room refId="A118" />
+	</rooms>
+	<teachers>
+		<teacher refId="LARDEUX Frederic" />
+	</teachers>
+</session>
+<session rank="8" class="Algorithmique1-TP-4A">
+	<startingSlot dailySlot="750" day="3" week="5" />
+	<rooms>
+		<room refId="A118" />
+	</rooms>
+	<teachers>
+		<teacher refId="LARDEUX Frederic" />
+	</teachers>
+</session>
+<session rank="0" class="Algorithmique1-TP-4B">
+	<startingSlot dailySlot="750" day="3" week="1" />
+	<rooms>
+		<room refId="Amphi-L004" />
+	</rooms>
+	<teachers>
+		<teacher refId="LEFEVRE Claire" />
+	</teachers>
+</session>
+<session rank="1" class="Algorithmique1-TP-4B">
+	<startingSlot dailySlot="570" day="2" week="2" />
+	<rooms>
+		<room refId="Amphi-L004" />
+	</rooms>
+	<teachers>
+		<teacher refId="LEFEVRE Claire" />
+	</teachers>
+</session>
+<session rank="2" class="Algorithmique1-TP-4B">
+	<startingSlot dailySlot="750" day="3" week="2" />
+	<rooms>
+		<room refId="Amphi-L004" />
+	</rooms>
+	<teachers>
+		<teacher refId="LEFEVRE Claire" />
+	</teachers>
+</session>
+<session rank="3" class="Algorithmique1-TP-4B">
+	<startingSlot dailySlot="570" day="2" week="3" />
+	<rooms>
+		<room refId="Amphi-L004" />
+	</rooms>
+	<teachers>
+		<teacher refId="LEFEVRE Claire" />
+	</teachers>
+</session>
+<session rank="4" class="Algorithmique1-TP-4B">
+	<startingSlot dailySlot="750" day="3" week="3" />
+	<rooms>
+		<room refId="Amphi-L004" />
+	</rooms>
+	<teachers>
+		<teacher refId="LEFEVRE Claire" />
+	</teachers>
+</session>
+<session rank="5" class="Algorithmique1-TP-4B">
+	<startingSlot dailySlot="570" day="2" week="4" />
+	<rooms>
+		<room refId="Amphi-L004" />
+	</rooms>
+	<teachers>
+		<teacher refId="LEFEVRE Claire" />
+	</teachers>
+</session>
+<session rank="6" class="Algorithmique1-TP-4B">
+	<startingSlot dailySlot="750" day="3" week="4" />
+	<rooms>
+		<room refId="Amphi-L004" />
+	</rooms>
+	<teachers>
+		<teacher refId="LEFEVRE Claire" />
+	</teachers>
+</session>
+<session rank="7" class="Algorithmique1-TP-4B">
+	<startingSlot dailySlot="570" day="2" week="5" />
+	<rooms>
+		<room refId="Amphi-L004" />
+	</rooms>
+	<teachers>
+		<teacher refId="LEFEVRE Claire" />
+	</teachers>
+</session>
+<session rank="8" class="Algorithmique1-TP-4B">
+	<startingSlot dailySlot="750" day="3" week="5" />
+	<rooms>
+		<room refId="Amphi-L004" />
+	</rooms>
+	<teachers>
+		<teacher refId="LEFEVRE Claire" />
+	</teachers>
+</session>
+<session rank="0" class="Algorithmique1-TP-5A">
+	<startingSlot dailySlot="750" day="3" week="1" />
+	<rooms>
+		<room refId="Amphi-L003-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="RICHER Jean-Michel" />
+	</teachers>
+</session>
+<session rank="1" class="Algorithmique1-TP-5A">
+	<startingSlot dailySlot="570" day="2" week="2" />
+	<rooms>
+		<room refId="Amphi-L003-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="RICHER Jean-Michel" />
+	</teachers>
+</session>
+<session rank="2" class="Algorithmique1-TP-5A">
+	<startingSlot dailySlot="750" day="3" week="2" />
+	<rooms>
+		<room refId="Amphi-L003-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="RICHER Jean-Michel" />
+	</teachers>
+</session>
+<session rank="3" class="Algorithmique1-TP-5A">
+	<startingSlot dailySlot="570" day="2" week="3" />
+	<rooms>
+		<room refId="Amphi-L003-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="RICHER Jean-Michel" />
+	</teachers>
+</session>
+<session rank="4" class="Algorithmique1-TP-5A">
+	<startingSlot dailySlot="750" day="3" week="3" />
+	<rooms>
+		<room refId="Amphi-L003-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="RICHER Jean-Michel" />
+	</teachers>
+</session>
+<session rank="5" class="Algorithmique1-TP-5A">
+	<startingSlot dailySlot="570" day="2" week="4" />
+	<rooms>
+		<room refId="Amphi-L003-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="RICHER Jean-Michel" />
+	</teachers>
+</session>
+<session rank="6" class="Algorithmique1-TP-5A">
+	<startingSlot dailySlot="750" day="3" week="4" />
+	<rooms>
+		<room refId="Amphi-L003-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="RICHER Jean-Michel" />
+	</teachers>
+</session>
+<session rank="7" class="Algorithmique1-TP-5A">
+	<startingSlot dailySlot="570" day="2" week="5" />
+	<rooms>
+		<room refId="Amphi-L003-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="RICHER Jean-Michel" />
+	</teachers>
+</session>
+<session rank="8" class="Algorithmique1-TP-5A">
+	<startingSlot dailySlot="750" day="3" week="5" />
+	<rooms>
+		<room refId="Amphi-L003-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="RICHER Jean-Michel" />
+	</teachers>
+</session>
+<session rank="0" class="Algorithmique1-TP-5B">
+	<startingSlot dailySlot="750" day="3" week="1" />
+	<rooms>
+		<room refId="D003" />
+	</rooms>
+	<teachers>
+		<teacher refId="VASCONCELLOS Claudia" />
+	</teachers>
+</session>
+<session rank="1" class="Algorithmique1-TP-5B">
+	<startingSlot dailySlot="570" day="2" week="2" />
+	<rooms>
+		<room refId="D003" />
+	</rooms>
+	<teachers>
+		<teacher refId="VASCONCELLOS Claudia" />
+	</teachers>
+</session>
+<session rank="2" class="Algorithmique1-TP-5B">
+	<startingSlot dailySlot="750" day="3" week="2" />
+	<rooms>
+		<room refId="D003" />
+	</rooms>
+	<teachers>
+		<teacher refId="VASCONCELLOS Claudia" />
+	</teachers>
+</session>
+<session rank="3" class="Algorithmique1-TP-5B">
+	<startingSlot dailySlot="570" day="2" week="3" />
+	<rooms>
+		<room refId="D003" />
+	</rooms>
+	<teachers>
+		<teacher refId="VASCONCELLOS Claudia" />
+	</teachers>
+</session>
+<session rank="4" class="Algorithmique1-TP-5B">
+	<startingSlot dailySlot="750" day="3" week="3" />
+	<rooms>
+		<room refId="D003" />
+	</rooms>
+	<teachers>
+		<teacher refId="VASCONCELLOS Claudia" />
+	</teachers>
+</session>
+<session rank="5" class="Algorithmique1-TP-5B">
+	<startingSlot dailySlot="570" day="2" week="4" />
+	<rooms>
+		<room refId="D003" />
+	</rooms>
+	<teachers>
+		<teacher refId="VASCONCELLOS Claudia" />
+	</teachers>
+</session>
+<session rank="6" class="Algorithmique1-TP-5B">
+	<startingSlot dailySlot="750" day="3" week="4" />
+	<rooms>
+		<room refId="D003" />
+	</rooms>
+	<teachers>
+		<teacher refId="VASCONCELLOS Claudia" />
+	</teachers>
+</session>
+<session rank="7" class="Algorithmique1-TP-5B">
+	<startingSlot dailySlot="570" day="2" week="5" />
+	<rooms>
+		<room refId="D003" />
+	</rooms>
+	<teachers>
+		<teacher refId="VASCONCELLOS Claudia" />
+	</teachers>
+</session>
+<session rank="8" class="Algorithmique1-TP-5B">
+	<startingSlot dailySlot="750" day="3" week="5" />
+	<rooms>
+		<room refId="D003" />
+	</rooms>
+	<teachers>
+		<teacher refId="VASCONCELLOS Claudia" />
+	</teachers>
+</session>
+<session rank="0" class="Algorithmique1-CC-1">
+	<startingSlot dailySlot="480" day="1" week="6" />
+	<rooms>
+		<room refId="Amphi-L003" />
+	</rooms>
+	<teachers>
+		<teacher refId="AIT EL MEKKI Touria" />
+	</teachers>
+</session>
+<session rank="0" class="BasesInfo1-CTD-0">
+	<startingSlot dailySlot="660" day="2" week="1" />
+	<rooms>
+		<room refId="D003" />
+	</rooms>
+	<teachers>
+		<teacher refId="AIT EL MEKKI Touria" />
+	</teachers>
+</session>
+<session rank="1" class="BasesInfo1-CTD-0">
+	<startingSlot dailySlot="660" day="2" week="2" />
+	<rooms>
+		<room refId="D003" />
+	</rooms>
+	<teachers>
+		<teacher refId="AIT EL MEKKI Touria" />
+	</teachers>
+</session>
+<session rank="2" class="BasesInfo1-CTD-0">
+	<startingSlot dailySlot="750" day="1" week="3" />
+	<rooms>
+		<room refId="D003" />
+	</rooms>
+	<teachers>
+		<teacher refId="AIT EL MEKKI Touria" />
+	</teachers>
+</session>
+<session rank="3" class="BasesInfo1-CTD-0">
+	<startingSlot dailySlot="660" day="2" week="3" />
+	<rooms>
+		<room refId="D003" />
+	</rooms>
+	<teachers>
+		<teacher refId="AIT EL MEKKI Touria" />
+	</teachers>
+</session>
+<session rank="4" class="BasesInfo1-CTD-0">
+	<startingSlot dailySlot="750" day="1" week="4" />
+	<rooms>
+		<room refId="D003" />
+	</rooms>
+	<teachers>
+		<teacher refId="AIT EL MEKKI Touria" />
+	</teachers>
+</session>
+<session rank="5" class="BasesInfo1-CTD-0">
+	<startingSlot dailySlot="660" day="2" week="4" />
+	<rooms>
+		<room refId="D003" />
+	</rooms>
+	<teachers>
+		<teacher refId="AIT EL MEKKI Touria" />
+	</teachers>
+</session>
+<session rank="6" class="BasesInfo1-CTD-0">
+	<startingSlot dailySlot="750" day="1" week="5" />
+	<rooms>
+		<room refId="D003" />
+	</rooms>
+	<teachers>
+		<teacher refId="AIT EL MEKKI Touria" />
+	</teachers>
+</session>
+<session rank="7" class="BasesInfo1-CTD-0">
+	<startingSlot dailySlot="660" day="2" week="5" />
+	<rooms>
+		<room refId="D003" />
+	</rooms>
+	<teachers>
+		<teacher refId="AIT EL MEKKI Touria" />
+	</teachers>
+</session>
+<session rank="8" class="BasesInfo1-CTD-0">
+	<startingSlot dailySlot="750" day="1" week="6" />
+	<rooms>
+		<room refId="D003" />
+	</rooms>
+	<teachers>
+		<teacher refId="AIT EL MEKKI Touria" />
+	</teachers>
+</session>
+<session rank="0" class="BasesInfo1-CTD-1">
+	<startingSlot dailySlot="930" day="2" week="1" />
+	<rooms>
+		<room refId="B006" />
+	</rooms>
+	<teachers>
+		<teacher refId="AMGHAR Tassadit" />
+	</teachers>
+</session>
+<session rank="1" class="BasesInfo1-CTD-1">
+	<startingSlot dailySlot="930" day="2" week="2" />
+	<rooms>
+		<room refId="B006" />
+	</rooms>
+	<teachers>
+		<teacher refId="AMGHAR Tassadit" />
+	</teachers>
+</session>
+<session rank="2" class="BasesInfo1-CTD-1">
+	<startingSlot dailySlot="930" day="1" week="3" />
+	<rooms>
+		<room refId="B006" />
+	</rooms>
+	<teachers>
+		<teacher refId="AMGHAR Tassadit" />
+	</teachers>
+</session>
+<session rank="3" class="BasesInfo1-CTD-1">
+	<startingSlot dailySlot="930" day="2" week="3" />
+	<rooms>
+		<room refId="B006" />
+	</rooms>
+	<teachers>
+		<teacher refId="AMGHAR Tassadit" />
+	</teachers>
+</session>
+<session rank="4" class="BasesInfo1-CTD-1">
+	<startingSlot dailySlot="930" day="1" week="4" />
+	<rooms>
+		<room refId="B006" />
+	</rooms>
+	<teachers>
+		<teacher refId="AMGHAR Tassadit" />
+	</teachers>
+</session>
+<session rank="5" class="BasesInfo1-CTD-1">
+	<startingSlot dailySlot="930" day="2" week="4" />
+	<rooms>
+		<room refId="B006" />
+	</rooms>
+	<teachers>
+		<teacher refId="AMGHAR Tassadit" />
+	</teachers>
+</session>
+<session rank="6" class="BasesInfo1-CTD-1">
+	<startingSlot dailySlot="930" day="1" week="5" />
+	<rooms>
+		<room refId="B006" />
+	</rooms>
+	<teachers>
+		<teacher refId="AMGHAR Tassadit" />
+	</teachers>
+</session>
+<session rank="7" class="BasesInfo1-CTD-1">
+	<startingSlot dailySlot="930" day="2" week="5" />
+	<rooms>
+		<room refId="B006" />
+	</rooms>
+	<teachers>
+		<teacher refId="AMGHAR Tassadit" />
+	</teachers>
+</session>
+<session rank="8" class="BasesInfo1-CTD-1">
+	<startingSlot dailySlot="930" day="1" week="6" />
+	<rooms>
+		<room refId="B006" />
+	</rooms>
+	<teachers>
+		<teacher refId="AMGHAR Tassadit" />
+	</teachers>
+</session>
+<session rank="0" class="BasesInfo1-CTD-2">
+	<startingSlot dailySlot="930" day="2" week="1" />
+	<rooms>
+		<room refId="D003" />
+	</rooms>
+	<teachers>
+		<teacher refId="GARCIA Laurent" />
+	</teachers>
+</session>
+<session rank="1" class="BasesInfo1-CTD-2">
+	<startingSlot dailySlot="930" day="2" week="2" />
+	<rooms>
+		<room refId="D003" />
+	</rooms>
+	<teachers>
+		<teacher refId="GARCIA Laurent" />
+	</teachers>
+</session>
+<session rank="2" class="BasesInfo1-CTD-2">
+	<startingSlot dailySlot="930" day="1" week="3" />
+	<rooms>
+		<room refId="D003" />
+	</rooms>
+	<teachers>
+		<teacher refId="GARCIA Laurent" />
+	</teachers>
+</session>
+<session rank="3" class="BasesInfo1-CTD-2">
+	<startingSlot dailySlot="930" day="2" week="3" />
+	<rooms>
+		<room refId="D003" />
+	</rooms>
+	<teachers>
+		<teacher refId="GARCIA Laurent" />
+	</teachers>
+</session>
+<session rank="4" class="BasesInfo1-CTD-2">
+	<startingSlot dailySlot="930" day="1" week="4" />
+	<rooms>
+		<room refId="D003" />
+	</rooms>
+	<teachers>
+		<teacher refId="GARCIA Laurent" />
+	</teachers>
+</session>
+<session rank="5" class="BasesInfo1-CTD-2">
+	<startingSlot dailySlot="930" day="2" week="4" />
+	<rooms>
+		<room refId="D003" />
+	</rooms>
+	<teachers>
+		<teacher refId="GARCIA Laurent" />
+	</teachers>
+</session>
+<session rank="6" class="BasesInfo1-CTD-2">
+	<startingSlot dailySlot="930" day="1" week="5" />
+	<rooms>
+		<room refId="D003" />
+	</rooms>
+	<teachers>
+		<teacher refId="GARCIA Laurent" />
+	</teachers>
+</session>
+<session rank="7" class="BasesInfo1-CTD-2">
+	<startingSlot dailySlot="930" day="2" week="5" />
+	<rooms>
+		<room refId="D003" />
+	</rooms>
+	<teachers>
+		<teacher refId="GARCIA Laurent" />
+	</teachers>
+</session>
+<session rank="8" class="BasesInfo1-CTD-2">
+	<startingSlot dailySlot="930" day="1" week="6" />
+	<rooms>
+		<room refId="D003" />
+	</rooms>
+	<teachers>
+		<teacher refId="GARCIA Laurent" />
+	</teachers>
+</session>
+<session rank="0" class="BasesInfo1-CTD-3">
+	<startingSlot dailySlot="930" day="2" week="1" />
+	<rooms>
+		<room refId="Amphi-D-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="MONFROY Eric" />
+	</teachers>
+</session>
+<session rank="1" class="BasesInfo1-CTD-3">
+	<startingSlot dailySlot="930" day="2" week="2" />
+	<rooms>
+		<room refId="Amphi-D-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="MONFROY Eric" />
+	</teachers>
+</session>
+<session rank="2" class="BasesInfo1-CTD-3">
+	<startingSlot dailySlot="930" day="1" week="3" />
+	<rooms>
+		<room refId="Amphi-D-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="MONFROY Eric" />
+	</teachers>
+</session>
+<session rank="3" class="BasesInfo1-CTD-3">
+	<startingSlot dailySlot="930" day="2" week="3" />
+	<rooms>
+		<room refId="Amphi-D-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="MONFROY Eric" />
+	</teachers>
+</session>
+<session rank="4" class="BasesInfo1-CTD-3">
+	<startingSlot dailySlot="930" day="1" week="4" />
+	<rooms>
+		<room refId="Amphi-D-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="MONFROY Eric" />
+	</teachers>
+</session>
+<session rank="5" class="BasesInfo1-CTD-3">
+	<startingSlot dailySlot="930" day="2" week="4" />
+	<rooms>
+		<room refId="Amphi-D-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="MONFROY Eric" />
+	</teachers>
+</session>
+<session rank="6" class="BasesInfo1-CTD-3">
+	<startingSlot dailySlot="930" day="1" week="5" />
+	<rooms>
+		<room refId="Amphi-D-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="MONFROY Eric" />
+	</teachers>
+</session>
+<session rank="7" class="BasesInfo1-CTD-3">
+	<startingSlot dailySlot="930" day="2" week="5" />
+	<rooms>
+		<room refId="Amphi-D-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="MONFROY Eric" />
+	</teachers>
+</session>
+<session rank="8" class="BasesInfo1-CTD-3">
+	<startingSlot dailySlot="930" day="1" week="6" />
+	<rooms>
+		<room refId="Amphi-D-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="MONFROY Eric" />
+	</teachers>
+</session>
+<session rank="0" class="BasesInfo1-CTD-4">
+	<startingSlot dailySlot="930" day="2" week="1" />
+	<rooms>
+		<room refId="Da004" />
+	</rooms>
+	<teachers>
+		<teacher refId="RICHER Jean-Michel" />
+	</teachers>
+</session>
+<session rank="1" class="BasesInfo1-CTD-4">
+	<startingSlot dailySlot="930" day="2" week="2" />
+	<rooms>
+		<room refId="Da004" />
+	</rooms>
+	<teachers>
+		<teacher refId="RICHER Jean-Michel" />
+	</teachers>
+</session>
+<session rank="2" class="BasesInfo1-CTD-4">
+	<startingSlot dailySlot="930" day="1" week="3" />
+	<rooms>
+		<room refId="Da004" />
+	</rooms>
+	<teachers>
+		<teacher refId="RICHER Jean-Michel" />
+	</teachers>
+</session>
+<session rank="3" class="BasesInfo1-CTD-4">
+	<startingSlot dailySlot="930" day="2" week="3" />
+	<rooms>
+		<room refId="Da004" />
+	</rooms>
+	<teachers>
+		<teacher refId="RICHER Jean-Michel" />
+	</teachers>
+</session>
+<session rank="4" class="BasesInfo1-CTD-4">
+	<startingSlot dailySlot="930" day="1" week="4" />
+	<rooms>
+		<room refId="Da004" />
+	</rooms>
+	<teachers>
+		<teacher refId="RICHER Jean-Michel" />
+	</teachers>
+</session>
+<session rank="5" class="BasesInfo1-CTD-4">
+	<startingSlot dailySlot="930" day="2" week="4" />
+	<rooms>
+		<room refId="Da004" />
+	</rooms>
+	<teachers>
+		<teacher refId="RICHER Jean-Michel" />
+	</teachers>
+</session>
+<session rank="6" class="BasesInfo1-CTD-4">
+	<startingSlot dailySlot="930" day="1" week="5" />
+	<rooms>
+		<room refId="Da004" />
+	</rooms>
+	<teachers>
+		<teacher refId="RICHER Jean-Michel" />
+	</teachers>
+</session>
+<session rank="7" class="BasesInfo1-CTD-4">
+	<startingSlot dailySlot="930" day="2" week="5" />
+	<rooms>
+		<room refId="Da004" />
+	</rooms>
+	<teachers>
+		<teacher refId="RICHER Jean-Michel" />
+	</teachers>
+</session>
+<session rank="8" class="BasesInfo1-CTD-4">
+	<startingSlot dailySlot="930" day="1" week="6" />
+	<rooms>
+		<room refId="Da004" />
+	</rooms>
+	<teachers>
+		<teacher refId="RICHER Jean-Michel" />
+	</teachers>
+</session>
+<session rank="0" class="BasesInfo1-CTD-5">
+	<startingSlot dailySlot="930" day="2" week="1" />
+	<rooms>
+		<room refId="Da004" />
+	</rooms>
+	<teachers>
+		<teacher refId="SAUBION Frederic" />
+	</teachers>
+</session>
+<session rank="1" class="BasesInfo1-CTD-5">
+	<startingSlot dailySlot="930" day="2" week="2" />
+	<rooms>
+		<room refId="Da004" />
+	</rooms>
+	<teachers>
+		<teacher refId="SAUBION Frederic" />
+	</teachers>
+</session>
+<session rank="2" class="BasesInfo1-CTD-5">
+	<startingSlot dailySlot="930" day="1" week="3" />
+	<rooms>
+		<room refId="Da004" />
+	</rooms>
+	<teachers>
+		<teacher refId="SAUBION Frederic" />
+	</teachers>
+</session>
+<session rank="3" class="BasesInfo1-CTD-5">
+	<startingSlot dailySlot="930" day="2" week="3" />
+	<rooms>
+		<room refId="Da004" />
+	</rooms>
+	<teachers>
+		<teacher refId="SAUBION Frederic" />
+	</teachers>
+</session>
+<session rank="4" class="BasesInfo1-CTD-5">
+	<startingSlot dailySlot="930" day="1" week="4" />
+	<rooms>
+		<room refId="Da004" />
+	</rooms>
+	<teachers>
+		<teacher refId="SAUBION Frederic" />
+	</teachers>
+</session>
+<session rank="5" class="BasesInfo1-CTD-5">
+	<startingSlot dailySlot="930" day="2" week="4" />
+	<rooms>
+		<room refId="Da004" />
+	</rooms>
+	<teachers>
+		<teacher refId="SAUBION Frederic" />
+	</teachers>
+</session>
+<session rank="6" class="BasesInfo1-CTD-5">
+	<startingSlot dailySlot="930" day="1" week="5" />
+	<rooms>
+		<room refId="Da004" />
+	</rooms>
+	<teachers>
+		<teacher refId="SAUBION Frederic" />
+	</teachers>
+</session>
+<session rank="7" class="BasesInfo1-CTD-5">
+	<startingSlot dailySlot="930" day="2" week="5" />
+	<rooms>
+		<room refId="Da004" />
+	</rooms>
+	<teachers>
+		<teacher refId="SAUBION Frederic" />
+	</teachers>
+</session>
+<session rank="8" class="BasesInfo1-CTD-5">
+	<startingSlot dailySlot="930" day="1" week="6" />
+	<rooms>
+		<room refId="Da004" />
+	</rooms>
+	<teachers>
+		<teacher refId="SAUBION Frederic" />
+	</teachers>
+</session>
+<session rank="0" class="BasesInfo1-CC-1">
+	<startingSlot dailySlot="570" day="1" week="6" />
+	<rooms>
+		<room refId="Da004" />
+	</rooms>
+	<teachers>
+		<teacher refId="AIT EL MEKKI Touria" />
+	</teachers>
+</session>
+<session rank="0" class="AlgebreElementaireEtoile1-CTD-MPC1">
+	<startingSlot dailySlot="570" day="1" week="1" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="1" class="AlgebreElementaireEtoile1-CTD-MPC1">
+	<startingSlot dailySlot="570" day="2" week="1" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="2" class="AlgebreElementaireEtoile1-CTD-MPC1">
+	<startingSlot dailySlot="570" day="3" week="1" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="3" class="AlgebreElementaireEtoile1-CTD-MPC1">
+	<startingSlot dailySlot="570" day="1" week="2" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="4" class="AlgebreElementaireEtoile1-CTD-MPC1">
+	<startingSlot dailySlot="570" day="2" week="2" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="5" class="AlgebreElementaireEtoile1-CTD-MPC1">
+	<startingSlot dailySlot="570" day="3" week="2" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="6" class="AlgebreElementaireEtoile1-CTD-MPC1">
+	<startingSlot dailySlot="570" day="1" week="3" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="7" class="AlgebreElementaireEtoile1-CTD-MPC1">
+	<startingSlot dailySlot="570" day="2" week="3" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="8" class="AlgebreElementaireEtoile1-CTD-MPC1">
+	<startingSlot dailySlot="570" day="3" week="3" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="9" class="AlgebreElementaireEtoile1-CTD-MPC1">
+	<startingSlot dailySlot="570" day="1" week="4" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="10" class="AlgebreElementaireEtoile1-CTD-MPC1">
+	<startingSlot dailySlot="570" day="2" week="4" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="11" class="AlgebreElementaireEtoile1-CTD-MPC1">
+	<startingSlot dailySlot="570" day="3" week="4" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="12" class="AlgebreElementaireEtoile1-CTD-MPC1">
+	<startingSlot dailySlot="570" day="1" week="5" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="13" class="AlgebreElementaireEtoile1-CTD-MPC1">
+	<startingSlot dailySlot="570" day="2" week="5" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="14" class="AlgebreElementaireEtoile1-CTD-MPC1">
+	<startingSlot dailySlot="570" day="3" week="5" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="0" class="AlgebreElementaireEtoile1-CTD-MPC2">
+	<startingSlot dailySlot="570" day="1" week="1" />
+	<rooms>
+		<room refId="D005" />
+	</rooms>
+	<teachers>
+		<teacher refId="BERNARD Francois" />
+	</teachers>
+</session>
+<session rank="1" class="AlgebreElementaireEtoile1-CTD-MPC2">
+	<startingSlot dailySlot="570" day="2" week="1" />
+	<rooms>
+		<room refId="D005" />
+	</rooms>
+	<teachers>
+		<teacher refId="BERNARD Francois" />
+	</teachers>
+</session>
+<session rank="2" class="AlgebreElementaireEtoile1-CTD-MPC2">
+	<startingSlot dailySlot="570" day="3" week="1" />
+	<rooms>
+		<room refId="D005" />
+	</rooms>
+	<teachers>
+		<teacher refId="BERNARD Francois" />
+	</teachers>
+</session>
+<session rank="3" class="AlgebreElementaireEtoile1-CTD-MPC2">
+	<startingSlot dailySlot="570" day="1" week="2" />
+	<rooms>
+		<room refId="D005" />
+	</rooms>
+	<teachers>
+		<teacher refId="BERNARD Francois" />
+	</teachers>
+</session>
+<session rank="4" class="AlgebreElementaireEtoile1-CTD-MPC2">
+	<startingSlot dailySlot="570" day="2" week="2" />
+	<rooms>
+		<room refId="D005" />
+	</rooms>
+	<teachers>
+		<teacher refId="BERNARD Francois" />
+	</teachers>
+</session>
+<session rank="5" class="AlgebreElementaireEtoile1-CTD-MPC2">
+	<startingSlot dailySlot="570" day="3" week="2" />
+	<rooms>
+		<room refId="D005" />
+	</rooms>
+	<teachers>
+		<teacher refId="BERNARD Francois" />
+	</teachers>
+</session>
+<session rank="6" class="AlgebreElementaireEtoile1-CTD-MPC2">
+	<startingSlot dailySlot="570" day="1" week="3" />
+	<rooms>
+		<room refId="D005" />
+	</rooms>
+	<teachers>
+		<teacher refId="BERNARD Francois" />
+	</teachers>
+</session>
+<session rank="7" class="AlgebreElementaireEtoile1-CTD-MPC2">
+	<startingSlot dailySlot="570" day="2" week="3" />
+	<rooms>
+		<room refId="D005" />
+	</rooms>
+	<teachers>
+		<teacher refId="BERNARD Francois" />
+	</teachers>
+</session>
+<session rank="8" class="AlgebreElementaireEtoile1-CTD-MPC2">
+	<startingSlot dailySlot="570" day="3" week="3" />
+	<rooms>
+		<room refId="D005" />
+	</rooms>
+	<teachers>
+		<teacher refId="BERNARD Francois" />
+	</teachers>
+</session>
+<session rank="9" class="AlgebreElementaireEtoile1-CTD-MPC2">
+	<startingSlot dailySlot="570" day="1" week="4" />
+	<rooms>
+		<room refId="D005" />
+	</rooms>
+	<teachers>
+		<teacher refId="BERNARD Francois" />
+	</teachers>
+</session>
+<session rank="10" class="AlgebreElementaireEtoile1-CTD-MPC2">
+	<startingSlot dailySlot="570" day="2" week="4" />
+	<rooms>
+		<room refId="D005" />
+	</rooms>
+	<teachers>
+		<teacher refId="BERNARD Francois" />
+	</teachers>
+</session>
+<session rank="11" class="AlgebreElementaireEtoile1-CTD-MPC2">
+	<startingSlot dailySlot="570" day="3" week="4" />
+	<rooms>
+		<room refId="D005" />
+	</rooms>
+	<teachers>
+		<teacher refId="BERNARD Francois" />
+	</teachers>
+</session>
+<session rank="12" class="AlgebreElementaireEtoile1-CTD-MPC2">
+	<startingSlot dailySlot="570" day="1" week="5" />
+	<rooms>
+		<room refId="D005" />
+	</rooms>
+	<teachers>
+		<teacher refId="BERNARD Francois" />
+	</teachers>
+</session>
+<session rank="13" class="AlgebreElementaireEtoile1-CTD-MPC2">
+	<startingSlot dailySlot="570" day="2" week="5" />
+	<rooms>
+		<room refId="D005" />
+	</rooms>
+	<teachers>
+		<teacher refId="BERNARD Francois" />
+	</teachers>
+</session>
+<session rank="14" class="AlgebreElementaireEtoile1-CTD-MPC2">
+	<startingSlot dailySlot="570" day="3" week="5" />
+	<rooms>
+		<room refId="D005" />
+	</rooms>
+	<teachers>
+		<teacher refId="BERNARD Francois" />
+	</teachers>
+</session>
+<session rank="0" class="AlgebreElementaireEtoile1-CTD-MPC3">
+	<startingSlot dailySlot="750" day="1" week="1" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="BERNARD Francois" />
+	</teachers>
+</session>
+<session rank="1" class="AlgebreElementaireEtoile1-CTD-MPC3">
+	<startingSlot dailySlot="660" day="2" week="1" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="BERNARD Francois" />
+	</teachers>
+</session>
+<session rank="2" class="AlgebreElementaireEtoile1-CTD-MPC3">
+	<startingSlot dailySlot="750" day="3" week="1" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="BERNARD Francois" />
+	</teachers>
+</session>
+<session rank="3" class="AlgebreElementaireEtoile1-CTD-MPC3">
+	<startingSlot dailySlot="750" day="1" week="2" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="BERNARD Francois" />
+	</teachers>
+</session>
+<session rank="4" class="AlgebreElementaireEtoile1-CTD-MPC3">
+	<startingSlot dailySlot="660" day="2" week="2" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="BERNARD Francois" />
+	</teachers>
+</session>
+<session rank="5" class="AlgebreElementaireEtoile1-CTD-MPC3">
+	<startingSlot dailySlot="750" day="3" week="2" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="BERNARD Francois" />
+	</teachers>
+</session>
+<session rank="6" class="AlgebreElementaireEtoile1-CTD-MPC3">
+	<startingSlot dailySlot="750" day="1" week="3" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="BERNARD Francois" />
+	</teachers>
+</session>
+<session rank="7" class="AlgebreElementaireEtoile1-CTD-MPC3">
+	<startingSlot dailySlot="660" day="2" week="3" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="BERNARD Francois" />
+	</teachers>
+</session>
+<session rank="8" class="AlgebreElementaireEtoile1-CTD-MPC3">
+	<startingSlot dailySlot="750" day="3" week="3" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="BERNARD Francois" />
+	</teachers>
+</session>
+<session rank="9" class="AlgebreElementaireEtoile1-CTD-MPC3">
+	<startingSlot dailySlot="750" day="1" week="4" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="BERNARD Francois" />
+	</teachers>
+</session>
+<session rank="10" class="AlgebreElementaireEtoile1-CTD-MPC3">
+	<startingSlot dailySlot="660" day="2" week="4" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="BERNARD Francois" />
+	</teachers>
+</session>
+<session rank="11" class="AlgebreElementaireEtoile1-CTD-MPC3">
+	<startingSlot dailySlot="750" day="3" week="4" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="BERNARD Francois" />
+	</teachers>
+</session>
+<session rank="12" class="AlgebreElementaireEtoile1-CTD-MPC3">
+	<startingSlot dailySlot="750" day="1" week="5" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="BERNARD Francois" />
+	</teachers>
+</session>
+<session rank="13" class="AlgebreElementaireEtoile1-CTD-MPC3">
+	<startingSlot dailySlot="660" day="2" week="5" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="BERNARD Francois" />
+	</teachers>
+</session>
+<session rank="14" class="AlgebreElementaireEtoile1-CTD-MPC3">
+	<startingSlot dailySlot="750" day="3" week="5" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="BERNARD Francois" />
+	</teachers>
+</session>
+<session rank="0" class="AlgebreElementaireEtoile1-CTD-MI1">
+	<startingSlot dailySlot="750" day="1" week="1" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOITREL Aurore" />
+	</teachers>
+</session>
+<session rank="1" class="AlgebreElementaireEtoile1-CTD-MI1">
+	<startingSlot dailySlot="660" day="2" week="1" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOITREL Aurore" />
+	</teachers>
+</session>
+<session rank="2" class="AlgebreElementaireEtoile1-CTD-MI1">
+	<startingSlot dailySlot="840" day="3" week="1" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOITREL Aurore" />
+	</teachers>
+</session>
+<session rank="3" class="AlgebreElementaireEtoile1-CTD-MI1">
+	<startingSlot dailySlot="750" day="1" week="2" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOITREL Aurore" />
+	</teachers>
+</session>
+<session rank="4" class="AlgebreElementaireEtoile1-CTD-MI1">
+	<startingSlot dailySlot="660" day="2" week="2" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOITREL Aurore" />
+	</teachers>
+</session>
+<session rank="5" class="AlgebreElementaireEtoile1-CTD-MI1">
+	<startingSlot dailySlot="840" day="3" week="2" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOITREL Aurore" />
+	</teachers>
+</session>
+<session rank="6" class="AlgebreElementaireEtoile1-CTD-MI1">
+	<startingSlot dailySlot="750" day="1" week="3" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOITREL Aurore" />
+	</teachers>
+</session>
+<session rank="7" class="AlgebreElementaireEtoile1-CTD-MI1">
+	<startingSlot dailySlot="660" day="2" week="3" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOITREL Aurore" />
+	</teachers>
+</session>
+<session rank="8" class="AlgebreElementaireEtoile1-CTD-MI1">
+	<startingSlot dailySlot="840" day="3" week="3" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOITREL Aurore" />
+	</teachers>
+</session>
+<session rank="9" class="AlgebreElementaireEtoile1-CTD-MI1">
+	<startingSlot dailySlot="750" day="1" week="4" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOITREL Aurore" />
+	</teachers>
+</session>
+<session rank="10" class="AlgebreElementaireEtoile1-CTD-MI1">
+	<startingSlot dailySlot="660" day="2" week="4" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOITREL Aurore" />
+	</teachers>
+</session>
+<session rank="11" class="AlgebreElementaireEtoile1-CTD-MI1">
+	<startingSlot dailySlot="840" day="3" week="4" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOITREL Aurore" />
+	</teachers>
+</session>
+<session rank="12" class="AlgebreElementaireEtoile1-CTD-MI1">
+	<startingSlot dailySlot="750" day="1" week="5" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOITREL Aurore" />
+	</teachers>
+</session>
+<session rank="13" class="AlgebreElementaireEtoile1-CTD-MI1">
+	<startingSlot dailySlot="660" day="2" week="5" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOITREL Aurore" />
+	</teachers>
+</session>
+<session rank="14" class="AlgebreElementaireEtoile1-CTD-MI1">
+	<startingSlot dailySlot="840" day="3" week="5" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOITREL Aurore" />
+	</teachers>
+</session>
+<session rank="0" class="AlgebreElementaireEtoile1-CTD-MI2">
+	<startingSlot dailySlot="840" day="1" week="1" />
+	<rooms>
+		<room refId="Da106" />
+	</rooms>
+	<teachers>
+		<teacher refId="LABATTE Jean-Marc" />
+	</teachers>
+</session>
+<session rank="1" class="AlgebreElementaireEtoile1-CTD-MI2">
+	<startingSlot dailySlot="840" day="2" week="1" />
+	<rooms>
+		<room refId="Da106" />
+	</rooms>
+	<teachers>
+		<teacher refId="LABATTE Jean-Marc" />
+	</teachers>
+</session>
+<session rank="2" class="AlgebreElementaireEtoile1-CTD-MI2">
+	<startingSlot dailySlot="930" day="3" week="1" />
+	<rooms>
+		<room refId="Da106" />
+	</rooms>
+	<teachers>
+		<teacher refId="LABATTE Jean-Marc" />
+	</teachers>
+</session>
+<session rank="3" class="AlgebreElementaireEtoile1-CTD-MI2">
+	<startingSlot dailySlot="840" day="1" week="2" />
+	<rooms>
+		<room refId="Da106" />
+	</rooms>
+	<teachers>
+		<teacher refId="LABATTE Jean-Marc" />
+	</teachers>
+</session>
+<session rank="4" class="AlgebreElementaireEtoile1-CTD-MI2">
+	<startingSlot dailySlot="840" day="2" week="2" />
+	<rooms>
+		<room refId="Da106" />
+	</rooms>
+	<teachers>
+		<teacher refId="LABATTE Jean-Marc" />
+	</teachers>
+</session>
+<session rank="5" class="AlgebreElementaireEtoile1-CTD-MI2">
+	<startingSlot dailySlot="930" day="3" week="2" />
+	<rooms>
+		<room refId="Da106" />
+	</rooms>
+	<teachers>
+		<teacher refId="LABATTE Jean-Marc" />
+	</teachers>
+</session>
+<session rank="6" class="AlgebreElementaireEtoile1-CTD-MI2">
+	<startingSlot dailySlot="840" day="1" week="3" />
+	<rooms>
+		<room refId="Da106" />
+	</rooms>
+	<teachers>
+		<teacher refId="LABATTE Jean-Marc" />
+	</teachers>
+</session>
+<session rank="7" class="AlgebreElementaireEtoile1-CTD-MI2">
+	<startingSlot dailySlot="840" day="2" week="3" />
+	<rooms>
+		<room refId="Da106" />
+	</rooms>
+	<teachers>
+		<teacher refId="LABATTE Jean-Marc" />
+	</teachers>
+</session>
+<session rank="8" class="AlgebreElementaireEtoile1-CTD-MI2">
+	<startingSlot dailySlot="930" day="3" week="3" />
+	<rooms>
+		<room refId="Da106" />
+	</rooms>
+	<teachers>
+		<teacher refId="LABATTE Jean-Marc" />
+	</teachers>
+</session>
+<session rank="9" class="AlgebreElementaireEtoile1-CTD-MI2">
+	<startingSlot dailySlot="840" day="1" week="4" />
+	<rooms>
+		<room refId="Da106" />
+	</rooms>
+	<teachers>
+		<teacher refId="LABATTE Jean-Marc" />
+	</teachers>
+</session>
+<session rank="10" class="AlgebreElementaireEtoile1-CTD-MI2">
+	<startingSlot dailySlot="840" day="2" week="4" />
+	<rooms>
+		<room refId="Da106" />
+	</rooms>
+	<teachers>
+		<teacher refId="LABATTE Jean-Marc" />
+	</teachers>
+</session>
+<session rank="11" class="AlgebreElementaireEtoile1-CTD-MI2">
+	<startingSlot dailySlot="930" day="3" week="4" />
+	<rooms>
+		<room refId="Da106" />
+	</rooms>
+	<teachers>
+		<teacher refId="LABATTE Jean-Marc" />
+	</teachers>
+</session>
+<session rank="12" class="AlgebreElementaireEtoile1-CTD-MI2">
+	<startingSlot dailySlot="840" day="1" week="5" />
+	<rooms>
+		<room refId="Da106" />
+	</rooms>
+	<teachers>
+		<teacher refId="LABATTE Jean-Marc" />
+	</teachers>
+</session>
+<session rank="13" class="AlgebreElementaireEtoile1-CTD-MI2">
+	<startingSlot dailySlot="840" day="2" week="5" />
+	<rooms>
+		<room refId="Da106" />
+	</rooms>
+	<teachers>
+		<teacher refId="LABATTE Jean-Marc" />
+	</teachers>
+</session>
+<session rank="14" class="AlgebreElementaireEtoile1-CTD-MI2">
+	<startingSlot dailySlot="930" day="3" week="5" />
+	<rooms>
+		<room refId="Da106" />
+	</rooms>
+	<teachers>
+		<teacher refId="LABATTE Jean-Marc" />
+	</teachers>
+</session>
+<session rank="0" class="AlgebreElementaireEtoile1-CTD-MI3">
+	<startingSlot dailySlot="750" day="1" week="1" />
+	<rooms>
+		<room refId="Virtual-Anglais1-1" />
+	</rooms>
+	<teachers>
+		<teacher refId="MENICHI Luc" />
+	</teachers>
+</session>
+<session rank="1" class="AlgebreElementaireEtoile1-CTD-MI3">
+	<startingSlot dailySlot="660" day="2" week="1" />
+	<rooms>
+		<room refId="Virtual-Anglais1-1" />
+	</rooms>
+	<teachers>
+		<teacher refId="MENICHI Luc" />
+	</teachers>
+</session>
+<session rank="2" class="AlgebreElementaireEtoile1-CTD-MI3">
+	<startingSlot dailySlot="840" day="3" week="1" />
+	<rooms>
+		<room refId="Virtual-Anglais1-1" />
+	</rooms>
+	<teachers>
+		<teacher refId="MENICHI Luc" />
+	</teachers>
+</session>
+<session rank="3" class="AlgebreElementaireEtoile1-CTD-MI3">
+	<startingSlot dailySlot="750" day="1" week="2" />
+	<rooms>
+		<room refId="Virtual-Anglais1-1" />
+	</rooms>
+	<teachers>
+		<teacher refId="MENICHI Luc" />
+	</teachers>
+</session>
+<session rank="4" class="AlgebreElementaireEtoile1-CTD-MI3">
+	<startingSlot dailySlot="660" day="2" week="2" />
+	<rooms>
+		<room refId="Virtual-Anglais1-1" />
+	</rooms>
+	<teachers>
+		<teacher refId="MENICHI Luc" />
+	</teachers>
+</session>
+<session rank="5" class="AlgebreElementaireEtoile1-CTD-MI3">
+	<startingSlot dailySlot="840" day="3" week="2" />
+	<rooms>
+		<room refId="Virtual-Anglais1-1" />
+	</rooms>
+	<teachers>
+		<teacher refId="MENICHI Luc" />
+	</teachers>
+</session>
+<session rank="6" class="AlgebreElementaireEtoile1-CTD-MI3">
+	<startingSlot dailySlot="750" day="1" week="3" />
+	<rooms>
+		<room refId="Virtual-Anglais1-1" />
+	</rooms>
+	<teachers>
+		<teacher refId="MENICHI Luc" />
+	</teachers>
+</session>
+<session rank="7" class="AlgebreElementaireEtoile1-CTD-MI3">
+	<startingSlot dailySlot="660" day="2" week="3" />
+	<rooms>
+		<room refId="Virtual-Anglais1-1" />
+	</rooms>
+	<teachers>
+		<teacher refId="MENICHI Luc" />
+	</teachers>
+</session>
+<session rank="8" class="AlgebreElementaireEtoile1-CTD-MI3">
+	<startingSlot dailySlot="840" day="3" week="3" />
+	<rooms>
+		<room refId="Virtual-Anglais1-1" />
+	</rooms>
+	<teachers>
+		<teacher refId="MENICHI Luc" />
+	</teachers>
+</session>
+<session rank="9" class="AlgebreElementaireEtoile1-CTD-MI3">
+	<startingSlot dailySlot="750" day="1" week="4" />
+	<rooms>
+		<room refId="Virtual-Anglais1-1" />
+	</rooms>
+	<teachers>
+		<teacher refId="MENICHI Luc" />
+	</teachers>
+</session>
+<session rank="10" class="AlgebreElementaireEtoile1-CTD-MI3">
+	<startingSlot dailySlot="660" day="2" week="4" />
+	<rooms>
+		<room refId="Virtual-Anglais1-1" />
+	</rooms>
+	<teachers>
+		<teacher refId="MENICHI Luc" />
+	</teachers>
+</session>
+<session rank="11" class="AlgebreElementaireEtoile1-CTD-MI3">
+	<startingSlot dailySlot="840" day="3" week="4" />
+	<rooms>
+		<room refId="Virtual-Anglais1-1" />
+	</rooms>
+	<teachers>
+		<teacher refId="MENICHI Luc" />
+	</teachers>
+</session>
+<session rank="12" class="AlgebreElementaireEtoile1-CTD-MI3">
+	<startingSlot dailySlot="750" day="1" week="5" />
+	<rooms>
+		<room refId="Virtual-Anglais1-1" />
+	</rooms>
+	<teachers>
+		<teacher refId="MENICHI Luc" />
+	</teachers>
+</session>
+<session rank="13" class="AlgebreElementaireEtoile1-CTD-MI3">
+	<startingSlot dailySlot="660" day="2" week="5" />
+	<rooms>
+		<room refId="Virtual-Anglais1-1" />
+	</rooms>
+	<teachers>
+		<teacher refId="MENICHI Luc" />
+	</teachers>
+</session>
+<session rank="14" class="AlgebreElementaireEtoile1-CTD-MI3">
+	<startingSlot dailySlot="840" day="3" week="5" />
+	<rooms>
+		<room refId="Virtual-Anglais1-1" />
+	</rooms>
+	<teachers>
+		<teacher refId="MENICHI Luc" />
+	</teachers>
+</session>
+<session rank="0" class="AlgebreElementaireEtoile1-CTD-MI4">
+	<startingSlot dailySlot="750" day="1" week="1" />
+	<rooms>
+		<room refId="D005" />
+	</rooms>
+	<teachers>
+		<teacher refId="ROULLEAU Xavier" />
+	</teachers>
+</session>
+<session rank="1" class="AlgebreElementaireEtoile1-CTD-MI4">
+	<startingSlot dailySlot="660" day="2" week="1" />
+	<rooms>
+		<room refId="D005" />
+	</rooms>
+	<teachers>
+		<teacher refId="ROULLEAU Xavier" />
+	</teachers>
+</session>
+<session rank="2" class="AlgebreElementaireEtoile1-CTD-MI4">
+	<startingSlot dailySlot="840" day="3" week="1" />
+	<rooms>
+		<room refId="D005" />
+	</rooms>
+	<teachers>
+		<teacher refId="ROULLEAU Xavier" />
+	</teachers>
+</session>
+<session rank="3" class="AlgebreElementaireEtoile1-CTD-MI4">
+	<startingSlot dailySlot="750" day="1" week="2" />
+	<rooms>
+		<room refId="D005" />
+	</rooms>
+	<teachers>
+		<teacher refId="ROULLEAU Xavier" />
+	</teachers>
+</session>
+<session rank="4" class="AlgebreElementaireEtoile1-CTD-MI4">
+	<startingSlot dailySlot="660" day="2" week="2" />
+	<rooms>
+		<room refId="D005" />
+	</rooms>
+	<teachers>
+		<teacher refId="ROULLEAU Xavier" />
+	</teachers>
+</session>
+<session rank="5" class="AlgebreElementaireEtoile1-CTD-MI4">
+	<startingSlot dailySlot="840" day="3" week="2" />
+	<rooms>
+		<room refId="D005" />
+	</rooms>
+	<teachers>
+		<teacher refId="ROULLEAU Xavier" />
+	</teachers>
+</session>
+<session rank="6" class="AlgebreElementaireEtoile1-CTD-MI4">
+	<startingSlot dailySlot="750" day="1" week="3" />
+	<rooms>
+		<room refId="D005" />
+	</rooms>
+	<teachers>
+		<teacher refId="ROULLEAU Xavier" />
+	</teachers>
+</session>
+<session rank="7" class="AlgebreElementaireEtoile1-CTD-MI4">
+	<startingSlot dailySlot="660" day="2" week="3" />
+	<rooms>
+		<room refId="D005" />
+	</rooms>
+	<teachers>
+		<teacher refId="ROULLEAU Xavier" />
+	</teachers>
+</session>
+<session rank="8" class="AlgebreElementaireEtoile1-CTD-MI4">
+	<startingSlot dailySlot="840" day="3" week="3" />
+	<rooms>
+		<room refId="D005" />
+	</rooms>
+	<teachers>
+		<teacher refId="ROULLEAU Xavier" />
+	</teachers>
+</session>
+<session rank="9" class="AlgebreElementaireEtoile1-CTD-MI4">
+	<startingSlot dailySlot="750" day="1" week="4" />
+	<rooms>
+		<room refId="D005" />
+	</rooms>
+	<teachers>
+		<teacher refId="ROULLEAU Xavier" />
+	</teachers>
+</session>
+<session rank="10" class="AlgebreElementaireEtoile1-CTD-MI4">
+	<startingSlot dailySlot="660" day="2" week="4" />
+	<rooms>
+		<room refId="D005" />
+	</rooms>
+	<teachers>
+		<teacher refId="ROULLEAU Xavier" />
+	</teachers>
+</session>
+<session rank="11" class="AlgebreElementaireEtoile1-CTD-MI4">
+	<startingSlot dailySlot="840" day="3" week="4" />
+	<rooms>
+		<room refId="D005" />
+	</rooms>
+	<teachers>
+		<teacher refId="ROULLEAU Xavier" />
+	</teachers>
+</session>
+<session rank="12" class="AlgebreElementaireEtoile1-CTD-MI4">
+	<startingSlot dailySlot="750" day="1" week="5" />
+	<rooms>
+		<room refId="D005" />
+	</rooms>
+	<teachers>
+		<teacher refId="ROULLEAU Xavier" />
+	</teachers>
+</session>
+<session rank="13" class="AlgebreElementaireEtoile1-CTD-MI4">
+	<startingSlot dailySlot="660" day="2" week="5" />
+	<rooms>
+		<room refId="D005" />
+	</rooms>
+	<teachers>
+		<teacher refId="ROULLEAU Xavier" />
+	</teachers>
+</session>
+<session rank="14" class="AlgebreElementaireEtoile1-CTD-MI4">
+	<startingSlot dailySlot="840" day="3" week="5" />
+	<rooms>
+		<room refId="D005" />
+	</rooms>
+	<teachers>
+		<teacher refId="ROULLEAU Xavier" />
+	</teachers>
+</session>
+<session rank="0" class="AlgebreElementaireEtoile1-CTD-MI5">
+	<startingSlot dailySlot="840" day="1" week="1" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="YALIN Sinan" />
+	</teachers>
+</session>
+<session rank="1" class="AlgebreElementaireEtoile1-CTD-MI5">
+	<startingSlot dailySlot="840" day="2" week="1" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="YALIN Sinan" />
+	</teachers>
+</session>
+<session rank="2" class="AlgebreElementaireEtoile1-CTD-MI5">
+	<startingSlot dailySlot="930" day="3" week="1" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="YALIN Sinan" />
+	</teachers>
+</session>
+<session rank="3" class="AlgebreElementaireEtoile1-CTD-MI5">
+	<startingSlot dailySlot="840" day="1" week="2" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="YALIN Sinan" />
+	</teachers>
+</session>
+<session rank="4" class="AlgebreElementaireEtoile1-CTD-MI5">
+	<startingSlot dailySlot="840" day="2" week="2" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="YALIN Sinan" />
+	</teachers>
+</session>
+<session rank="5" class="AlgebreElementaireEtoile1-CTD-MI5">
+	<startingSlot dailySlot="930" day="3" week="2" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="YALIN Sinan" />
+	</teachers>
+</session>
+<session rank="6" class="AlgebreElementaireEtoile1-CTD-MI5">
+	<startingSlot dailySlot="840" day="1" week="3" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="YALIN Sinan" />
+	</teachers>
+</session>
+<session rank="7" class="AlgebreElementaireEtoile1-CTD-MI5">
+	<startingSlot dailySlot="840" day="2" week="3" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="YALIN Sinan" />
+	</teachers>
+</session>
+<session rank="8" class="AlgebreElementaireEtoile1-CTD-MI5">
+	<startingSlot dailySlot="930" day="3" week="3" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="YALIN Sinan" />
+	</teachers>
+</session>
+<session rank="9" class="AlgebreElementaireEtoile1-CTD-MI5">
+	<startingSlot dailySlot="840" day="1" week="4" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="YALIN Sinan" />
+	</teachers>
+</session>
+<session rank="10" class="AlgebreElementaireEtoile1-CTD-MI5">
+	<startingSlot dailySlot="840" day="2" week="4" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="YALIN Sinan" />
+	</teachers>
+</session>
+<session rank="11" class="AlgebreElementaireEtoile1-CTD-MI5">
+	<startingSlot dailySlot="930" day="3" week="4" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="YALIN Sinan" />
+	</teachers>
+</session>
+<session rank="12" class="AlgebreElementaireEtoile1-CTD-MI5">
+	<startingSlot dailySlot="840" day="1" week="5" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="YALIN Sinan" />
+	</teachers>
+</session>
+<session rank="13" class="AlgebreElementaireEtoile1-CTD-MI5">
+	<startingSlot dailySlot="840" day="2" week="5" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="YALIN Sinan" />
+	</teachers>
+</session>
+<session rank="14" class="AlgebreElementaireEtoile1-CTD-MI5">
+	<startingSlot dailySlot="930" day="3" week="5" />
+	<rooms>
+		<room refId="Amphi-A-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="YALIN Sinan" />
+	</teachers>
+</session>
+<session rank="0" class="AlgebreElementaireEtoile1-CC-1">
+	<startingSlot dailySlot="750" day="1" week="6" />
+	<rooms>
+		<room refId="Virtual-Anglais1-1" />
+	</rooms>
+	<teachers>
+		<teacher refId="BERNARD Francois" />
+	</teachers>
+</session>
+<session rank="0" class="AlgebreElementaire1-CTD-MPC4">
+	<startingSlot dailySlot="570" day="1" week="1" />
+	<rooms>
+		<room refId="Amphi-L001-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="ASSI Daniel" />
+	</teachers>
+</session>
+<session rank="1" class="AlgebreElementaire1-CTD-MPC4">
+	<startingSlot dailySlot="570" day="2" week="1" />
+	<rooms>
+		<room refId="Amphi-L001-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="ASSI Daniel" />
+	</teachers>
+</session>
+<session rank="2" class="AlgebreElementaire1-CTD-MPC4">
+	<startingSlot dailySlot="570" day="3" week="1" />
+	<rooms>
+		<room refId="Amphi-L001-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="ASSI Daniel" />
+	</teachers>
+</session>
+<session rank="3" class="AlgebreElementaire1-CTD-MPC4">
+	<startingSlot dailySlot="570" day="1" week="2" />
+	<rooms>
+		<room refId="Amphi-L001-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="ASSI Daniel" />
+	</teachers>
+</session>
+<session rank="4" class="AlgebreElementaire1-CTD-MPC4">
+	<startingSlot dailySlot="570" day="2" week="2" />
+	<rooms>
+		<room refId="Amphi-L001-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="ASSI Daniel" />
+	</teachers>
+</session>
+<session rank="5" class="AlgebreElementaire1-CTD-MPC4">
+	<startingSlot dailySlot="570" day="3" week="2" />
+	<rooms>
+		<room refId="Amphi-L001-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="ASSI Daniel" />
+	</teachers>
+</session>
+<session rank="6" class="AlgebreElementaire1-CTD-MPC4">
+	<startingSlot dailySlot="570" day="1" week="3" />
+	<rooms>
+		<room refId="Amphi-L001-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="ASSI Daniel" />
+	</teachers>
+</session>
+<session rank="7" class="AlgebreElementaire1-CTD-MPC4">
+	<startingSlot dailySlot="570" day="2" week="3" />
+	<rooms>
+		<room refId="Amphi-L001-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="ASSI Daniel" />
+	</teachers>
+</session>
+<session rank="8" class="AlgebreElementaire1-CTD-MPC4">
+	<startingSlot dailySlot="570" day="3" week="3" />
+	<rooms>
+		<room refId="Amphi-L001-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="ASSI Daniel" />
+	</teachers>
+</session>
+<session rank="9" class="AlgebreElementaire1-CTD-MPC4">
+	<startingSlot dailySlot="570" day="1" week="4" />
+	<rooms>
+		<room refId="Amphi-L001-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="ASSI Daniel" />
+	</teachers>
+</session>
+<session rank="10" class="AlgebreElementaire1-CTD-MPC4">
+	<startingSlot dailySlot="570" day="2" week="4" />
+	<rooms>
+		<room refId="Amphi-L001-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="ASSI Daniel" />
+	</teachers>
+</session>
+<session rank="11" class="AlgebreElementaire1-CTD-MPC4">
+	<startingSlot dailySlot="570" day="3" week="4" />
+	<rooms>
+		<room refId="Amphi-L001-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="ASSI Daniel" />
+	</teachers>
+</session>
+<session rank="12" class="AlgebreElementaire1-CTD-MPC4">
+	<startingSlot dailySlot="570" day="1" week="5" />
+	<rooms>
+		<room refId="Amphi-L001-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="ASSI Daniel" />
+	</teachers>
+</session>
+<session rank="13" class="AlgebreElementaire1-CTD-MPC4">
+	<startingSlot dailySlot="570" day="2" week="5" />
+	<rooms>
+		<room refId="Amphi-L001-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="ASSI Daniel" />
+	</teachers>
+</session>
+<session rank="14" class="AlgebreElementaire1-CTD-MPC4">
+	<startingSlot dailySlot="570" day="3" week="5" />
+	<rooms>
+		<room refId="Amphi-L001-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="ASSI Daniel" />
+	</teachers>
+</session>
+<session rank="0" class="AlgebreElementaire1-CC-1">
+	<startingSlot dailySlot="480" day="1" week="6" />
+	<rooms>
+		<room refId="Virtual-Anglais1-2" />
+	</rooms>
+	<teachers>
+		<teacher refId="BERNARD Francois2" />
+	</teachers>
+</session>
+<session rank="0" class="AnalyseElementaireEtoile1-CTD-MPC1">
+	<startingSlot dailySlot="750" day="1" week="1" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="1" class="AnalyseElementaireEtoile1-CTD-MPC1">
+	<startingSlot dailySlot="660" day="2" week="1" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="2" class="AnalyseElementaireEtoile1-CTD-MPC1">
+	<startingSlot dailySlot="750" day="3" week="1" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="3" class="AnalyseElementaireEtoile1-CTD-MPC1">
+	<startingSlot dailySlot="750" day="1" week="2" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="4" class="AnalyseElementaireEtoile1-CTD-MPC1">
+	<startingSlot dailySlot="660" day="2" week="2" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="5" class="AnalyseElementaireEtoile1-CTD-MPC1">
+	<startingSlot dailySlot="750" day="3" week="2" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="6" class="AnalyseElementaireEtoile1-CTD-MPC1">
+	<startingSlot dailySlot="750" day="1" week="3" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="7" class="AnalyseElementaireEtoile1-CTD-MPC1">
+	<startingSlot dailySlot="660" day="2" week="3" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="8" class="AnalyseElementaireEtoile1-CTD-MPC1">
+	<startingSlot dailySlot="750" day="3" week="3" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="9" class="AnalyseElementaireEtoile1-CTD-MPC1">
+	<startingSlot dailySlot="750" day="1" week="4" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="10" class="AnalyseElementaireEtoile1-CTD-MPC1">
+	<startingSlot dailySlot="660" day="2" week="4" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="11" class="AnalyseElementaireEtoile1-CTD-MPC1">
+	<startingSlot dailySlot="750" day="3" week="4" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="12" class="AnalyseElementaireEtoile1-CTD-MPC1">
+	<startingSlot dailySlot="750" day="1" week="5" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="13" class="AnalyseElementaireEtoile1-CTD-MPC1">
+	<startingSlot dailySlot="660" day="2" week="5" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="14" class="AnalyseElementaireEtoile1-CTD-MPC1">
+	<startingSlot dailySlot="750" day="3" week="5" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="0" class="AnalyseElementaireEtoile1-CTD-MPC2">
+	<startingSlot dailySlot="840" day="1" week="1" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="1" class="AnalyseElementaireEtoile1-CTD-MPC2">
+	<startingSlot dailySlot="840" day="2" week="1" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="2" class="AnalyseElementaireEtoile1-CTD-MPC2">
+	<startingSlot dailySlot="840" day="3" week="1" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="3" class="AnalyseElementaireEtoile1-CTD-MPC2">
+	<startingSlot dailySlot="840" day="1" week="2" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="4" class="AnalyseElementaireEtoile1-CTD-MPC2">
+	<startingSlot dailySlot="840" day="2" week="2" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="5" class="AnalyseElementaireEtoile1-CTD-MPC2">
+	<startingSlot dailySlot="840" day="3" week="2" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="6" class="AnalyseElementaireEtoile1-CTD-MPC2">
+	<startingSlot dailySlot="840" day="1" week="3" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="7" class="AnalyseElementaireEtoile1-CTD-MPC2">
+	<startingSlot dailySlot="840" day="2" week="3" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="8" class="AnalyseElementaireEtoile1-CTD-MPC2">
+	<startingSlot dailySlot="840" day="3" week="3" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="9" class="AnalyseElementaireEtoile1-CTD-MPC2">
+	<startingSlot dailySlot="840" day="1" week="4" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="10" class="AnalyseElementaireEtoile1-CTD-MPC2">
+	<startingSlot dailySlot="840" day="2" week="4" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="11" class="AnalyseElementaireEtoile1-CTD-MPC2">
+	<startingSlot dailySlot="840" day="3" week="4" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="12" class="AnalyseElementaireEtoile1-CTD-MPC2">
+	<startingSlot dailySlot="840" day="1" week="5" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="13" class="AnalyseElementaireEtoile1-CTD-MPC2">
+	<startingSlot dailySlot="840" day="2" week="5" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="14" class="AnalyseElementaireEtoile1-CTD-MPC2">
+	<startingSlot dailySlot="840" day="3" week="5" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="AAFARANI Maha" />
+	</teachers>
+</session>
+<session rank="0" class="AnalyseElementaireEtoile1-CTD-MPC3">
+	<startingSlot dailySlot="840" day="1" week="1" />
+	<rooms>
+		<room refId="Virtual-Anglais2-5" />
+	</rooms>
+	<teachers>
+		<teacher refId="CAMPESATO Jean-Baptiste" />
+	</teachers>
+</session>
+<session rank="1" class="AnalyseElementaireEtoile1-CTD-MPC3">
+	<startingSlot dailySlot="570" day="2" week="1" />
+	<rooms>
+		<room refId="Virtual-Anglais2-5" />
+	</rooms>
+	<teachers>
+		<teacher refId="CAMPESATO Jean-Baptiste" />
+	</teachers>
+</session>
+<session rank="2" class="AnalyseElementaireEtoile1-CTD-MPC3">
+	<startingSlot dailySlot="570" day="3" week="1" />
+	<rooms>
+		<room refId="Virtual-Anglais2-5" />
+	</rooms>
+	<teachers>
+		<teacher refId="CAMPESATO Jean-Baptiste" />
+	</teachers>
+</session>
+<session rank="3" class="AnalyseElementaireEtoile1-CTD-MPC3">
+	<startingSlot dailySlot="840" day="1" week="2" />
+	<rooms>
+		<room refId="Virtual-Anglais2-5" />
+	</rooms>
+	<teachers>
+		<teacher refId="CAMPESATO Jean-Baptiste" />
+	</teachers>
+</session>
+<session rank="4" class="AnalyseElementaireEtoile1-CTD-MPC3">
+	<startingSlot dailySlot="570" day="2" week="2" />
+	<rooms>
+		<room refId="Virtual-Anglais2-5" />
+	</rooms>
+	<teachers>
+		<teacher refId="CAMPESATO Jean-Baptiste" />
+	</teachers>
+</session>
+<session rank="5" class="AnalyseElementaireEtoile1-CTD-MPC3">
+	<startingSlot dailySlot="570" day="3" week="2" />
+	<rooms>
+		<room refId="Virtual-Anglais2-5" />
+	</rooms>
+	<teachers>
+		<teacher refId="CAMPESATO Jean-Baptiste" />
+	</teachers>
+</session>
+<session rank="6" class="AnalyseElementaireEtoile1-CTD-MPC3">
+	<startingSlot dailySlot="840" day="1" week="3" />
+	<rooms>
+		<room refId="Virtual-Anglais2-5" />
+	</rooms>
+	<teachers>
+		<teacher refId="CAMPESATO Jean-Baptiste" />
+	</teachers>
+</session>
+<session rank="7" class="AnalyseElementaireEtoile1-CTD-MPC3">
+	<startingSlot dailySlot="570" day="2" week="3" />
+	<rooms>
+		<room refId="Virtual-Anglais2-5" />
+	</rooms>
+	<teachers>
+		<teacher refId="CAMPESATO Jean-Baptiste" />
+	</teachers>
+</session>
+<session rank="8" class="AnalyseElementaireEtoile1-CTD-MPC3">
+	<startingSlot dailySlot="570" day="3" week="3" />
+	<rooms>
+		<room refId="Virtual-Anglais2-5" />
+	</rooms>
+	<teachers>
+		<teacher refId="CAMPESATO Jean-Baptiste" />
+	</teachers>
+</session>
+<session rank="9" class="AnalyseElementaireEtoile1-CTD-MPC3">
+	<startingSlot dailySlot="840" day="1" week="4" />
+	<rooms>
+		<room refId="Virtual-Anglais2-5" />
+	</rooms>
+	<teachers>
+		<teacher refId="CAMPESATO Jean-Baptiste" />
+	</teachers>
+</session>
+<session rank="10" class="AnalyseElementaireEtoile1-CTD-MPC3">
+	<startingSlot dailySlot="570" day="2" week="4" />
+	<rooms>
+		<room refId="Virtual-Anglais2-5" />
+	</rooms>
+	<teachers>
+		<teacher refId="CAMPESATO Jean-Baptiste" />
+	</teachers>
+</session>
+<session rank="11" class="AnalyseElementaireEtoile1-CTD-MPC3">
+	<startingSlot dailySlot="570" day="3" week="4" />
+	<rooms>
+		<room refId="Virtual-Anglais2-5" />
+	</rooms>
+	<teachers>
+		<teacher refId="CAMPESATO Jean-Baptiste" />
+	</teachers>
+</session>
+<session rank="12" class="AnalyseElementaireEtoile1-CTD-MPC3">
+	<startingSlot dailySlot="840" day="1" week="5" />
+	<rooms>
+		<room refId="Virtual-Anglais2-5" />
+	</rooms>
+	<teachers>
+		<teacher refId="CAMPESATO Jean-Baptiste" />
+	</teachers>
+</session>
+<session rank="13" class="AnalyseElementaireEtoile1-CTD-MPC3">
+	<startingSlot dailySlot="570" day="2" week="5" />
+	<rooms>
+		<room refId="Virtual-Anglais2-5" />
+	</rooms>
+	<teachers>
+		<teacher refId="CAMPESATO Jean-Baptiste" />
+	</teachers>
+</session>
+<session rank="14" class="AnalyseElementaireEtoile1-CTD-MPC3">
+	<startingSlot dailySlot="570" day="3" week="5" />
+	<rooms>
+		<room refId="Virtual-Anglais2-5" />
+	</rooms>
+	<teachers>
+		<teacher refId="CAMPESATO Jean-Baptiste" />
+	</teachers>
+</session>
+<session rank="0" class="AnalyseElementaireEtoile1-CTD-MI1">
+	<startingSlot dailySlot="840" day="1" week="1" />
+	<rooms>
+		<room refId="Virtual-Anglais2-5" />
+	</rooms>
+	<teachers>
+		<teacher refId="EGEA Maxime" />
+	</teachers>
+</session>
+<session rank="1" class="AnalyseElementaireEtoile1-CTD-MI1">
+	<startingSlot dailySlot="840" day="2" week="1" />
+	<rooms>
+		<room refId="Virtual-Anglais2-5" />
+	</rooms>
+	<teachers>
+		<teacher refId="EGEA Maxime" />
+	</teachers>
+</session>
+<session rank="2" class="AnalyseElementaireEtoile1-CTD-MI1">
+	<startingSlot dailySlot="930" day="3" week="1" />
+	<rooms>
+		<room refId="Virtual-Anglais2-5" />
+	</rooms>
+	<teachers>
+		<teacher refId="EGEA Maxime" />
+	</teachers>
+</session>
+<session rank="3" class="AnalyseElementaireEtoile1-CTD-MI1">
+	<startingSlot dailySlot="840" day="1" week="2" />
+	<rooms>
+		<room refId="Virtual-Anglais2-5" />
+	</rooms>
+	<teachers>
+		<teacher refId="EGEA Maxime" />
+	</teachers>
+</session>
+<session rank="4" class="AnalyseElementaireEtoile1-CTD-MI1">
+	<startingSlot dailySlot="840" day="2" week="2" />
+	<rooms>
+		<room refId="Virtual-Anglais2-5" />
+	</rooms>
+	<teachers>
+		<teacher refId="EGEA Maxime" />
+	</teachers>
+</session>
+<session rank="5" class="AnalyseElementaireEtoile1-CTD-MI1">
+	<startingSlot dailySlot="930" day="3" week="2" />
+	<rooms>
+		<room refId="Virtual-Anglais2-5" />
+	</rooms>
+	<teachers>
+		<teacher refId="EGEA Maxime" />
+	</teachers>
+</session>
+<session rank="6" class="AnalyseElementaireEtoile1-CTD-MI1">
+	<startingSlot dailySlot="840" day="1" week="3" />
+	<rooms>
+		<room refId="Virtual-Anglais2-5" />
+	</rooms>
+	<teachers>
+		<teacher refId="EGEA Maxime" />
+	</teachers>
+</session>
+<session rank="7" class="AnalyseElementaireEtoile1-CTD-MI1">
+	<startingSlot dailySlot="840" day="2" week="3" />
+	<rooms>
+		<room refId="Virtual-Anglais2-5" />
+	</rooms>
+	<teachers>
+		<teacher refId="EGEA Maxime" />
+	</teachers>
+</session>
+<session rank="8" class="AnalyseElementaireEtoile1-CTD-MI1">
+	<startingSlot dailySlot="930" day="3" week="3" />
+	<rooms>
+		<room refId="Virtual-Anglais2-5" />
+	</rooms>
+	<teachers>
+		<teacher refId="EGEA Maxime" />
+	</teachers>
+</session>
+<session rank="9" class="AnalyseElementaireEtoile1-CTD-MI1">
+	<startingSlot dailySlot="840" day="1" week="4" />
+	<rooms>
+		<room refId="Virtual-Anglais2-5" />
+	</rooms>
+	<teachers>
+		<teacher refId="EGEA Maxime" />
+	</teachers>
+</session>
+<session rank="10" class="AnalyseElementaireEtoile1-CTD-MI1">
+	<startingSlot dailySlot="840" day="2" week="4" />
+	<rooms>
+		<room refId="Virtual-Anglais2-5" />
+	</rooms>
+	<teachers>
+		<teacher refId="EGEA Maxime" />
+	</teachers>
+</session>
+<session rank="11" class="AnalyseElementaireEtoile1-CTD-MI1">
+	<startingSlot dailySlot="930" day="3" week="4" />
+	<rooms>
+		<room refId="Virtual-Anglais2-5" />
+	</rooms>
+	<teachers>
+		<teacher refId="EGEA Maxime" />
+	</teachers>
+</session>
+<session rank="12" class="AnalyseElementaireEtoile1-CTD-MI1">
+	<startingSlot dailySlot="840" day="1" week="5" />
+	<rooms>
+		<room refId="Virtual-Anglais2-5" />
+	</rooms>
+	<teachers>
+		<teacher refId="EGEA Maxime" />
+	</teachers>
+</session>
+<session rank="13" class="AnalyseElementaireEtoile1-CTD-MI1">
+	<startingSlot dailySlot="840" day="2" week="5" />
+	<rooms>
+		<room refId="Virtual-Anglais2-5" />
+	</rooms>
+	<teachers>
+		<teacher refId="EGEA Maxime" />
+	</teachers>
+</session>
+<session rank="14" class="AnalyseElementaireEtoile1-CTD-MI1">
+	<startingSlot dailySlot="930" day="3" week="5" />
+	<rooms>
+		<room refId="Virtual-Anglais2-5" />
+	</rooms>
+	<teachers>
+		<teacher refId="EGEA Maxime" />
+	</teachers>
+</session>
+<session rank="0" class="AnalyseElementaireEtoile1-CTD-MI2">
+	<startingSlot dailySlot="750" day="1" week="1" />
+	<rooms>
+		<room refId="Virtual-Anglais2-7" />
+	</rooms>
+	<teachers>
+		<teacher refId="EGEA Maxime" />
+	</teachers>
+</session>
+<session rank="1" class="AnalyseElementaireEtoile1-CTD-MI2">
+	<startingSlot dailySlot="660" day="2" week="1" />
+	<rooms>
+		<room refId="Virtual-Anglais2-7" />
+	</rooms>
+	<teachers>
+		<teacher refId="EGEA Maxime" />
+	</teachers>
+</session>
+<session rank="2" class="AnalyseElementaireEtoile1-CTD-MI2">
+	<startingSlot dailySlot="840" day="3" week="1" />
+	<rooms>
+		<room refId="Virtual-Anglais2-7" />
+	</rooms>
+	<teachers>
+		<teacher refId="EGEA Maxime" />
+	</teachers>
+</session>
+<session rank="3" class="AnalyseElementaireEtoile1-CTD-MI2">
+	<startingSlot dailySlot="750" day="1" week="2" />
+	<rooms>
+		<room refId="Virtual-Anglais2-7" />
+	</rooms>
+	<teachers>
+		<teacher refId="EGEA Maxime" />
+	</teachers>
+</session>
+<session rank="4" class="AnalyseElementaireEtoile1-CTD-MI2">
+	<startingSlot dailySlot="660" day="2" week="2" />
+	<rooms>
+		<room refId="Virtual-Anglais2-7" />
+	</rooms>
+	<teachers>
+		<teacher refId="EGEA Maxime" />
+	</teachers>
+</session>
+<session rank="5" class="AnalyseElementaireEtoile1-CTD-MI2">
+	<startingSlot dailySlot="840" day="3" week="2" />
+	<rooms>
+		<room refId="Virtual-Anglais2-7" />
+	</rooms>
+	<teachers>
+		<teacher refId="EGEA Maxime" />
+	</teachers>
+</session>
+<session rank="6" class="AnalyseElementaireEtoile1-CTD-MI2">
+	<startingSlot dailySlot="750" day="1" week="3" />
+	<rooms>
+		<room refId="Virtual-Anglais2-7" />
+	</rooms>
+	<teachers>
+		<teacher refId="EGEA Maxime" />
+	</teachers>
+</session>
+<session rank="7" class="AnalyseElementaireEtoile1-CTD-MI2">
+	<startingSlot dailySlot="660" day="2" week="3" />
+	<rooms>
+		<room refId="Virtual-Anglais2-7" />
+	</rooms>
+	<teachers>
+		<teacher refId="EGEA Maxime" />
+	</teachers>
+</session>
+<session rank="8" class="AnalyseElementaireEtoile1-CTD-MI2">
+	<startingSlot dailySlot="840" day="3" week="3" />
+	<rooms>
+		<room refId="Virtual-Anglais2-7" />
+	</rooms>
+	<teachers>
+		<teacher refId="EGEA Maxime" />
+	</teachers>
+</session>
+<session rank="9" class="AnalyseElementaireEtoile1-CTD-MI2">
+	<startingSlot dailySlot="750" day="1" week="4" />
+	<rooms>
+		<room refId="Virtual-Anglais2-7" />
+	</rooms>
+	<teachers>
+		<teacher refId="EGEA Maxime" />
+	</teachers>
+</session>
+<session rank="10" class="AnalyseElementaireEtoile1-CTD-MI2">
+	<startingSlot dailySlot="660" day="2" week="4" />
+	<rooms>
+		<room refId="Virtual-Anglais2-7" />
+	</rooms>
+	<teachers>
+		<teacher refId="EGEA Maxime" />
+	</teachers>
+</session>
+<session rank="11" class="AnalyseElementaireEtoile1-CTD-MI2">
+	<startingSlot dailySlot="840" day="3" week="4" />
+	<rooms>
+		<room refId="Virtual-Anglais2-7" />
+	</rooms>
+	<teachers>
+		<teacher refId="EGEA Maxime" />
+	</teachers>
+</session>
+<session rank="12" class="AnalyseElementaireEtoile1-CTD-MI2">
+	<startingSlot dailySlot="750" day="1" week="5" />
+	<rooms>
+		<room refId="Virtual-Anglais2-7" />
+	</rooms>
+	<teachers>
+		<teacher refId="EGEA Maxime" />
+	</teachers>
+</session>
+<session rank="13" class="AnalyseElementaireEtoile1-CTD-MI2">
+	<startingSlot dailySlot="660" day="2" week="5" />
+	<rooms>
+		<room refId="Virtual-Anglais2-7" />
+	</rooms>
+	<teachers>
+		<teacher refId="EGEA Maxime" />
+	</teachers>
+</session>
+<session rank="14" class="AnalyseElementaireEtoile1-CTD-MI2">
+	<startingSlot dailySlot="840" day="3" week="5" />
+	<rooms>
+		<room refId="Virtual-Anglais2-7" />
+	</rooms>
+	<teachers>
+		<teacher refId="EGEA Maxime" />
+	</teachers>
+</session>
+<session rank="0" class="AnalyseElementaireEtoile1-CTD-MI3">
+	<startingSlot dailySlot="840" day="1" week="1" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="EVAIN Laurent" />
+	</teachers>
+</session>
+<session rank="1" class="AnalyseElementaireEtoile1-CTD-MI3">
+	<startingSlot dailySlot="840" day="2" week="1" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="EVAIN Laurent" />
+	</teachers>
+</session>
+<session rank="2" class="AnalyseElementaireEtoile1-CTD-MI3">
+	<startingSlot dailySlot="930" day="3" week="1" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="EVAIN Laurent" />
+	</teachers>
+</session>
+<session rank="3" class="AnalyseElementaireEtoile1-CTD-MI3">
+	<startingSlot dailySlot="840" day="1" week="2" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="EVAIN Laurent" />
+	</teachers>
+</session>
+<session rank="4" class="AnalyseElementaireEtoile1-CTD-MI3">
+	<startingSlot dailySlot="840" day="2" week="2" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="EVAIN Laurent" />
+	</teachers>
+</session>
+<session rank="5" class="AnalyseElementaireEtoile1-CTD-MI3">
+	<startingSlot dailySlot="930" day="3" week="2" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="EVAIN Laurent" />
+	</teachers>
+</session>
+<session rank="6" class="AnalyseElementaireEtoile1-CTD-MI3">
+	<startingSlot dailySlot="840" day="1" week="3" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="EVAIN Laurent" />
+	</teachers>
+</session>
+<session rank="7" class="AnalyseElementaireEtoile1-CTD-MI3">
+	<startingSlot dailySlot="840" day="2" week="3" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="EVAIN Laurent" />
+	</teachers>
+</session>
+<session rank="8" class="AnalyseElementaireEtoile1-CTD-MI3">
+	<startingSlot dailySlot="930" day="3" week="3" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="EVAIN Laurent" />
+	</teachers>
+</session>
+<session rank="9" class="AnalyseElementaireEtoile1-CTD-MI3">
+	<startingSlot dailySlot="840" day="1" week="4" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="EVAIN Laurent" />
+	</teachers>
+</session>
+<session rank="10" class="AnalyseElementaireEtoile1-CTD-MI3">
+	<startingSlot dailySlot="840" day="2" week="4" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="EVAIN Laurent" />
+	</teachers>
+</session>
+<session rank="11" class="AnalyseElementaireEtoile1-CTD-MI3">
+	<startingSlot dailySlot="930" day="3" week="4" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="EVAIN Laurent" />
+	</teachers>
+</session>
+<session rank="12" class="AnalyseElementaireEtoile1-CTD-MI3">
+	<startingSlot dailySlot="840" day="1" week="5" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="EVAIN Laurent" />
+	</teachers>
+</session>
+<session rank="13" class="AnalyseElementaireEtoile1-CTD-MI3">
+	<startingSlot dailySlot="840" day="2" week="5" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="EVAIN Laurent" />
+	</teachers>
+</session>
+<session rank="14" class="AnalyseElementaireEtoile1-CTD-MI3">
+	<startingSlot dailySlot="930" day="3" week="5" />
+	<rooms>
+		<room refId="A115" />
+	</rooms>
+	<teachers>
+		<teacher refId="EVAIN Laurent" />
+	</teachers>
+</session>
+<session rank="0" class="AnalyseElementaireEtoile1-CTD-MI4">
+	<startingSlot dailySlot="840" day="1" week="1" />
+	<rooms>
+		<room refId="A018" />
+	</rooms>
+	<teachers>
+		<teacher refId="JAMIN Theo" />
+	</teachers>
+</session>
+<session rank="1" class="AnalyseElementaireEtoile1-CTD-MI4">
+	<startingSlot dailySlot="840" day="2" week="1" />
+	<rooms>
+		<room refId="A018" />
+	</rooms>
+	<teachers>
+		<teacher refId="JAMIN Theo" />
+	</teachers>
+</session>
+<session rank="2" class="AnalyseElementaireEtoile1-CTD-MI4">
+	<startingSlot dailySlot="930" day="3" week="1" />
+	<rooms>
+		<room refId="A018" />
+	</rooms>
+	<teachers>
+		<teacher refId="JAMIN Theo" />
+	</teachers>
+</session>
+<session rank="3" class="AnalyseElementaireEtoile1-CTD-MI4">
+	<startingSlot dailySlot="840" day="1" week="2" />
+	<rooms>
+		<room refId="A018" />
+	</rooms>
+	<teachers>
+		<teacher refId="JAMIN Theo" />
+	</teachers>
+</session>
+<session rank="4" class="AnalyseElementaireEtoile1-CTD-MI4">
+	<startingSlot dailySlot="840" day="2" week="2" />
+	<rooms>
+		<room refId="A018" />
+	</rooms>
+	<teachers>
+		<teacher refId="JAMIN Theo" />
+	</teachers>
+</session>
+<session rank="5" class="AnalyseElementaireEtoile1-CTD-MI4">
+	<startingSlot dailySlot="930" day="3" week="2" />
+	<rooms>
+		<room refId="A018" />
+	</rooms>
+	<teachers>
+		<teacher refId="JAMIN Theo" />
+	</teachers>
+</session>
+<session rank="6" class="AnalyseElementaireEtoile1-CTD-MI4">
+	<startingSlot dailySlot="840" day="1" week="3" />
+	<rooms>
+		<room refId="A018" />
+	</rooms>
+	<teachers>
+		<teacher refId="JAMIN Theo" />
+	</teachers>
+</session>
+<session rank="7" class="AnalyseElementaireEtoile1-CTD-MI4">
+	<startingSlot dailySlot="840" day="2" week="3" />
+	<rooms>
+		<room refId="A018" />
+	</rooms>
+	<teachers>
+		<teacher refId="JAMIN Theo" />
+	</teachers>
+</session>
+<session rank="8" class="AnalyseElementaireEtoile1-CTD-MI4">
+	<startingSlot dailySlot="930" day="3" week="3" />
+	<rooms>
+		<room refId="A018" />
+	</rooms>
+	<teachers>
+		<teacher refId="JAMIN Theo" />
+	</teachers>
+</session>
+<session rank="9" class="AnalyseElementaireEtoile1-CTD-MI4">
+	<startingSlot dailySlot="840" day="1" week="4" />
+	<rooms>
+		<room refId="A018" />
+	</rooms>
+	<teachers>
+		<teacher refId="JAMIN Theo" />
+	</teachers>
+</session>
+<session rank="10" class="AnalyseElementaireEtoile1-CTD-MI4">
+	<startingSlot dailySlot="840" day="2" week="4" />
+	<rooms>
+		<room refId="A018" />
+	</rooms>
+	<teachers>
+		<teacher refId="JAMIN Theo" />
+	</teachers>
+</session>
+<session rank="11" class="AnalyseElementaireEtoile1-CTD-MI4">
+	<startingSlot dailySlot="930" day="3" week="4" />
+	<rooms>
+		<room refId="A018" />
+	</rooms>
+	<teachers>
+		<teacher refId="JAMIN Theo" />
+	</teachers>
+</session>
+<session rank="12" class="AnalyseElementaireEtoile1-CTD-MI4">
+	<startingSlot dailySlot="840" day="1" week="5" />
+	<rooms>
+		<room refId="A018" />
+	</rooms>
+	<teachers>
+		<teacher refId="JAMIN Theo" />
+	</teachers>
+</session>
+<session rank="13" class="AnalyseElementaireEtoile1-CTD-MI4">
+	<startingSlot dailySlot="840" day="2" week="5" />
+	<rooms>
+		<room refId="A018" />
+	</rooms>
+	<teachers>
+		<teacher refId="JAMIN Theo" />
+	</teachers>
+</session>
+<session rank="14" class="AnalyseElementaireEtoile1-CTD-MI4">
+	<startingSlot dailySlot="930" day="3" week="5" />
+	<rooms>
+		<room refId="A018" />
+	</rooms>
+	<teachers>
+		<teacher refId="JAMIN Theo" />
+	</teachers>
+</session>
+<session rank="0" class="AnalyseElementaireEtoile1-CTD-MI5">
+	<startingSlot dailySlot="750" day="1" week="1" />
+	<rooms>
+		<room refId="Virtual-Anglais2-7" />
+	</rooms>
+	<teachers>
+		<teacher refId="LABATTE Jean-Marc" />
+	</teachers>
+</session>
+<session rank="1" class="AnalyseElementaireEtoile1-CTD-MI5">
+	<startingSlot dailySlot="660" day="2" week="1" />
+	<rooms>
+		<room refId="Virtual-Anglais2-7" />
+	</rooms>
+	<teachers>
+		<teacher refId="LABATTE Jean-Marc" />
+	</teachers>
+</session>
+<session rank="2" class="AnalyseElementaireEtoile1-CTD-MI5">
+	<startingSlot dailySlot="840" day="3" week="1" />
+	<rooms>
+		<room refId="Virtual-Anglais2-7" />
+	</rooms>
+	<teachers>
+		<teacher refId="LABATTE Jean-Marc" />
+	</teachers>
+</session>
+<session rank="3" class="AnalyseElementaireEtoile1-CTD-MI5">
+	<startingSlot dailySlot="750" day="1" week="2" />
+	<rooms>
+		<room refId="Virtual-Anglais2-7" />
+	</rooms>
+	<teachers>
+		<teacher refId="LABATTE Jean-Marc" />
+	</teachers>
+</session>
+<session rank="4" class="AnalyseElementaireEtoile1-CTD-MI5">
+	<startingSlot dailySlot="660" day="2" week="2" />
+	<rooms>
+		<room refId="Virtual-Anglais2-7" />
+	</rooms>
+	<teachers>
+		<teacher refId="LABATTE Jean-Marc" />
+	</teachers>
+</session>
+<session rank="5" class="AnalyseElementaireEtoile1-CTD-MI5">
+	<startingSlot dailySlot="840" day="3" week="2" />
+	<rooms>
+		<room refId="Virtual-Anglais2-7" />
+	</rooms>
+	<teachers>
+		<teacher refId="LABATTE Jean-Marc" />
+	</teachers>
+</session>
+<session rank="6" class="AnalyseElementaireEtoile1-CTD-MI5">
+	<startingSlot dailySlot="750" day="1" week="3" />
+	<rooms>
+		<room refId="Virtual-Anglais2-7" />
+	</rooms>
+	<teachers>
+		<teacher refId="LABATTE Jean-Marc" />
+	</teachers>
+</session>
+<session rank="7" class="AnalyseElementaireEtoile1-CTD-MI5">
+	<startingSlot dailySlot="660" day="2" week="3" />
+	<rooms>
+		<room refId="Virtual-Anglais2-7" />
+	</rooms>
+	<teachers>
+		<teacher refId="LABATTE Jean-Marc" />
+	</teachers>
+</session>
+<session rank="8" class="AnalyseElementaireEtoile1-CTD-MI5">
+	<startingSlot dailySlot="840" day="3" week="3" />
+	<rooms>
+		<room refId="Virtual-Anglais2-7" />
+	</rooms>
+	<teachers>
+		<teacher refId="LABATTE Jean-Marc" />
+	</teachers>
+</session>
+<session rank="9" class="AnalyseElementaireEtoile1-CTD-MI5">
+	<startingSlot dailySlot="750" day="1" week="4" />
+	<rooms>
+		<room refId="Virtual-Anglais2-7" />
+	</rooms>
+	<teachers>
+		<teacher refId="LABATTE Jean-Marc" />
+	</teachers>
+</session>
+<session rank="10" class="AnalyseElementaireEtoile1-CTD-MI5">
+	<startingSlot dailySlot="660" day="2" week="4" />
+	<rooms>
+		<room refId="Virtual-Anglais2-7" />
+	</rooms>
+	<teachers>
+		<teacher refId="LABATTE Jean-Marc" />
+	</teachers>
+</session>
+<session rank="11" class="AnalyseElementaireEtoile1-CTD-MI5">
+	<startingSlot dailySlot="840" day="3" week="4" />
+	<rooms>
+		<room refId="Virtual-Anglais2-7" />
+	</rooms>
+	<teachers>
+		<teacher refId="LABATTE Jean-Marc" />
+	</teachers>
+</session>
+<session rank="12" class="AnalyseElementaireEtoile1-CTD-MI5">
+	<startingSlot dailySlot="750" day="1" week="5" />
+	<rooms>
+		<room refId="Virtual-Anglais2-7" />
+	</rooms>
+	<teachers>
+		<teacher refId="LABATTE Jean-Marc" />
+	</teachers>
+</session>
+<session rank="13" class="AnalyseElementaireEtoile1-CTD-MI5">
+	<startingSlot dailySlot="660" day="2" week="5" />
+	<rooms>
+		<room refId="Virtual-Anglais2-7" />
+	</rooms>
+	<teachers>
+		<teacher refId="LABATTE Jean-Marc" />
+	</teachers>
+</session>
+<session rank="14" class="AnalyseElementaireEtoile1-CTD-MI5">
+	<startingSlot dailySlot="840" day="3" week="5" />
+	<rooms>
+		<room refId="Virtual-Anglais2-7" />
+	</rooms>
+	<teachers>
+		<teacher refId="LABATTE Jean-Marc" />
+	</teachers>
+</session>
+<session rank="0" class="AnalyseElementaireEtoile1-CC-1">
+	<startingSlot dailySlot="840" day="1" week="6" />
+	<rooms>
+		<room refId="Virtual-Anglais1-10" />
+	</rooms>
+	<teachers>
+		<teacher refId="DARNIERE Jack-Luck" />
+	</teachers>
+</session>
+<session rank="0" class="AnalyseElementaire1-CTD-MPC4">
+	<startingSlot dailySlot="840" day="1" week="1" />
+	<rooms>
+		<room refId="Virtual-Anglais2-9" />
+	</rooms>
+	<teachers>
+		<teacher refId="FAHS Rayan" />
+	</teachers>
+</session>
+<session rank="1" class="AnalyseElementaire1-CTD-MPC4">
+	<startingSlot dailySlot="660" day="2" week="1" />
+	<rooms>
+		<room refId="Virtual-Anglais2-9" />
+	</rooms>
+	<teachers>
+		<teacher refId="FAHS Rayan" />
+	</teachers>
+</session>
+<session rank="2" class="AnalyseElementaire1-CTD-MPC4">
+	<startingSlot dailySlot="750" day="3" week="1" />
+	<rooms>
+		<room refId="Virtual-Anglais2-9" />
+	</rooms>
+	<teachers>
+		<teacher refId="FAHS Rayan" />
+	</teachers>
+</session>
+<session rank="3" class="AnalyseElementaire1-CTD-MPC4">
+	<startingSlot dailySlot="840" day="1" week="2" />
+	<rooms>
+		<room refId="Virtual-Anglais2-9" />
+	</rooms>
+	<teachers>
+		<teacher refId="FAHS Rayan" />
+	</teachers>
+</session>
+<session rank="4" class="AnalyseElementaire1-CTD-MPC4">
+	<startingSlot dailySlot="660" day="2" week="2" />
+	<rooms>
+		<room refId="Virtual-Anglais2-9" />
+	</rooms>
+	<teachers>
+		<teacher refId="FAHS Rayan" />
+	</teachers>
+</session>
+<session rank="5" class="AnalyseElementaire1-CTD-MPC4">
+	<startingSlot dailySlot="750" day="3" week="2" />
+	<rooms>
+		<room refId="Virtual-Anglais2-9" />
+	</rooms>
+	<teachers>
+		<teacher refId="FAHS Rayan" />
+	</teachers>
+</session>
+<session rank="6" class="AnalyseElementaire1-CTD-MPC4">
+	<startingSlot dailySlot="840" day="1" week="3" />
+	<rooms>
+		<room refId="Virtual-Anglais2-9" />
+	</rooms>
+	<teachers>
+		<teacher refId="FAHS Rayan" />
+	</teachers>
+</session>
+<session rank="7" class="AnalyseElementaire1-CTD-MPC4">
+	<startingSlot dailySlot="660" day="2" week="3" />
+	<rooms>
+		<room refId="Virtual-Anglais2-9" />
+	</rooms>
+	<teachers>
+		<teacher refId="FAHS Rayan" />
+	</teachers>
+</session>
+<session rank="8" class="AnalyseElementaire1-CTD-MPC4">
+	<startingSlot dailySlot="750" day="3" week="3" />
+	<rooms>
+		<room refId="Virtual-Anglais2-9" />
+	</rooms>
+	<teachers>
+		<teacher refId="FAHS Rayan" />
+	</teachers>
+</session>
+<session rank="9" class="AnalyseElementaire1-CTD-MPC4">
+	<startingSlot dailySlot="840" day="1" week="4" />
+	<rooms>
+		<room refId="Virtual-Anglais2-9" />
+	</rooms>
+	<teachers>
+		<teacher refId="FAHS Rayan" />
+	</teachers>
+</session>
+<session rank="10" class="AnalyseElementaire1-CTD-MPC4">
+	<startingSlot dailySlot="660" day="2" week="4" />
+	<rooms>
+		<room refId="Virtual-Anglais2-9" />
+	</rooms>
+	<teachers>
+		<teacher refId="FAHS Rayan" />
+	</teachers>
+</session>
+<session rank="11" class="AnalyseElementaire1-CTD-MPC4">
+	<startingSlot dailySlot="750" day="3" week="4" />
+	<rooms>
+		<room refId="Virtual-Anglais2-9" />
+	</rooms>
+	<teachers>
+		<teacher refId="FAHS Rayan" />
+	</teachers>
+</session>
+<session rank="12" class="AnalyseElementaire1-CTD-MPC4">
+	<startingSlot dailySlot="840" day="1" week="5" />
+	<rooms>
+		<room refId="Virtual-Anglais2-9" />
+	</rooms>
+	<teachers>
+		<teacher refId="FAHS Rayan" />
+	</teachers>
+</session>
+<session rank="13" class="AnalyseElementaire1-CTD-MPC4">
+	<startingSlot dailySlot="660" day="2" week="5" />
+	<rooms>
+		<room refId="Virtual-Anglais2-9" />
+	</rooms>
+	<teachers>
+		<teacher refId="FAHS Rayan" />
+	</teachers>
+</session>
+<session rank="14" class="AnalyseElementaire1-CTD-MPC4">
+	<startingSlot dailySlot="750" day="3" week="5" />
+	<rooms>
+		<room refId="Virtual-Anglais2-9" />
+	</rooms>
+	<teachers>
+		<teacher refId="FAHS Rayan" />
+	</teachers>
+</session>
+<session rank="0" class="AnalyseElementaire1-CC-1">
+	<startingSlot dailySlot="570" day="1" week="6" />
+	<rooms>
+		<room refId="Virtual-Anglais2-1" />
+	</rooms>
+	<teachers>
+		<teacher refId="DARNIERE Jack-Luck2" />
+	</teachers>
+</session>
+<session rank="0" class="Anglais1-MI-CTD-1">
+	<startingSlot dailySlot="570" day="4" week="1" />
+	<rooms>
+		<room refId="C002" />
+	</rooms>
+	<teachers>
+		<teacher refId="AUBERT Tiffany" />
+	</teachers>
+</session>
+<session rank="1" class="Anglais1-MI-CTD-1">
+	<startingSlot dailySlot="570" day="4" week="2" />
+	<rooms>
+		<room refId="C002" />
+	</rooms>
+	<teachers>
+		<teacher refId="AUBERT Tiffany" />
+	</teachers>
+</session>
+<session rank="2" class="Anglais1-MI-CTD-1">
+	<startingSlot dailySlot="570" day="4" week="3" />
+	<rooms>
+		<room refId="C002" />
+	</rooms>
+	<teachers>
+		<teacher refId="AUBERT Tiffany" />
+	</teachers>
+</session>
+<session rank="3" class="Anglais1-MI-CTD-1">
+	<startingSlot dailySlot="570" day="4" week="4" />
+	<rooms>
+		<room refId="C002" />
+	</rooms>
+	<teachers>
+		<teacher refId="AUBERT Tiffany" />
+	</teachers>
+</session>
+<session rank="4" class="Anglais1-MI-CTD-1">
+	<startingSlot dailySlot="570" day="4" week="5" />
+	<rooms>
+		<room refId="C002" />
+	</rooms>
+	<teachers>
+		<teacher refId="AUBERT Tiffany" />
+	</teachers>
+</session>
+<session rank="5" class="Anglais1-MI-CTD-1">
+	<startingSlot dailySlot="570" day="4" week="6" />
+	<rooms>
+		<room refId="C002" />
+	</rooms>
+	<teachers>
+		<teacher refId="AUBERT Tiffany" />
+	</teachers>
+</session>
+<session rank="0" class="Anglais1-MI-CTD-2">
+	<startingSlot dailySlot="570" day="4" week="1" />
+	<rooms>
+		<room refId="Amphi-L002-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="BAUTHAMY Sabrina" />
+	</teachers>
+</session>
+<session rank="1" class="Anglais1-MI-CTD-2">
+	<startingSlot dailySlot="570" day="4" week="2" />
+	<rooms>
+		<room refId="Amphi-L002-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="BAUTHAMY Sabrina" />
+	</teachers>
+</session>
+<session rank="2" class="Anglais1-MI-CTD-2">
+	<startingSlot dailySlot="570" day="4" week="3" />
+	<rooms>
+		<room refId="Amphi-L002-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="BAUTHAMY Sabrina" />
+	</teachers>
+</session>
+<session rank="3" class="Anglais1-MI-CTD-2">
+	<startingSlot dailySlot="570" day="4" week="4" />
+	<rooms>
+		<room refId="Amphi-L002-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="BAUTHAMY Sabrina" />
+	</teachers>
+</session>
+<session rank="4" class="Anglais1-MI-CTD-2">
+	<startingSlot dailySlot="570" day="4" week="5" />
+	<rooms>
+		<room refId="Amphi-L002-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="BAUTHAMY Sabrina" />
+	</teachers>
+</session>
+<session rank="5" class="Anglais1-MI-CTD-2">
+	<startingSlot dailySlot="570" day="4" week="6" />
+	<rooms>
+		<room refId="Amphi-L002-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="BAUTHAMY Sabrina" />
+	</teachers>
+</session>
+<session rank="0" class="Anglais1-MI-CTD-3">
+	<startingSlot dailySlot="570" day="4" week="1" />
+	<rooms>
+		<room refId="C002" />
+	</rooms>
+	<teachers>
+		<teacher refId="BROUQUIER Recherche" />
+	</teachers>
+</session>
+<session rank="1" class="Anglais1-MI-CTD-3">
+	<startingSlot dailySlot="570" day="4" week="2" />
+	<rooms>
+		<room refId="C002" />
+	</rooms>
+	<teachers>
+		<teacher refId="BROUQUIER Recherche" />
+	</teachers>
+</session>
+<session rank="2" class="Anglais1-MI-CTD-3">
+	<startingSlot dailySlot="570" day="4" week="3" />
+	<rooms>
+		<room refId="C002" />
+	</rooms>
+	<teachers>
+		<teacher refId="BROUQUIER Recherche" />
+	</teachers>
+</session>
+<session rank="3" class="Anglais1-MI-CTD-3">
+	<startingSlot dailySlot="570" day="4" week="4" />
+	<rooms>
+		<room refId="C002" />
+	</rooms>
+	<teachers>
+		<teacher refId="BROUQUIER Recherche" />
+	</teachers>
+</session>
+<session rank="4" class="Anglais1-MI-CTD-3">
+	<startingSlot dailySlot="570" day="4" week="5" />
+	<rooms>
+		<room refId="C002" />
+	</rooms>
+	<teachers>
+		<teacher refId="BROUQUIER Recherche" />
+	</teachers>
+</session>
+<session rank="5" class="Anglais1-MI-CTD-3">
+	<startingSlot dailySlot="570" day="4" week="6" />
+	<rooms>
+		<room refId="C002" />
+	</rooms>
+	<teachers>
+		<teacher refId="BROUQUIER Recherche" />
+	</teachers>
+</session>
+<session rank="0" class="Anglais1-MI-CTD-4">
+	<startingSlot dailySlot="570" day="4" week="1" />
+	<rooms>
+		<room refId="Amphi-L005" />
+	</rooms>
+	<teachers>
+		<teacher refId="HARDMAN David" />
+	</teachers>
+</session>
+<session rank="1" class="Anglais1-MI-CTD-4">
+	<startingSlot dailySlot="570" day="4" week="2" />
+	<rooms>
+		<room refId="Amphi-L005" />
+	</rooms>
+	<teachers>
+		<teacher refId="HARDMAN David" />
+	</teachers>
+</session>
+<session rank="2" class="Anglais1-MI-CTD-4">
+	<startingSlot dailySlot="570" day="4" week="3" />
+	<rooms>
+		<room refId="Amphi-L005" />
+	</rooms>
+	<teachers>
+		<teacher refId="HARDMAN David" />
+	</teachers>
+</session>
+<session rank="3" class="Anglais1-MI-CTD-4">
+	<startingSlot dailySlot="570" day="4" week="4" />
+	<rooms>
+		<room refId="Amphi-L005" />
+	</rooms>
+	<teachers>
+		<teacher refId="HARDMAN David" />
+	</teachers>
+</session>
+<session rank="4" class="Anglais1-MI-CTD-4">
+	<startingSlot dailySlot="570" day="4" week="5" />
+	<rooms>
+		<room refId="Amphi-L005" />
+	</rooms>
+	<teachers>
+		<teacher refId="HARDMAN David" />
+	</teachers>
+</session>
+<session rank="5" class="Anglais1-MI-CTD-4">
+	<startingSlot dailySlot="570" day="4" week="6" />
+	<rooms>
+		<room refId="Amphi-L005" />
+	</rooms>
+	<teachers>
+		<teacher refId="HARDMAN David" />
+	</teachers>
+</session>
+<session rank="0" class="Anglais1-MI-CTD-5">
+	<startingSlot dailySlot="570" day="4" week="1" />
+	<rooms>
+		<room refId="A020" />
+	</rooms>
+	<teachers>
+		<teacher refId="KAMGAR Amir" />
+	</teachers>
+</session>
+<session rank="1" class="Anglais1-MI-CTD-5">
+	<startingSlot dailySlot="570" day="4" week="2" />
+	<rooms>
+		<room refId="A020" />
+	</rooms>
+	<teachers>
+		<teacher refId="KAMGAR Amir" />
+	</teachers>
+</session>
+<session rank="2" class="Anglais1-MI-CTD-5">
+	<startingSlot dailySlot="570" day="4" week="3" />
+	<rooms>
+		<room refId="A020" />
+	</rooms>
+	<teachers>
+		<teacher refId="KAMGAR Amir" />
+	</teachers>
+</session>
+<session rank="3" class="Anglais1-MI-CTD-5">
+	<startingSlot dailySlot="570" day="4" week="4" />
+	<rooms>
+		<room refId="A020" />
+	</rooms>
+	<teachers>
+		<teacher refId="KAMGAR Amir" />
+	</teachers>
+</session>
+<session rank="4" class="Anglais1-MI-CTD-5">
+	<startingSlot dailySlot="570" day="4" week="5" />
+	<rooms>
+		<room refId="A020" />
+	</rooms>
+	<teachers>
+		<teacher refId="KAMGAR Amir" />
+	</teachers>
+</session>
+<session rank="5" class="Anglais1-MI-CTD-5">
+	<startingSlot dailySlot="570" day="4" week="6" />
+	<rooms>
+		<room refId="A020" />
+	</rooms>
+	<teachers>
+		<teacher refId="KAMGAR Amir" />
+	</teachers>
+</session>
+<session rank="0" class="Anglais1-MPC-CTD-1">
+	<startingSlot dailySlot="660" day="4" week="1" />
+	<rooms>
+		<room refId="A117" />
+	</rooms>
+	<teachers>
+		<teacher refId="LAUDIER Romain" />
+	</teachers>
+</session>
+<session rank="1" class="Anglais1-MPC-CTD-1">
+	<startingSlot dailySlot="660" day="4" week="2" />
+	<rooms>
+		<room refId="A117" />
+	</rooms>
+	<teachers>
+		<teacher refId="LAUDIER Romain" />
+	</teachers>
+</session>
+<session rank="2" class="Anglais1-MPC-CTD-1">
+	<startingSlot dailySlot="660" day="4" week="3" />
+	<rooms>
+		<room refId="A117" />
+	</rooms>
+	<teachers>
+		<teacher refId="LAUDIER Romain" />
+	</teachers>
+</session>
+<session rank="3" class="Anglais1-MPC-CTD-1">
+	<startingSlot dailySlot="660" day="4" week="4" />
+	<rooms>
+		<room refId="A117" />
+	</rooms>
+	<teachers>
+		<teacher refId="LAUDIER Romain" />
+	</teachers>
+</session>
+<session rank="4" class="Anglais1-MPC-CTD-1">
+	<startingSlot dailySlot="660" day="4" week="5" />
+	<rooms>
+		<room refId="A117" />
+	</rooms>
+	<teachers>
+		<teacher refId="LAUDIER Romain" />
+	</teachers>
+</session>
+<session rank="5" class="Anglais1-MPC-CTD-1">
+	<startingSlot dailySlot="660" day="4" week="6" />
+	<rooms>
+		<room refId="A117" />
+	</rooms>
+	<teachers>
+		<teacher refId="LAUDIER Romain" />
+	</teachers>
+</session>
+<session rank="0" class="Anglais1-MPC-CTD-2">
+	<startingSlot dailySlot="840" day="4" week="1" />
+	<rooms>
+		<room refId="Da102" />
+	</rooms>
+	<teachers>
+		<teacher refId="LAUDIER Romain" />
+	</teachers>
+</session>
+<session rank="1" class="Anglais1-MPC-CTD-2">
+	<startingSlot dailySlot="840" day="4" week="2" />
+	<rooms>
+		<room refId="Da102" />
+	</rooms>
+	<teachers>
+		<teacher refId="LAUDIER Romain" />
+	</teachers>
+</session>
+<session rank="2" class="Anglais1-MPC-CTD-2">
+	<startingSlot dailySlot="840" day="4" week="3" />
+	<rooms>
+		<room refId="Da102" />
+	</rooms>
+	<teachers>
+		<teacher refId="LAUDIER Romain" />
+	</teachers>
+</session>
+<session rank="3" class="Anglais1-MPC-CTD-2">
+	<startingSlot dailySlot="840" day="4" week="4" />
+	<rooms>
+		<room refId="Da102" />
+	</rooms>
+	<teachers>
+		<teacher refId="LAUDIER Romain" />
+	</teachers>
+</session>
+<session rank="4" class="Anglais1-MPC-CTD-2">
+	<startingSlot dailySlot="840" day="4" week="5" />
+	<rooms>
+		<room refId="Da102" />
+	</rooms>
+	<teachers>
+		<teacher refId="LAUDIER Romain" />
+	</teachers>
+</session>
+<session rank="5" class="Anglais1-MPC-CTD-2">
+	<startingSlot dailySlot="840" day="4" week="6" />
+	<rooms>
+		<room refId="Da102" />
+	</rooms>
+	<teachers>
+		<teacher refId="LAUDIER Romain" />
+	</teachers>
+</session>
+<session rank="0" class="Anglais1-MPC-CTD-3">
+	<startingSlot dailySlot="570" day="4" week="1" />
+	<rooms>
+		<room refId="Da102" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICQUET Virginie" />
+	</teachers>
+</session>
+<session rank="1" class="Anglais1-MPC-CTD-3">
+	<startingSlot dailySlot="570" day="4" week="2" />
+	<rooms>
+		<room refId="Da102" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICQUET Virginie" />
+	</teachers>
+</session>
+<session rank="2" class="Anglais1-MPC-CTD-3">
+	<startingSlot dailySlot="570" day="4" week="3" />
+	<rooms>
+		<room refId="Da102" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICQUET Virginie" />
+	</teachers>
+</session>
+<session rank="3" class="Anglais1-MPC-CTD-3">
+	<startingSlot dailySlot="570" day="4" week="4" />
+	<rooms>
+		<room refId="Da102" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICQUET Virginie" />
+	</teachers>
+</session>
+<session rank="4" class="Anglais1-MPC-CTD-3">
+	<startingSlot dailySlot="570" day="4" week="5" />
+	<rooms>
+		<room refId="Da102" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICQUET Virginie" />
+	</teachers>
+</session>
+<session rank="5" class="Anglais1-MPC-CTD-3">
+	<startingSlot dailySlot="570" day="4" week="6" />
+	<rooms>
+		<room refId="Da102" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICQUET Virginie" />
+	</teachers>
+</session>
+<session rank="0" class="Anglais1-MPC-CTD-4">
+	<startingSlot dailySlot="660" day="4" week="1" />
+	<rooms>
+		<room refId="Amphi-L005-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="TORRES Philippe" />
+	</teachers>
+</session>
+<session rank="1" class="Anglais1-MPC-CTD-4">
+	<startingSlot dailySlot="660" day="4" week="2" />
+	<rooms>
+		<room refId="Amphi-L005-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="TORRES Philippe" />
+	</teachers>
+</session>
+<session rank="2" class="Anglais1-MPC-CTD-4">
+	<startingSlot dailySlot="660" day="4" week="3" />
+	<rooms>
+		<room refId="Amphi-L005-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="TORRES Philippe" />
+	</teachers>
+</session>
+<session rank="3" class="Anglais1-MPC-CTD-4">
+	<startingSlot dailySlot="660" day="4" week="4" />
+	<rooms>
+		<room refId="Amphi-L005-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="TORRES Philippe" />
+	</teachers>
+</session>
+<session rank="4" class="Anglais1-MPC-CTD-4">
+	<startingSlot dailySlot="660" day="4" week="5" />
+	<rooms>
+		<room refId="Amphi-L005-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="TORRES Philippe" />
+	</teachers>
+</session>
+<session rank="5" class="Anglais1-MPC-CTD-4">
+	<startingSlot dailySlot="660" day="4" week="6" />
+	<rooms>
+		<room refId="Amphi-L005-EVAL" />
+	</rooms>
+	<teachers>
+		<teacher refId="TORRES Philippe" />
+	</teachers>
+</session>
+<session rank="0" class="Atomistique1-CTD-1">
+	<startingSlot dailySlot="930" day="1" week="1" />
+	<rooms>
+		<room refId="Da003" />
+	</rooms>
+	<teachers>
+		<teacher refId="DUL Marie-Claire" />
+	</teachers>
+</session>
+<session rank="1" class="Atomistique1-CTD-1">
+	<startingSlot dailySlot="930" day="2" week="1" />
+	<rooms>
+		<room refId="Da003" />
+	</rooms>
+	<teachers>
+		<teacher refId="DUL Marie-Claire" />
+	</teachers>
+</session>
+<session rank="2" class="Atomistique1-CTD-1">
+	<startingSlot dailySlot="930" day="1" week="2" />
+	<rooms>
+		<room refId="Da003" />
+	</rooms>
+	<teachers>
+		<teacher refId="DUL Marie-Claire" />
+	</teachers>
+</session>
+<session rank="3" class="Atomistique1-CTD-1">
+	<startingSlot dailySlot="930" day="2" week="2" />
+	<rooms>
+		<room refId="Da003" />
+	</rooms>
+	<teachers>
+		<teacher refId="DUL Marie-Claire" />
+	</teachers>
+</session>
+<session rank="4" class="Atomistique1-CTD-1">
+	<startingSlot dailySlot="930" day="1" week="3" />
+	<rooms>
+		<room refId="Da003" />
+	</rooms>
+	<teachers>
+		<teacher refId="DUL Marie-Claire" />
+	</teachers>
+</session>
+<session rank="5" class="Atomistique1-CTD-1">
+	<startingSlot dailySlot="930" day="2" week="3" />
+	<rooms>
+		<room refId="Da003" />
+	</rooms>
+	<teachers>
+		<teacher refId="DUL Marie-Claire" />
+	</teachers>
+</session>
+<session rank="6" class="Atomistique1-CTD-1">
+	<startingSlot dailySlot="930" day="1" week="4" />
+	<rooms>
+		<room refId="Da003" />
+	</rooms>
+	<teachers>
+		<teacher refId="DUL Marie-Claire" />
+	</teachers>
+</session>
+<session rank="7" class="Atomistique1-CTD-1">
+	<startingSlot dailySlot="930" day="2" week="4" />
+	<rooms>
+		<room refId="Da003" />
+	</rooms>
+	<teachers>
+		<teacher refId="DUL Marie-Claire" />
+	</teachers>
+</session>
+<session rank="8" class="Atomistique1-CTD-1">
+	<startingSlot dailySlot="930" day="1" week="5" />
+	<rooms>
+		<room refId="Da003" />
+	</rooms>
+	<teachers>
+		<teacher refId="DUL Marie-Claire" />
+	</teachers>
+</session>
+<session rank="9" class="Atomistique1-CTD-1">
+	<startingSlot dailySlot="930" day="2" week="5" />
+	<rooms>
+		<room refId="Da003" />
+	</rooms>
+	<teachers>
+		<teacher refId="DUL Marie-Claire" />
+	</teachers>
+</session>
+<session rank="0" class="Atomistique1-CTD-2">
+	<startingSlot dailySlot="930" day="1" week="1" />
+	<rooms>
+		<room refId="Virtual-Anglais2-6" />
+	</rooms>
+	<teachers>
+		<teacher refId="EL GHAYOURY Abdelkrim" />
+	</teachers>
+</session>
+<session rank="1" class="Atomistique1-CTD-2">
+	<startingSlot dailySlot="930" day="2" week="1" />
+	<rooms>
+		<room refId="Virtual-Anglais2-6" />
+	</rooms>
+	<teachers>
+		<teacher refId="EL GHAYOURY Abdelkrim" />
+	</teachers>
+</session>
+<session rank="2" class="Atomistique1-CTD-2">
+	<startingSlot dailySlot="930" day="1" week="2" />
+	<rooms>
+		<room refId="Virtual-Anglais2-6" />
+	</rooms>
+	<teachers>
+		<teacher refId="EL GHAYOURY Abdelkrim" />
+	</teachers>
+</session>
+<session rank="3" class="Atomistique1-CTD-2">
+	<startingSlot dailySlot="930" day="2" week="2" />
+	<rooms>
+		<room refId="Virtual-Anglais2-6" />
+	</rooms>
+	<teachers>
+		<teacher refId="EL GHAYOURY Abdelkrim" />
+	</teachers>
+</session>
+<session rank="4" class="Atomistique1-CTD-2">
+	<startingSlot dailySlot="930" day="1" week="3" />
+	<rooms>
+		<room refId="Virtual-Anglais2-6" />
+	</rooms>
+	<teachers>
+		<teacher refId="EL GHAYOURY Abdelkrim" />
+	</teachers>
+</session>
+<session rank="5" class="Atomistique1-CTD-2">
+	<startingSlot dailySlot="930" day="2" week="3" />
+	<rooms>
+		<room refId="Virtual-Anglais2-6" />
+	</rooms>
+	<teachers>
+		<teacher refId="EL GHAYOURY Abdelkrim" />
+	</teachers>
+</session>
+<session rank="6" class="Atomistique1-CTD-2">
+	<startingSlot dailySlot="930" day="1" week="4" />
+	<rooms>
+		<room refId="Virtual-Anglais2-6" />
+	</rooms>
+	<teachers>
+		<teacher refId="EL GHAYOURY Abdelkrim" />
+	</teachers>
+</session>
+<session rank="7" class="Atomistique1-CTD-2">
+	<startingSlot dailySlot="930" day="2" week="4" />
+	<rooms>
+		<room refId="Virtual-Anglais2-6" />
+	</rooms>
+	<teachers>
+		<teacher refId="EL GHAYOURY Abdelkrim" />
+	</teachers>
+</session>
+<session rank="8" class="Atomistique1-CTD-2">
+	<startingSlot dailySlot="930" day="1" week="5" />
+	<rooms>
+		<room refId="Virtual-Anglais2-6" />
+	</rooms>
+	<teachers>
+		<teacher refId="EL GHAYOURY Abdelkrim" />
+	</teachers>
+</session>
+<session rank="9" class="Atomistique1-CTD-2">
+	<startingSlot dailySlot="930" day="2" week="5" />
+	<rooms>
+		<room refId="Virtual-Anglais2-6" />
+	</rooms>
+	<teachers>
+		<teacher refId="EL GHAYOURY Abdelkrim" />
+	</teachers>
+</session>
+<session rank="0" class="Atomistique1-CTD-3">
+	<startingSlot dailySlot="930" day="2" week="1" />
+	<rooms>
+		<room refId="Virtual-Anglais2-6" />
+	</rooms>
+	<teachers>
+		<teacher refId="SANCHEZ Francois" />
+	</teachers>
+</session>
+<session rank="1" class="Atomistique1-CTD-3">
+	<startingSlot dailySlot="840" day="3" week="1" />
+	<rooms>
+		<room refId="Virtual-Anglais2-6" />
+	</rooms>
+	<teachers>
+		<teacher refId="SANCHEZ Francois" />
+	</teachers>
+</session>
+<session rank="2" class="Atomistique1-CTD-3">
+	<startingSlot dailySlot="930" day="2" week="2" />
+	<rooms>
+		<room refId="Virtual-Anglais2-6" />
+	</rooms>
+	<teachers>
+		<teacher refId="SANCHEZ Francois" />
+	</teachers>
+</session>
+<session rank="3" class="Atomistique1-CTD-3">
+	<startingSlot dailySlot="840" day="3" week="2" />
+	<rooms>
+		<room refId="Virtual-Anglais2-6" />
+	</rooms>
+	<teachers>
+		<teacher refId="SANCHEZ Francois" />
+	</teachers>
+</session>
+<session rank="4" class="Atomistique1-CTD-3">
+	<startingSlot dailySlot="930" day="2" week="3" />
+	<rooms>
+		<room refId="Virtual-Anglais2-6" />
+	</rooms>
+	<teachers>
+		<teacher refId="SANCHEZ Francois" />
+	</teachers>
+</session>
+<session rank="5" class="Atomistique1-CTD-3">
+	<startingSlot dailySlot="840" day="3" week="3" />
+	<rooms>
+		<room refId="Virtual-Anglais2-6" />
+	</rooms>
+	<teachers>
+		<teacher refId="SANCHEZ Francois" />
+	</teachers>
+</session>
+<session rank="6" class="Atomistique1-CTD-3">
+	<startingSlot dailySlot="930" day="2" week="4" />
+	<rooms>
+		<room refId="Virtual-Anglais2-6" />
+	</rooms>
+	<teachers>
+		<teacher refId="SANCHEZ Francois" />
+	</teachers>
+</session>
+<session rank="7" class="Atomistique1-CTD-3">
+	<startingSlot dailySlot="840" day="3" week="4" />
+	<rooms>
+		<room refId="Virtual-Anglais2-6" />
+	</rooms>
+	<teachers>
+		<teacher refId="SANCHEZ Francois" />
+	</teachers>
+</session>
+<session rank="8" class="Atomistique1-CTD-3">
+	<startingSlot dailySlot="930" day="2" week="5" />
+	<rooms>
+		<room refId="Virtual-Anglais2-6" />
+	</rooms>
+	<teachers>
+		<teacher refId="SANCHEZ Francois" />
+	</teachers>
+</session>
+<session rank="9" class="Atomistique1-CTD-3">
+	<startingSlot dailySlot="840" day="3" week="5" />
+	<rooms>
+		<room refId="Virtual-Anglais2-6" />
+	</rooms>
+	<teachers>
+		<teacher refId="SANCHEZ Francois" />
+	</teachers>
+</session>
+<session rank="0" class="Atomistique1-CTD-4">
+	<startingSlot dailySlot="930" day="2" week="1" />
+	<rooms>
+		<room refId="Virtual-Anglais2-6" />
+	</rooms>
+	<teachers>
+		<teacher refId="SANGUINET Lionel" />
+	</teachers>
+</session>
+<session rank="1" class="Atomistique1-CTD-4">
+	<startingSlot dailySlot="840" day="3" week="1" />
+	<rooms>
+		<room refId="Virtual-Anglais2-6" />
+	</rooms>
+	<teachers>
+		<teacher refId="SANGUINET Lionel" />
+	</teachers>
+</session>
+<session rank="2" class="Atomistique1-CTD-4">
+	<startingSlot dailySlot="930" day="2" week="2" />
+	<rooms>
+		<room refId="Virtual-Anglais2-6" />
+	</rooms>
+	<teachers>
+		<teacher refId="SANGUINET Lionel" />
+	</teachers>
+</session>
+<session rank="3" class="Atomistique1-CTD-4">
+	<startingSlot dailySlot="840" day="3" week="2" />
+	<rooms>
+		<room refId="Virtual-Anglais2-6" />
+	</rooms>
+	<teachers>
+		<teacher refId="SANGUINET Lionel" />
+	</teachers>
+</session>
+<session rank="4" class="Atomistique1-CTD-4">
+	<startingSlot dailySlot="930" day="2" week="3" />
+	<rooms>
+		<room refId="Virtual-Anglais2-6" />
+	</rooms>
+	<teachers>
+		<teacher refId="SANGUINET Lionel" />
+	</teachers>
+</session>
+<session rank="5" class="Atomistique1-CTD-4">
+	<startingSlot dailySlot="840" day="3" week="3" />
+	<rooms>
+		<room refId="Virtual-Anglais2-6" />
+	</rooms>
+	<teachers>
+		<teacher refId="SANGUINET Lionel" />
+	</teachers>
+</session>
+<session rank="6" class="Atomistique1-CTD-4">
+	<startingSlot dailySlot="930" day="2" week="4" />
+	<rooms>
+		<room refId="Virtual-Anglais2-6" />
+	</rooms>
+	<teachers>
+		<teacher refId="SANGUINET Lionel" />
+	</teachers>
+</session>
+<session rank="7" class="Atomistique1-CTD-4">
+	<startingSlot dailySlot="840" day="3" week="4" />
+	<rooms>
+		<room refId="Virtual-Anglais2-6" />
+	</rooms>
+	<teachers>
+		<teacher refId="SANGUINET Lionel" />
+	</teachers>
+</session>
+<session rank="8" class="Atomistique1-CTD-4">
+	<startingSlot dailySlot="930" day="2" week="5" />
+	<rooms>
+		<room refId="Virtual-Anglais2-6" />
+	</rooms>
+	<teachers>
+		<teacher refId="SANGUINET Lionel" />
+	</teachers>
+</session>
+<session rank="9" class="Atomistique1-CTD-4">
+	<startingSlot dailySlot="840" day="3" week="5" />
+	<rooms>
+		<room refId="Virtual-Anglais2-6" />
+	</rooms>
+	<teachers>
+		<teacher refId="SANGUINET Lionel" />
+	</teachers>
+</session>
+<session rank="0" class="Atomistique1-CC-1">
+	<startingSlot dailySlot="1020" day="5" week="6" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="DUL Marie-Claire" />
+	</teachers>
+</session>
+<session rank="0" class="Electrocinetique1-CTD-1">
+	<startingSlot dailySlot="480" day="1" week="7" />
+	<rooms>
+		<room refId="Virtual-Anglais1-8" />
+	</rooms>
+	<teachers>
+		<teacher refId="CHAUSSEDENT Stephane" />
+	</teachers>
+</session>
+<session rank="1" class="Electrocinetique1-CTD-1">
+	<startingSlot dailySlot="480" day="1" week="8" />
+	<rooms>
+		<room refId="Virtual-Anglais1-8" />
+	</rooms>
+	<teachers>
+		<teacher refId="CHAUSSEDENT Stephane" />
+	</teachers>
+</session>
+<session rank="2" class="Electrocinetique1-CTD-1">
+	<startingSlot dailySlot="480" day="1" week="9" />
+	<rooms>
+		<room refId="Virtual-Anglais1-8" />
+	</rooms>
+	<teachers>
+		<teacher refId="CHAUSSEDENT Stephane" />
+	</teachers>
+</session>
+<session rank="3" class="Electrocinetique1-CTD-1">
+	<startingSlot dailySlot="480" day="1" week="10" />
+	<rooms>
+		<room refId="Virtual-Anglais1-8" />
+	</rooms>
+	<teachers>
+		<teacher refId="CHAUSSEDENT Stephane" />
+	</teachers>
+</session>
+<session rank="4" class="Electrocinetique1-CTD-1">
+	<startingSlot dailySlot="480" day="1" week="11" />
+	<rooms>
+		<room refId="Virtual-Anglais1-8" />
+	</rooms>
+	<teachers>
+		<teacher refId="CHAUSSEDENT Stephane" />
+	</teachers>
+</session>
+<session rank="0" class="Electrocinetique1-CTD-2">
+	<startingSlot dailySlot="480" day="1" week="7" />
+	<rooms>
+		<room refId="Virtual-Anglais1-9" />
+	</rooms>
+	<teachers>
+		<teacher refId="CIRET Charles" />
+	</teachers>
+</session>
+<session rank="1" class="Electrocinetique1-CTD-2">
+	<startingSlot dailySlot="480" day="1" week="8" />
+	<rooms>
+		<room refId="Virtual-Anglais1-9" />
+	</rooms>
+	<teachers>
+		<teacher refId="CIRET Charles" />
+	</teachers>
+</session>
+<session rank="2" class="Electrocinetique1-CTD-2">
+	<startingSlot dailySlot="480" day="1" week="9" />
+	<rooms>
+		<room refId="Virtual-Anglais1-9" />
+	</rooms>
+	<teachers>
+		<teacher refId="CIRET Charles" />
+	</teachers>
+</session>
+<session rank="3" class="Electrocinetique1-CTD-2">
+	<startingSlot dailySlot="480" day="1" week="10" />
+	<rooms>
+		<room refId="Virtual-Anglais1-9" />
+	</rooms>
+	<teachers>
+		<teacher refId="CIRET Charles" />
+	</teachers>
+</session>
+<session rank="4" class="Electrocinetique1-CTD-2">
+	<startingSlot dailySlot="480" day="1" week="11" />
+	<rooms>
+		<room refId="Virtual-Anglais1-9" />
+	</rooms>
+	<teachers>
+		<teacher refId="CIRET Charles" />
+	</teachers>
+</session>
+<session rank="0" class="Electrocinetique1-CTD-3">
+	<startingSlot dailySlot="480" day="1" week="7" />
+	<rooms>
+		<room refId="Virtual-Anglais1-9" />
+	</rooms>
+	<teachers>
+		<teacher refId="SEMAAN Georges" />
+	</teachers>
+</session>
+<session rank="1" class="Electrocinetique1-CTD-3">
+	<startingSlot dailySlot="480" day="1" week="8" />
+	<rooms>
+		<room refId="Virtual-Anglais1-9" />
+	</rooms>
+	<teachers>
+		<teacher refId="SEMAAN Georges" />
+	</teachers>
+</session>
+<session rank="2" class="Electrocinetique1-CTD-3">
+	<startingSlot dailySlot="480" day="1" week="9" />
+	<rooms>
+		<room refId="Virtual-Anglais1-9" />
+	</rooms>
+	<teachers>
+		<teacher refId="SEMAAN Georges" />
+	</teachers>
+</session>
+<session rank="3" class="Electrocinetique1-CTD-3">
+	<startingSlot dailySlot="480" day="1" week="10" />
+	<rooms>
+		<room refId="Virtual-Anglais1-9" />
+	</rooms>
+	<teachers>
+		<teacher refId="SEMAAN Georges" />
+	</teachers>
+</session>
+<session rank="4" class="Electrocinetique1-CTD-3">
+	<startingSlot dailySlot="480" day="1" week="11" />
+	<rooms>
+		<room refId="Virtual-Anglais1-9" />
+	</rooms>
+	<teachers>
+		<teacher refId="SEMAAN Georges" />
+	</teachers>
+</session>
+<session rank="0" class="Electrocinetique1-CTD-4">
+	<startingSlot dailySlot="570" day="1" week="7" />
+	<rooms>
+		<room refId="Da005" />
+	</rooms>
+	<teachers>
+		<teacher refId="SEMAAN Georges" />
+	</teachers>
+</session>
+<session rank="1" class="Electrocinetique1-CTD-4">
+	<startingSlot dailySlot="570" day="1" week="8" />
+	<rooms>
+		<room refId="Da005" />
+	</rooms>
+	<teachers>
+		<teacher refId="SEMAAN Georges" />
+	</teachers>
+</session>
+<session rank="2" class="Electrocinetique1-CTD-4">
+	<startingSlot dailySlot="570" day="1" week="9" />
+	<rooms>
+		<room refId="Da005" />
+	</rooms>
+	<teachers>
+		<teacher refId="SEMAAN Georges" />
+	</teachers>
+</session>
+<session rank="3" class="Electrocinetique1-CTD-4">
+	<startingSlot dailySlot="570" day="1" week="10" />
+	<rooms>
+		<room refId="Da005" />
+	</rooms>
+	<teachers>
+		<teacher refId="SEMAAN Georges" />
+	</teachers>
+</session>
+<session rank="4" class="Electrocinetique1-CTD-4">
+	<startingSlot dailySlot="570" day="1" week="11" />
+	<rooms>
+		<room refId="Da005" />
+	</rooms>
+	<teachers>
+		<teacher refId="SEMAAN Georges" />
+	</teachers>
+</session>
+<session rank="0" class="Electrocinetique1-CC-1">
+	<startingSlot dailySlot="480" day="1" week="12" />
+	<rooms>
+		<room refId="Virtual-Anglais1-8" />
+	</rooms>
+	<teachers>
+		<teacher refId="CHAUSSEDENT Stephane" />
+	</teachers>
+</session>
+<session rank="0" class="Introduction-chimie1-CTD-1">
+	<startingSlot dailySlot="930" day="3" week="1" />
+	<rooms>
+		<room refId="Da207" />
+	</rooms>
+	<teachers>
+		<teacher refId="EL GHAYOURY Abdelkrim" />
+	</teachers>
+</session>
+<session rank="1" class="Introduction-chimie1-CTD-1">
+	<startingSlot dailySlot="840" day="4" week="1" />
+	<rooms>
+		<room refId="Da207" />
+	</rooms>
+	<teachers>
+		<teacher refId="EL GHAYOURY Abdelkrim" />
+	</teachers>
+</session>
+<session rank="2" class="Introduction-chimie1-CTD-1">
+	<startingSlot dailySlot="930" day="3" week="2" />
+	<rooms>
+		<room refId="Da207" />
+	</rooms>
+	<teachers>
+		<teacher refId="EL GHAYOURY Abdelkrim" />
+	</teachers>
+</session>
+<session rank="3" class="Introduction-chimie1-CTD-1">
+	<startingSlot dailySlot="840" day="4" week="2" />
+	<rooms>
+		<room refId="Da207" />
+	</rooms>
+	<teachers>
+		<teacher refId="EL GHAYOURY Abdelkrim" />
+	</teachers>
+</session>
+<session rank="4" class="Introduction-chimie1-CTD-1">
+	<startingSlot dailySlot="930" day="3" week="3" />
+	<rooms>
+		<room refId="Da207" />
+	</rooms>
+	<teachers>
+		<teacher refId="EL GHAYOURY Abdelkrim" />
+	</teachers>
+</session>
+<session rank="5" class="Introduction-chimie1-CTD-1">
+	<startingSlot dailySlot="840" day="4" week="3" />
+	<rooms>
+		<room refId="Da207" />
+	</rooms>
+	<teachers>
+		<teacher refId="EL GHAYOURY Abdelkrim" />
+	</teachers>
+</session>
+<session rank="6" class="Introduction-chimie1-CTD-1">
+	<startingSlot dailySlot="930" day="3" week="4" />
+	<rooms>
+		<room refId="Da207" />
+	</rooms>
+	<teachers>
+		<teacher refId="EL GHAYOURY Abdelkrim" />
+	</teachers>
+</session>
+<session rank="7" class="Introduction-chimie1-CTD-1">
+	<startingSlot dailySlot="840" day="4" week="4" />
+	<rooms>
+		<room refId="Da207" />
+	</rooms>
+	<teachers>
+		<teacher refId="EL GHAYOURY Abdelkrim" />
+	</teachers>
+</session>
+<session rank="8" class="Introduction-chimie1-CTD-1">
+	<startingSlot dailySlot="930" day="3" week="5" />
+	<rooms>
+		<room refId="Da207" />
+	</rooms>
+	<teachers>
+		<teacher refId="EL GHAYOURY Abdelkrim" />
+	</teachers>
+</session>
+<session rank="9" class="Introduction-chimie1-CTD-1">
+	<startingSlot dailySlot="840" day="4" week="5" />
+	<rooms>
+		<room refId="Da207" />
+	</rooms>
+	<teachers>
+		<teacher refId="EL GHAYOURY Abdelkrim" />
+	</teachers>
+</session>
+<session rank="0" class="Introduction-chimie1-CTD-2">
+	<startingSlot dailySlot="570" day="4" week="1" />
+	<rooms>
+		<room refId="Da207" />
+	</rooms>
+	<teachers>
+		<teacher refId="OCAFRAIN Maitena" />
+	</teachers>
+</session>
+<session rank="1" class="Introduction-chimie1-CTD-2">
+	<startingSlot dailySlot="570" day="5" week="1" />
+	<rooms>
+		<room refId="Da207" />
+	</rooms>
+	<teachers>
+		<teacher refId="OCAFRAIN Maitena" />
+	</teachers>
+</session>
+<session rank="2" class="Introduction-chimie1-CTD-2">
+	<startingSlot dailySlot="570" day="4" week="2" />
+	<rooms>
+		<room refId="Da207" />
+	</rooms>
+	<teachers>
+		<teacher refId="OCAFRAIN Maitena" />
+	</teachers>
+</session>
+<session rank="3" class="Introduction-chimie1-CTD-2">
+	<startingSlot dailySlot="570" day="5" week="2" />
+	<rooms>
+		<room refId="Da207" />
+	</rooms>
+	<teachers>
+		<teacher refId="OCAFRAIN Maitena" />
+	</teachers>
+</session>
+<session rank="4" class="Introduction-chimie1-CTD-2">
+	<startingSlot dailySlot="570" day="4" week="3" />
+	<rooms>
+		<room refId="Da207" />
+	</rooms>
+	<teachers>
+		<teacher refId="OCAFRAIN Maitena" />
+	</teachers>
+</session>
+<session rank="5" class="Introduction-chimie1-CTD-2">
+	<startingSlot dailySlot="570" day="5" week="3" />
+	<rooms>
+		<room refId="Da207" />
+	</rooms>
+	<teachers>
+		<teacher refId="OCAFRAIN Maitena" />
+	</teachers>
+</session>
+<session rank="6" class="Introduction-chimie1-CTD-2">
+	<startingSlot dailySlot="570" day="4" week="4" />
+	<rooms>
+		<room refId="Da207" />
+	</rooms>
+	<teachers>
+		<teacher refId="OCAFRAIN Maitena" />
+	</teachers>
+</session>
+<session rank="7" class="Introduction-chimie1-CTD-2">
+	<startingSlot dailySlot="570" day="5" week="4" />
+	<rooms>
+		<room refId="Da207" />
+	</rooms>
+	<teachers>
+		<teacher refId="OCAFRAIN Maitena" />
+	</teachers>
+</session>
+<session rank="8" class="Introduction-chimie1-CTD-2">
+	<startingSlot dailySlot="570" day="4" week="5" />
+	<rooms>
+		<room refId="Da207" />
+	</rooms>
+	<teachers>
+		<teacher refId="OCAFRAIN Maitena" />
+	</teachers>
+</session>
+<session rank="9" class="Introduction-chimie1-CTD-2">
+	<startingSlot dailySlot="570" day="5" week="5" />
+	<rooms>
+		<room refId="Da207" />
+	</rooms>
+	<teachers>
+		<teacher refId="OCAFRAIN Maitena" />
+	</teachers>
+</session>
+<session rank="0" class="Introduction-chimie1-CTD-3">
+	<startingSlot dailySlot="930" day="3" week="1" />
+	<rooms>
+		<room refId="Da207" />
+	</rooms>
+	<teachers>
+		<teacher refId="SOURISSEAU Sebastien" />
+	</teachers>
+</session>
+<session rank="1" class="Introduction-chimie1-CTD-3">
+	<startingSlot dailySlot="660" day="4" week="1" />
+	<rooms>
+		<room refId="Da207" />
+	</rooms>
+	<teachers>
+		<teacher refId="SOURISSEAU Sebastien" />
+	</teachers>
+</session>
+<session rank="2" class="Introduction-chimie1-CTD-3">
+	<startingSlot dailySlot="930" day="3" week="2" />
+	<rooms>
+		<room refId="Da207" />
+	</rooms>
+	<teachers>
+		<teacher refId="SOURISSEAU Sebastien" />
+	</teachers>
+</session>
+<session rank="3" class="Introduction-chimie1-CTD-3">
+	<startingSlot dailySlot="660" day="4" week="2" />
+	<rooms>
+		<room refId="Da207" />
+	</rooms>
+	<teachers>
+		<teacher refId="SOURISSEAU Sebastien" />
+	</teachers>
+</session>
+<session rank="4" class="Introduction-chimie1-CTD-3">
+	<startingSlot dailySlot="930" day="3" week="3" />
+	<rooms>
+		<room refId="Da207" />
+	</rooms>
+	<teachers>
+		<teacher refId="SOURISSEAU Sebastien" />
+	</teachers>
+</session>
+<session rank="5" class="Introduction-chimie1-CTD-3">
+	<startingSlot dailySlot="660" day="4" week="3" />
+	<rooms>
+		<room refId="Da207" />
+	</rooms>
+	<teachers>
+		<teacher refId="SOURISSEAU Sebastien" />
+	</teachers>
+</session>
+<session rank="6" class="Introduction-chimie1-CTD-3">
+	<startingSlot dailySlot="930" day="3" week="4" />
+	<rooms>
+		<room refId="Da207" />
+	</rooms>
+	<teachers>
+		<teacher refId="SOURISSEAU Sebastien" />
+	</teachers>
+</session>
+<session rank="7" class="Introduction-chimie1-CTD-3">
+	<startingSlot dailySlot="660" day="4" week="4" />
+	<rooms>
+		<room refId="Da207" />
+	</rooms>
+	<teachers>
+		<teacher refId="SOURISSEAU Sebastien" />
+	</teachers>
+</session>
+<session rank="8" class="Introduction-chimie1-CTD-3">
+	<startingSlot dailySlot="930" day="3" week="5" />
+	<rooms>
+		<room refId="Da207" />
+	</rooms>
+	<teachers>
+		<teacher refId="SOURISSEAU Sebastien" />
+	</teachers>
+</session>
+<session rank="9" class="Introduction-chimie1-CTD-3">
+	<startingSlot dailySlot="660" day="4" week="5" />
+	<rooms>
+		<room refId="Da207" />
+	</rooms>
+	<teachers>
+		<teacher refId="SOURISSEAU Sebastien" />
+	</teachers>
+</session>
+<session rank="0" class="Introduction-chimie1-CTD-4">
+	<startingSlot dailySlot="570" day="4" week="1" />
+	<rooms>
+		<room refId="Virtual-Anglais2-6" />
+	</rooms>
+	<teachers>
+		<teacher refId="ZIGON Nicolas" />
+	</teachers>
+</session>
+<session rank="1" class="Introduction-chimie1-CTD-4">
+	<startingSlot dailySlot="570" day="5" week="1" />
+	<rooms>
+		<room refId="Virtual-Anglais2-6" />
+	</rooms>
+	<teachers>
+		<teacher refId="ZIGON Nicolas" />
+	</teachers>
+</session>
+<session rank="2" class="Introduction-chimie1-CTD-4">
+	<startingSlot dailySlot="570" day="4" week="2" />
+	<rooms>
+		<room refId="Virtual-Anglais2-6" />
+	</rooms>
+	<teachers>
+		<teacher refId="ZIGON Nicolas" />
+	</teachers>
+</session>
+<session rank="3" class="Introduction-chimie1-CTD-4">
+	<startingSlot dailySlot="570" day="5" week="2" />
+	<rooms>
+		<room refId="Virtual-Anglais2-6" />
+	</rooms>
+	<teachers>
+		<teacher refId="ZIGON Nicolas" />
+	</teachers>
+</session>
+<session rank="4" class="Introduction-chimie1-CTD-4">
+	<startingSlot dailySlot="570" day="4" week="3" />
+	<rooms>
+		<room refId="Virtual-Anglais2-6" />
+	</rooms>
+	<teachers>
+		<teacher refId="ZIGON Nicolas" />
+	</teachers>
+</session>
+<session rank="5" class="Introduction-chimie1-CTD-4">
+	<startingSlot dailySlot="570" day="5" week="3" />
+	<rooms>
+		<room refId="Virtual-Anglais2-6" />
+	</rooms>
+	<teachers>
+		<teacher refId="ZIGON Nicolas" />
+	</teachers>
+</session>
+<session rank="6" class="Introduction-chimie1-CTD-4">
+	<startingSlot dailySlot="570" day="4" week="4" />
+	<rooms>
+		<room refId="Virtual-Anglais2-6" />
+	</rooms>
+	<teachers>
+		<teacher refId="ZIGON Nicolas" />
+	</teachers>
+</session>
+<session rank="7" class="Introduction-chimie1-CTD-4">
+	<startingSlot dailySlot="570" day="5" week="4" />
+	<rooms>
+		<room refId="Virtual-Anglais2-6" />
+	</rooms>
+	<teachers>
+		<teacher refId="ZIGON Nicolas" />
+	</teachers>
+</session>
+<session rank="8" class="Introduction-chimie1-CTD-4">
+	<startingSlot dailySlot="570" day="4" week="5" />
+	<rooms>
+		<room refId="Virtual-Anglais2-6" />
+	</rooms>
+	<teachers>
+		<teacher refId="ZIGON Nicolas" />
+	</teachers>
+</session>
+<session rank="9" class="Introduction-chimie1-CTD-4">
+	<startingSlot dailySlot="570" day="5" week="5" />
+	<rooms>
+		<room refId="Virtual-Anglais2-6" />
+	</rooms>
+	<teachers>
+		<teacher refId="ZIGON Nicolas" />
+	</teachers>
+</session>
+<session rank="0" class="Introduction-chimie1-CC-1">
+	<startingSlot dailySlot="750" day="5" week="6" />
+	<rooms>
+		<room refId="Da207" />
+	</rooms>
+	<teachers>
+		<teacher refId="EL GHAYOURY Abdelkrim" />
+	</teachers>
+</session>
+<session rank="0" class="Mecanique1-CTD-1">
+	<startingSlot dailySlot="840" day="1" week="1" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOUDEBS Georges" />
+	</teachers>
+</session>
+<session rank="1" class="Mecanique1-CTD-1">
+	<startingSlot dailySlot="840" day="2" week="1" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOUDEBS Georges" />
+	</teachers>
+</session>
+<session rank="2" class="Mecanique1-CTD-1">
+	<startingSlot dailySlot="840" day="3" week="1" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOUDEBS Georges" />
+	</teachers>
+</session>
+<session rank="3" class="Mecanique1-CTD-1">
+	<startingSlot dailySlot="840" day="1" week="2" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOUDEBS Georges" />
+	</teachers>
+</session>
+<session rank="4" class="Mecanique1-CTD-1">
+	<startingSlot dailySlot="840" day="2" week="2" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOUDEBS Georges" />
+	</teachers>
+</session>
+<session rank="5" class="Mecanique1-CTD-1">
+	<startingSlot dailySlot="840" day="3" week="2" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOUDEBS Georges" />
+	</teachers>
+</session>
+<session rank="6" class="Mecanique1-CTD-1">
+	<startingSlot dailySlot="840" day="1" week="3" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOUDEBS Georges" />
+	</teachers>
+</session>
+<session rank="7" class="Mecanique1-CTD-1">
+	<startingSlot dailySlot="840" day="2" week="3" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOUDEBS Georges" />
+	</teachers>
+</session>
+<session rank="8" class="Mecanique1-CTD-1">
+	<startingSlot dailySlot="840" day="3" week="3" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOUDEBS Georges" />
+	</teachers>
+</session>
+<session rank="9" class="Mecanique1-CTD-1">
+	<startingSlot dailySlot="840" day="1" week="4" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOUDEBS Georges" />
+	</teachers>
+</session>
+<session rank="10" class="Mecanique1-CTD-1">
+	<startingSlot dailySlot="840" day="2" week="4" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOUDEBS Georges" />
+	</teachers>
+</session>
+<session rank="11" class="Mecanique1-CTD-1">
+	<startingSlot dailySlot="840" day="3" week="4" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOUDEBS Georges" />
+	</teachers>
+</session>
+<session rank="12" class="Mecanique1-CTD-1">
+	<startingSlot dailySlot="840" day="1" week="5" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOUDEBS Georges" />
+	</teachers>
+</session>
+<session rank="13" class="Mecanique1-CTD-1">
+	<startingSlot dailySlot="840" day="2" week="5" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOUDEBS Georges" />
+	</teachers>
+</session>
+<session rank="14" class="Mecanique1-CTD-1">
+	<startingSlot dailySlot="840" day="3" week="5" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOUDEBS Georges" />
+	</teachers>
+</session>
+<session rank="0" class="Mecanique1-CTD-2">
+	<startingSlot dailySlot="750" day="1" week="1" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOUDEBS Georges" />
+	</teachers>
+</session>
+<session rank="1" class="Mecanique1-CTD-2">
+	<startingSlot dailySlot="660" day="2" week="1" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOUDEBS Georges" />
+	</teachers>
+</session>
+<session rank="2" class="Mecanique1-CTD-2">
+	<startingSlot dailySlot="750" day="3" week="1" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOUDEBS Georges" />
+	</teachers>
+</session>
+<session rank="3" class="Mecanique1-CTD-2">
+	<startingSlot dailySlot="750" day="1" week="2" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOUDEBS Georges" />
+	</teachers>
+</session>
+<session rank="4" class="Mecanique1-CTD-2">
+	<startingSlot dailySlot="660" day="2" week="2" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOUDEBS Georges" />
+	</teachers>
+</session>
+<session rank="5" class="Mecanique1-CTD-2">
+	<startingSlot dailySlot="750" day="3" week="2" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOUDEBS Georges" />
+	</teachers>
+</session>
+<session rank="6" class="Mecanique1-CTD-2">
+	<startingSlot dailySlot="750" day="1" week="3" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOUDEBS Georges" />
+	</teachers>
+</session>
+<session rank="7" class="Mecanique1-CTD-2">
+	<startingSlot dailySlot="660" day="2" week="3" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOUDEBS Georges" />
+	</teachers>
+</session>
+<session rank="8" class="Mecanique1-CTD-2">
+	<startingSlot dailySlot="750" day="3" week="3" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOUDEBS Georges" />
+	</teachers>
+</session>
+<session rank="9" class="Mecanique1-CTD-2">
+	<startingSlot dailySlot="750" day="1" week="4" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOUDEBS Georges" />
+	</teachers>
+</session>
+<session rank="10" class="Mecanique1-CTD-2">
+	<startingSlot dailySlot="660" day="2" week="4" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOUDEBS Georges" />
+	</teachers>
+</session>
+<session rank="11" class="Mecanique1-CTD-2">
+	<startingSlot dailySlot="750" day="3" week="4" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOUDEBS Georges" />
+	</teachers>
+</session>
+<session rank="12" class="Mecanique1-CTD-2">
+	<startingSlot dailySlot="750" day="1" week="5" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOUDEBS Georges" />
+	</teachers>
+</session>
+<session rank="13" class="Mecanique1-CTD-2">
+	<startingSlot dailySlot="660" day="2" week="5" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOUDEBS Georges" />
+	</teachers>
+</session>
+<session rank="14" class="Mecanique1-CTD-2">
+	<startingSlot dailySlot="750" day="3" week="5" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOUDEBS Georges" />
+	</teachers>
+</session>
+<session rank="0" class="Mecanique1-CTD-3">
+	<startingSlot dailySlot="930" day="1" week="1" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="CIRET Charles" />
+	</teachers>
+</session>
+<session rank="1" class="Mecanique1-CTD-3">
+	<startingSlot dailySlot="840" day="2" week="1" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="CIRET Charles" />
+	</teachers>
+</session>
+<session rank="2" class="Mecanique1-CTD-3">
+	<startingSlot dailySlot="930" day="4" week="1" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="CIRET Charles" />
+	</teachers>
+</session>
+<session rank="3" class="Mecanique1-CTD-3">
+	<startingSlot dailySlot="930" day="1" week="2" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="CIRET Charles" />
+	</teachers>
+</session>
+<session rank="4" class="Mecanique1-CTD-3">
+	<startingSlot dailySlot="840" day="2" week="2" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="CIRET Charles" />
+	</teachers>
+</session>
+<session rank="5" class="Mecanique1-CTD-3">
+	<startingSlot dailySlot="930" day="4" week="2" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="CIRET Charles" />
+	</teachers>
+</session>
+<session rank="6" class="Mecanique1-CTD-3">
+	<startingSlot dailySlot="930" day="1" week="3" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="CIRET Charles" />
+	</teachers>
+</session>
+<session rank="7" class="Mecanique1-CTD-3">
+	<startingSlot dailySlot="840" day="2" week="3" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="CIRET Charles" />
+	</teachers>
+</session>
+<session rank="8" class="Mecanique1-CTD-3">
+	<startingSlot dailySlot="930" day="4" week="3" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="CIRET Charles" />
+	</teachers>
+</session>
+<session rank="9" class="Mecanique1-CTD-3">
+	<startingSlot dailySlot="930" day="1" week="4" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="CIRET Charles" />
+	</teachers>
+</session>
+<session rank="10" class="Mecanique1-CTD-3">
+	<startingSlot dailySlot="840" day="2" week="4" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="CIRET Charles" />
+	</teachers>
+</session>
+<session rank="11" class="Mecanique1-CTD-3">
+	<startingSlot dailySlot="930" day="4" week="4" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="CIRET Charles" />
+	</teachers>
+</session>
+<session rank="12" class="Mecanique1-CTD-3">
+	<startingSlot dailySlot="930" day="1" week="5" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="CIRET Charles" />
+	</teachers>
+</session>
+<session rank="13" class="Mecanique1-CTD-3">
+	<startingSlot dailySlot="840" day="2" week="5" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="CIRET Charles" />
+	</teachers>
+</session>
+<session rank="14" class="Mecanique1-CTD-3">
+	<startingSlot dailySlot="930" day="4" week="5" />
+	<rooms>
+		<room refId="Da001" />
+	</rooms>
+	<teachers>
+		<teacher refId="CIRET Charles" />
+	</teachers>
+</session>
+<session rank="0" class="Mecanique1-CTD-4">
+	<startingSlot dailySlot="930" day="1" week="1" />
+	<rooms>
+		<room refId="Virtual-Anglais1-4" />
+	</rooms>
+	<teachers>
+		<teacher refId="SANCHEZ Francois" />
+	</teachers>
+</session>
+<session rank="1" class="Mecanique1-CTD-4">
+	<startingSlot dailySlot="840" day="2" week="1" />
+	<rooms>
+		<room refId="Virtual-Anglais1-4" />
+	</rooms>
+	<teachers>
+		<teacher refId="SANCHEZ Francois" />
+	</teachers>
+</session>
+<session rank="2" class="Mecanique1-CTD-4">
+	<startingSlot dailySlot="930" day="3" week="1" />
+	<rooms>
+		<room refId="Virtual-Anglais1-4" />
+	</rooms>
+	<teachers>
+		<teacher refId="SANCHEZ Francois" />
+	</teachers>
+</session>
+<session rank="3" class="Mecanique1-CTD-4">
+	<startingSlot dailySlot="930" day="1" week="2" />
+	<rooms>
+		<room refId="Virtual-Anglais1-4" />
+	</rooms>
+	<teachers>
+		<teacher refId="SANCHEZ Francois" />
+	</teachers>
+</session>
+<session rank="4" class="Mecanique1-CTD-4">
+	<startingSlot dailySlot="840" day="2" week="2" />
+	<rooms>
+		<room refId="Virtual-Anglais1-4" />
+	</rooms>
+	<teachers>
+		<teacher refId="SANCHEZ Francois" />
+	</teachers>
+</session>
+<session rank="5" class="Mecanique1-CTD-4">
+	<startingSlot dailySlot="930" day="3" week="2" />
+	<rooms>
+		<room refId="Virtual-Anglais1-4" />
+	</rooms>
+	<teachers>
+		<teacher refId="SANCHEZ Francois" />
+	</teachers>
+</session>
+<session rank="6" class="Mecanique1-CTD-4">
+	<startingSlot dailySlot="930" day="1" week="3" />
+	<rooms>
+		<room refId="Virtual-Anglais1-4" />
+	</rooms>
+	<teachers>
+		<teacher refId="SANCHEZ Francois" />
+	</teachers>
+</session>
+<session rank="7" class="Mecanique1-CTD-4">
+	<startingSlot dailySlot="840" day="2" week="3" />
+	<rooms>
+		<room refId="Virtual-Anglais1-4" />
+	</rooms>
+	<teachers>
+		<teacher refId="SANCHEZ Francois" />
+	</teachers>
+</session>
+<session rank="8" class="Mecanique1-CTD-4">
+	<startingSlot dailySlot="930" day="3" week="3" />
+	<rooms>
+		<room refId="Virtual-Anglais1-4" />
+	</rooms>
+	<teachers>
+		<teacher refId="SANCHEZ Francois" />
+	</teachers>
+</session>
+<session rank="9" class="Mecanique1-CTD-4">
+	<startingSlot dailySlot="930" day="1" week="4" />
+	<rooms>
+		<room refId="Virtual-Anglais1-4" />
+	</rooms>
+	<teachers>
+		<teacher refId="SANCHEZ Francois" />
+	</teachers>
+</session>
+<session rank="10" class="Mecanique1-CTD-4">
+	<startingSlot dailySlot="840" day="2" week="4" />
+	<rooms>
+		<room refId="Virtual-Anglais1-4" />
+	</rooms>
+	<teachers>
+		<teacher refId="SANCHEZ Francois" />
+	</teachers>
+</session>
+<session rank="11" class="Mecanique1-CTD-4">
+	<startingSlot dailySlot="930" day="3" week="4" />
+	<rooms>
+		<room refId="Virtual-Anglais1-4" />
+	</rooms>
+	<teachers>
+		<teacher refId="SANCHEZ Francois" />
+	</teachers>
+</session>
+<session rank="12" class="Mecanique1-CTD-4">
+	<startingSlot dailySlot="930" day="1" week="5" />
+	<rooms>
+		<room refId="Virtual-Anglais1-4" />
+	</rooms>
+	<teachers>
+		<teacher refId="SANCHEZ Francois" />
+	</teachers>
+</session>
+<session rank="13" class="Mecanique1-CTD-4">
+	<startingSlot dailySlot="840" day="2" week="5" />
+	<rooms>
+		<room refId="Virtual-Anglais1-4" />
+	</rooms>
+	<teachers>
+		<teacher refId="SANCHEZ Francois" />
+	</teachers>
+</session>
+<session rank="14" class="Mecanique1-CTD-4">
+	<startingSlot dailySlot="930" day="3" week="5" />
+	<rooms>
+		<room refId="Virtual-Anglais1-4" />
+	</rooms>
+	<teachers>
+		<teacher refId="SANCHEZ Francois" />
+	</teachers>
+</session>
+<session rank="0" class="Mecanique1-CC-1">
+	<startingSlot dailySlot="570" day="5" week="6" />
+	<rooms>
+		<room refId="Virtual-Anglais1-4" />
+	</rooms>
+	<teachers>
+		<teacher refId="BOUDEBS Georges" />
+	</teachers>
+</session>
+<session rank="0" class="PhysiqueDesOndes-CTD-1">
+	<startingSlot dailySlot="570" day="4" week="1" />
+	<rooms>
+		<room refId="Amphi-B" />
+	</rooms>
+	<teachers>
+		<teacher refId="GAUMER Nathalie" />
+	</teachers>
+</session>
+<session rank="1" class="PhysiqueDesOndes-CTD-1">
+	<startingSlot dailySlot="570" day="5" week="1" />
+	<rooms>
+		<room refId="Amphi-B" />
+	</rooms>
+	<teachers>
+		<teacher refId="GAUMER Nathalie" />
+	</teachers>
+</session>
+<session rank="2" class="PhysiqueDesOndes-CTD-1">
+	<startingSlot dailySlot="570" day="4" week="2" />
+	<rooms>
+		<room refId="Amphi-B" />
+	</rooms>
+	<teachers>
+		<teacher refId="GAUMER Nathalie" />
+	</teachers>
+</session>
+<session rank="3" class="PhysiqueDesOndes-CTD-1">
+	<startingSlot dailySlot="570" day="5" week="2" />
+	<rooms>
+		<room refId="Amphi-B" />
+	</rooms>
+	<teachers>
+		<teacher refId="GAUMER Nathalie" />
+	</teachers>
+</session>
+<session rank="4" class="PhysiqueDesOndes-CTD-1">
+	<startingSlot dailySlot="570" day="4" week="3" />
+	<rooms>
+		<room refId="Amphi-B" />
+	</rooms>
+	<teachers>
+		<teacher refId="GAUMER Nathalie" />
+	</teachers>
+</session>
+<session rank="5" class="PhysiqueDesOndes-CTD-1">
+	<startingSlot dailySlot="570" day="5" week="3" />
+	<rooms>
+		<room refId="Amphi-B" />
+	</rooms>
+	<teachers>
+		<teacher refId="GAUMER Nathalie" />
+	</teachers>
+</session>
+<session rank="6" class="PhysiqueDesOndes-CTD-1">
+	<startingSlot dailySlot="570" day="4" week="4" />
+	<rooms>
+		<room refId="Amphi-B" />
+	</rooms>
+	<teachers>
+		<teacher refId="GAUMER Nathalie" />
+	</teachers>
+</session>
+<session rank="7" class="PhysiqueDesOndes-CTD-1">
+	<startingSlot dailySlot="570" day="5" week="4" />
+	<rooms>
+		<room refId="Amphi-B" />
+	</rooms>
+	<teachers>
+		<teacher refId="GAUMER Nathalie" />
+	</teachers>
+</session>
+<session rank="8" class="PhysiqueDesOndes-CTD-1">
+	<startingSlot dailySlot="570" day="4" week="5" />
+	<rooms>
+		<room refId="Amphi-B" />
+	</rooms>
+	<teachers>
+		<teacher refId="GAUMER Nathalie" />
+	</teachers>
+</session>
+<session rank="9" class="PhysiqueDesOndes-CTD-1">
+	<startingSlot dailySlot="570" day="5" week="5" />
+	<rooms>
+		<room refId="Amphi-B" />
+	</rooms>
+	<teachers>
+		<teacher refId="GAUMER Nathalie" />
+	</teachers>
+</session>
+<session rank="0" class="PhysiqueDesOndes-CTD-2">
+	<startingSlot dailySlot="930" day="3" week="1" />
+	<rooms>
+		<room refId="Amphi-B" />
+	</rooms>
+	<teachers>
+		<teacher refId="GAUMER Nathalie" />
+	</teachers>
+</session>
+<session rank="1" class="PhysiqueDesOndes-CTD-2">
+	<startingSlot dailySlot="660" day="4" week="1" />
+	<rooms>
+		<room refId="Amphi-B" />
+	</rooms>
+	<teachers>
+		<teacher refId="GAUMER Nathalie" />
+	</teachers>
+</session>
+<session rank="2" class="PhysiqueDesOndes-CTD-2">
+	<startingSlot dailySlot="930" day="3" week="2" />
+	<rooms>
+		<room refId="Amphi-B" />
+	</rooms>
+	<teachers>
+		<teacher refId="GAUMER Nathalie" />
+	</teachers>
+</session>
+<session rank="3" class="PhysiqueDesOndes-CTD-2">
+	<startingSlot dailySlot="660" day="4" week="2" />
+	<rooms>
+		<room refId="Amphi-B" />
+	</rooms>
+	<teachers>
+		<teacher refId="GAUMER Nathalie" />
+	</teachers>
+</session>
+<session rank="4" class="PhysiqueDesOndes-CTD-2">
+	<startingSlot dailySlot="930" day="3" week="3" />
+	<rooms>
+		<room refId="Amphi-B" />
+	</rooms>
+	<teachers>
+		<teacher refId="GAUMER Nathalie" />
+	</teachers>
+</session>
+<session rank="5" class="PhysiqueDesOndes-CTD-2">
+	<startingSlot dailySlot="660" day="4" week="3" />
+	<rooms>
+		<room refId="Amphi-B" />
+	</rooms>
+	<teachers>
+		<teacher refId="GAUMER Nathalie" />
+	</teachers>
+</session>
+<session rank="6" class="PhysiqueDesOndes-CTD-2">
+	<startingSlot dailySlot="930" day="3" week="4" />
+	<rooms>
+		<room refId="Amphi-B" />
+	</rooms>
+	<teachers>
+		<teacher refId="GAUMER Nathalie" />
+	</teachers>
+</session>
+<session rank="7" class="PhysiqueDesOndes-CTD-2">
+	<startingSlot dailySlot="660" day="4" week="4" />
+	<rooms>
+		<room refId="Amphi-B" />
+	</rooms>
+	<teachers>
+		<teacher refId="GAUMER Nathalie" />
+	</teachers>
+</session>
+<session rank="8" class="PhysiqueDesOndes-CTD-2">
+	<startingSlot dailySlot="930" day="3" week="5" />
+	<rooms>
+		<room refId="Amphi-B" />
+	</rooms>
+	<teachers>
+		<teacher refId="GAUMER Nathalie" />
+	</teachers>
+</session>
+<session rank="9" class="PhysiqueDesOndes-CTD-2">
+	<startingSlot dailySlot="660" day="4" week="5" />
+	<rooms>
+		<room refId="Amphi-B" />
+	</rooms>
+	<teachers>
+		<teacher refId="GAUMER Nathalie" />
+	</teachers>
+</session>
+<session rank="0" class="PhysiqueDesOndes-CTD-3">
+	<startingSlot dailySlot="840" day="4" week="1" />
+	<rooms>
+		<room refId="Amphi-B" />
+	</rooms>
+	<teachers>
+		<teacher refId="GAUMER Nathalie" />
+	</teachers>
+</session>
+<session rank="1" class="PhysiqueDesOndes-CTD-3">
+	<startingSlot dailySlot="750" day="5" week="1" />
+	<rooms>
+		<room refId="Amphi-B" />
+	</rooms>
+	<teachers>
+		<teacher refId="GAUMER Nathalie" />
+	</teachers>
+</session>
+<session rank="2" class="PhysiqueDesOndes-CTD-3">
+	<startingSlot dailySlot="840" day="4" week="2" />
+	<rooms>
+		<room refId="Amphi-B" />
+	</rooms>
+	<teachers>
+		<teacher refId="GAUMER Nathalie" />
+	</teachers>
+</session>
+<session rank="3" class="PhysiqueDesOndes-CTD-3">
+	<startingSlot dailySlot="750" day="5" week="2" />
+	<rooms>
+		<room refId="Amphi-B" />
+	</rooms>
+	<teachers>
+		<teacher refId="GAUMER Nathalie" />
+	</teachers>
+</session>
+<session rank="4" class="PhysiqueDesOndes-CTD-3">
+	<startingSlot dailySlot="840" day="4" week="3" />
+	<rooms>
+		<room refId="Amphi-B" />
+	</rooms>
+	<teachers>
+		<teacher refId="GAUMER Nathalie" />
+	</teachers>
+</session>
+<session rank="5" class="PhysiqueDesOndes-CTD-3">
+	<startingSlot dailySlot="750" day="5" week="3" />
+	<rooms>
+		<room refId="Amphi-B" />
+	</rooms>
+	<teachers>
+		<teacher refId="GAUMER Nathalie" />
+	</teachers>
+</session>
+<session rank="6" class="PhysiqueDesOndes-CTD-3">
+	<startingSlot dailySlot="840" day="4" week="4" />
+	<rooms>
+		<room refId="Amphi-B" />
+	</rooms>
+	<teachers>
+		<teacher refId="GAUMER Nathalie" />
+	</teachers>
+</session>
+<session rank="7" class="PhysiqueDesOndes-CTD-3">
+	<startingSlot dailySlot="750" day="5" week="4" />
+	<rooms>
+		<room refId="Amphi-B" />
+	</rooms>
+	<teachers>
+		<teacher refId="GAUMER Nathalie" />
+	</teachers>
+</session>
+<session rank="8" class="PhysiqueDesOndes-CTD-3">
+	<startingSlot dailySlot="840" day="4" week="5" />
+	<rooms>
+		<room refId="Amphi-B" />
+	</rooms>
+	<teachers>
+		<teacher refId="GAUMER Nathalie" />
+	</teachers>
+</session>
+<session rank="9" class="PhysiqueDesOndes-CTD-3">
+	<startingSlot dailySlot="750" day="5" week="5" />
+	<rooms>
+		<room refId="Amphi-B" />
+	</rooms>
+	<teachers>
+		<teacher refId="GAUMER Nathalie" />
+	</teachers>
+</session>
+<session rank="0" class="PhysiqueDesOndes-CTD-4">
+	<startingSlot dailySlot="930" day="4" week="1" />
+	<rooms>
+		<room refId="Amphi-B" />
+	</rooms>
+	<teachers>
+		<teacher refId="GAUMER Nathalie" />
+	</teachers>
+</session>
+<session rank="1" class="PhysiqueDesOndes-CTD-4">
+	<startingSlot dailySlot="840" day="5" week="1" />
+	<rooms>
+		<room refId="Amphi-B" />
+	</rooms>
+	<teachers>
+		<teacher refId="GAUMER Nathalie" />
+	</teachers>
+</session>
+<session rank="2" class="PhysiqueDesOndes-CTD-4">
+	<startingSlot dailySlot="930" day="4" week="2" />
+	<rooms>
+		<room refId="Amphi-B" />
+	</rooms>
+	<teachers>
+		<teacher refId="GAUMER Nathalie" />
+	</teachers>
+</session>
+<session rank="3" class="PhysiqueDesOndes-CTD-4">
+	<startingSlot dailySlot="840" day="5" week="2" />
+	<rooms>
+		<room refId="Amphi-B" />
+	</rooms>
+	<teachers>
+		<teacher refId="GAUMER Nathalie" />
+	</teachers>
+</session>
+<session rank="4" class="PhysiqueDesOndes-CTD-4">
+	<startingSlot dailySlot="930" day="4" week="3" />
+	<rooms>
+		<room refId="Amphi-B" />
+	</rooms>
+	<teachers>
+		<teacher refId="GAUMER Nathalie" />
+	</teachers>
+</session>
+<session rank="5" class="PhysiqueDesOndes-CTD-4">
+	<startingSlot dailySlot="840" day="5" week="3" />
+	<rooms>
+		<room refId="Amphi-B" />
+	</rooms>
+	<teachers>
+		<teacher refId="GAUMER Nathalie" />
+	</teachers>
+</session>
+<session rank="6" class="PhysiqueDesOndes-CTD-4">
+	<startingSlot dailySlot="930" day="4" week="4" />
+	<rooms>
+		<room refId="Amphi-B" />
+	</rooms>
+	<teachers>
+		<teacher refId="GAUMER Nathalie" />
+	</teachers>
+</session>
+<session rank="7" class="PhysiqueDesOndes-CTD-4">
+	<startingSlot dailySlot="840" day="5" week="4" />
+	<rooms>
+		<room refId="Amphi-B" />
+	</rooms>
+	<teachers>
+		<teacher refId="GAUMER Nathalie" />
+	</teachers>
+</session>
+<session rank="8" class="PhysiqueDesOndes-CTD-4">
+	<startingSlot dailySlot="930" day="4" week="5" />
+	<rooms>
+		<room refId="Amphi-B" />
+	</rooms>
+	<teachers>
+		<teacher refId="GAUMER Nathalie" />
+	</teachers>
+</session>
+<session rank="9" class="PhysiqueDesOndes-CTD-4">
+	<startingSlot dailySlot="840" day="5" week="5" />
+	<rooms>
+		<room refId="Amphi-B" />
+	</rooms>
+	<teachers>
+		<teacher refId="GAUMER Nathalie" />
+	</teachers>
+</session>
+<session rank="0" class="PhysiqueDesOndes-CC-1">
+	<startingSlot dailySlot="960" day="1" week="6" />
+	<rooms>
+		<room refId="Amphi-B" />
+	</rooms>
+	<teachers>
+		<teacher refId="GAUMER Nathalie" />
+	</teachers>
+</session>
+<session rank="0" class="EEO1-MPC-CTD-1">
+	<startingSlot dailySlot="840" day="5" week="1" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>
+<session rank="1" class="EEO1-MPC-CTD-1">
+	<startingSlot dailySlot="840" day="5" week="2" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>
+<session rank="2" class="EEO1-MPC-CTD-1">
+	<startingSlot dailySlot="840" day="5" week="3" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>
+<session rank="3" class="EEO1-MPC-CTD-1">
+	<startingSlot dailySlot="840" day="5" week="5" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>
+<session rank="4" class="EEO1-MPC-CTD-1">
+	<startingSlot dailySlot="840" day="5" week="6" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>
+<session rank="0" class="EEO1-MPC-CTD-2">
+	<startingSlot dailySlot="930" day="5" week="1" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>
+<session rank="1" class="EEO1-MPC-CTD-2">
+	<startingSlot dailySlot="930" day="5" week="2" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>
+<session rank="2" class="EEO1-MPC-CTD-2">
+	<startingSlot dailySlot="930" day="5" week="3" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>
+<session rank="3" class="EEO1-MPC-CTD-2">
+	<startingSlot dailySlot="930" day="5" week="5" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>
+<session rank="4" class="EEO1-MPC-CTD-2">
+	<startingSlot dailySlot="930" day="5" week="6" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>
+<session rank="0" class="EEO1-MPC-CTD-3">
+	<startingSlot dailySlot="570" day="1" week="1" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>
+<session rank="1" class="EEO1-MPC-CTD-3">
+	<startingSlot dailySlot="570" day="1" week="2" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>
+<session rank="2" class="EEO1-MPC-CTD-3">
+	<startingSlot dailySlot="570" day="1" week="3" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>
+<session rank="3" class="EEO1-MPC-CTD-3">
+	<startingSlot dailySlot="570" day="1" week="5" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>
+<session rank="4" class="EEO1-MPC-CTD-3">
+	<startingSlot dailySlot="570" day="1" week="6" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>
+<session rank="0" class="EEO1-MPC-CTD-4">
+	<startingSlot dailySlot="750" day="1" week="1" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>
+<session rank="1" class="EEO1-MPC-CTD-4">
+	<startingSlot dailySlot="750" day="1" week="2" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>
+<session rank="2" class="EEO1-MPC-CTD-4">
+	<startingSlot dailySlot="750" day="1" week="3" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>
+<session rank="3" class="EEO1-MPC-CTD-4">
+	<startingSlot dailySlot="750" day="1" week="5" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>
+<session rank="4" class="EEO1-MPC-CTD-4">
+	<startingSlot dailySlot="750" day="1" week="6" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>
+<session rank="0" class="EEO1-MI-CTD-1">
+	<startingSlot dailySlot="660" day="4" week="1" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>
+<session rank="1" class="EEO1-MI-CTD-1">
+	<startingSlot dailySlot="660" day="4" week="2" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>
+<session rank="2" class="EEO1-MI-CTD-1">
+	<startingSlot dailySlot="660" day="4" week="3" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>
+<session rank="3" class="EEO1-MI-CTD-1">
+	<startingSlot dailySlot="660" day="4" week="5" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>
+<session rank="4" class="EEO1-MI-CTD-1">
+	<startingSlot dailySlot="660" day="4" week="6" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>
+<session rank="0" class="EEO1-MI-CTD-2">
+	<startingSlot dailySlot="840" day="4" week="1" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>
+<session rank="1" class="EEO1-MI-CTD-2">
+	<startingSlot dailySlot="840" day="4" week="2" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>
+<session rank="2" class="EEO1-MI-CTD-2">
+	<startingSlot dailySlot="840" day="4" week="3" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>
+<session rank="3" class="EEO1-MI-CTD-2">
+	<startingSlot dailySlot="840" day="4" week="5" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>
+<session rank="4" class="EEO1-MI-CTD-2">
+	<startingSlot dailySlot="840" day="4" week="6" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>
+<session rank="0" class="EEO1-MI-CTD-3">
+	<startingSlot dailySlot="570" day="5" week="1" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>
+<session rank="1" class="EEO1-MI-CTD-3">
+	<startingSlot dailySlot="570" day="5" week="2" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>
+<session rank="2" class="EEO1-MI-CTD-3">
+	<startingSlot dailySlot="570" day="5" week="3" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>
+<session rank="3" class="EEO1-MI-CTD-3">
+	<startingSlot dailySlot="570" day="5" week="5" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>
+<session rank="4" class="EEO1-MI-CTD-3">
+	<startingSlot dailySlot="570" day="5" week="6" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>
+<session rank="0" class="EEO1-MI-CTD-4">
+	<startingSlot dailySlot="750" day="5" week="1" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>
+<session rank="1" class="EEO1-MI-CTD-4">
+	<startingSlot dailySlot="750" day="5" week="2" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>
+<session rank="2" class="EEO1-MI-CTD-4">
+	<startingSlot dailySlot="750" day="5" week="3" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>
+<session rank="3" class="EEO1-MI-CTD-4">
+	<startingSlot dailySlot="750" day="5" week="5" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>
+<session rank="4" class="EEO1-MI-CTD-4">
+	<startingSlot dailySlot="750" day="5" week="6" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>
+<session rank="0" class="EEO1-MI-CTD-5">
+	<startingSlot dailySlot="930" day="4" week="1" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>
+<session rank="1" class="EEO1-MI-CTD-5">
+	<startingSlot dailySlot="930" day="4" week="2" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>
+<session rank="2" class="EEO1-MI-CTD-5">
+	<startingSlot dailySlot="930" day="4" week="3" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>
+<session rank="3" class="EEO1-MI-CTD-5">
+	<startingSlot dailySlot="930" day="4" week="5" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>
+<session rank="4" class="EEO1-MI-CTD-5">
+	<startingSlot dailySlot="930" day="4" week="6" />
+	<rooms>
+		<room refId="B'108" />
+	</rooms>
+	<teachers>
+		<teacher refId="PICAVEZ Hugues" />
+	</teachers>
+</session>

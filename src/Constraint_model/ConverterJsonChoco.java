@@ -111,7 +111,7 @@ public class ConverterJsonChoco {
 			cpt++;
 		}
 		this.instanceUTPArray.constraints = constraints;
-		print_constraints(constraints);
+		//print_constraints(constraints);
 	}//FinMethod
 	
 	public void print_constraints(Vector<ConstraintUTP> t) {

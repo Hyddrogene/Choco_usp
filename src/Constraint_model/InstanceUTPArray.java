@@ -1,4 +1,6 @@
 package Constraint_model;
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.Vector;
 
 public class InstanceUTPArray {
@@ -125,6 +127,16 @@ public class InstanceUTPArray {
 	public Vector<Vector<Integer>> class_sessions;
 	public Vector<Vector<Integer>> teacher_parts;
 	public Vector<Vector<Integer>> room_parts;
+	
+	public int[] class_multiple_teacher;
+	public int nr_class_multiple_teacher;
+	public int[] class_position_multiple_teacher;
+	public int[] class_multiple_room;
+	public int nr_class_multiple_room;
+	public int[] class_position_multiple_room;
+	public int[] part_room_worst_case;
+	public int[] room_capacity_v2;
+	
 	//Method
 	
 	public int nr_slot() {
@@ -163,11 +175,11 @@ public class InstanceUTPArray {
 	
 	public void part_course() {
 		int[] part_course = new int[nr_parts];
-		System.out.println(nr_courses);
-		System.out.println(nr_parts);
+		//System.out.println(nr_courses);
+		//System.out.println(nr_parts);
 		int i = 0;
 		for (int p = 0; p < nr_courses ;p++) {
-			System.out.println(p);
+			//System.out.println(p);
 			for(int c = 0 ; c < course_parts.get(p).size() ; c++) {
 				part_course[i] = p+1;
 				i++;
@@ -247,6 +259,149 @@ public class InstanceUTPArray {
 		this.room_parts = room_parts;
 	}//FinMethod
 	
+	public void class_groups() {
+		Vector<Vector<Integer>> class_groups = new Vector<Vector<Integer>>(nr_classes);
+		for(int c = 0 ; c < nr_classes ;c++) {
+			Vector<Integer> gTmp = new Vector<Integer>();
+			for(int g = 0; g < nr_groups ;g++) {
+				for(int i = 0; i < group_classes.get(g).size() ;i++)
+				if(group_classes.get(g).get(i)-1 == c) {
+					gTmp.add(g+1);
+				}
+			}
+			class_groups.add(gTmp);
+		}
+		this.class_groups = class_groups;
+	}//FinMethod
+	
+	public void class_multiple() {
+		Vector<Integer> cl_ml = new Vector<Integer>();
+		for(int i = 0; i < nr_classes ;i++) {
+			if( this.part_session_teacher_count[class_part[i]-1] >1) {
+				cl_ml.add(i+1);
+			}
+		}
+		int[] class_multiple = new int[cl_ml.size()];
+		for(int i = 0; i < cl_ml.size();i++) {
+			class_multiple[i] = cl_ml.get(i).intValue();
+		}
+		this.nr_class_multiple_teacher = cl_ml.size();
+		this.class_multiple_teacher = class_multiple;
+	}//FinMethod
+	
+	public void class_multiple_teacher_position() {
+		int[] class_position_multiple_teacher = new int[nr_classes];
+		int j = 0;
+		for(int i = 0; i < this.nr_class_multiple_teacher ;i++) {
+			class_position_multiple_teacher[this.class_multiple_teacher[i]-1] = j;
+			j += this.part_session_teacher_count[this.class_part[this.class_multiple_teacher[i]-1]-1];
+		}
+		this.class_position_multiple_teacher = class_position_multiple_teacher;
+	}//FinMethod
+	
+	public int size_class_groups(int p) {
+		int[] tab = new int[this.part_classes.get(p).size()];
+		for(int i = 0; i < this.part_classes.get(p).size() ;i++) {
+			int cg = this.part_classes.get(p).get(i);
+			int m_s_g = 0;
+			for(int c = 0; c < this.class_groups.get(cg-1).size() ;c++) {
+				m_s_g += this.group_headcount[this.class_groups.get(cg-1).get(c)-1];
+			}
+			tab[i] = m_s_g;
+		}
+		int max = 0;
+		for(int i =0; i < tab.length ;i++) {
+			if(tab[i]>max) {
+				max = tab[i];
+			}
+		}
+		return max;
+	}//FinMethod
+	
+	public void part_room_worst_case() {
+		int[] part_room_worst_case = new int[nr_parts];
+
+		for(int i = 0; i < nr_parts;i++) {
+			if(this.part_room_use[i].equals("single")) {
+				part_room_worst_case[i] = 1;
+				
+			}
+			else {
+				//System.out.println(this.part_name[i]);
+				SessionRank[] tt = new SessionRank[this.part_rooms.get(i).size()];
+				for(int r = 0; r < this.part_rooms.get(i).size() ;r++) {
+					//System.out.println(this.room_name[this.part_rooms.get(i).get(r)-1]+" "+this.room_capacity[this.part_rooms.get(i).get(r)-1]);
+					tt[r] = new SessionRank(this.part_rooms.get(i).get(r),this.room_capacity[this.part_rooms.get(i).get(r)-1]);
+				}
+				
+				Arrays.sort(tt,new Comparator<SessionRank>() {
+					@Override
+					public int  compare(SessionRank sr1,SessionRank sr2) {return Integer.compare(sr1.rank, sr2.rank);}
+				});
+				int s_g = 0;
+				int p_max = 0;
+				int g_size_part = size_class_groups(i);
+				for(int j = 0; j < tt.length ;j++) {
+					s_g += tt[j].rank;
+					//System.out.println("s_g "+s_g);
+					p_max++;
+					if( g_size_part <= s_g) {
+						break;
+					}
+				}
+				part_room_worst_case[i] = p_max;
+			}
+
+			//System.out.println("p_max "+p_max);
+		}
+		this.part_room_worst_case = part_room_worst_case;
+	}//FinMethod
+	
+	public void class_multiple_rooms() {
+		Vector<Integer> cl_ml_r = new Vector<Integer>();
+		for(int i = 0; i < nr_classes ;i++) {
+			if( this.part_room_use[class_part[i]-1].equals("multiple")) {
+				cl_ml_r.add(i+1);
+			}
+		}
+		int[] class_multiple_room = new int[cl_ml_r.size()];
+		for(int i = 0; i < cl_ml_r.size();i++) {
+			class_multiple_room[i] = cl_ml_r.get(i).intValue();
+		}
+		this.nr_class_multiple_room = cl_ml_r.size();
+		this.class_multiple_room = class_multiple_room;
+	}//FinMethod
+	
+	public void class_multiple_room_position() {
+		int[] class_position_multiple_room = new int[nr_classes];
+		int j = 0;
+		for(int i = 0; i < this.nr_class_multiple_room ;i++) {
+			class_position_multiple_room[this.class_multiple_room[i]-1] = j;
+			j +=  this.part_room_worst_case[this.class_part[this.class_multiple_room[i]-1]-1];
+		}
+		this.class_position_multiple_room = class_position_multiple_room;
+	}//FinMethod
+	
+	public void room_capacity_v2() {
+		int[] room_capacity_v2 = new int[this.nr_rooms+1];
+		for(int i = 1; i <= room_capacity.length ;i++) {
+			room_capacity_v2[i] = room_capacity[i-1];
+		}
+		room_capacity_v2[0] = 0;
+		this.room_capacity_v2 = room_capacity_v2;
+	
+	}//FinMethod
+	
+	public void room_name_v2() {
+		String[] room_name_v2 = new String[this.nr_rooms+1];
+		for(int i = 1; i <= room_name.length ;i++) {
+			room_name_v2[i] = room_name[i-1];
+		}
+		room_name_v2[0] = "vide";
+		this.room_name= room_name_v2;
+		//System.out.println(Arrays.toString(this.room_name));
+	}//FinMethod
+	
 	public void calcul() {
 		nr_slot();
 		part_slots();
@@ -257,6 +412,17 @@ public class InstanceUTPArray {
 		session_rank();
 		teacher_parts();
 		room_parts();
+		class_groups();
+		class_multiple();
+		class_multiple_teacher_position();
+		
+		part_room_worst_case();
+		class_multiple_rooms();
+		class_multiple_room_position();
+		
+		room_capacity_v2();
+		room_name_v2();
+		
 	}//FinMethod
 
 }//FinClass
