@@ -5,8 +5,8 @@ public class Class extends CourseElement{
 	private int maxHeadCount;
 	private Class parent;
 	private int nrSessions;
-	public Class(String id, int cpt, String type, Label[] label, Session[] sessions) {
-		super(id, cpt, type, label);
+	public Class(String id, int cpt, String type, Session[] sessions) {
+		super(id, cpt, type, new  Label[0]);
 		this.sessions = sessions;
 		this.nrSessions = sessions.length;
 	}//FinMethod

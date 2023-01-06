@@ -136,6 +136,7 @@ public class InstanceUTPArray {
 	public int[] class_position_multiple_room;
 	public int[] part_room_worst_case;
 	public int[] room_capacity_v2;
+	public int[] student_group;
 	
 	//Method
 	
@@ -395,11 +396,38 @@ public class InstanceUTPArray {
 	public void room_name_v2() {
 		String[] room_name_v2 = new String[this.nr_rooms+1];
 		for(int i = 1; i <= room_name.length ;i++) {
+			//System.out.println("i "+i);
 			room_name_v2[i] = room_name[i-1];
 		}
 		room_name_v2[0] = "vide";
 		this.room_name= room_name_v2;
 		//System.out.println(Arrays.toString(this.room_name));
+	}//FinMethod
+	
+	public void student_group() {
+		int[] student_group = new int[nr_students];
+		for(int student = 0; student < nr_students ;student++) {
+			for(int group = 0; group < nr_groups ;group++) {
+				for(int st = 0; st < this.group_students.get(group).size() ; st++) {
+					if(this.group_students.get(group).get(st)-1 == student) {
+						student_group[student] = group+1;
+						group = nr_groups;
+						break;//st = this.group_students.get(group).size();
+					}
+				}
+			}
+		}
+		//System.out.println(Arrays.toString(student_group));
+		this.student_group = student_group;
+	}//FinMethod
+	
+	public void resizemultiplevariable() {
+		for(int i = 0; i < this.nr_class_multiple_room; i++) {
+			this.class_position_multiple_room[this.class_multiple_room[i]-1] = i;
+		}
+		for(int i = 0; i < this.nr_class_multiple_teacher; i++) {
+			this.class_position_multiple_teacher[this.class_multiple_teacher[i]-1] = i;
+		}
 	}//FinMethod
 	
 	public void calcul() {
@@ -422,7 +450,7 @@ public class InstanceUTPArray {
 		
 		room_capacity_v2();
 		room_name_v2();
-		
+		student_group();
 	}//FinMethod
 
 }//FinClass

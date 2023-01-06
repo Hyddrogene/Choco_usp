@@ -51,7 +51,7 @@ public class ModelUTP {
 		
 		//x_rooms = new IntVar[];
 		x_teachers = new IntVar[this.instanceUTP.nr_class_multiple_teacher];
-		this.instanceUTP.calcul(); 
+		//this.instanceUTP.calcul(); 
 		initVariables();
 		initMultpileVariables();
 		initMultpileVariablesRoom();
@@ -168,7 +168,7 @@ public class ModelUTP {
 		for(int i = 0; i < instanceUTP.nr_sessions ;i++ ) {
 			//x_slot[i] = model.intVar("x_slot_"+i,1,this.instanceUTP.nr_slot());
 			//Integer[] t = this.instanceUTP.part_slots.get(i).toArray(new Integer[this.instanceUTP.part_slots.get(i).size()]);
-			x_slot[i] = model.intVar("x_slot_"+i,part_i_slots(this.instanceUTP.part_slots.get(this.instanceUTP.class_part[this.instanceUTP.session_class[i]-1]-1)));
+			x_slot[i] = model.intVar("x_slot_"+(i+1),part_i_slots(this.instanceUTP.part_slots.get(this.instanceUTP.class_part[this.instanceUTP.session_class[i]-1]-1)));
 		}
 		
 		for(int i = 0; i < instanceUTP.nr_classes ;i++ ) {
@@ -347,6 +347,43 @@ public class ModelUTP {
 	
 	
 	public void disjunctive_teacher_v2() {
+		for(int t = 0; t < this.instanceUTP.nr_teachers ;t++) {
+			if(this.instanceUTP.teacher_parts.get(t).size() > 0) {
+				//System.out.println("tasks : "+sessions_of_teacher_disjun_v2(t).length);
+				//System.out.println("heigh : "+generate_heigth(t).length);
+				//Disjunctive
+				model.cumulative(sessions_of_teacher_disjun_v2(t),generate_heigth_teacher_v2(t),model.intVar(1)).post();
+			}
+		}
+		
+	}//FinMethod
+	
+	public IntVar[] sessions_of_teacher_disjun_v3(int t) {
+		int s_max = 0;
+		//int s_max_class = 0;
+		int[] part_service_t = new int[this.instanceUTP.nr_parts];
+		Vector<Integer> part_concerned =new Vector<Integer>(); 
+		for (int i = 0; i < this.instanceUTP.nr_parts ; i++) {
+			if(this.instanceUTP.part_teacher_sessions_count[i][t-1] > 0) {
+				part_service_t[i] = this.instanceUTP.part_teacher_sessions_count[i][t-1] / this.instanceUTP.part_nr_sessions[i];
+				part_concerned.add(i+1);
+				s_max += part_service_t[i];
+			}
+		}
+		int k = 0;
+		IntVar[] tab =new IntVar[s_max];
+		IntVar[] tabTmp =new IntVar[s_max];
+		for(int i = 0; i < part_concerned.size() ;i++) {
+			for(int j = 0; j < this.instanceUTP.part_classes.get(i).size() ;j++) {//part_service_t[part_concerned.get(i)-1] ;j++) {
+				x_teacher[this.instanceUTP.part_classes.get(i).get(j)-1].eq(t).imp(tabTmp[k].eq(this.instanceUTP.part_classes.get(i).get(j))).post();	
+				k++;
+				
+			}
+		}
+		return tab;
+	}//FinMethod
+	
+	public void disjunctive_teacher_v3() {
 		for(int t = 0; t < this.instanceUTP.nr_teachers ;t++) {
 			if(this.instanceUTP.teacher_parts.get(t).size() > 0) {
 				//System.out.println("tasks : "+sessions_of_teacher_disjun_v2(t).length);
@@ -586,53 +623,90 @@ public class ModelUTP {
 		return -1;
 	}//FinMethod
 	
+	public IntVar[] generateXSlot(Vector<Vector<Integer>> cs) {
+		IntVar[] tab = new IntVar[cs.get(0).size()];
+		for(int i = 0; i< cs.get(0).size() ;i++) {
+			tab[i] = x_slot[cs.get(0).get(i)-1];
+		}
+		return tab;
+	}//FinMethod
+	
+	public IntVar[] generateXrooms(Vector<Vector<Integer>> cs) {
+		IntVar[] tab = new IntVar[cs.get(0).size()];
+		for(int i = 0; i< cs.get(0).size() ;i++) {
+			int sess = cs.get(0).get(i)-1;
+			tab[i] = x_room[this.instanceUTP.session_class[sess]-1];
+		}
+		return tab;
+	}//FinMethod
+	
 	public void sameSlot(ConstraintUTP constraint) {
 		
-		for (int i = 0; i < constraint.getSessions().get(0).size()-1 ;i++) {
+		if(constraint.getRule() > 90 & constraint.getRule() < 94) {
+			//System.out.println("");
+			System.out.println("MAUVAISE : "+constraint.getConstraint()+" "+constraint.getRule());
+			//return;
+		}
+		System.out.println(constraint.getConstraint()+" "+constraint.getRule());
+		this.model.allEqual(generateXSlot(constraint.getSessions())).post();
+		this.model.allDifferent(generateXrooms(constraint.getSessions())).post();
+		/*for (int i = 0; i < constraint.getSessions().get(0).size()-1 ;i++) {
 			for(int j = i+1; j < constraint.getSessions().get(0).size() ;j++) {
 				model.arithm(x_slot[constraint.getSessions().get(0).get(j)-1], "=", x_slot[constraint.getSessions().get(0).get(i)-1]).post();
 				//precedence()
 			}
-		}
+		}*/
 	}//FinMethod
 	
 	public void forbiddenPeriod(ConstraintUTP constraint) {
 		//Vector<Integer> allTimes = new Vector<Integer>();
 		int first_num = search_value(constraint,"first");
 		int last_num = search_value(constraint,"last");
-		int unite_num = search_value(constraint,"period");
-		//System.out.println("Val "+value_num+" unite "+unite_num);
+		//System.out.println("Contrainte "+constraint.getCpt()+" rule "+constraint.getRule());
+
+		
 		int first = Integer.parseInt(this.instanceUTP.parameter_value.get(first_num).get(0));
 		int last = Integer.parseInt(this.instanceUTP.parameter_value.get(last_num).get(0));
-		int unite = unit_value(this.instanceUTP.parameter_value.get(unite_num).get(0));
-		int unite_bound = unit_value_bound(this.instanceUTP.parameter_value.get(unite_num).get(0));
-		//System.out.println("unite "+unite);
-		//System.out.println("unitebound "+unite_bound);
-		/*for(int i = first; i <= last;i++) {
-			allTimes.add(i);
-		}*/
-		int[][] valuePeriod = new int[unite_bound][2];
-		//Vector<Integer> allPeriod = new Vector<Integer>();
-		/*for(int i = 0; i < allTimes.size() ;i++) {
-			for(int j = 0; j < unite_bound  ;j++) {
-				allPeriod.add(allTimes.get(i)+(j*unite));
+		
+		if(constraint.getParameters().length >=3) {
+			int unite_num = search_value(constraint,"period");
+
+			int unite = unit_value(this.instanceUTP.parameter_value.get(unite_num).get(0));
+			int unite_bound = unit_value_bound(this.instanceUTP.parameter_value.get(unite_num).get(0));
+			//System.out.println("unite "+unite);
+			//System.out.println("unitebound "+unite_bound);
+			/*for(int i = first; i <= last;i++) {
+				allTimes.add(i);
+			}*/
+			int[][] valuePeriod = new int[unite_bound][2];
+			for(int i = 0; i < unite_bound ;i++) {
+				valuePeriod[i][0] = first + (i*unite);
+				valuePeriod[i][1] = last + (i*unite);
 			}
-		}*/
-		for(int i = 0; i < unite_bound ;i++) {
-			valuePeriod[i][0] = first + (i*unite);
-			valuePeriod[i][1] = last + (i*unite);
-		}
-		for(int i = 0; i < constraint.getSessions().get(0).size() ;i++) {
-			for(int j = 0; j < unite_bound ;j++) {
-				try {
-					x_slot[constraint.getSessions().get(0).get(i)-1].removeInterval(valuePeriod[j][0], valuePeriod[j][1], solution);
-				} catch (ContradictionException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
+			for(int i = 0; i < constraint.getSessions().get(0).size() ;i++) {
+				for(int j = 0; j < unite_bound ;j++) {
+					try {
+						x_slot[constraint.getSessions().get(0).get(i)-1].removeInterval(valuePeriod[j][0], valuePeriod[j][1], solution);
+					} catch (ContradictionException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+					//model.arithm(x_slot[constraint.getSessions().get(0).get(i)-1],"!=", allPeriod.get(j).intValue()).post();
 				}
-				//model.arithm(x_slot[constraint.getSessions().get(0).get(i)-1],"!=", allPeriod.get(j).intValue()).post();
 			}
 		}
+		else {
+			for(int i = 0; i < constraint.getSessions().get(0).size() ;i++) {
+					try {
+						x_slot[constraint.getSessions().get(0).get(i)-1].removeInterval(first, last, solution);
+					} catch (ContradictionException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+			}
+			
+		}
+
 	}//FinMethod
 	
 	
@@ -668,10 +742,32 @@ public class ModelUTP {
 		  //System.out.println("Val "+value_num+" unite "+unite_num);
 		  int first = Integer.parseInt(this.instanceUTP.parameter_value.get(first_num).get(0));
 		  int last = Integer.parseInt(this.instanceUTP.parameter_value.get(last_num).get(0));
-		  for(int i = 0; i < constraint.getSessions().get(0).size() ;i++) {
-			  model.arithm(x_slot[constraint.getSessions().get(0).get(i).intValue()-1],">=",first).post();
-			  model.arithm(x_slot[constraint.getSessions().get(0).get(i).intValue()-1],"<=",last).post();
+		  
+		  if(constraint.getParameters().length >= 3) {
+			  //int unite_num = search_value(constraint,"period");
+
+			//	int unite = unit_value(this.instanceUTP.parameter_value.get(unite_num).get(0));
+				//int unite_bound = unit_value_bound(this.instanceUTP.parameter_value.get(unite_num).get(0));
+
+				int weekslot_duration = this.instanceUTP.nr_slots_per_day * instanceUTP.nr_days_per_week;
+				for(int i = 0; i < constraint.getSessions().get(0).size() ;i++) {
+					
+					model.arithm(x_slot[constraint.getSessions().get(0).get(i)-1].sub(1).mod(weekslot_duration).add(1).intVar(), ">=", first).post();
+					model.arithm(x_slot[constraint.getSessions().get(0).get(i)-1].sub(1).mod(weekslot_duration).add(1).intVar(), "<=", last).post();
+					
+		
+						//model.arithm(x_slot[constraint.getSessions().get(0).get(i)-1],"!=", allPeriod.get(j).intValue()).post();
+					
+				}
 		  }
+		  else {
+			  for(int i = 0; i < constraint.getSessions().get(0).size() ;i++) {
+				  model.arithm(x_slot[constraint.getSessions().get(0).get(i).intValue()-1],">=",first).post();
+				  model.arithm(x_slot[constraint.getSessions().get(0).get(i).intValue()-1],"<=",last).post();
+			  }
+		  }
+		  
+
 	}//FinMethod
 	
 	public void sequenced(ConstraintUTP constraint) {
@@ -779,21 +875,20 @@ public class ModelUTP {
 	public void flatten_constraint() {
 		for(int i = 0; i < this.instanceUTP.constraints.size() ;i++) {
 			if(this.instanceUTP.constraints.get(i).getConstraint().equals("periodic")) {periodic(this.instanceUTP.constraints.get(i));}
-			if(this.instanceUTP.constraints.get(i).getConstraint().equals("forbiddenPeriod")) {forbiddenPeriod(this.instanceUTP.constraints.get(i));}
-			if(this.instanceUTP.constraints.get(i).getConstraint().equals("sameTeachers")) {sameTeachers(this.instanceUTP.constraints.get(i));}
-			if(this.instanceUTP.constraints.get(i).getConstraint().equals("sameRooms")) {sameRooms(this.instanceUTP.constraints.get(i));}
-			if(this.instanceUTP.constraints.get(i).getConstraint().equals("sameSlot")) {sameSlot(this.instanceUTP.constraints.get(i));}
-			if(this.instanceUTP.constraints.get(i).getConstraint().equals("allowedPeriod")) {allowedPeriod(this.instanceUTP.constraints.get(i));}
-			if(this.instanceUTP.constraints.get(i).getConstraint().equals("sequenced")) {sequenced(this.instanceUTP.constraints.get(i));}
-			if(this.instanceUTP.constraints.get(i).getConstraint().equals("sameWeek")) {sameWeek(this.instanceUTP.constraints.get(i));}
-			if(this.instanceUTP.constraints.get(i).getConstraint().equals("assignRoom")) {assignRoom(this.instanceUTP.constraints.get(i));}
-			if(this.instanceUTP.constraints.get(i).getConstraint().equals("sameWeekDay")) {sameWeekDay(this.instanceUTP.constraints.get(i));}
-			if(this.instanceUTP.constraints.get(i).getConstraint().equals("sameWeeklySlot")) {sameWeeklySlot(this.instanceUTP.constraints.get(i));}
-			if(this.instanceUTP.constraints.get(i).getConstraint().equals("disjunct")) {disjunct(this.instanceUTP.constraints.get(i));}
-			if(this.instanceUTP.constraints.get(i).getConstraint().equals("differentWeekDay")) {differentWeekDay(this.instanceUTP.constraints.get(i));}
-			if(this.instanceUTP.constraints.get(i).getConstraint().equals("forbiddenRooms")) {forbiddenRooms(this.instanceUTP.constraints.get(i));}
-			
-			//System.out.println("Constraint "+this.instanceUTP.constraints.get(i).getConstraint()+" is not implemented");
+			else if(this.instanceUTP.constraints.get(i).getConstraint().equals("forbiddenPeriod")) {forbiddenPeriod(this.instanceUTP.constraints.get(i));}
+			else if(this.instanceUTP.constraints.get(i).getConstraint().equals("sameTeachers")) {sameTeachers(this.instanceUTP.constraints.get(i));}
+			else if(this.instanceUTP.constraints.get(i).getConstraint().equals("sameRooms")) {sameRooms(this.instanceUTP.constraints.get(i));}
+			else if(this.instanceUTP.constraints.get(i).getConstraint().equals("sameSlot")) {sameSlot(this.instanceUTP.constraints.get(i));}
+			else if(this.instanceUTP.constraints.get(i).getConstraint().equals("allowedPeriod")) {allowedPeriod(this.instanceUTP.constraints.get(i));}
+			else if(this.instanceUTP.constraints.get(i).getConstraint().equals("sequenced")) {sequenced(this.instanceUTP.constraints.get(i));}
+			else if(this.instanceUTP.constraints.get(i).getConstraint().equals("sameWeek")) {sameWeek(this.instanceUTP.constraints.get(i));}
+			else if(this.instanceUTP.constraints.get(i).getConstraint().equals("assignRoom")) {assignRoom(this.instanceUTP.constraints.get(i));}
+			else if(this.instanceUTP.constraints.get(i).getConstraint().equals("sameWeekDay")) {sameWeekDay(this.instanceUTP.constraints.get(i));}
+			else if(this.instanceUTP.constraints.get(i).getConstraint().equals("sameWeeklySlot")) {sameWeeklySlot(this.instanceUTP.constraints.get(i));}
+			else if(this.instanceUTP.constraints.get(i).getConstraint().equals("disjunct")) {disjunct(this.instanceUTP.constraints.get(i));}
+			else if(this.instanceUTP.constraints.get(i).getConstraint().equals("differentWeekDay")) {differentWeekDay(this.instanceUTP.constraints.get(i));}
+			else if(this.instanceUTP.constraints.get(i).getConstraint().equals("forbiddenRooms")) {forbiddenRooms(this.instanceUTP.constraints.get(i));}
+			else System.out.println("Constraint "+this.instanceUTP.constraints.get(i).getConstraint()+" is not implemented"+" provide from rule : "+this.instanceUTP.constraints.get(i).getRule());
 			
 		}
 		
@@ -874,26 +969,6 @@ public class ModelUTP {
 	
 	public IntVar[] sort_xslot1() {
 		//IntVar[] tab = new IntVar[this.instanceUTP.nr_sessions];
-		/*Vector<SessionRank> normalCourse = new Vector<SessionRank>();
-		for(int i = 0; i < this.instanceUTP.nr_sessions  ;i++) {
-			for(int j = 0; j < this.instanceUTP.part_label.get(this.instanceUTP.class_part[this.instanceUTP.session_class[i]-1]-1).size() ;j++) {
-				if(!this.instanceUTP.label_name[this.instanceUTP.part_label.get(this.instanceUTP.class_part[this.instanceUTP.session_class[i]-1]-1).get(j)-1].equals("CC")) {
-					//this.instanceUTP.label_name[this.instanceUTP.part_label.get(this.instanceUTP.class_part[this.instanceUTP.session_class[i]-1]-1).get(j)-1].equals("EVAL") ||
-					//System.out.println("Session "+i+" "+this.instanceUTP.label_name[this.instanceUTP.part_label.get(this.instanceUTP.class_part[this.instanceUTP.session_class[i]-1]-1).get(j)-1]);
-					int rank = i - this.instanceUTP.class_sessions.get(this.instanceUTP.session_class[i]-1).get(0).intValue() + 1;
-					normalCourse.add(new SessionRank(i+1,rank));
-				}
-			}
-
-		}
-		SessionRank[] tt = new SessionRank[normalCourse.size()];
-		for(int i = 0; i < normalCourse.size() ;i++) {
-			tt[i] = normalCourse.get(i);
-		}
-		Arrays.sort(tt,new Comparator<SessionRank>() {
-			@Override
-			public int  compare(SessionRank sr1,SessionRank sr2) {return Integer.compare(sr1.rank, sr2.rank);}
-		});*/
 
 		SessionRank[] tt = tab_normal_course();
 		IntVar[] tab = new IntVar[tt.length/2];
@@ -943,6 +1018,7 @@ public class ModelUTP {
                 new FirstFail(model),
                 // selects the smallest domain value (lower bound)
                 new IntDomainRandom((long) ran),
+                //new IntDomainMin(),
                 // apply equality (var = val)
                 //DecisionOperator.int_eq,
                 // variables to branch on
@@ -956,6 +1032,7 @@ public class ModelUTP {
 				new InputOrder<IntVar>(model),
 				//true,
 				new IntDomainMin(),
+				//new IntDomainRandom((long) ran),
 				x_rooms
 		        
 				),
@@ -986,6 +1063,7 @@ public class ModelUTP {
                 new FirstFail(model),
                 // selects the smallest domain value (lower bound)
                 new IntDomainMin(),
+                //new IntDomainRandom((long) ran),
                 // apply equality (var = val)
                 //DecisionOperator.int_eq,
                 // variables to branch on
@@ -997,6 +1075,8 @@ public class ModelUTP {
                 new FirstFail(model),
                 // selects the smallest domain value (lower bound)
                 new IntDomainMiddle(true),
+                //new IntDomainMin(),
+                //new IntDomainRandom((long) ran),
                 // apply equality (var = val)
                 //DecisionOperator.int_eq,
                 // variables to branch on

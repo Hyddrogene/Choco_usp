@@ -111,6 +111,7 @@ public class ConverterJsonChoco {
 			cpt++;
 		}
 		this.instanceUTPArray.constraints = constraints;
+		this.instanceUTPArray.calcul();
 		//print_constraints(constraints);
 	}//FinMethod
 	

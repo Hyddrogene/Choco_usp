@@ -13,7 +13,8 @@ public class Exec {
 		//jsonParser.readJsonFile();
 		//jsonParser.generateUTPInstance();
 		//String filename = "/home/etud/timetabling/instances/benchmarks/ua_l1_p1-p2/ua_l1_p1_extension_v2.json"; 
-		String filename = "/home/etud/timetabling/instances/benchmarks/ua_l1_p1-p2/ua_l1_p1_v4_extension_v2.json";
+		//String filename = "/home/etud/timetabling/instances/benchmarks/ua_l1_p1-p2/ua_l1_p1_v4_extension_v2.json";
+		String filename = "/home/etud/timetabling/instances/benchmarks/ua_l1_p1-p2/ua_l1-l2_p1-p6_extension_v2.json";
 		ConverterJsonChoco g = new ConverterJsonChoco(filename);
 		g.CreateInstance();
 		
@@ -26,6 +27,7 @@ public class Exec {
 		Solution_file_generator sfg = new Solution_file_generator(filename);
 		String solution_name = sfg.getSolution_name();
 		ModelUTP utp = new ModelUTP(g.getInstanceUTPArray());
+		//ModelUTPset utp = new ModelUTPset(g.getInstanceUTPArray());
 		utp.setFilename_solution(solution_name);
 		utp.solve();
 		utp.write_solution_file(utp.print());
