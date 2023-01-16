@@ -97,6 +97,17 @@ public class ConstraintUTP {
 			return out;
 	}//FinMethod
 	
+	public boolean containSession(int session) {
+		for(int i = 0; i < this.sessions.size() ;i++) {
+			for(int j =0; j < this.sessions.get(i).size();j++) {
+				if(this.sessions.get(i).get(j) == session+1) {
+					return true;
+				}
+			}
+		}
+		return false;
+	}//FinMethod
+	
 	public String ToString() {
 		String out = "";
 		out += "Constraint "+cpt+"\nrule "+rule+"\nconstraint "+constraint+"\nhardness "+hardness+"\narity "+arity+"\n";

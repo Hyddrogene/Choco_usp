@@ -49,7 +49,8 @@ public class InstanceUTPArray {
 	public int[] room_capacity;
 	public String[] part_room_use;
 	public int nr_part_room_mandatory;
-	public int[] part_room_mandatory;
+	public int[][] part_room_mandatory;
+	//public int[] part_room_mandatory;
 	public int[][] part_teacher_sessions_count;
 	//public Vector<Vector<Integer>> part_teacher_sessions_count;
 	public int[] part_session_teacher_count;
@@ -137,6 +138,16 @@ public class InstanceUTPArray {
 	public int[] part_room_worst_case;
 	public int[] room_capacity_v2;
 	public int[] student_group;
+	
+	public int[] session_xrooms;
+	public int vars_room;
+	public int var_same_room;
+	
+	public int[] session_xteachers;
+	public int vars_teachers;
+	public int var_same_teachers;
+	
+	public int[] class_rank;
 	
 	//Method
 	
@@ -430,6 +441,123 @@ public class InstanceUTPArray {
 		}
 	}//FinMethod
 	
+	public boolean isSameVar(int session, Vector<ConstraintUTP> tab) {
+		for(int i = 0; i < tab.size();i++) {
+			for(int s= 0; s < tab.get(i).getSessions().get(0).size() ;s++) {
+				if(tab.get(i).getSessions().get(0).get(s).intValue() == session+1) {
+					return true;
+				}
+			}
+
+		}
+		return false;
+	}//FinMethod
+	
+	public boolean isSameVarForThis(int session, ConstraintUTP constraint) {
+		for(int s= 0; s < constraint.getSessions().get(0).size() ;s++) {
+			if(constraint.getSessions().get(0).get(s).intValue() == session+1) {
+				return true;
+			}
+		}
+		return false;
+	}//FinMethod
+	
+	public int getVarsSession(int session, Vector<ConstraintUTP> tab) {
+		int res = 0;
+		
+		for(int i = 0; i < tab.size() ;i++) {
+			if(isSameVarForThis(session,tab.get(i))) {
+				return i;
+			}
+		}
+		
+		return res;
+	}//FinMethod
+	
+	public void sessions_xrooms() {
+		Vector<ConstraintUTP> tab = new Vector<ConstraintUTP>();
+		for(int constraint = 0; constraint < this.constraints.size() ;constraint++) {
+			if(this.constraints.get(constraint).getConstraint().equals("sameRooms")) {
+				tab.add(this.constraints.get(constraint));
+			}
+		}
+		
+		int var_same = tab.size();
+		int vars = var_same;
+		
+		for(int session = 0; session < this.nr_sessions ;session++) {
+			if(!isSameVar(session,tab)) {
+				vars++;
+			}
+		}
+		//int[] session_xrooms = new int[vars];
+		int vars_init = var_same;
+		int[] session_xrooms = new int[nr_sessions];
+		for(int session = 0; session < this.nr_sessions ;session++) {
+			if(!isSameVar(session,tab)) {
+				session_xrooms[session] = vars_init;
+				vars_init++;
+			}
+			else {
+				session_xrooms[session] = getVarsSession(session,tab);
+			}
+		}
+		
+		this.session_xrooms = session_xrooms;
+		this.vars_room = vars;
+		this.var_same_room = var_same;
+		System.out.println(Arrays.toString(session_xrooms));
+		System.out.println("vars = "+vars+" var_same = "+var_same+" nr_sessions = "+nr_sessions);
+	}//FinMethod
+	
+	public void sessions_xteachers() {
+		Vector<ConstraintUTP> tab = new Vector<ConstraintUTP>();
+		for(int constraint = 0; constraint < this.constraints.size() ;constraint++) {
+			if(this.constraints.get(constraint).getConstraint().equals("sameTeachers")) {
+				tab.add(this.constraints.get(constraint));
+			}
+		}
+		
+		int var_same = tab.size();
+		int vars = var_same;
+		
+		for(int session = 0; session < this.nr_sessions ;session++) {
+			if(!isSameVar(session,tab)) {
+				vars++;
+			}
+		}
+		//int[] session_xrooms = new int[vars];
+		int vars_init = var_same;
+		int[] session_xrooms = new int[nr_sessions];
+		for(int session = 0; session < this.nr_sessions ;session++) {
+			if(!isSameVar(session,tab)) {
+				session_xrooms[session] = vars_init;
+				vars_init++;
+			}
+			else {
+				session_xrooms[session] = getVarsSession(session,tab);
+			}
+		}
+		
+		this.session_xteachers = session_xrooms;
+		this.vars_teachers = vars;
+		this.var_same_teachers = var_same;
+		System.out.println(Arrays.toString(session_xrooms));
+		System.out.println("teacher vars = "+vars+" var_same = "+var_same+" nr_sessions = "+nr_sessions);
+	}//FinMethod
+	
+	public void class_rank() {
+		int classe = 0;
+		int[] class_rank = new int[this.nr_classes];
+		for(int p =0; p < this.nr_parts ;p++) {
+			for(int c = 0; c < this.part_classes.get(p).size() ;c++) {
+				class_rank[classe] = c+1;
+				classe++;
+			}
+		}
+		this.class_rank = class_rank;
+	}//FinMethod
+	
 	public void calcul() {
 		nr_slot();
 		part_slots();
@@ -451,6 +579,9 @@ public class InstanceUTPArray {
 		room_capacity_v2();
 		room_name_v2();
 		student_group();
+		sessions_xrooms();
+		sessions_xteachers();
+		class_rank();
 	}//FinMethod
 
 }//FinClass

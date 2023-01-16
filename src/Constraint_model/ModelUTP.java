@@ -1,8 +1,11 @@
 package Constraint_model;
 
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.RandomAccessFile;
+import java.nio.file.Files;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Vector;
@@ -16,8 +19,10 @@ import org.chocosolver.solver.search.strategy.selectors.values.IntDomainMax;
 import org.chocosolver.solver.search.strategy.selectors.values.IntDomainMiddle;
 import org.chocosolver.solver.search.strategy.selectors.values.IntDomainMin;
 import org.chocosolver.solver.search.strategy.selectors.values.IntDomainRandom;
+import org.chocosolver.solver.search.strategy.selectors.variables.AntiFirstFail;
 import org.chocosolver.solver.search.strategy.selectors.variables.FirstFail;
 import org.chocosolver.solver.search.strategy.selectors.variables.InputOrder;
+import org.chocosolver.solver.search.strategy.selectors.variables.Smallest;
 import org.chocosolver.solver.variables.BoolVar;
 import org.chocosolver.solver.variables.IntVar;
 import org.chocosolver.solver.variables.Task;
@@ -736,6 +741,19 @@ public class ModelUTP {
 		//System.out.println();
 	}//FinMethod
 	
+	public void weekly(ConstraintUTP constraint) {
+		  //System.out.println("PERIODIC");
+		  //System.out.println("Val "+value_num+" unite "+unite_num);
+		  int sum_val = this.instanceUTP.nr_days_per_week * this.instanceUTP.nr_slots_per_day;
+		  
+		  if(constraint.getSessions().get(0).size()>1) {
+			  for(int i = 1; i < constraint.getSessions().get(0).size() ;i++) {
+				  model.arithm(x_slot[constraint.getSessions().get(0).get(i)-1], "=", x_slot[constraint.getSessions().get(0).get(0)-1],"+",sum_val*i).post();
+			  }
+		  }
+		//System.out.println();
+	}//FinMethod
+	
 	public void allowedPeriod(ConstraintUTP constraint) {
 			int first_num = search_value(constraint,"first");
 		  int last_num = search_value(constraint,"last");
@@ -771,13 +789,26 @@ public class ModelUTP {
 	}//FinMethod
 	
 	public void sequenced(ConstraintUTP constraint) {
-		for (int i = 0; i < constraint.getSessions().get(0).size() ;i++) {
-			for(int j = 0; j < constraint.getSessions().get(1).size() ;j++) {
-				int session_length = this.instanceUTP.part_session_length[this.instanceUTP.class_part[this.instanceUTP.session_class[constraint.getSessions().get(0).get(i)-1]-1]-1];
-				model.arithm(x_slot[constraint.getSessions().get(1).get(j)-1], ">=", x_slot[constraint.getSessions().get(0).get(i)-1],"+",session_length).post();
-				//precedence()
+		//System.out.println(constraint.getConstraint()+" "+constraint.getRule());
+		if(constraint.getArity() == 1) {
+			/*for (int i = 0; i < constraint.getSessions().get(0).size() ;i++) {
+				for(int j = i+1; j < constraint.getSessions().get(0).size() ;j++) {
+					int session_length = this.instanceUTP.part_session_length[this.instanceUTP.class_part[this.instanceUTP.session_class[constraint.getSessions().get(0).get(i)-1]-1]-1];
+					model.arithm(x_slot[constraint.getSessions().get(0).get(j)-1], ">=", x_slot[constraint.getSessions().get(0).get(i)-1],"+",session_length).post();
+					//precedence()
+				}
+			}*/
+		}
+		else {
+			for (int i = 0; i < constraint.getSessions().get(0).size() ;i++) {
+				for(int j = 0; j < constraint.getSessions().get(1).size() ;j++) {
+					int session_length = this.instanceUTP.part_session_length[this.instanceUTP.class_part[this.instanceUTP.session_class[constraint.getSessions().get(0).get(i)-1]-1]-1];
+					model.arithm(x_slot[constraint.getSessions().get(1).get(j)-1], ">=", x_slot[constraint.getSessions().get(0).get(i)-1],"+",session_length).post();
+					//precedence()
+				}
 			}
 		}
+
 	}//FinMethod
 	
 	public void sameWeek(ConstraintUTP constraint) {
@@ -879,6 +910,7 @@ public class ModelUTP {
 			else if(this.instanceUTP.constraints.get(i).getConstraint().equals("sameTeachers")) {sameTeachers(this.instanceUTP.constraints.get(i));}
 			else if(this.instanceUTP.constraints.get(i).getConstraint().equals("sameRooms")) {sameRooms(this.instanceUTP.constraints.get(i));}
 			else if(this.instanceUTP.constraints.get(i).getConstraint().equals("sameSlot")) {sameSlot(this.instanceUTP.constraints.get(i));}
+			else if(this.instanceUTP.constraints.get(i).getConstraint().equals("sameSlots")) {sameSlot(this.instanceUTP.constraints.get(i));}
 			else if(this.instanceUTP.constraints.get(i).getConstraint().equals("allowedPeriod")) {allowedPeriod(this.instanceUTP.constraints.get(i));}
 			else if(this.instanceUTP.constraints.get(i).getConstraint().equals("sequenced")) {sequenced(this.instanceUTP.constraints.get(i));}
 			else if(this.instanceUTP.constraints.get(i).getConstraint().equals("sameWeek")) {sameWeek(this.instanceUTP.constraints.get(i));}
@@ -887,6 +919,7 @@ public class ModelUTP {
 			else if(this.instanceUTP.constraints.get(i).getConstraint().equals("sameWeeklySlot")) {sameWeeklySlot(this.instanceUTP.constraints.get(i));}
 			else if(this.instanceUTP.constraints.get(i).getConstraint().equals("disjunct")) {disjunct(this.instanceUTP.constraints.get(i));}
 			else if(this.instanceUTP.constraints.get(i).getConstraint().equals("differentWeekDay")) {differentWeekDay(this.instanceUTP.constraints.get(i));}
+			else if(this.instanceUTP.constraints.get(i).getConstraint().equals("weekly")) {weekly(this.instanceUTP.constraints.get(i));}
 			else if(this.instanceUTP.constraints.get(i).getConstraint().equals("forbiddenRooms")) {forbiddenRooms(this.instanceUTP.constraints.get(i));}
 			else System.out.println("Constraint "+this.instanceUTP.constraints.get(i).getConstraint()+" is not implemented"+" provide from rule : "+this.instanceUTP.constraints.get(i).getRule());
 			
@@ -903,19 +936,72 @@ public class ModelUTP {
 	}//FinMethod
 
 	
-	public void write_solution_file(String out) {
-		FileWriter FWriter;
-		BufferedWriter writer;
-		try {
-			FWriter = new FileWriter(filename_solution);
-			writer = new BufferedWriter(FWriter);
-					
-			writer.write(out);			    
-			writer.close();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+	public void write_solution_file(String out,boolean isXml,String filename) {
+		if(!isXml) {
+			FileWriter FWriter;
+			BufferedWriter writer;
+			try {
+				FWriter = new FileWriter(filename_solution);
+				writer = new BufferedWriter(FWriter);
+						
+				writer.write(out);			    
+				writer.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
+		else {
+			File or1 = new File(filename);
+			File or2 = new File(filename_solution);
+			try {
+				Files.copy(or1.toPath(), or2.toPath());
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			RandomAccessFile f;
+			try {
+				f = new RandomAccessFile(filename_solution, "rw");
+				long length = f.length() - 20;
+				byte b = 0;
+				do {                     
+				  length -= 1;
+				  try {
+				  f.seek(length);
+					b = f.readByte();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				} while(b != 10 && length > 0);
+				try {
+					f.setLength(length+1);
+					f.close();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			} catch (IOException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+
+			FileWriter FWriter;
+			BufferedWriter writer;
+			//out ="";
+			out += "\n</solution>\n</timetabling>";
+			try {
+				FWriter = new FileWriter(filename_solution,true);
+				writer = new BufferedWriter(FWriter);
+						
+				writer.write(out);			    
+				writer.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+
 	}//FinMethod
 
 	public int[] tab_CC_course() {
@@ -1010,12 +1096,126 @@ public class ModelUTP {
 		return tab;
 	}//FinMethod
 	
+	public void strategie_choice() {
+		int strategie = 1;
+		switch(strategie) {
+		case 0: search_strategie();break;
+		case 1: search_strategie_2();break;
+		case 2: search_strategie_3();break;
+		default :System.out.println("Strategie not referecend");
+		}
+	}//FinMethod
+	
+	/*public IntVar[] get_session_per_rank() {
+		
+	}//FinMethod*/
+	
+	public void search_strategie_3() {
+		double ran = Math.random();
+		Integer t = 1;
+		System.out.println("random_seed : "+ran);
+		this.solver.setSearch(
+				Search.intVarSearch(
+		                new FirstFail(model),
+		                //new IntDomainMin(),
+		                new decisionWeekEquilibrate(t, sort_xslot1(),this.x_slot,this.instanceUTP),
+		                sort_xslot1()
+						),
+				Search.intVarSearch(
+                //new FirstFail(model),
+                new AntiFirstFail(model),
+                new IntDomainRandom((long) ran),
+                x_room
+				),
+		Search.intVarSearch(
+				
+				new InputOrder<IntVar>(model),
+				//new AntiFirstFail(model),
+				new IntDomainMin(),
+				//new IntDomainRandom((long) ran),
+				x_rooms
+				),
+		Search.intVarSearch(
+                new FirstFail(model),
+                new IntDomainMin(),
+                x_teacher
+				),
+		Search.intVarSearch(
+                new FirstFail(model),
+                new IntDomainMin(),
+                x_teachers
+				),
+
+		Search.intVarSearch(
+                new FirstFail(model),
+                new IntDomainMiddle(true),
+                sort_xslot2()
+				),
+		Search.intVarSearch(
+                new FirstFail(model),
+                new IntDomainMax(),
+                sort_xslot3()
+				));
+
+	}//FinMethod
+	
+	
+	public void search_strategie_2() {
+		double ran = Math.random();
+		Integer t = 1;
+		System.out.println("Stratégie 2 : random_seed : "+ran);
+		this.solver.setSearch(Search.intVarSearch(
+                new FirstFail(model),
+				//new Smallest(),
+                //new AntiFirstFail(model),
+                new EquilibrateRoomDisposition(x_room,this.instanceUTP,this.instanceUTP.nr_rooms),
+                //new IntDomainRandom((long) ran),
+                x_room
+				),
+		Search.intVarSearch(
+				
+				new InputOrder<IntVar>(model),
+				//new AntiFirstFail(model),
+				new IntDomainMin(),
+				//new IntDomainRandom((long) ran),
+				x_rooms
+				),
+		Search.intVarSearch(
+                new FirstFail(model),
+                new IntDomainMin(),
+                x_teacher
+				),
+		Search.intVarSearch(
+                new FirstFail(model),
+                new IntDomainMin(),
+                x_teachers
+				),
+		Search.intVarSearch(
+                new FirstFail(model),
+                new IntDomainMin(),
+                //new decisionWeekEquilibrate(t, sort_xslot1(),this.x_slot,this.instanceUTP),
+                sort_xslot1()
+				),
+		Search.intVarSearch(
+                new FirstFail(model),
+                new IntDomainMiddle(true),
+                sort_xslot2()
+				),
+		Search.intVarSearch(
+                new FirstFail(model),
+                new IntDomainMax(),
+                sort_xslot3()
+				));
+
+	}//FinMethod
+	
 	public void search_strategie() {
 		double ran = Math.random();
 		System.out.println(ran);
 		this.solver.setSearch(Search.intVarSearch(
                 // selects the variable of smallest domain size
-                new FirstFail(model),
+                //new FirstFail(model),
+                new AntiFirstFail(model),
                 // selects the smallest domain value (lower bound)
                 new IntDomainRandom((long) ran),
                 //new IntDomainMin(),
@@ -1124,10 +1324,15 @@ public class ModelUTP {
 	
 	public Solution solve() {
 		this.solver = model.getSolver(); 
-		search_strategie();
-		//this.solver.showContradiction();;
+		//search_strategie();
+		strategie_choice();
+		//this.solver.showContradiction();
+		this.solver.setNoLearning();
+		this.solver.isLearnOff();
+		//this.solver.showShortStatistics();
 		this.solution = this.solver.findSolution();
 		this.solver.printStatistics();
+		
 		return this.solution;
 	}//FinMethod
 	
@@ -1197,6 +1402,113 @@ public class ModelUTP {
 		return out;
 	}//FinMethod
 	
+	//====================================
+	
+	public int[] slot2Time(int slot) {
+		String[] val = new String[]{"slot", "week", "day", "dailyslot"};
+		int[] tab = new int[val.length];
+		tab[0] = slot;		
+		int week = (int)slot / (this.instanceUTP.nr_slots_per_day*this.instanceUTP.nr_days_per_week);
+		int slot2 = slot - (week * (this.instanceUTP.nr_slots_per_day*this.instanceUTP.nr_days_per_week));
+		int day = (int) slot2 / this.instanceUTP.nr_slots_per_day;
+		int dailySlot = slot2 - (day * this.instanceUTP.nr_slots_per_day);
+		tab[1] = week+1;
+		tab[2] = day+1;
+		tab[3] = dailySlot;
+		return tab;
+	}
+	public String print_xml() {
+		String out = "<classes>\n";
+		for(int i = 0; i<this.instanceUTP.nr_classes;i++) {
+			out += "<class refId = \""+this.instanceUTP.class_name[i]+"\">\n";
+				out+= "    <groups>\n"+print_xml_group_solution(this.instanceUTP.class_sessions.get(i).get(0)-1)+"    </groups>\n";
+				out+= "    <teachers>\n"+print_xml_teacher_solution(this.instanceUTP.class_sessions.get(i).get(0)-1)+"    </teachers>\n";
+				out+= "    <rooms>\n"+print_xml_room_solution(this.instanceUTP.class_sessions.get(i).get(0)-1)+"    </rooms>\n";
+			out += "</class>\n";
+		}
+		out +="</classes>\n";
+		out += "<sessions>\n";
+		for(int i = 0; i<this.instanceUTP.nr_sessions;i++) {
+			int[] slot2time = slot2Time(this.solution.getIntVal(x_slot[i]));
+			out +=  "<session rank=\""+(this.instanceUTP.session_rank[i]-1)+"\" class=\""+this.instanceUTP.class_name[this.instanceUTP.session_class[i]-1]+"\">\n";
+			out += "    <startingSlot dailySlot=\""+slot2time[3]+"\" day =\""+slot2time[2]+"\" week =\""+slot2time[1]+"\" />\n";
+			out += "    <rooms>\n"+print_xml_room_solution(i)+"    </rooms>\n";
+			out += "    <teachers>\n"+print_xml_teacher_solution(i)+"    </teachers>\n";
+			out += "</session>\n";
+			//out +=  x_s[i]+" ";
+		}
+		out +="</sessions>\n";
+		
+		return out;
+	}//FinMethod
+	
+	
+	public String print_xml_group_solution(int session) {
+		String out = "";
+		Vector<Integer> groups = this.instanceUTP.class_groups.get(this.instanceUTP.session_class[session]-1);
+		for(int g = 0; g < groups.size() ;g++) {
+			if(g < groups.size()-1) {out += "        <group refId=\""+this.instanceUTP.group_name[groups.get(g)-1]+"\"/>\n";}
+			else {out += "        <group refId=\""+this.instanceUTP.group_name[groups.get(g)-1]+"\"/>\n";}
+		}
+		return out;
+	}//FinMethod
+	
+	public String print_xml_teacher_solution(int session) {
+		String out = "";
+		int cl = this.instanceUTP.session_class[session];
+		int part = this.instanceUTP.class_part[cl-1];
+		if(this.instanceUTP.part_session_teacher_count[part-1] > 1) {
+			for(int j = 0; j < this.instanceUTP.part_session_teacher_count[part-1];j++) {
+				if(j < this.instanceUTP.part_session_teacher_count[part-1]-1 ) {
+					out += "        <teacher refId=\""+this.instanceUTP.teacher_name[this.solution.getIntVal(this.x_teachers[this.instanceUTP.class_position_multiple_teacher[cl-1]+j])-1]+"\"/>\n";
+				}
+				else {
+					out += "        <teacher refId=\""+this.instanceUTP.teacher_name[this.solution.getIntVal(this.x_teachers[this.instanceUTP.class_position_multiple_teacher[cl-1]+j])-1]+"\"/>\n";
+				}
+			}
+		}
+		else {
+			out += "        <teacher refId=\""+this.instanceUTP.teacher_name[this.solution.getIntVal(this.x_teacher[cl-1])-1]+"\" />\n";
+		}
+		return out;
+	}//FinMethod
+	//public int room_multiple_total;
+	public String print_xml_room_solution(int session) {
+		String out = "";
+		int cl = this.instanceUTP.session_class[session];
+		int part = this.instanceUTP.class_part[cl-1];
+		if(this.instanceUTP.part_room_use[part-1].equals("multiple")) {
+			//int[] cl_j = this.solution.getSetVal(this.x_rooms[this.instanceUTP.class_position_multiple_room[cl-1]]);
+			for(int i = 0; i < this.instanceUTP.part_room_worst_case[part-1] ;i++) { 
+				int cl_p = this.instanceUTP.class_position_multiple_room[cl-1];
+				int t_room = this.solution.getIntVal(x_rooms[i+cl_p]);
+				if(t_room > 0) {
+					if(i < this.instanceUTP.part_room_worst_case[part-1]-1 ) {
+						
+						out += "        <room refId = \""+this.instanceUTP.room_name[t_room]+"\" />\n";
+					}
+					else {
+						out += "        <room refId = \""+this.instanceUTP.room_name[t_room]+"\" />\n";
+					}
+				}
+
+				
+				//this.room_multiple_total++;
+			}
+			if(out.length() > 0) {
+				//out = out.substring(0,out.length()-1);
+			}
+
+		}
+		else {
+			out += "        <room refId =\""+this.instanceUTP.room_name[this.solution.getIntVal(this.x_room[cl-1])]+"\" />\n";
+		}
+		if(out.equals("")) {
+			out = "        <room refId=\"Amphi-B-EVAL\" />\n";
+		}
+		return out;
+	}//FinMethod
+	//===================================
 	public String print() {
 		//this.room_multiple_total = 0;
 		if(this.solution != null){

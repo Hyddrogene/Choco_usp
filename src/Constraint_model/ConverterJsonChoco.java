@@ -176,7 +176,6 @@ public class ConverterJsonChoco {
 	public Vector<Vector<Integer>> createSetIntArray2d(JSONObject j,String f){
 		JSONArray setArray = (JSONArray) j.get(f);
 		Vector<Vector<Integer>> tab = new Vector<Vector<Integer>>(setArray.size());
-		
 		for(int k = 0; k<setArray.size() ;k++ ) {
 			JSONArray sizeo = (JSONArray) setArray.get(k);
 			Vector<Integer> tabTmp = new Vector<Integer>(sizeo.size());
@@ -232,17 +231,21 @@ public class ConverterJsonChoco {
 	}//FinMethod
 	
 	public int[][] createIntArray2d(JSONObject j,String f) {
+		System.out.println(f);
 		JSONArray setArray = (JSONArray) j.get(f);
-		JSONArray sizeo = (JSONArray)setArray.get(0);
-		int[][] tab = new int[setArray.size()][sizeo.size()];
-		for(int k = 0 ; k < setArray.size() ;k++) {
-			JSONArray setArrayi = (JSONArray) setArray.get(k);
-			for(int l = 0 ; l < sizeo.size() ; l++) {
-				Long m = (Long) setArrayi.get(l);
-				tab[k][l] = m.intValue();
+		if(setArray.size() <= 0){return new int[0][0] ;}
+		else {
+			JSONArray sizeo = (JSONArray)setArray.get(0);
+			int[][] tab = new int[setArray.size()][sizeo.size()];
+			for(int k = 0 ; k < setArray.size() ;k++) {
+				JSONArray setArrayi = (JSONArray) setArray.get(k);
+				for(int l = 0 ; l < sizeo.size() ; l++) {
+					Long m = (Long) setArrayi.get(l);
+					tab[k][l] = m.intValue();
+				}
 			}
+			return tab;
 		}
-		return tab;
 	}//FinMethod
 	
 	@SuppressWarnings("unchecked")
@@ -279,12 +282,13 @@ public class ConverterJsonChoco {
 		this.instanceUTPArray.part_session_length = createIntArray(DATA,"part_session_length");
 		this.instanceUTPArray.equipment_count = createIntArray(DATA,"equipment_count");
 		this.instanceUTPArray.room_capacity = createIntArray(DATA,"room_capacity");
-		this.instanceUTPArray.part_room_mandatory = createIntArray(DATA,"part_room_mandatory");
+		//this.instanceUTPArray.part_room_mandatory = createIntArray(DATA,"part_room_mandatory");
 		this.instanceUTPArray.part_session_teacher_count = createIntArray(DATA,"part_session_teacher_count");
 		this.instanceUTPArray.class_maxheadcount = createIntArray(DATA,"class_maxheadcount");
 		this.instanceUTPArray.class_parent = createIntArray(DATA,"class_parent");
 		
 		this.instanceUTPArray.part_teacher_sessions_count = createIntArray2d(DATA,"part_teacher_sessions_count");
+		this.instanceUTPArray.part_room_mandatory = createIntArray2d(DATA,"part_room_mandatory");
 		//print(this.instanceUTPArray.part_teacher_sessions_count);
 		
 		this.instanceUTPArray.part_room_use = createStringArray(DATA,"part_room_use");

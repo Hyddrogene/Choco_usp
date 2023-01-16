@@ -9,7 +9,7 @@ import java.util.Date;
 
 public class Solution_file_generator {
 	private String solution_name;
-	public Solution_file_generator(String filename) {
+	public Solution_file_generator(String filename, boolean isXML ) {
 		Date date = new Date();
 		SimpleDateFormat formater1 = new SimpleDateFormat("ddMMyy");
 		SimpleDateFormat formater2 = new SimpleDateFormat("hh_mm_ss");
@@ -22,7 +22,14 @@ public class Solution_file_generator {
 		String[] words = filename.split("/");
 		String name_instance = words[words.length-1].substring(0,words[words.length-1].length()-5);
 		test_directory("./tmp/experiment_"+date_formated3);
-		solution_name  = "./tmp/experiment_"+date_formated3+"/solution_"+name_instance+"_"+date_formated1+"_"+date_formated2+".txt";
+		if(isXML) {
+			solution_name  = "./tmp/experiment_"+date_formated3+"/solution_"+name_instance+"_"+date_formated1+"_"+date_formated2+".xml";
+
+		}
+		else {
+			solution_name  = "./tmp/experiment_"+date_formated3+"/solution_"+name_instance+"_"+date_formated1+"_"+date_formated2+".txt";
+
+		}
 	}//FinMethod
 	
 	public void test_directory(String directory) {
