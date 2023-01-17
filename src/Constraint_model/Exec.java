@@ -14,10 +14,15 @@ public class Exec {
 		//jsonParser.generateUTPInstance();
 		//String filename = "/home/etud/timetabling/instances/benchmarks/ua_l1_p1-p2/ua_l1_p1_extension_v2.json"; 
 		//String filename = "/home/etud/timetabling/instances/benchmarks/ua_l1_p1-p2/ua_l1_p1_v4_extension_v2.json";
-		String filename = "/home/etud/timetabling/instances/benchmarks/ua_l1_p1-p2/ua_l1-l2_p1-p6_extension_v2.json";
-		String filenamexml = "/home/etud/timetabling/instances/benchmarks/ua_l1_p1-p2/ua_l1-l2_p1-p6.xml";
-		filename = "/home/etud/timetabling/tools/tools_php/ua_l1-l2_p1-p6_l3info_2021_extension_v2.json";
-		filenamexml = "/home/etud/timetabling/tools/tools_php/ua_l1-l2_p1-p6_l3info_2021.xml";
+		String filename = "/home/etud/eclipse-workspace/Constraint_model/instance/ua_l1-l2_p1-p6_extension_v5.json";
+		String filenamexml = "/home/etud/eclipse-workspace/Constraint_model/instance/ua_l1-l2_p1-p6_bis.xml";
+		filename = "/home/etud/eclipse-workspace/Constraint_model/instance/ua_l1-l2_p1-p6_l3info_v2_extension_v2.json";
+		filenamexml = "/home/etud/eclipse-workspace/Constraint_model/instance/ua_l1-l2_p1-p6_l3info_v2.xml";
+		
+		//filename = "/home/etud/eclipse-workspace/Constraint_model/instance/ua_l3info_2021_bdd_dw-noPR_opt_plf_anglais_extension_v2.json";
+		//filenamexml = "/home/etud/eclipse-workspace/Constraint_model/instance/ua_l3info_2021_bdd_dw-noPR_opt_plf_anglais.xml";
+		
+		
 		ConverterJsonChoco g = new ConverterJsonChoco(filename);
 		g.CreateInstance();
 		

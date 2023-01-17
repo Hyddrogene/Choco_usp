@@ -1,0 +1,3069 @@
+{
+"PADDING":
+{
+"padding_value" : [0,-1],
+"padding_name_value" : ["paddingUnknowValue","paddingImpossibleValue"],
+"padding_set" : [{"set" :[0]},{"set" :[-1]}],
+"padding_name_set" : ["paddingUnknowSet","paddingImpossibleSet"]
+},
+"DATA":
+{
+"nr_weeks" : 12,
+"nr_days_per_week" : 5,
+"nr_slots_per_day" : 1440,
+"nr_courses" : 9,
+"nr_parts" : 24,
+"course_parts" : [{"set" :[1,2,3,4]},{"set" :[5,6,7]},{"set" :[8,9]},{"set" :[10,11]},{"set" :[12,13,14]},{"set" :[15,16]},{"set" :[17,18,19]},{"set" :[20,21,22]},{"set" :[23,24]}],
+"nr_classes" : 45,
+"part_classes" : [{"set" :[1]},{"set" :[2,3]},{"set" :[4,5,6]},{"set" :[7,8,9]},{"set" :[10]},{"set" :[11,12,13]},{"set" :[14,15,16]},{"set" :[17]},{"set" :[18]},{"set" :[19]},{"set" :[20,21]},{"set" :[22]},{"set" :[23]},{"set" :[24,25,26]},{"set" :[27]},{"set" :[28,29]},{"set" :[30]},{"set" :[31,32]},{"set" :[33,34,35]},{"set" :[36]},{"set" :[37,38]},{"set" :[39,40,41]},{"set" :[42,43,44]},{"set" :[45]}],
+"nr_sessions" : 242,
+"max_part_sessions" : 12,
+"part_nr_sessions" : [8,9,7,1,12,8,1,7,5,5,4,2,2,10,4,7,7,4,4,6,3,4,8,1],
+"nr_equipments" : 0,
+"nr_rooms" : 8,
+"nr_teachers" : 12,
+"nr_students" : 67,
+"nr_part_rooms" : 3,
+"part_rooms" : [{"set" :[1,2]},{"set" :[6,7,8]},{"set" :[3,4,5]},{"set" :[3,4,5]},{"set" :[1,2]},{"set" :[3,4,5]},{"set" :[3,4,5]},{"set" :[1,2]},{"set" :[3,4,5]},{"set" :[3,4,5]},{"set" :[3,4,5]},{"set" :[1,2]},{"set" :[1,2]},{"set" :[3,4,5]},{"set" :[1,2]},{"set" :[3,4,5]},{"set" :[1,2]},{"set" :[6,7,8]},{"set" :[3,4,5]},{"set" :[1,2]},{"set" :[3,4,5]},{"set" :[3,4,5]},{"set" :[6,7,8]},{"set" :[1,2]}],
+"nr_part_teachers" : 3,
+"part_teachers" : [{"set" :[1]},{"set" :[1]},{"set" :[1,2]},{"set" :[1,2,3]},{"set" :[4]},{"set" :[4,5]},{"set" :[4,5,6]},{"set" :[9]},{"set" :[9]},{"set" :[8]},{"set" :[8]},{"set" :[9]},{"set" :[7]},{"set" :[7]},{"set" :[6]},{"set" :[6]},{"set" :[10]},{"set" :[10]},{"set" :[10,11,6]},{"set" :[9]},{"set" :[9]},{"set" :[9]},{"set" :[12]},{"set" :[12]}],
+"part_dailyslots" : [{"set" :[480,570,660,750,840,930,1020,1110]},{"set" :[480,570,660,750,840,930,1020,1110]},{"set" :[480,570,750,840,930,1020]},{"set" :[480,570,750,840,930,1020]},{"set" :[480,570,660,750,840,930,1020,1110]},{"set" :[480,570,750,840,930,1020]},{"set" :[480,570,750,840,930,1020]},{"set" :[480,570,660,750,840,930,1020,1110]},{"set" :[480,570,750,840,930,1020]},{"set" :[480,570,750,840,930,1020]},{"set" :[480,570,750,840,930,1020]},{"set" :[480,570,750,840,930,1020]},{"set" :[480,570,750,840,930,1020]},{"set" :[480,570,660,750,840,930,1020,1110]},{"set" :[480,570,660,750,840,930,1020,1110]},{"set" :[480,570,750,840,930,1020]},{"set" :[480,570,660,750,840,930,1020,1110]},{"set" :[480,570,660,750,840,930,1020,1110]},{"set" :[480,570,750,840,930,1020]},{"set" :[480,570,660,750,840,930,1020,1110]},{"set" :[480,570,660,750,840,930,1020,1110]},{"set" :[480,570,750,840,930,1020]},{"set" :[480,530,570,620,660,710,750,800,840,890,930,980,1020]},{"set" :[480,530,570,620,660,710,750,800,840,890,930,980,1020]}],
+"part_days" : [{"set" :[1,2,3,4,5]},{"set" :[1,2,3,4,5]},{"set" :[1,2,3,4,5]},{"set" :[1,2,4,5]},{"set" :[1,2,3,4,5]},{"set" :[1,2,3,4,5]},{"set" :[1,2,3,4,5]},{"set" :[1,2,3,4,5]},{"set" :[1,2,3,4,5]},{"set" :[1,2,3,4,5]},{"set" :[1,2,3,4,5]},{"set" :[1,2,3,4,5]},{"set" :[1,2,3,4,5]},{"set" :[1,2,3,4,5]},{"set" :[1,2,3,4,5]},{"set" :[1,2,3,4,5]},{"set" :[1,2,3,4,5]},{"set" :[1,2,3,4,5]},{"set" :[1,2,3,4,5]},{"set" :[1,2,3,4,5]},{"set" :[1,2,3,4,5]},{"set" :[1,2,3,4,5]},{"set" :[1,2,3,4,5]},{"set" :[1,2,4,5]}],
+"part_weeks" : [{"set" :[1,2,3,4,5,6,7,8,9,10,11,12]},{"set" :[1,2,3,4,5,6,7,8,9,10,11,12]},{"set" :[1,2,3,4,5,6,7,8,9,10,11,12]},{"set" :[1,2,3,4,5,6,7,8,9,10,11,12]},{"set" :[1,2,3,4,5,6,7,8,9,10,11,12]},{"set" :[1,2,3,4,5,6,7,8,9,10,11,12]},{"set" :[1,2,3,4,5,6,7,8,9,10,11,12]},{"set" :[1,2,3,4,5,6,7,8,9,10,11,12]},{"set" :[1,2,3,4,5,6,7,8,9,10,11,12]},{"set" :[1,2,3,4,5,6,7,8,9,10,11,12]},{"set" :[1,2,3,4,5,6,7,8,9,10,11,12]},{"set" :[1,2,3,4,5,6,7,8,9,10,11,12]},{"set" :[1,2,3,4,5,6,7,8,9,10,11,12]},{"set" :[1,2,3,4,5,6,7,8,9,10,11,12]},{"set" :[1,2,3,4,5,6,7,8,9,10,11,12]},{"set" :[1,2,3,4,5,6,7,8,9,10,11,12]},{"set" :[1,2,3,4,5,6,7,8,9,10,11,12]},{"set" :[1,2,3,4,5,6,7,8,9,10,11,12]},{"set" :[1,2,3,4,5,6,7,8,9,10,11,12]},{"set" :[1,2,3,4,5,6,7,8,9,10,11,12]},{"set" :[1,2,3,4,5,6,7,8,9,10,11,12]},{"set" :[1,2,3,4,5,6,7,8,9,10,11,12]},{"set" :[1,2,3,4,5,6,7,8,9,10,11,12]},{"set" :[1,2,3,4,5,6,7,8,9,10,11,12]}],
+"part_session_length" : [80,80,160,160,80,160,160,80,160,160,160,160,160,80,80,160,80,80,160,80,80,160,120,120],
+"max_equipment_count" : 0,
+"max_class_maxheadcount" : 80,
+"max_teacher_session" : 1,
+"max_teacher_sessions" : 30,
+"equipment_count" : [],
+"max_room_capacity" : 286,
+"room_capacity" : [90,286,20,42,38,46,46,28],
+"part_room_use" : ["single","single","single","multiple","single","single","single","single","single","single","single","single","single","single","single","single","single","single","single","single","single","single","single","single"],
+"nr_part_room_mandatory" : 2,
+"part_room_mandatory" : [[4,4],[24,1]],
+"part_teacher_sessions_count" : [[8,0,0,0,0,0,0,0,0,0,0,0],[18,0,0,0,0,0,0,0,0,0,0,0],[14,7,0,0,0,0,0,0,0,0,0,0],[1,1,1,0,0,0,0,0,0,0,0,0],[0,0,0,12,0,0,0,0,0,0,0,0],[0,0,0,16,8,0,0,0,0,0,0,0],[0,0,0,1,1,1,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,7,0,0,0],[0,0,0,0,0,0,0,0,5,0,0,0],[0,0,0,0,0,0,0,5,0,0,0,0],[0,0,0,0,0,0,0,8,0,0,0,0],[0,0,0,0,0,0,0,0,2,0,0,0],[0,0,0,0,0,0,2,0,0,0,0,0],[0,0,0,0,0,0,30,0,0,0,0,0],[0,0,0,0,0,4,0,0,0,0,0,0],[0,0,0,0,0,14,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,7,0,0],[0,0,0,0,0,0,0,0,0,8,0,0],[0,0,0,0,0,4,0,0,0,4,4,0],[0,0,0,0,0,0,0,0,6,0,0,0],[0,0,0,0,0,0,0,0,6,0,0,0],[0,0,0,0,0,0,0,0,12,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,24],[0,0,0,0,0,0,0,0,0,0,0,1]],
+"part_session_teacher_count" : [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
+"class_maxheadcount" : [80,40,40,20,20,20,20,20,20,80,25,28,25,40,40,40,80,40,40,20,20,80,40,20,20,20,80,20,20,80,40,40,20,20,25,80,40,40,20,20,20,30,30,30,20],
+"class_parent" : [0,1,1,2,3,2,4,5,6,0,10,10,10,11,12,13,0,17,0,19,19,0,22,23,23,23,0,27,27,0,30,30,31,32,31,0,36,36,37,38,37,0,0,0,42],
+"student_courses" : [{"set" :[1,2,4,5,7,8,9]},{"set" :[1,2,5,6,7,8,9]},{"set" :[1,2,4,5,7,8,9]},{"set" :[1,2,4,6,7,8,9]},{"set" :[1,2,4,6,7,8,9]},{"set" :[1,2,4,6,7,8,9]},{"set" :[1,2,5,3,7,8,9]},{"set" :[1,2,5,6,7,8,9]},{"set" :[1,2,4,6,7,8,9]},{"set" :[1,2,5,3,7,8,9]},{"set" :[1,2,4,6,7,8,9]},{"set" :[1,2,5,3,7,8,9]},{"set" :[1,2,4,6,7,8,9]},{"set" :[1,2,4,5,7,8,9]},{"set" :[1,2,4,6,7,8,9]},{"set" :[1,2,4,6,7,8,9]},{"set" :[1,2,5,3,7,8,9]},{"set" :[1,2,4,6,7,8,9]},{"set" :[1,2,4,6,7,8,9]},{"set" :[1,2,4,6,7,8,9]},{"set" :[1,2,5,6,7,8,9]},{"set" :[1,2,4,5,7,8,9]},{"set" :[1,2,4,6,7,8,9]},{"set" :[1,2,4,5,7,8,9]},{"set" :[1,2,5,6,7,8,9]},{"set" :[1,2,4,6,7,8,9]},{"set" :[1,2,5,6,7,8,9]},{"set" :[1,2,5,6,7,8,9]},{"set" :[1,2,4,5,7,8,9]},{"set" :[1,2,5,3,7,8,9]},{"set" :[1,2,5,3,7,8,9]},{"set" :[1,2,4,5,7,8,9]},{"set" :[1,2,5,6,7,8,9]},{"set" :[1,2,4,6,7,8,9]},{"set" :[1,2,4,5,7,8,9]},{"set" :[1,2,4,6,7,8,9]},{"set" :[1,2,4,6,7,8,9]},{"set" :[1,2,5,6,7,8,9]},{"set" :[1,2,4,5,7,8,9]},{"set" :[1,2,5,3,7,8,9]},{"set" :[1,2,5,6,7,8,9]},{"set" :[1,2,5,3,7,8,9]},{"set" :[1,2,4,6,7,8,9]},{"set" :[1,2,5,6,7,8,9]},{"set" :[1,2,4,5,7,8,9]},{"set" :[1,2,4,5,7,8,9]},{"set" :[1,2,5,6,7,8,9]},{"set" :[1,2,5,3,7,8,9]},{"set" :[1,2,4,5,7,8,9]},{"set" :[1,2,4,5,7,8,9]},{"set" :[1,2,5,6,7,8,9]},{"set" :[1,2,5,6,7,8,9]},{"set" :[1,2,4,6,7,8,9]},{"set" :[1,2,5,3,7,8,9]},{"set" :[1,2,5,6,7,8,9]},{"set" :[1,2,4,5,7,8,9]},{"set" :[1,2,5,6,7,8,9]},{"set" :[1,2,5,6,7,8,9]},{"set" :[1,2,4,5,7,8,9]},{"set" :[1,2,5,6,7,8,9]},{"set" :[1,2,4,5,7,8,9]},{"set" :[1,2,4,5,7,8,9]},{"set" :[1,2,4,5,7,8,9]},{"set" :[1,2,4,5,7,8,9]},{"set" :[1,2,4,5,7,8,9]},{"set" :[1,2,4,5,7,8,9]},{"set" :[1,2,4,5,7,8,9]}],
+"equipment_name" : [],
+"room_name" : ["AMPHI-A","AMPHI-B","H001","H002","H003","L201","L202","L206"],
+"teacher_name" : ["AIT EL MEKKI Touria","GARCIA Laurent","RICHER Jean-Michel","LESAINT David","JAMIN Antoine","LEGEAY Marc","DEVRED Caroline","GOUDET Olivier","STEPHAN Igor","LEFEVRE Claire","DIEGUEZ Martin","LAUDIER Romain"],
+"student_name" : ["student L3 1","student L3 2","student L3 3","student L3 4","student L3 5","student L3 6","student L3 7","student L3 8","student L3 9","student L3 10","student L3 11","student L3 12","student L3 13","student L3 14","student L3 15","student L3 16","student L3 17","student L3 18","student L3 19","student L3 20","student L3 21","student L3 22","student L3 23","student L3 24","student L3 25","student L3 26","student L3 27","student L3 28","student L3 29","student L3 30","student L3 31","student L3 32","student L3 33","student L3 34","student L3 35","student L3 36","student L3 37","student L3 38","student L3 39","student L3 40","student L3 41","student L3 42","student L3 43","student L3 44","student L3 45","student L3 46","student L3 47","student L3 48","student L3 49","student L3 50","student L3 51","student L3 52","student L3 53","student L3 54","student L3 55","student L3 56","student L3 57","student L3 58","student L3 59","student L3 60","student L3 61","student L3 62","student L3 63","student L3 64","student L3 65","student L3 66","student L3 67"],
+"course_name" : ["Base-de-donnees-2","Developpement-Web","Image-de-Synthese","Traitement-de-donnees-en-Python","Initiation-programmation-de-systemes-intelligents","Developpement-interfaces-graphiques-avancees","Programmation-Fonctionnelle","Programmation-Logique","Anglais"],
+"part_name" : ["Base-de-donnees-2-CM","Base-de-donnees-2-TD","Base-de-donnees-2-TP","Base-de-donnees-2-TPN","Developpement-Web-CM","Developpement-Web-TP","Developpement-Web-TPN","Image-de-Synthese-CM","Image-de-Synthese-TP","Traitement-de-donnees-en-Python-CM-TD","Traitement-de-donnees-en-Python-TP","Initiation-programmation-de-systemes-intelligents-CM","Initiation-programmation-de-systemes-intelligents-TD","Initiation-programmation-de-systemes-intelligents-TP","Developpement-interfaces-graphiques-avancees-CM","Developpement-interfaces-graphiques-avancees-TP","Programmation-Fonctionnelle-CM","Programmation-Fonctionnelle-TD","Programmation-Fonctionnelle-TP","Programmation-Logique-CM","Programmation-Logique-TD","Programmation-Logique-TP","Anglais-CM-TD","Anglais-CC"],
+"class_name" : ["Base-de-donnees-2-CM-1","Base-de-donnees-2-TD-1","Base-de-donnees-2-TD-2","Base-de-donnees-2-TP-1","Base-de-donnees-2-TP-2","Base-de-donnees-2-TP-3","Base-de-donnees-2-TPN-1","Base-de-donnees-2-TPN-2","Base-de-donnees-2-TPN-3","Developpement-Web-CM-1","Developpement-Web-TP-1","Developpement-Web-TP-2","Developpement-Web-TP-3","Developpement-Web-TPN-1","Developpement-Web-TPN-2","Developpement-Web-TPN-3","Image-de-Synthese-CM-1","Image-de-Synthese-TP-1","Traitement-de-donnees-en-Python-CM-TD-1","Traitement-de-donnees-en-Python-TP-1","Traitement-de-donnees-en-Python-TP-2","Initiation-programmation-de-systemes-intelligents-CM-1","Initiation-programmation-de-systemes-intelligents-TD-1","Initiation-programmation-de-systemes-intelligents-TP-1","Initiation-programmation-de-systemes-intelligents-TP-2","Initiation-programmation-de-systemes-intelligents-TP-3","Developpement-interfaces-graphiques-avancees-CM-1","Developpement-interfaces-graphiques-avancees-TP-1","Developpement-interfaces-graphiques-avancees-TP-2","Programmation-Fonctionnelle-CM-1","Programmation-Fonctionnelle-TD-1","Programmation-Fonctionnelle-TD-2","Programmation-Fonctionnelle-TP-1","Programmation-Fonctionnelle-TP-2","Programmation-Fonctionnelle-TP-3","Programmation-Logique-CM-1","Programmation-Logique-TD-1","Programmation-Logique-TD-2","Programmation-Logique-TP-1","Programmation-Logique-TP-2","Programmation-Logique-TP-3","Anglais-CM-TD-1","Anglais-CM-TD-2","Anglais-CM-TD-3","Anglais-CC-1"],
+"nr_labels" : 14,
+"label_name" : ["BATIMENT-A","BATIMENT-H","BATIMENT-L","DEPARTEMENT-INFORMATIQUE","DEPARTEMENT-ANGLAIS","L3-INFORMATIQUE","UE","CM","TD","TP","TPN","TP1","OPTIONS-L3-INFO","CC"],
+"room_label" : [{"set" :[1]},{"set" :[1]},{"set" :[2]},{"set" :[2]},{"set" :[2]},{"set" :[3]},{"set" :[3]},{"set" :[3]}],
+"teacher_label" : [{"set" :[4]},{"set" :[4]},{"set" :[4]},{"set" :[4]},{"set" :[4]},{"set" :[4]},{"set" :[4]},{"set" :[4]},{"set" :[4]},{"set" :[4]},{"set" :[4]},{"set" :[5]}],
+"student_label" : [{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]},{"set" :[6]}],
+"course_label" : [{"set" :[6,7]},{"set" :[6,7]},{"set" :[6,7,13]},{"set" :[6,7]},{"set" :[6,7]},{"set" :[6,7]},{"set" :[6,7]},{"set" :[6,7]},{"set" :[6,7]}],
+"part_label" : [{"set" :[8]},{"set" :[9]},{"set" :[10]},{"set" :[11]},{"set" :[8]},{"set" :[10,12]},{"set" :[11]},{"set" :[8]},{"set" :[10]},{"set" :[8,9]},{"set" :[10]},{"set" :[8]},{"set" :[9]},{"set" :[10]},{"set" :[8]},{"set" :[10]},{"set" :[8]},{"set" :[9]},{"set" :[10]},{"set" :[8]},{"set" :[9]},{"set" :[10]},{"set" :[8,9]},{"set" :[14]}]
+},
+"RULES":
+{
+"nr_rules" : 53,
+"nr_scopes" : 72,
+"rule_scopes" : [{"set" :[1]},{"set" :[2]},{"set" :[3]},{"set" :[4]},{"set" :[5]},{"set" :[6,7]},{"set" :[8,9]},{"set" :[10,11]},{"set" :[12,13]},{"set" :[14,15]},{"set" :[16]},{"set" :[17]},{"set" :[18]},{"set" :[19]},{"set" :[20]},{"set" :[21]},{"set" :[22]},{"set" :[23,24]},{"set" :[25]},{"set" :[26]},{"set" :[27]},{"set" :[28,29]},{"set" :[30,31]},{"set" :[32,33]},{"set" :[34]},{"set" :[35]},{"set" :[36]},{"set" :[37,38]},{"set" :[39,40]},{"set" :[41,42]},{"set" :[43]},{"set" :[44]},{"set" :[45]},{"set" :[46]},{"set" :[47]},{"set" :[48]},{"set" :[49]},{"set" :[50]},{"set" :[51,52]},{"set" :[53,54]},{"set" :[55,56]},{"set" :[57,58]},{"set" :[59,60]},{"set" :[61]},{"set" :[62]},{"set" :[63]},{"set" :[64]},{"set" :[65]},{"set" :[66]},{"set" :[67,68]},{"set" :[69]},{"set" :[70]},{"set" :[71,72]}],
+"scope_type" : ["class","class","class","class","class","class","class","class","class","class","class","class","class","class","class","class","class","class","class","class","class","part","class","class","class","class","part","class","class","class","class","class","class","class","class","class","class","class","class","class","class","class","class","class","class","class","class","class","class","class","class","class","class","class","class","class","class","class","class","class","part","part","class","class","class","class","class","class","class","class","class","class"],
+"mask_length" : 10,
+"scope_mask" : [{"set" :[1,3,4,5,6,7,8]},{"set" :[]},{"set" :[]},{"set" :[1]},{"set" :[]},{"set" :[2]},{"set" :[1]},{"set" :[2]},{"set" :[1]},{"set" :[8]},{"set" :[1]},{"set" :[9]},{"set" :[1]},{"set" :[7]},{"set" :[1]},{"set" :[1]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[1,4,5,6,7,8,9,10,11,12]},{"set" :[]},{"set" :[1]},{"set" :[3]},{"set" :[1]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[5]},{"set" :[1]},{"set" :[1]},{"set" :[6]},{"set" :[1]},{"set" :[1]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[2]},{"set" :[1]},{"set" :[2]},{"set" :[1]},{"set" :[2]},{"set" :[1]},{"set" :[1]},{"set" :[]},{"set" :[1,4,5,6]},{"set" :[1,3,4,5,6,7]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[6]},{"set" :[1]},{"set" :[6]},{"set" :[1]},{"set" :[3]},{"set" :[1]},{"set" :[1]},{"set" :[1]},{"set" :[4]},{"set" :[1]},{"set" :[1]},{"set" :[1]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[8]},{"set" :[1]},{"set" :[1]},{"set" :[]},{"set" :[1,5,6,7]},{"set" :[1,5,6,7]}],
+"nr_filters" : 85,
+"scope_filters" : [{"set" :[1]},{"set" :[2]},{"set" :[3]},{"set" :[4]},{"set" :[5]},{"set" :[6]},{"set" :[7]},{"set" :[8]},{"set" :[9]},{"set" :[10]},{"set" :[11]},{"set" :[12]},{"set" :[13]},{"set" :[14]},{"set" :[15]},{"set" :[16]},{"set" :[17]},{"set" :[18]},{"set" :[19]},{"set" :[20]},{"set" :[21]},{"set" :[22]},{"set" :[23]},{"set" :[24]},{"set" :[25,26]},{"set" :[27]},{"set" :[28,29]},{"set" :[30,31]},{"set" :[32,33]},{"set" :[34,35]},{"set" :[36]},{"set" :[37]},{"set" :[38,39]},{"set" :[40,41]},{"set" :[42,43]},{"set" :[44]},{"set" :[45]},{"set" :[46]},{"set" :[47]},{"set" :[48]},{"set" :[49]},{"set" :[50]},{"set" :[51,52]},{"set" :[]},{"set" :[53]},{"set" :[54]},{"set" :[55,56]},{"set" :[57,58]},{"set" :[59,60]},{"set" :[61,62]},{"set" :[63]},{"set" :[64]},{"set" :[65]},{"set" :[66]},{"set" :[67]},{"set" :[68]},{"set" :[69]},{"set" :[70]},{"set" :[71]},{"set" :[72]},{"set" :[73,74]},{"set" :[75,76]},{"set" :[]},{"set" :[77]},{"set" :[78]},{"set" :[79]},{"set" :[80]},{"set" :[81]},{"set" :[82]},{"set" :[83]},{"set" :[84]},{"set" :[85]}],
+"filter_type" : ["part","course","part","part","part","part","part","part","part","part","part","part","part","part","part","part","course","course","course","part","part","part","part","part","course","part","course","course","part","course","part","course","part","course","part","part","part","part","class","course","part","course","part","part","part","part","part","part","part","part","course","part","part","part","course","part","course","part","course","part","course","part","part","part","part","part","part","part","part","part","part","part","course","part","course","part","course","part","part","part","part","part","course","part","part"],
+"filter_elements" : [{"set" :[1]},{"set" :[1]},{"set" :[3,2]},{"set" :[3]},{"set" :[3,2]},{"set" :[1]},{"set" :[2]},{"set" :[2]},{"set" :[3]},{"set" :[1]},{"set" :[4]},{"set" :[2]},{"set" :[4]},{"set" :[3]},{"set" :[4]},{"set" :[2]},{"set" :[1]},{"set" :[1]},{"set" :[2]},{"set" :[5]},{"set" :[6]},{"set" :[6]},{"set" :[5]},{"set" :[6]},{"set" :[2]},{"set" :[1,2,3,5,6,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24]},{"set" :[2]},{"set" :[2]},{"set" :[4,7]},{"set" :[2]},{"set" :[3,6,9,11,14,16,19,22]},{"set" :[2]},{"set" :[4,7]},{"set" :[2]},{"set" :[4,7]},{"set" :[6]},{"set" :[5]},{"set" :[6]},{"set" :[1,2,3,4,5,6,7,8,9,10,11,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45]},{"set" :[3]},{"set" :[1,5,8,10,12,15,17,20,23,3,6,9,11,14,16,19,22]},{"set" :[3]},{"set" :[1,5,8,10,12,15,17,20,23,3,6,9,11,14,16,19,22]},{"set" :[13]},{"set" :[12]},{"set" :[14]},{"set" :[12]},{"set" :[13]},{"set" :[13]},{"set" :[14]},{"set" :[3]},{"set" :[3,6,9,11,14,16,19,22]},{"set" :[20]},{"set" :[17]},{"set" :[8]},{"set" :[3,6,9,11,14,16,19,22,2,10,13,18,21,23]},{"set" :[7]},{"set" :[3,6,9,11,14,16,19,22,2,10,13,18,21,23]},{"set" :[7]},{"set" :[3,6,9,11,14,16,19,22,2,10,13,18,21,23]},{"set" :[8]},{"set" :[3,6,9,11,14,16,19,22,2,10,13,18,21,23]},{"set" :[20]},{"set" :[22]},{"set" :[20]},{"set" :[21]},{"set" :[17]},{"set" :[18]},{"set" :[22]},{"set" :[21]},{"set" :[18]},{"set" :[19]},{"set" :[8]},{"set" :[2,10,13,18,21,23,3,6,9,11,14,16,19,22]},{"set" :[7]},{"set" :[2,10,13,18,21,23,3,6,9,11,14,16,19,22]},{"set" :[7]},{"set" :[23]},{"set" :[23]},{"set" :[23]},{"set" :[24]},{"set" :[23]},{"set" :[9]},{"set" :[23]},{"set" :[23]}],
+"rule_constraint" : ["weekly","sequenced","weekly","same_week","sequenced","sequenced","sequenced","sequenced","sequenced","sequenced","same_week","same_teachers","same_rooms","sequenced","weekly","weekly","same_week","sequenced","same_rooms","same_teachers","same_slots","sequenced","sequenced","sequenced","weekly","sequenced","sequenced","sequenced","sequenced","sequenced","same_week","same_teachers","weekly","weekly","weekly","weekly","sequenced","sequenced","sequenced","sequenced","sequenced","sequenced","sequenced","same_week","same_week","same_teachers","same_rooms","weekly","sequenced","sequenced","same_week","same_teachers","same_rooms"],
+"constraint_hardness" : ["hard","hard","hard","hard","hard","hard","hard","hard","hard","hard","hard","hard","hard","hard","hard","hard","hard","hard","hard","hard","hard","hard","hard","hard","hard","hard","hard","hard","hard","hard","hard","hard","hard","hard","hard","hard","hard","hard","hard","hard","hard","hard","hard","hard","hard","hard","hard","hard","hard","hard","hard","hard","hard"],
+"nr_parameters" : 2,
+"constraint_parameters" : [{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[]},{"set" :[1]},{"set" :[]},{"set" :[2]}],
+"parameter_name" : ["slot","slot"],
+"parameter_type" : ["slot","slot"],
+"max_paramater_value" : 78,
+"max_parameter_size" : 2,
+"parameter_value" : [[1,0],[72,78]]
+},
+"SOLUTION":
+{
+"GROUPS":
+{
+"nr_groups" : 4,
+"max_group_headcount" : 22,
+"group_headcount" : [18,22,10,17],
+"group_name" : ["1-td1-tp1-pq","2-td1-tp3-ps","3-td2-tp2-is","4-td2-tp2-qs"],
+"group_students" : [{"set" :[4,5,6,9,11,13,15,16,18,19,20,23,26,34,36,37,43,53]},{"set" :[1,3,14,22,24,29,32,35,39,45,46,49,50,56,59,61,62,63,64,65,66,67]},{"set" :[7,10,12,17,30,31,40,42,48,54]},{"set" :[2,8,21,25,27,28,33,38,41,44,47,51,52,55,57,58,60]}],
+"group_classes" : [{"set" :[1,2,4,7,10,11,19,20,27,28,30,31,33,36,37,39,42,45]},{"set" :[1,2,6,9,10,13,19,21,22,23,24,30,31,35,36,37,41,44,45]},{"set" :[1,3,5,8,10,12,17,18,22,23,25,30,32,34,36,38,40,43,45]},{"set" :[1,3,5,8,10,12,22,23,26,27,29,30,32,34,36,38,40,43,45]}],
+"group_sessions" : [{"set" :[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,27,28,29,30,31,32,33,48,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,102,103,104,105,106,107,108,109,110,149,150,151,152,153,154,155,156,157,158,159,167,168,169,170,171,172,173,174,175,176,177,182,183,184,185,194,195,196,197,198,199,200,201,202,206,207,208,209,218,219,220,221,222,223,224,225,242]},{"set" :[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,41,42,43,44,45,46,47,50,51,52,53,54,55,56,57,58,59,60,61,62,79,80,81,82,83,84,85,86,102,103,104,105,106,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,167,168,169,170,171,172,173,174,175,176,177,190,191,192,193,194,195,196,197,198,199,200,201,202,214,215,216,217,234,235,236,237,238,239,240,241,242]},{"set" :[1,2,3,4,5,6,7,8,18,19,20,21,22,23,24,25,26,34,35,36,37,38,39,40,49,51,52,53,54,55,56,57,58,59,60,61,62,71,72,73,74,75,76,77,78,90,91,92,93,94,95,96,97,98,99,100,101,115,116,117,118,129,130,131,132,133,134,135,136,137,138,167,168,169,170,171,172,173,178,179,180,181,186,187,188,189,194,195,196,197,198,199,203,204,205,210,211,212,213,226,227,228,229,230,231,232,233,242]},{"set" :[1,2,3,4,5,6,7,8,18,19,20,21,22,23,24,25,26,34,35,36,37,38,39,40,49,51,52,53,54,55,56,57,58,59,60,61,62,71,72,73,74,75,76,77,78,115,116,117,118,139,140,141,142,143,144,145,146,147,148,149,150,151,152,160,161,162,163,164,165,166,167,168,169,170,171,172,173,178,179,180,181,186,187,188,189,194,195,196,197,198,199,203,204,205,210,211,212,213,226,227,228,229,230,231,232,233,242]}]
+},
+"CLASS":
+{
+"class_teachers" : [],
+"class_rooms" : [],
+"class_groups" : [[{"set" :[1]},{"set" :[1,2,3,4]}],[{"set" :[2]},{"set" :[1,2]}],[{"set" :[4]},{"set" :[1]}],[{"set" :[7]},{"set" :[1]}],[{"set" :[10]},{"set" :[1,2,3,4]}],[{"set" :[11]},{"set" :[1]}],[{"set" :[19]},{"set" :[1,2]}],[{"set" :[20]},{"set" :[1]}],[{"set" :[27]},{"set" :[1,4]}],[{"set" :[28]},{"set" :[1]}],[{"set" :[30]},{"set" :[1,2,3,4]}],[{"set" :[31]},{"set" :[1,2]}],[{"set" :[33]},{"set" :[1]}],[{"set" :[36]},{"set" :[1,2,3,4]}],[{"set" :[37]},{"set" :[1,2]}],[{"set" :[39]},{"set" :[1]}],[{"set" :[42]},{"set" :[1]}],[{"set" :[45]},{"set" :[1,2,3,4]}],[{"set" :[6]},{"set" :[2]}],[{"set" :[9]},{"set" :[2]}],[{"set" :[13]},{"set" :[2]}],[{"set" :[21]},{"set" :[2]}],[{"set" :[22]},{"set" :[2,3,4]}],[{"set" :[23]},{"set" :[2,3,4]}],[{"set" :[24]},{"set" :[2]}],[{"set" :[35]},{"set" :[2]}],[{"set" :[41]},{"set" :[2]}],[{"set" :[44]},{"set" :[2]}],[{"set" :[3]},{"set" :[3,4]}],[{"set" :[5]},{"set" :[3,4]}],[{"set" :[8]},{"set" :[3,4]}],[{"set" :[12]},{"set" :[3,4]}],[{"set" :[17]},{"set" :[3]}],[{"set" :[18]},{"set" :[3]}],[{"set" :[25]},{"set" :[3]}],[{"set" :[32]},{"set" :[3,4]}],[{"set" :[34]},{"set" :[3,4]}],[{"set" :[38]},{"set" :[3,4]}],[{"set" :[40]},{"set" :[3,4]}],[{"set" :[43]},{"set" :[3,4]}],[{"set" :[26]},{"set" :[4]}],[{"set" :[29]},{"set" :[4]}]]
+},
+"SESSION":
+{
+"session_dailyslot" : [],
+"session_day" : [],
+"session_week" : [],
+"session_rooms" : [],
+"session_teachers" : [],
+"part_service_room" : [[8,0,0,0,0,0,0,0],[0,0,0,0,0,9,0,9],[0,0,7,7,7,0,0,0],[0,0,3,3,3,0,0,0],[12,0,0,0,0,0,0,0],[0,0,8,8,8,0,0,0],[0,0,1,1,1,0,0,0],[7,0,0,0,0,0,0,0],[0,0,5,0,0,0,0,0],[0,0,0,0,5,0,0,0],[0,0,0,4,4,0,0,0],[0,2,0,0,0,0,0,0],[2,0,0,0,0,0,0,0],[0,0,10,10,10,0,0,0],[4,0,0,0,0,0,0,0],[0,0,7,0,7,0,0,0],[7,0,0,0,0,0,0,0],[0,0,0,0,0,4,4,0],[0,0,4,4,4,0,0,0],[0,6,0,0,0,0,0,0],[0,0,3,0,3,0,0,0],[0,0,4,4,4,0,0,0],[0,0,0,0,0,8,8,8],[0,1,0,0,0,0,0,0]]
+}
+
+},
+"CONSTRAINTS" :
+ [
+{
+"rule" : 1,
+"constraint" : "weekly",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [1],
+"sessions" : [{"set" :[1,3,4,5,6,7,8]}],
+"parameters" : []
+},
+{
+"rule" : 2,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [1],
+"sessions" : [{"set" :[1,2,3,4,5,6,7,8]}],
+"parameters" : []
+},
+{
+"rule" : 2,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [2],
+"sessions" : [{"set" :[9,10,11,12,13,14,15,16,17]}],
+"parameters" : []
+},
+{
+"rule" : 2,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [3],
+"sessions" : [{"set" :[18,19,20,21,22,23,24,25,26]}],
+"parameters" : []
+},
+{
+"rule" : 2,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [4],
+"sessions" : [{"set" :[27,28,29,30,31,32,33]}],
+"parameters" : []
+},
+{
+"rule" : 2,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [5],
+"sessions" : [{"set" :[34,35,36,37,38,39,40]}],
+"parameters" : []
+},
+{
+"rule" : 2,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [6],
+"sessions" : [{"set" :[41,42,43,44,45,46,47]}],
+"parameters" : []
+},
+{
+"rule" : 2,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [7],
+"sessions" : [{"set" :[48]}],
+"parameters" : []
+},
+{
+"rule" : 2,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [8],
+"sessions" : [{"set" :[49]}],
+"parameters" : []
+},
+{
+"rule" : 2,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [9],
+"sessions" : [{"set" :[50]}],
+"parameters" : []
+},
+{
+"rule" : 3,
+"constraint" : "weekly",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [2],
+"sessions" : [{"set" :[9,10,11,12,13,14,15,16,17]}],
+"parameters" : []
+},
+{
+"rule" : 3,
+"constraint" : "weekly",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [3],
+"sessions" : [{"set" :[18,19,20,21,22,23,24,25,26]}],
+"parameters" : []
+},
+{
+"rule" : 3,
+"constraint" : "weekly",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [4],
+"sessions" : [{"set" :[27,28,29,30,31,32,33]}],
+"parameters" : []
+},
+{
+"rule" : 3,
+"constraint" : "weekly",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [5],
+"sessions" : [{"set" :[34,35,36,37,38,39,40]}],
+"parameters" : []
+},
+{
+"rule" : 3,
+"constraint" : "weekly",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [6],
+"sessions" : [{"set" :[41,42,43,44,45,46,47]}],
+"parameters" : []
+},
+{
+"rule" : 4,
+"constraint" : "sameWeek",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [4],
+"sessions" : [{"set" :[27]}],
+"parameters" : []
+},
+{
+"rule" : 4,
+"constraint" : "sameWeek",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [5],
+"sessions" : [{"set" :[34]}],
+"parameters" : []
+},
+{
+"rule" : 4,
+"constraint" : "sameWeek",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [6],
+"sessions" : [{"set" :[41]}],
+"parameters" : []
+},
+{
+"rule" : 5,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [2],
+"sessions" : [{"set" :[9,10,11,12,13,14,15,16,17]}],
+"parameters" : []
+},
+{
+"rule" : 5,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [3],
+"sessions" : [{"set" :[18,19,20,21,22,23,24,25,26]}],
+"parameters" : []
+},
+{
+"rule" : 5,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [4],
+"sessions" : [{"set" :[27,28,29,30,31,32,33]}],
+"parameters" : []
+},
+{
+"rule" : 5,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [5],
+"sessions" : [{"set" :[34,35,36,37,38,39,40]}],
+"parameters" : []
+},
+{
+"rule" : 5,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [6],
+"sessions" : [{"set" :[41,42,43,44,45,46,47]}],
+"parameters" : []
+},
+{
+"rule" : 6,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [1,2],
+"sessions" : [{"set" :[2]},{"set" :[9]}],
+"parameters" : []
+},
+{
+"rule" : 6,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [1,3],
+"sessions" : [{"set" :[2]},{"set" :[18]}],
+"parameters" : []
+},
+{
+"rule" : 7,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [2,4],
+"sessions" : [{"set" :[10]},{"set" :[27]}],
+"parameters" : []
+},
+{
+"rule" : 7,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [2,5],
+"sessions" : [{"set" :[10]},{"set" :[34]}],
+"parameters" : []
+},
+{
+"rule" : 7,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [2,6],
+"sessions" : [{"set" :[10]},{"set" :[41]}],
+"parameters" : []
+},
+{
+"rule" : 7,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [3,4],
+"sessions" : [{"set" :[19]},{"set" :[27]}],
+"parameters" : []
+},
+{
+"rule" : 7,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [3,5],
+"sessions" : [{"set" :[19]},{"set" :[34]}],
+"parameters" : []
+},
+{
+"rule" : 7,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [3,6],
+"sessions" : [{"set" :[19]},{"set" :[41]}],
+"parameters" : []
+},
+{
+"rule" : 8,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [1,7],
+"sessions" : [{"set" :[8]},{"set" :[48]}],
+"parameters" : []
+},
+{
+"rule" : 8,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [1,8],
+"sessions" : [{"set" :[8]},{"set" :[49]}],
+"parameters" : []
+},
+{
+"rule" : 8,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [1,9],
+"sessions" : [{"set" :[8]},{"set" :[50]}],
+"parameters" : []
+},
+{
+"rule" : 9,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [2,7],
+"sessions" : [{"set" :[17]},{"set" :[48]}],
+"parameters" : []
+},
+{
+"rule" : 9,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [2,8],
+"sessions" : [{"set" :[17]},{"set" :[49]}],
+"parameters" : []
+},
+{
+"rule" : 9,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [2,9],
+"sessions" : [{"set" :[17]},{"set" :[50]}],
+"parameters" : []
+},
+{
+"rule" : 9,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [3,7],
+"sessions" : [{"set" :[26]},{"set" :[48]}],
+"parameters" : []
+},
+{
+"rule" : 9,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [3,8],
+"sessions" : [{"set" :[26]},{"set" :[49]}],
+"parameters" : []
+},
+{
+"rule" : 9,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [3,9],
+"sessions" : [{"set" :[26]},{"set" :[50]}],
+"parameters" : []
+},
+{
+"rule" : 10,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [4,7],
+"sessions" : [{"set" :[33]},{"set" :[48]}],
+"parameters" : []
+},
+{
+"rule" : 10,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [4,8],
+"sessions" : [{"set" :[33]},{"set" :[49]}],
+"parameters" : []
+},
+{
+"rule" : 10,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [4,9],
+"sessions" : [{"set" :[33]},{"set" :[50]}],
+"parameters" : []
+},
+{
+"rule" : 10,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [5,7],
+"sessions" : [{"set" :[40]},{"set" :[48]}],
+"parameters" : []
+},
+{
+"rule" : 10,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [5,8],
+"sessions" : [{"set" :[40]},{"set" :[49]}],
+"parameters" : []
+},
+{
+"rule" : 10,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [5,9],
+"sessions" : [{"set" :[40]},{"set" :[50]}],
+"parameters" : []
+},
+{
+"rule" : 10,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [6,7],
+"sessions" : [{"set" :[47]},{"set" :[48]}],
+"parameters" : []
+},
+{
+"rule" : 10,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [6,8],
+"sessions" : [{"set" :[47]},{"set" :[49]}],
+"parameters" : []
+},
+{
+"rule" : 10,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [6,9],
+"sessions" : [{"set" :[47]},{"set" :[50]}],
+"parameters" : []
+},
+{
+"rule" : 11,
+"constraint" : "sameWeek",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [2],
+"sessions" : [{"set" :[9]}],
+"parameters" : []
+},
+{
+"rule" : 11,
+"constraint" : "sameWeek",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [3],
+"sessions" : [{"set" :[18]}],
+"parameters" : []
+},
+{
+"rule" : 12,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [1],
+"sessions" : [{"set" :[1,2,3,4,5,6,7,8]}],
+"parameters" : []
+},
+{
+"rule" : 12,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [2],
+"sessions" : [{"set" :[9,10,11,12,13,14,15,16,17]}],
+"parameters" : []
+},
+{
+"rule" : 12,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [3],
+"sessions" : [{"set" :[18,19,20,21,22,23,24,25,26]}],
+"parameters" : []
+},
+{
+"rule" : 12,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [4],
+"sessions" : [{"set" :[27,28,29,30,31,32,33]}],
+"parameters" : []
+},
+{
+"rule" : 12,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [5],
+"sessions" : [{"set" :[34,35,36,37,38,39,40]}],
+"parameters" : []
+},
+{
+"rule" : 12,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [6],
+"sessions" : [{"set" :[41,42,43,44,45,46,47]}],
+"parameters" : []
+},
+{
+"rule" : 12,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [7],
+"sessions" : [{"set" :[48]}],
+"parameters" : []
+},
+{
+"rule" : 12,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [8],
+"sessions" : [{"set" :[49]}],
+"parameters" : []
+},
+{
+"rule" : 12,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [9],
+"sessions" : [{"set" :[50]}],
+"parameters" : []
+},
+{
+"rule" : 13,
+"constraint" : "sameRooms",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [1],
+"sessions" : [{"set" :[1,2,3,4,5,6,7,8]}],
+"parameters" : []
+},
+{
+"rule" : 13,
+"constraint" : "sameRooms",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [2],
+"sessions" : [{"set" :[9,10,11,12,13,14,15,16,17]}],
+"parameters" : []
+},
+{
+"rule" : 13,
+"constraint" : "sameRooms",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [3],
+"sessions" : [{"set" :[18,19,20,21,22,23,24,25,26]}],
+"parameters" : []
+},
+{
+"rule" : 13,
+"constraint" : "sameRooms",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [4],
+"sessions" : [{"set" :[27,28,29,30,31,32,33]}],
+"parameters" : []
+},
+{
+"rule" : 13,
+"constraint" : "sameRooms",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [5],
+"sessions" : [{"set" :[34,35,36,37,38,39,40]}],
+"parameters" : []
+},
+{
+"rule" : 13,
+"constraint" : "sameRooms",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [6],
+"sessions" : [{"set" :[41,42,43,44,45,46,47]}],
+"parameters" : []
+},
+{
+"rule" : 13,
+"constraint" : "sameRooms",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [7],
+"sessions" : [{"set" :[48]}],
+"parameters" : []
+},
+{
+"rule" : 13,
+"constraint" : "sameRooms",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [8],
+"sessions" : [{"set" :[49]}],
+"parameters" : []
+},
+{
+"rule" : 13,
+"constraint" : "sameRooms",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [9],
+"sessions" : [{"set" :[50]}],
+"parameters" : []
+},
+{
+"rule" : 14,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [10],
+"sessions" : [{"set" :[51,52,53,54,55,56,57,58,59,60,61,62]}],
+"parameters" : []
+},
+{
+"rule" : 14,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [11],
+"sessions" : [{"set" :[63,64,65,66,67,68,69,70]}],
+"parameters" : []
+},
+{
+"rule" : 14,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [12],
+"sessions" : [{"set" :[71,72,73,74,75,76,77,78]}],
+"parameters" : []
+},
+{
+"rule" : 14,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [13],
+"sessions" : [{"set" :[79,80,81,82,83,84,85,86]}],
+"parameters" : []
+},
+{
+"rule" : 14,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [14],
+"sessions" : [{"set" :[87]}],
+"parameters" : []
+},
+{
+"rule" : 14,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [15],
+"sessions" : [{"set" :[88]}],
+"parameters" : []
+},
+{
+"rule" : 14,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [16],
+"sessions" : [{"set" :[89]}],
+"parameters" : []
+},
+{
+"rule" : 15,
+"constraint" : "weekly",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [10],
+"sessions" : [{"set" :[51,54,55,56,57,58,59,60,61,62]}],
+"parameters" : []
+},
+{
+"rule" : 16,
+"constraint" : "weekly",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [11],
+"sessions" : [{"set" :[63,64,65,66,67,68,69,70]}],
+"parameters" : []
+},
+{
+"rule" : 16,
+"constraint" : "weekly",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [12],
+"sessions" : [{"set" :[71,72,73,74,75,76,77,78]}],
+"parameters" : []
+},
+{
+"rule" : 16,
+"constraint" : "weekly",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [13],
+"sessions" : [{"set" :[79,80,81,82,83,84,85,86]}],
+"parameters" : []
+},
+{
+"rule" : 17,
+"constraint" : "sameWeek",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["part"],
+"elements" : [6],
+"sessions" : [{"set" :[63,71,79]}],
+"parameters" : []
+},
+{
+"rule" : 18,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [10,11],
+"sessions" : [{"set" :[53]},{"set" :[63]}],
+"parameters" : []
+},
+{
+"rule" : 18,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [10,12],
+"sessions" : [{"set" :[53]},{"set" :[71]}],
+"parameters" : []
+},
+{
+"rule" : 18,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [10,13],
+"sessions" : [{"set" :[53]},{"set" :[79]}],
+"parameters" : []
+},
+{
+"rule" : 19,
+"constraint" : "sameRooms",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [10],
+"sessions" : [{"set" :[51,52,53,54,55,56,57,58,59,60,61,62]}],
+"parameters" : []
+},
+{
+"rule" : 19,
+"constraint" : "sameRooms",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [11],
+"sessions" : [{"set" :[63,64,65,66,67,68,69,70]}],
+"parameters" : []
+},
+{
+"rule" : 19,
+"constraint" : "sameRooms",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [12],
+"sessions" : [{"set" :[71,72,73,74,75,76,77,78]}],
+"parameters" : []
+},
+{
+"rule" : 19,
+"constraint" : "sameRooms",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [13],
+"sessions" : [{"set" :[79,80,81,82,83,84,85,86]}],
+"parameters" : []
+},
+{
+"rule" : 20,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [10],
+"sessions" : [{"set" :[51,52,53,54,55,56,57,58,59,60,61,62]}],
+"parameters" : []
+},
+{
+"rule" : 20,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [11],
+"sessions" : [{"set" :[63,64,65,66,67,68,69,70]}],
+"parameters" : []
+},
+{
+"rule" : 20,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [12],
+"sessions" : [{"set" :[71,72,73,74,75,76,77,78]}],
+"parameters" : []
+},
+{
+"rule" : 20,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [13],
+"sessions" : [{"set" :[79,80,81,82,83,84,85,86]}],
+"parameters" : []
+},
+{
+"rule" : 20,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [14],
+"sessions" : [{"set" :[87]}],
+"parameters" : []
+},
+{
+"rule" : 20,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [15],
+"sessions" : [{"set" :[88]}],
+"parameters" : []
+},
+{
+"rule" : 20,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [16],
+"sessions" : [{"set" :[89]}],
+"parameters" : []
+},
+{
+"rule" : 21,
+"constraint" : "sameSlots",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["part"],
+"elements" : [7],
+"sessions" : [{"set" :[87,88,89]}],
+"parameters" : []
+},
+{
+"rule" : 22,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [11,14],
+"sessions" : [{"set" :[67]},{"set" :[87]}],
+"parameters" : []
+},
+{
+"rule" : 22,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [11,15],
+"sessions" : [{"set" :[67]},{"set" :[88]}],
+"parameters" : []
+},
+{
+"rule" : 22,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [11,16],
+"sessions" : [{"set" :[67]},{"set" :[89]}],
+"parameters" : []
+},
+{
+"rule" : 22,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [12,14],
+"sessions" : [{"set" :[75]},{"set" :[87]}],
+"parameters" : []
+},
+{
+"rule" : 22,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [12,15],
+"sessions" : [{"set" :[75]},{"set" :[88]}],
+"parameters" : []
+},
+{
+"rule" : 22,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [12,16],
+"sessions" : [{"set" :[75]},{"set" :[89]}],
+"parameters" : []
+},
+{
+"rule" : 22,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [13,14],
+"sessions" : [{"set" :[83]},{"set" :[87]}],
+"parameters" : []
+},
+{
+"rule" : 22,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [13,15],
+"sessions" : [{"set" :[83]},{"set" :[88]}],
+"parameters" : []
+},
+{
+"rule" : 22,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [13,16],
+"sessions" : [{"set" :[83]},{"set" :[89]}],
+"parameters" : []
+},
+{
+"rule" : 23,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [14,11],
+"sessions" : [{"set" :[87]},{"set" :[68]}],
+"parameters" : []
+},
+{
+"rule" : 23,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [14,12],
+"sessions" : [{"set" :[87]},{"set" :[76]}],
+"parameters" : []
+},
+{
+"rule" : 23,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [14,13],
+"sessions" : [{"set" :[87]},{"set" :[84]}],
+"parameters" : []
+},
+{
+"rule" : 23,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [15,11],
+"sessions" : [{"set" :[88]},{"set" :[68]}],
+"parameters" : []
+},
+{
+"rule" : 23,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [15,12],
+"sessions" : [{"set" :[88]},{"set" :[76]}],
+"parameters" : []
+},
+{
+"rule" : 23,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [15,13],
+"sessions" : [{"set" :[88]},{"set" :[84]}],
+"parameters" : []
+},
+{
+"rule" : 23,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [16,11],
+"sessions" : [{"set" :[89]},{"set" :[68]}],
+"parameters" : []
+},
+{
+"rule" : 23,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [16,12],
+"sessions" : [{"set" :[89]},{"set" :[76]}],
+"parameters" : []
+},
+{
+"rule" : 23,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [16,13],
+"sessions" : [{"set" :[89]},{"set" :[84]}],
+"parameters" : []
+},
+{
+"rule" : 24,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [10,11],
+"sessions" : [{"set" :[51]},{"set" :[63]}],
+"parameters" : []
+},
+{
+"rule" : 24,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [10,13],
+"sessions" : [{"set" :[51]},{"set" :[79]}],
+"parameters" : []
+},
+{
+"rule" : 25,
+"constraint" : "weekly",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [17],
+"sessions" : [{"set" :[90,91,92,93,94,95,96]}],
+"parameters" : []
+},
+{
+"rule" : 25,
+"constraint" : "weekly",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [18],
+"sessions" : [{"set" :[97,98,99,100,101]}],
+"parameters" : []
+},
+{
+"rule" : 26,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [17],
+"sessions" : [{"set" :[90,91,92,93,94,95,96]}],
+"parameters" : []
+},
+{
+"rule" : 26,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [18],
+"sessions" : [{"set" :[97,98,99,100,101]}],
+"parameters" : []
+},
+{
+"rule" : 27,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [23],
+"sessions" : [{"set" :[117,118]}],
+"parameters" : []
+},
+{
+"rule" : 28,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [22,24],
+"sessions" : [{"set" :[116]},{"set" :[119]}],
+"parameters" : []
+},
+{
+"rule" : 28,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [22,25],
+"sessions" : [{"set" :[116]},{"set" :[129]}],
+"parameters" : []
+},
+{
+"rule" : 28,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [22,26],
+"sessions" : [{"set" :[116]},{"set" :[139]}],
+"parameters" : []
+},
+{
+"rule" : 29,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [22,23],
+"sessions" : [{"set" :[116]},{"set" :[117]}],
+"parameters" : []
+},
+{
+"rule" : 30,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [23,24],
+"sessions" : [{"set" :[118]},{"set" :[119]}],
+"parameters" : []
+},
+{
+"rule" : 30,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [23,25],
+"sessions" : [{"set" :[118]},{"set" :[129]}],
+"parameters" : []
+},
+{
+"rule" : 30,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [23,26],
+"sessions" : [{"set" :[118]},{"set" :[139]}],
+"parameters" : []
+},
+{
+"rule" : 31,
+"constraint" : "sameWeek",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [18],
+"sessions" : [{"set" :[97]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [1],
+"sessions" : [{"set" :[1,2,3,4,5,6,7,8]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [2],
+"sessions" : [{"set" :[9,10,11,12,13,14,15,16,17]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [3],
+"sessions" : [{"set" :[18,19,20,21,22,23,24,25,26]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [4],
+"sessions" : [{"set" :[27,28,29,30,31,32,33]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [5],
+"sessions" : [{"set" :[34,35,36,37,38,39,40]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [6],
+"sessions" : [{"set" :[41,42,43,44,45,46,47]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [7],
+"sessions" : [{"set" :[48]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [8],
+"sessions" : [{"set" :[49]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [9],
+"sessions" : [{"set" :[50]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [10],
+"sessions" : [{"set" :[51,52,53,54,55,56,57,58,59,60,61,62]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [11],
+"sessions" : [{"set" :[63,64,65,66,67,68,69,70]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [12],
+"sessions" : [{"set" :[71,72,73,74,75,76,77,78]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [13],
+"sessions" : [{"set" :[79,80,81,82,83,84,85,86]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [14],
+"sessions" : [{"set" :[87]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [15],
+"sessions" : [{"set" :[88]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [16],
+"sessions" : [{"set" :[89]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [17],
+"sessions" : [{"set" :[90,91,92,93,94,95,96]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [18],
+"sessions" : [{"set" :[97,98,99,100,101]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [19],
+"sessions" : [{"set" :[102,103,104,105,106]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [20],
+"sessions" : [{"set" :[107,108,109,110]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [21],
+"sessions" : [{"set" :[111,112,113,114]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [22],
+"sessions" : [{"set" :[115,116]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [23],
+"sessions" : [{"set" :[117,118]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [24],
+"sessions" : [{"set" :[119,120,121,122,123,124,125,126,127,128]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [25],
+"sessions" : [{"set" :[129,130,131,132,133,134,135,136,137,138]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [26],
+"sessions" : [{"set" :[139,140,141,142,143,144,145,146,147,148]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [27],
+"sessions" : [{"set" :[149,150,151,152]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [28],
+"sessions" : [{"set" :[153,154,155,156,157,158,159]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [29],
+"sessions" : [{"set" :[160,161,162,163,164,165,166]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [30],
+"sessions" : [{"set" :[167,168,169,170,171,172,173]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [31],
+"sessions" : [{"set" :[174,175,176,177]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [32],
+"sessions" : [{"set" :[178,179,180,181]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [33],
+"sessions" : [{"set" :[182,183,184,185]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [34],
+"sessions" : [{"set" :[186,187,188,189]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [35],
+"sessions" : [{"set" :[190,191,192,193]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [36],
+"sessions" : [{"set" :[194,195,196,197,198,199]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [37],
+"sessions" : [{"set" :[200,201,202]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [38],
+"sessions" : [{"set" :[203,204,205]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [39],
+"sessions" : [{"set" :[206,207,208,209]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [40],
+"sessions" : [{"set" :[210,211,212,213]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [41],
+"sessions" : [{"set" :[214,215,216,217]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [42],
+"sessions" : [{"set" :[218,219,220,221,222,223,224,225]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [43],
+"sessions" : [{"set" :[226,227,228,229,230,231,232,233]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [44],
+"sessions" : [{"set" :[234,235,236,237,238,239,240,241]}],
+"parameters" : []
+},
+{
+"rule" : 32,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [45],
+"sessions" : [{"set" :[242]}],
+"parameters" : []
+},
+{
+"rule" : 33,
+"constraint" : "weekly",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [36],
+"sessions" : [{"set" :[194,197,198,199]}],
+"parameters" : []
+},
+{
+"rule" : 34,
+"constraint" : "weekly",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [30],
+"sessions" : [{"set" :[167,169,170,171,172,173]}],
+"parameters" : []
+},
+{
+"rule" : 35,
+"constraint" : "weekly",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [37],
+"sessions" : [{"set" :[200,201,202]}],
+"parameters" : []
+},
+{
+"rule" : 35,
+"constraint" : "weekly",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [38],
+"sessions" : [{"set" :[203,204,205]}],
+"parameters" : []
+},
+{
+"rule" : 35,
+"constraint" : "weekly",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [39],
+"sessions" : [{"set" :[206,207,208,209]}],
+"parameters" : []
+},
+{
+"rule" : 35,
+"constraint" : "weekly",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [40],
+"sessions" : [{"set" :[210,211,212,213]}],
+"parameters" : []
+},
+{
+"rule" : 35,
+"constraint" : "weekly",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [41],
+"sessions" : [{"set" :[214,215,216,217]}],
+"parameters" : []
+},
+{
+"rule" : 36,
+"constraint" : "weekly",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [31],
+"sessions" : [{"set" :[174,175,176,177]}],
+"parameters" : []
+},
+{
+"rule" : 36,
+"constraint" : "weekly",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [32],
+"sessions" : [{"set" :[178,179,180,181]}],
+"parameters" : []
+},
+{
+"rule" : 36,
+"constraint" : "weekly",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [33],
+"sessions" : [{"set" :[182,183,184,185]}],
+"parameters" : []
+},
+{
+"rule" : 36,
+"constraint" : "weekly",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [34],
+"sessions" : [{"set" :[186,187,188,189]}],
+"parameters" : []
+},
+{
+"rule" : 36,
+"constraint" : "weekly",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [35],
+"sessions" : [{"set" :[190,191,192,193]}],
+"parameters" : []
+},
+{
+"rule" : 37,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [31],
+"sessions" : [{"set" :[174,175,176,177]}],
+"parameters" : []
+},
+{
+"rule" : 37,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [32],
+"sessions" : [{"set" :[178,179,180,181]}],
+"parameters" : []
+},
+{
+"rule" : 37,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [33],
+"sessions" : [{"set" :[182,183,184,185]}],
+"parameters" : []
+},
+{
+"rule" : 37,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [34],
+"sessions" : [{"set" :[186,187,188,189]}],
+"parameters" : []
+},
+{
+"rule" : 37,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [35],
+"sessions" : [{"set" :[190,191,192,193]}],
+"parameters" : []
+},
+{
+"rule" : 38,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [37],
+"sessions" : [{"set" :[200,201,202]}],
+"parameters" : []
+},
+{
+"rule" : 38,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [38],
+"sessions" : [{"set" :[203,204,205]}],
+"parameters" : []
+},
+{
+"rule" : 38,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [39],
+"sessions" : [{"set" :[206,207,208,209]}],
+"parameters" : []
+},
+{
+"rule" : 38,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [40],
+"sessions" : [{"set" :[210,211,212,213]}],
+"parameters" : []
+},
+{
+"rule" : 38,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [41],
+"sessions" : [{"set" :[214,215,216,217]}],
+"parameters" : []
+},
+{
+"rule" : 39,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [36,39],
+"sessions" : [{"set" :[199]},{"set" :[206]}],
+"parameters" : []
+},
+{
+"rule" : 39,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [36,40],
+"sessions" : [{"set" :[199]},{"set" :[210]}],
+"parameters" : []
+},
+{
+"rule" : 39,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [36,41],
+"sessions" : [{"set" :[199]},{"set" :[214]}],
+"parameters" : []
+},
+{
+"rule" : 40,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [36,37],
+"sessions" : [{"set" :[199]},{"set" :[200]}],
+"parameters" : []
+},
+{
+"rule" : 40,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [36,38],
+"sessions" : [{"set" :[199]},{"set" :[203]}],
+"parameters" : []
+},
+{
+"rule" : 41,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [30,31],
+"sessions" : [{"set" :[169]},{"set" :[174]}],
+"parameters" : []
+},
+{
+"rule" : 41,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [30,32],
+"sessions" : [{"set" :[169]},{"set" :[178]}],
+"parameters" : []
+},
+{
+"rule" : 42,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [39,37],
+"sessions" : [{"set" :[206]},{"set" :[200]}],
+"parameters" : []
+},
+{
+"rule" : 42,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [39,38],
+"sessions" : [{"set" :[206]},{"set" :[203]}],
+"parameters" : []
+},
+{
+"rule" : 42,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [40,37],
+"sessions" : [{"set" :[210]},{"set" :[200]}],
+"parameters" : []
+},
+{
+"rule" : 42,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [40,38],
+"sessions" : [{"set" :[210]},{"set" :[203]}],
+"parameters" : []
+},
+{
+"rule" : 42,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [41,37],
+"sessions" : [{"set" :[214]},{"set" :[200]}],
+"parameters" : []
+},
+{
+"rule" : 42,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [41,38],
+"sessions" : [{"set" :[214]},{"set" :[203]}],
+"parameters" : []
+},
+{
+"rule" : 43,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [31,33],
+"sessions" : [{"set" :[177]},{"set" :[182]}],
+"parameters" : []
+},
+{
+"rule" : 43,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [31,34],
+"sessions" : [{"set" :[177]},{"set" :[186]}],
+"parameters" : []
+},
+{
+"rule" : 43,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [31,35],
+"sessions" : [{"set" :[177]},{"set" :[190]}],
+"parameters" : []
+},
+{
+"rule" : 43,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [32,33],
+"sessions" : [{"set" :[181]},{"set" :[182]}],
+"parameters" : []
+},
+{
+"rule" : 43,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [32,34],
+"sessions" : [{"set" :[181]},{"set" :[186]}],
+"parameters" : []
+},
+{
+"rule" : 43,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [32,35],
+"sessions" : [{"set" :[181]},{"set" :[190]}],
+"parameters" : []
+},
+{
+"rule" : 44,
+"constraint" : "sameWeek",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["part"],
+"elements" : [21],
+"sessions" : [{"set" :[200,203]}],
+"parameters" : []
+},
+{
+"rule" : 44,
+"constraint" : "sameWeek",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["part"],
+"elements" : [22],
+"sessions" : [{"set" :[206,210,214]}],
+"parameters" : []
+},
+{
+"rule" : 45,
+"constraint" : "sameWeek",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["part"],
+"elements" : [18],
+"sessions" : [{"set" :[174,178]}],
+"parameters" : []
+},
+{
+"rule" : 45,
+"constraint" : "sameWeek",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["part"],
+"elements" : [19],
+"sessions" : [{"set" :[182,186,190]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [1],
+"sessions" : [{"set" :[1,2,3,4,5,6,7,8]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [2],
+"sessions" : [{"set" :[9,10,11,12,13,14,15,16,17]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [3],
+"sessions" : [{"set" :[18,19,20,21,22,23,24,25,26]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [4],
+"sessions" : [{"set" :[27,28,29,30,31,32,33]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [5],
+"sessions" : [{"set" :[34,35,36,37,38,39,40]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [6],
+"sessions" : [{"set" :[41,42,43,44,45,46,47]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [7],
+"sessions" : [{"set" :[48]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [8],
+"sessions" : [{"set" :[49]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [9],
+"sessions" : [{"set" :[50]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [10],
+"sessions" : [{"set" :[51,52,53,54,55,56,57,58,59,60,61,62]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [11],
+"sessions" : [{"set" :[63,64,65,66,67,68,69,70]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [12],
+"sessions" : [{"set" :[71,72,73,74,75,76,77,78]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [13],
+"sessions" : [{"set" :[79,80,81,82,83,84,85,86]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [14],
+"sessions" : [{"set" :[87]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [15],
+"sessions" : [{"set" :[88]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [16],
+"sessions" : [{"set" :[89]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [17],
+"sessions" : [{"set" :[90,91,92,93,94,95,96]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [18],
+"sessions" : [{"set" :[97,98,99,100,101]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [19],
+"sessions" : [{"set" :[102,103,104,105,106]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [20],
+"sessions" : [{"set" :[107,108,109,110]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [21],
+"sessions" : [{"set" :[111,112,113,114]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [22],
+"sessions" : [{"set" :[115,116]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [23],
+"sessions" : [{"set" :[117,118]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [24],
+"sessions" : [{"set" :[119,120,121,122,123,124,125,126,127,128]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [25],
+"sessions" : [{"set" :[129,130,131,132,133,134,135,136,137,138]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [26],
+"sessions" : [{"set" :[139,140,141,142,143,144,145,146,147,148]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [27],
+"sessions" : [{"set" :[149,150,151,152]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [28],
+"sessions" : [{"set" :[153,154,155,156,157,158,159]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [29],
+"sessions" : [{"set" :[160,161,162,163,164,165,166]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [30],
+"sessions" : [{"set" :[167,168,169,170,171,172,173]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [31],
+"sessions" : [{"set" :[174,175,176,177]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [32],
+"sessions" : [{"set" :[178,179,180,181]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [33],
+"sessions" : [{"set" :[182,183,184,185]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [34],
+"sessions" : [{"set" :[186,187,188,189]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [35],
+"sessions" : [{"set" :[190,191,192,193]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [36],
+"sessions" : [{"set" :[194,195,196,197,198,199]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [37],
+"sessions" : [{"set" :[200,201,202]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [38],
+"sessions" : [{"set" :[203,204,205]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [39],
+"sessions" : [{"set" :[206,207,208,209]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [40],
+"sessions" : [{"set" :[210,211,212,213]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [41],
+"sessions" : [{"set" :[214,215,216,217]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [42],
+"sessions" : [{"set" :[218,219,220,221,222,223,224,225]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [43],
+"sessions" : [{"set" :[226,227,228,229,230,231,232,233]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [44],
+"sessions" : [{"set" :[234,235,236,237,238,239,240,241]}],
+"parameters" : []
+},
+{
+"rule" : 46,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [45],
+"sessions" : [{"set" :[242]}],
+"parameters" : []
+},
+{
+"rule" : 47,
+"constraint" : "sameRooms",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [30],
+"sessions" : [{"set" :[167,168,169,170,171,172,173]}],
+"parameters" : []
+},
+{
+"rule" : 47,
+"constraint" : "sameRooms",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [31],
+"sessions" : [{"set" :[174,175,176,177]}],
+"parameters" : []
+},
+{
+"rule" : 47,
+"constraint" : "sameRooms",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [32],
+"sessions" : [{"set" :[178,179,180,181]}],
+"parameters" : []
+},
+{
+"rule" : 47,
+"constraint" : "sameRooms",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [33],
+"sessions" : [{"set" :[182,183,184,185]}],
+"parameters" : []
+},
+{
+"rule" : 47,
+"constraint" : "sameRooms",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [34],
+"sessions" : [{"set" :[186,187,188,189]}],
+"parameters" : []
+},
+{
+"rule" : 47,
+"constraint" : "sameRooms",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [35],
+"sessions" : [{"set" :[190,191,192,193]}],
+"parameters" : []
+},
+{
+"rule" : 48,
+"constraint" : "weekly",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [42],
+"sessions" : [{"set" :[218,219,220,221,222,223,224,225]}],
+"parameters" : []
+},
+{
+"rule" : 48,
+"constraint" : "weekly",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [43],
+"sessions" : [{"set" :[226,227,228,229,230,231,232,233]}],
+"parameters" : []
+},
+{
+"rule" : 48,
+"constraint" : "weekly",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [44],
+"sessions" : [{"set" :[234,235,236,237,238,239,240,241]}],
+"parameters" : []
+},
+{
+"rule" : 49,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [42],
+"sessions" : [{"set" :[218,219,220,221,222,223,224,225]}],
+"parameters" : []
+},
+{
+"rule" : 49,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [43],
+"sessions" : [{"set" :[226,227,228,229,230,231,232,233]}],
+"parameters" : []
+},
+{
+"rule" : 49,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [44],
+"sessions" : [{"set" :[234,235,236,237,238,239,240,241]}],
+"parameters" : []
+},
+{
+"rule" : 50,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [42,45],
+"sessions" : [{"set" :[225]},{"set" :[242]}],
+"parameters" : []
+},
+{
+"rule" : 50,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [43,45],
+"sessions" : [{"set" :[233]},{"set" :[242]}],
+"parameters" : []
+},
+{
+"rule" : 50,
+"constraint" : "sequenced",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [44,45],
+"sessions" : [{"set" :[241]},{"set" :[242]}],
+"parameters" : []
+},
+{
+"rule" : 51,
+"constraint" : "sameWeek",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [42],
+"sessions" : [{"set" :[218]}],
+"parameters" : [1]
+},
+{
+"rule" : 51,
+"constraint" : "sameWeek",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [43],
+"sessions" : [{"set" :[226]}],
+"parameters" : [1]
+},
+{
+"rule" : 51,
+"constraint" : "sameWeek",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [44],
+"sessions" : [{"set" :[234]}],
+"parameters" : [1]
+},
+{
+"rule" : 52,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [42],
+"sessions" : [{"set" :[218,219,220,221,222,223,224,225]}],
+"parameters" : []
+},
+{
+"rule" : 52,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [43],
+"sessions" : [{"set" :[226,227,228,229,230,231,232,233]}],
+"parameters" : []
+},
+{
+"rule" : 52,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [44],
+"sessions" : [{"set" :[234,235,236,237,238,239,240,241]}],
+"parameters" : []
+},
+{
+"rule" : 52,
+"constraint" : "sameTeachers",
+"hardness" : "hard",
+"arity" : 1,
+"type" : ["class"],
+"elements" : [45],
+"sessions" : [{"set" :[242]}],
+"parameters" : []
+},
+{
+"rule" : 53,
+"constraint" : "sameRooms",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [42,42],
+"sessions" : [{"set" :[218,222,223,224]},{"set" :[218,222,223,224]}],
+"parameters" : [2]
+},
+{
+"rule" : 53,
+"constraint" : "sameRooms",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [42,43],
+"sessions" : [{"set" :[218,222,223,224]},{"set" :[226,230,231,232]}],
+"parameters" : [2]
+},
+{
+"rule" : 53,
+"constraint" : "sameRooms",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [42,44],
+"sessions" : [{"set" :[218,222,223,224]},{"set" :[234,238,239,240]}],
+"parameters" : [2]
+},
+{
+"rule" : 53,
+"constraint" : "sameRooms",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [43,42],
+"sessions" : [{"set" :[226,230,231,232]},{"set" :[218,222,223,224]}],
+"parameters" : [2]
+},
+{
+"rule" : 53,
+"constraint" : "sameRooms",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [43,43],
+"sessions" : [{"set" :[226,230,231,232]},{"set" :[226,230,231,232]}],
+"parameters" : [2]
+},
+{
+"rule" : 53,
+"constraint" : "sameRooms",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [43,44],
+"sessions" : [{"set" :[226,230,231,232]},{"set" :[234,238,239,240]}],
+"parameters" : [2]
+},
+{
+"rule" : 53,
+"constraint" : "sameRooms",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [44,42],
+"sessions" : [{"set" :[234,238,239,240]},{"set" :[218,222,223,224]}],
+"parameters" : [2]
+},
+{
+"rule" : 53,
+"constraint" : "sameRooms",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [44,43],
+"sessions" : [{"set" :[234,238,239,240]},{"set" :[226,230,231,232]}],
+"parameters" : [2]
+},
+{
+"rule" : 53,
+"constraint" : "sameRooms",
+"hardness" : "hard",
+"arity" : 2,
+"type" : ["class","class"],
+"elements" : [44,44],
+"sessions" : [{"set" :[234,238,239,240]},{"set" :[234,238,239,240]}],
+"parameters" : [2]
+}
+]
+
+}

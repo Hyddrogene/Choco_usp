@@ -60,8 +60,9 @@ public class EquilibrateRoomDisposition implements IntValueSelector {
 		return rooms;
 	}//FinMethod
 	
-	
-
+	public void outPut(int[] tab) {
+		System.out.println(Arrays.toString(tab));
+	}//FinMethod
 	@Override
 	public int selectValue(IntVar var) {
 		//var.getDomainSize();

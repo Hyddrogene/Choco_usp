@@ -13,6 +13,7 @@ import java.util.Vector;
 import org.chocosolver.solver.Model;
 import org.chocosolver.solver.Solution;
 import org.chocosolver.solver.Solver;
+import org.chocosolver.solver.constraints.Constraint;
 import org.chocosolver.solver.exception.ContradictionException;
 import org.chocosolver.solver.search.strategy.Search;
 import org.chocosolver.solver.search.strategy.selectors.values.IntDomainMax;
@@ -27,6 +28,7 @@ import org.chocosolver.solver.variables.BoolVar;
 import org.chocosolver.solver.variables.IntVar;
 import org.chocosolver.solver.variables.Task;
 
+@SuppressWarnings("unused")//TODO
 public class ModelUTP {
 	//Attribute
 	private InstanceUTPArray instanceUTP;
@@ -457,7 +459,7 @@ public class ModelUTP {
 					for(int k = 0; k < this.instanceUTP.class_sessions.get(classe-1).size() ;k++) {
 						tab[it] = model.intVar(0,1);
 						for(int m = 0; m < this.instanceUTP.part_room_worst_case[part-1];m++) {
-							
+							//model.arithm(model.intVar(0),"=",tab[it]).post();
 							model.sum(sum_var_rooms_disjunct(classe,t),"=",tab[it]).post();
 						}
 						//model.arithm(tab[it], "=", tabBool[it].intVar()).post(); 
@@ -474,7 +476,8 @@ public class ModelUTP {
 					//System.out.println("c : "+classe);
 					for(int k = 0; k < this.instanceUTP.class_sessions.get(classe-1).size() ;k++) {
 						tab[it] = model.intVar(0,1);
-						tabBool[it] = model.intEqView(x_room[classe-1], t+1);
+						//tabBool[it] = model.boolVar(false);//model.intEqView(x_room[classe-1], t+1);
+						tabBool[it] = model.intEqView(x_room[classe-1],t+1);
 						model.arithm(tab[it], "=", tabBool[it].intVar()).post(); 
 						//model.arithm(tabBool[it],"=",x_teacher[classe],"=",(t+1));
 						it++;
@@ -490,12 +493,26 @@ public class ModelUTP {
 	
 	public void disjunctive_room_v2() {
 		for(int t = 0; t < this.instanceUTP.nr_rooms ;t++) {
-			if(this.instanceUTP.room_parts.get(t).size() > 0) {
+			if(this.instanceUTP.room_parts.get(t).size() > 0 && t!=3 ) {
+				
 				//System.out.println("tasks : "+sessions_of_teacher_disjun_v2(t).length);
 				//System.out.println("heigh : "+generate_heigth(t).length);
 				//Disjunctive
-				model.cumulative(sessions_of_room_disjun_v2(t),generate_heigth_room_v2(t),model.intVar(1)).post();
+				Constraint cons = model.cumulative(sessions_of_room_disjun_v2(t),generate_heigth_room_v2(t),model.intVar(1));
+				cons.post();
+				cons.setName("cumulative_"+(t+1));
+				//System.out.println("room "+this.instanceUTP.room_name[t+1]+" constId "+cons.getName());
 			}
+			/*else {
+				System.out.println("MAUVAISE room :"+this.instanceUTP.room_name[t]);
+				int p_bad = 8;
+				System.out.println("bad part "+this.instanceUTP.part_name[this.instanceUTP.room_parts.get(t).get(p_bad)-1]);
+				//this.instanceUTP.room_parts.get(t).removeElementAt(p_bad);
+
+				Constraint cons = model.cumulative(sessions_of_room_disjun_v2(t),generate_heigth_room_v2(t),model.intVar(1));
+				cons.post();
+				cons.setName("cumulative_"+(t+1));
+			}*/
 		}
 		
 	}//FinMethod
@@ -637,24 +654,46 @@ public class ModelUTP {
 	}//FinMethod
 	
 	public IntVar[] generateXrooms(Vector<Vector<Integer>> cs) {
-		IntVar[] tab = new IntVar[cs.get(0).size()];
+		Vector<IntVar> tab = new Vector<IntVar>();
+		Vector<IntVar> tab2 = new Vector<IntVar>();
 		for(int i = 0; i< cs.get(0).size() ;i++) {
 			int sess = cs.get(0).get(i)-1;
-			tab[i] = x_room[this.instanceUTP.session_class[sess]-1];
+			int part = this.instanceUTP.class_part[this.instanceUTP.session_class[sess]-1];
+			///System.out.println("passsage");
+			if(this.instanceUTP.part_room_use[part-1].equals("multiple")) {
+				for(int j = 0; j < this.instanceUTP.part_room_worst_case[part-1] ;j++) {
+					tab2.add(this.x_rooms[this.instanceUTP.class_position_multiple_room[this.instanceUTP.session_class[sess]-1]+j]);
+				}
+				
+			}
+			else {
+				tab.add(x_room[this.instanceUTP.session_class[sess]-1]);
+			}
 		}
-		return tab;
+		IntVar[] tabFinal = new IntVar[tab.size()+tab2.size()];
+		for(int i = 0; i < tab.size() ;i++) {
+			tabFinal[i] = tab.get(i);
+		}
+		int j = 0;
+		for(int i = tab.size(); i < tab.size()+tab2.size() ;i++) {
+			tabFinal[i] = tab2.get(j);
+			//System.out.println("name : "+tab2.get(j).getName());
+			j++;
+		}
+		//System.out.println("length "+tab.size()+" size : "+tab2.size());
+		return tabFinal;
 	}//FinMethod
 	
 	public void sameSlot(ConstraintUTP constraint) {
 		
-		if(constraint.getRule() > 90 & constraint.getRule() < 94) {
+		/*if(constraint.getRule() > 90 & constraint.getRule() < 94) {
 			//System.out.println("");
 			System.out.println("MAUVAISE : "+constraint.getConstraint()+" "+constraint.getRule());
 			//return;
-		}
+		}*/
 		System.out.println(constraint.getConstraint()+" "+constraint.getRule());
 		this.model.allEqual(generateXSlot(constraint.getSessions())).post();
-		this.model.allDifferent(generateXrooms(constraint.getSessions())).post();
+		this.model.allDifferentExcept0(generateXrooms(constraint.getSessions())).post();
 		/*for (int i = 0; i < constraint.getSessions().get(0).size()-1 ;i++) {
 			for(int j = i+1; j < constraint.getSessions().get(0).size() ;j++) {
 				model.arithm(x_slot[constraint.getSessions().get(0).get(j)-1], "=", x_slot[constraint.getSessions().get(0).get(i)-1]).post();
@@ -662,7 +701,7 @@ public class ModelUTP {
 			}
 		}*/
 	}//FinMethod
-	
+
 	public void forbiddenPeriod(ConstraintUTP constraint) {
 		//Vector<Integer> allTimes = new Vector<Integer>();
 		int first_num = search_value(constraint,"first");
@@ -1162,7 +1201,7 @@ public class ModelUTP {
 	
 	public void search_strategie_2() {
 		double ran = Math.random();
-		Integer t = 1;
+		//Integer t = 1;
 		System.out.println("Stratégie 2 : random_seed : "+ran);
 		this.solver.setSearch(Search.intVarSearch(
                 new FirstFail(model),
@@ -1327,7 +1366,11 @@ public class ModelUTP {
 		//search_strategie();
 		strategie_choice();
 		//this.solver.showContradiction();
+		//this.solver.verboseSolving(100);
+		//this.solver.showStatisticsDuringResolution(1000);
 		this.solver.setNoLearning();
+		//this.solver.showDecisions();
+		this.solver.showDashboard();
 		this.solver.isLearnOff();
 		//this.solver.showShortStatistics();
 		this.solution = this.solver.findSolution();
@@ -1418,6 +1461,9 @@ public class ModelUTP {
 		return tab;
 	}
 	public String print_xml() {
+		if(this.solution == null) {
+			return "<!-- UNSAT ->";
+		}
 		String out = "<classes>\n";
 		for(int i = 0; i<this.instanceUTP.nr_classes;i++) {
 			out += "<class refId = \""+this.instanceUTP.class_name[i]+"\">\n";

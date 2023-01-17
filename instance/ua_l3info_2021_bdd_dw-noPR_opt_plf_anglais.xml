@@ -1,0 +1,3770 @@
+<?xml version="1.0"?>
+<!--
+<calendar>
+    <startingYear>2021</startingYear>
+    <weeks>1-8,10-13</weeks>
+    <weekDays>1-5</weekDays>
+</calendar>
+-->
+<!DOCTYPE timetabling SYSTEM "./../../../schema/fichier_dtd/usp_validator_v0_2.dtd">
+<timetabling xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/home/etudd/timetabling/schema/usp_timetabling_v0_2.xsd" name="ua_l3info_20s6_w12d5s8_e0r13t2g4_s45_bdd" nrWeeks="12" nrDaysPerWeek="5" nrSlotsPerDay="1440">
+
+    <rooms>
+        <!--<room id="Teams" sharable = "true" capacity="-1"/>
+        <room id="Discord_PC[i]_L3.0_Cours" sharable = "false" capacity="-1"/>
+        <room id="Discord_PC[i]_L3.1_Cours" sharable = "false" capacity="-1"/>
+        <room id="Discord_PC[i]_L3.2_Cours" sharable = "false" capacity="-1"/>
+        <room id="Discord_PC[i]_L3.3_Cours" sharable = "false" capacity="-1"/>-->
+        <room id="AMPHI-A" capacity="90" label="BATIMENT-A"/>
+        <room id="AMPHI-B" capacity="286" label="BATIMENT-A"/>
+        <room id="H001" capacity="20" label="BATIMENT-H"/>
+        <room id="H002" capacity="42" label="BATIMENT-H"/>
+        <room id="H003" capacity="38" label="BATIMENT-H"/>
+        <room id="L201" capacity="46" label="BATIMENT-L"/>
+        <room id="L202" capacity="46" label="BATIMENT-L"/>
+        <room id="L206" capacity="28" label="BATIMENT-L"/>
+
+    </rooms>
+    <teachers>
+        <teacher id="AIT EL MEKKI Touria" label="DEPARTEMENT-INFORMATIQUE"/>
+        <teacher id="GARCIA Laurent" label="DEPARTEMENT-INFORMATIQUE"/>
+        <teacher id="RICHER Jean-Michel" label="DEPARTEMENT-INFORMATIQUE"/>
+    
+        
+        <teacher id="LESAINT David" label="DEPARTEMENT-INFORMATIQUE"/>
+        <teacher id="JAMIN Antoine" label="DEPARTEMENT-INFORMATIQUE"/>
+        <teacher id="LEGEAY Marc" label="DEPARTEMENT-INFORMATIQUE"/>
+    
+        
+        <teacher id="DEVRED Caroline" label="DEPARTEMENT-INFORMATIQUE"/>
+        
+        <teacher id="GOUDET Olivier" label="DEPARTEMENT-INFORMATIQUE"/>
+        <teacher id="STEPHAN Igor" label="DEPARTEMENT-INFORMATIQUE"/>
+    
+        
+        <teacher id="LEFEVRE Claire" label="DEPARTEMENT-INFORMATIQUE"/>
+        <teacher id="DIEGUEZ Martin" label="DEPARTEMENT-INFORMATIQUE"/>
+        
+        
+    
+        <teacher id="LAUDIER Romain" label="DEPARTEMENT-ANGLAIS"/>
+    </teachers>
+    
+    <courses>
+        <course id="Base-de-donnees-2" label="L3-INFORMATIQUE,UE">
+            <part id="Base-de-donnees-2-CM" nrSessions="8" label="CM">
+                
+                <classes>
+                    <class id="Base-de-donnees-2-CM-1" maxHeadCount="80"/>
+                </classes>
+
+                <allowedSlots sessionLength="80">
+                <!--Slot quotition possible pour la part -->
+                    <dailySlots>480,570,660,750,840,930,1020,1110</dailySlots>
+                    <days>1-5</days>
+                    <weeks>1-12</weeks>
+                </allowedSlots>
+
+                <allowedRooms sessionRooms="single">
+                    <room refId="AMPHI-A"/>
+                    <room refId="AMPHI-B"/>
+                </allowedRooms>
+
+                <allowedTeachers sessionTeachers="1">
+                    <teacher refId="AIT EL MEKKI Touria" nrSessions="8"/>
+                </allowedTeachers>
+            </part>
+
+            <part id="Base-de-donnees-2-TD" nrSessions="9" label="TD">
+                <!--Parenté unique && sameStudent-->
+                <classes>
+                    <class id="Base-de-donnees-2-TD-1" maxHeadCount="40" parent="Base-de-donnees-2-CM-1"/>
+                    <class id="Base-de-donnees-2-TD-2" maxHeadCount="40" parent="Base-de-donnees-2-CM-1"/>
+                </classes>
+
+                <allowedSlots sessionLength="80">
+                <!--Slot quotidien possible pour la part -->
+                    <dailySlots>480,570,660,750,840,930,1020,1110</dailySlots>
+                    <days>1-5</days>
+                    <weeks>1-12</weeks>
+                </allowedSlots>
+
+                 <allowedRooms sessionRooms="single">
+                        <room refId="L201"/>
+                        <room refId="L202"/>
+                        <room refId="L206"/>
+                </allowedRooms>
+
+                <allowedTeachers sessionTeachers="1">
+                    <teacher refId="AIT EL MEKKI Touria" nrSessions="18"/>
+                </allowedTeachers>
+
+            </part>
+
+            <part id="Base-de-donnees-2-TP" nrSessions="7" label="TP">
+
+                <classes>
+                    <class id="Base-de-donnees-2-TP-1" maxHeadCount="20" parent="Base-de-donnees-2-TD-1"/>
+                    <class id="Base-de-donnees-2-TP-2" maxHeadCount="20" parent="Base-de-donnees-2-TD-2"/>
+                    <class id="Base-de-donnees-2-TP-3" maxHeadCount="20" parent="Base-de-donnees-2-TD-1"/>
+                </classes>
+
+                <allowedSlots sessionLength="160">
+                <!--Slot quotition possible pour la part -->
+                <!-- 8h00-10h30 ; 09h30-12h20 ; 12h30-15h20 ; 14h00-16h50 ; 15h30-18h20 ; 17h00-19h50 -->
+                <!-- 11h00-13h50 a été retiré pour le repas : peut-être le laisser pour que la règle s'en charge ? -->
+                    <dailySlots>480,570,750,840,930,1020</dailySlots>
+                    <days>1-5</days>
+                    <weeks>1-12</weeks>
+                </allowedSlots>
+
+                <allowedRooms sessionRooms="single">
+                        <room refId="H001"/>
+                        <room refId="H002"/>
+                        <room refId="H003"/>
+                </allowedRooms>
+
+                <allowedTeachers sessionTeachers="1">
+                    <teacher refId="AIT EL MEKKI Touria" nrSessions="14"/>
+                    <teacher refId="GARCIA Laurent" nrSessions="7"/>
+                </allowedTeachers>
+
+            </part>
+
+            <!--
+            <part id="Base-de-donnees-2-CT" nrSessions="1" length="1" label="CT">
+                <classes>
+                    <class id="Base-de-donnees-2-CT1">
+                        <groupId>1-td1-tp1-pq</groupId>
+                        <groupId>3-td2-tp2-is</groupId>
+                        <groupId>4-td2-tp2-qs</groupId>
+                        <groupId>2-td1-tp3-ps</groupId>
+                    </class>
+                </classes>
+                <allowedRooms demand="multiple">
+                    <roomId>H001</roomId>
+                    <roomId>H002</roomId>
+                    <roomId>H003</roomId>
+                </allowedRooms>                   
+                <allowedTeachers demand="multiple">
+                    <teacherId count="1">AIT EL MEKKI Touria</teacherId>
+                    <teacherId count="1">GARCIA Laurent</teacherId>
+                </allowedTeachers>   
+            </part>
+            -->
+
+            <part id="Base-de-donnees-2-TPN" nrSessions="1" label="TPN">
+                <classes>
+                    <class id="Base-de-donnees-2-TPN-1" maxHeadCount="20" parent="Base-de-donnees-2-TP-1"/>
+                    <class id="Base-de-donnees-2-TPN-2" maxHeadCount="20" parent="Base-de-donnees-2-TP-2"/>
+                    <class id="Base-de-donnees-2-TPN-3" maxHeadCount="20" parent="Base-de-donnees-2-TP-3"/>
+                </classes>
+
+                <allowedSlots sessionLength="160">
+                <!--Slot quotition possible pour la part -->
+                <!-- 8h00-10h30 ; 09h30-12h20 ; 12h30-15h20 ; 14h00-16h50 ; 15h30-18h20 ; 17h00-19h50 -->
+                <!-- 11h00-13h50 a été retiré pour le repas : peut-être le laisser pour que la règle s'en charge ? -->
+                    <dailySlots>480,570,750,840,930,1020</dailySlots>
+                    <days>1-2,4-5</days>
+                    <weeks>1-12</weeks>
+                </allowedSlots>
+
+                <allowedRooms sessionRooms="multiple">
+                        <room refId="H001"/>
+                        <room refId="H002" mandatory="true"/>
+                        <room refId="H003"/>
+                </allowedRooms>  
+
+                <allowedTeachers sessionTeachers="1">
+                    <teacher refId="AIT EL MEKKI Touria" nrSessions="1"/>
+                    <teacher refId="GARCIA Laurent" nrSessions="1"/>
+                    <teacher refId="RICHER Jean-Michel" nrSessions="1"/>
+                </allowedTeachers>
+            </part>
+        </course>
+    
+        
+        <course id="Developpement-Web" label="L3-INFORMATIQUE,UE">
+            <!-- les parties du cours -->
+            <!-- au moins une partie par cours -->
+            <!-- chaque partie comprend un ensemble de classes et prescrit un ensemble de ressources requises et possibles -->
+            <!-- `nrSessions` : nombre de séances à dispenser pour chacune des classes de la partie -->
+                <!-- `nrSessions>=1` -->
+                <!-- chaque séance de classe est implicitement identifiée par un entier dans la plage `1..nrSessions` -->
+            <!-- `sessionLength` : durée de chaque séance en nombre de créneaux consécutifs -->
+            <!-- `sessionRooms` : mode de sélection d'une salle par session -->
+            	<!-- `none` : pas de salle -->
+            	<!-- `single` : une seule salle par session, toute la classe doit tenir dans la salle -->
+            	<!-- `multiple` : autant de salles que nécessaire : les groupes d'une même classe pourront être dans des salles différentes -->
+            <!-- `sessionTeachers` : nombre d'enseignants différents par séance -->
+                <!-- `length>=1` -->
+            <!-- `label` (optionnel) : étiquette ou liste d'étiquettes quelconques pour une partie -->
+            <part id="Developpement-Web-CM" nrSessions="12" label="CM">
+                <!-- les classes de la partie et leurs groupes -->
+                <!-- au moins une classe par partie, au moins un groupe par classe -->
+                <!-- les classes de la partie partitionnent l'ensemble des groupes listés dans la partie -->
+                <!-- les séances d'une classe sont chacune dispensées à tous les groupes de la classe -->
+                <!-- les contraintes de programmation de séances se formulent par contraintes -->
+
+                <classes>
+                    <class id="Developpement-Web-CM-1" maxHeadCount="80"/>
+                </classes>
+                
+                <!--Time precision to the part, we can precise more precily -->
+                <allowedSlots sessionLength="80">
+                <!--Slot quotidien possible pour la part -->
+                    <dailySlots>480,570,660,750,840,930,1020,1110</dailySlots>
+                    <days>1-5</days>
+                    <weeks>1-12</weeks>
+                </allowedSlots>
+
+                <!-- pas d'équipements requis -->
+
+                <!-- le pool de salles possibles ou requises pour toutes les classes -->
+                <!-- la politique d'allocation de salles aux classes ou aux séances de classes se formule par contraintes -->
+                    <!-- par exemple, placement d'une classe particulière dans une salle particulière -->
+                    <!-- par exemple, placement des séances d'une classe dans la (les) même(s) salle(s) -->
+                <allowedRooms sessionRooms="single">
+                    <!-- `mandatory` (true|false) : (défaut: false) la salle doit-elle être utilisée obligatoirement -->
+                    <room refId="AMPHI-A"/>
+                    <room refId="AMPHI-B"/>
+                </allowedRooms>
+
+                <!-- le pool d'enseignants possibles ou requis pour les classes -->
+                <!-- la politique d'attribution des classes ou séances de classes aux enseignants se formule par contraintes -->
+                    <!-- par exemple, attribution d'une classe particulière à un enseignant particulier -->
+                    <!-- par exemple, attribution des séances d'une classe au(x) même(s) enseignant(s) -->
+                <allowedTeachers sessionTeachers="1">
+                    <teacher refId="LESAINT David" nrSessions="12"/>
+                </allowedTeachers>
+            </part>
+ 
+            <part id="Developpement-Web-TP" nrSessions="8" label="TP,TP1">
+                
+                <classes>
+                    <class id="Developpement-Web-TP-1" maxHeadCount="25" parent="Developpement-Web-CM-1"/>
+                    <class id="Developpement-Web-TP-2" maxHeadCount="28" parent="Developpement-Web-CM-1"/>
+                    <class id="Developpement-Web-TP-3" maxHeadCount="25" parent="Developpement-Web-CM-1"/>
+                </classes>
+
+                <!--Time precision to the part, we can precise more precily -->
+                <allowedSlots sessionLength="160">
+                <!--Slot quotition possible pour la part -->
+                <!-- 8h00-10h30 ; 09h30-12h20 ; 12h30-15h20 ; 14h00-16h50 ; 15h30-18h20 ; 17h00-19h50 -->
+                <!-- 11h00-13h50 a été retiré pour le repas : peut-être le laisser pour que la règle s'en charge ? -->
+                    <dailySlots>480,570,750,840,930,1020</dailySlots>
+                    <days>1-5</days>
+                    <weeks>1-12</weeks>
+                </allowedSlots>
+                
+                <allowedRooms sessionRooms="single">
+                    <room refId="H001"/>
+                    <room refId="H002"/>
+                    <room refId="H003"/>
+                </allowedRooms>
+                
+                <allowedTeachers sessionTeachers="1">
+                    <teacher refId="LESAINT David" nrSessions="16"/><!--12 et 12-->
+                    <teacher refId="JAMIN Antoine" nrSessions="8"/>
+                </allowedTeachers>
+            </part>
+
+        <part id="Developpement-Web-TPN" nrSessions="1" label="TPN">
+
+            <classes>
+                <class id="Developpement-Web-TPN-1" maxHeadCount="40" parent="Developpement-Web-TP-1"/>
+                <class id="Developpement-Web-TPN-2" maxHeadCount="40" parent="Developpement-Web-TP-2"/>
+                <class id="Developpement-Web-TPN-3" maxHeadCount="40" parent="Developpement-Web-TP-3"/>
+            </classes>
+
+            <allowedSlots sessionLength="160">
+                <!-- 8h00-10h30 ; 09h30-12h20 ; 12h30-15h20 ; 14h00-16h50 ; 15h30-18h20 ; 17h00-19h50 -->
+                <!-- 11h00-13h50 a été retiré pour le repas : peut-être le laisser pour que la règle s'en charge ? -->
+                <dailySlots>480,570,750,840,930,1020</dailySlots>
+                <days>1-5</days>
+                <weeks>1-12</weeks>
+            </allowedSlots>
+
+            <allowedRooms sessionRooms="single">
+                <room refId="H001"/>
+                <room refId="H002"/>
+                <room refId="H003"/>
+            </allowedRooms>                   
+            <allowedTeachers sessionTeachers="1">
+                <teacher refId="LESAINT David" nrSessions="1"/>
+                <teacher refId="JAMIN Antoine" nrSessions="1"/>
+                <teacher refId="LEGEAY Marc" nrSessions="1"/>
+            </allowedTeachers>       
+        </part>
+
+    </course>
+
+    
+        <course id="Image-de-Synthese" label="L3-INFORMATIQUE,UE,OPTIONS-L3-INFO">
+            <part id="Image-de-Synthese-CM" nrSessions="7" label="CM">
+    
+                <classes>
+                    <class id="Image-de-Synthese-CM-1" maxHeadCount="80"/>
+                </classes>
+    
+                <!--Time precision to the part, we can precise more precily -->
+                <allowedSlots sessionLength="80">
+                <!--Slot quotition possible pour la part -->
+                    <dailySlots>480,570,660,750,840,930,1020,1110</dailySlots>
+                    <days>1-5</days>
+                    <weeks>1-12</weeks>
+                </allowedSlots>
+    
+                <allowedRooms sessionRooms="single">
+                    <room refId="AMPHI-A"/>
+                    <room refId="AMPHI-B"/>
+                </allowedRooms>
+    
+                <allowedTeachers sessionTeachers="1">
+                    <teacher refId="STEPHAN Igor" nrSessions="7"/>
+                </allowedTeachers>
+            </part>
+    
+            <part id="Image-de-Synthese-TP" nrSessions="5" label="TP">
+               
+                <classes>
+                    <class id="Image-de-Synthese-TP-1" maxHeadCount="40" parent="Image-de-Synthese-CM-1"/>
+                </classes>
+    
+                <!--Time precision to the part, we can precise more precily -->
+                <allowedSlots sessionLength="160">
+                <!--Slot quotition possible pour la part -->
+                <!-- 8h00-10h30 ; 09h30-12h20 ; 12h30-15h20 ; 14h00-16h50 ; 15h30-18h20 ; 17h00-19h50 -->
+                <!-- 11h00-13h50 a été retiré pour le repas : peut-être le laisser pour que la règle s'en charge ? -->
+                    <dailySlots>480,570,750,840,930,1020</dailySlots>
+                    <days>1-5</days>
+                    <weeks>1-12</weeks>
+                </allowedSlots>
+    
+                <allowedRooms sessionRooms="single">
+                    <room refId="H001"/>
+                    <room refId="H002"/>
+                    <room refId="H003"/>
+                </allowedRooms>
+    
+                <allowedTeachers sessionTeachers="1">
+                    <teacher refId="STEPHAN Igor" nrSessions="5"/>
+                </allowedTeachers>
+            </part>
+            <!--
+            <part id="Image-de-Synthese-CT" nrSessions="1" sessionLength="2">
+    
+                <classes>
+                    <class id="Image-de-Synthese-CT">
+                       <group refId="3-td2-tp2-is" />
+                    </class>
+                </classes>
+    
+                <allowedRooms sessionRooms="single">
+                    <room refId="AMPHI-A" />
+                    <room refId="AMPHI-B" />
+                </allowedRooms>
+    
+                <allowedTeachers sessionTeachers="1">
+                    <teacher refId="STEPHAN Igor" nrSessions="1" />
+                </allowedTeachers>
+            </part>-->
+    
+            <!-- PROJET
+            <part id="Image-de-Synthese-PR" nrSessions="8" sessionLength="2" label="PR">
+                <classes>
+                    <class id="Image-de-Synthese-PR1">
+                       <group refId="3-td2-tp2-is" />
+                    </class>
+                </classes>
+    
+               <allowedRooms sessionRooms="single">
+                    <room refId="AMPHI-A" />
+                    <room refId="AMPHI-B" />
+                </allowedRooms>
+            </part>
+            -->
+          </course>
+    
+          <course id="Traitement-de-donnees-en-Python" label="L3-INFORMATIQUE,UE">
+    
+            <part id="Traitement-de-donnees-en-Python-CM-TD" nrSessions="5" label="CM,TD">
+                <classes>
+                     <class id="Traitement-de-donnees-en-Python-CM-TD-1" maxHeadCount="40"/>
+                 </classes>
+    
+                 <!--Time precision to the part, we can precise more precily -->
+                 <allowedSlots sessionLength="160">
+                 <!--Slot quotition possible pour la part -->
+                 <!-- 8h00-10h30 ; 09h30-12h20 ; 12h30-15h20 ; 14h00-16h50 ; 15h30-18h20 ; 17h00-19h50 -->
+                <!-- 11h00-13h50 a été retiré pour le repas : peut-être le laisser pour que la règle s'en charge ? -->
+                    <dailySlots>480,570,750,840,930,1020</dailySlots>
+                     <days>1-5</days>
+                     <weeks>1-12</weeks>
+                 </allowedSlots>
+    
+                 <allowedRooms sessionRooms="single">
+                     <room refId="H001"/>
+                     <room refId="H002"/>
+                     <room refId="H003"/>
+                 </allowedRooms>
+    
+                 <allowedTeachers sessionTeachers="1">
+                     <teacher refId="GOUDET Olivier" nrSessions="5"/>
+                 </allowedTeachers>
+    
+             </part>
+    
+             <part id="Traitement-de-donnees-en-Python-TP" nrSessions="4" label="TP">
+    
+                 <classes>
+                     <class id="Traitement-de-donnees-en-Python-TP-1" maxHeadCount="20" parent="Traitement-de-donnees-en-Python-CM-TD-1"/>
+                     <class id="Traitement-de-donnees-en-Python-TP-2" maxHeadCount="20" parent="Traitement-de-donnees-en-Python-CM-TD-1"/>        
+                 </classes>
+                 <!--Time precision to the part, we can precise more precily -->
+                 <allowedSlots sessionLength="160">
+                 <!--Slot quotition possible pour la part -->
+                 <!-- 8h00-10h30 ; 09h30-12h20 ; 12h30-15h20 ; 14h00-16h50 ; 15h30-18h20 ; 17h00-19h50 -->
+                <!-- 11h00-13h50 a été retiré pour le repas : peut-être le laisser pour que la règle s'en charge ? -->
+                    <dailySlots>480,570,750,840,930,1020</dailySlots>
+                     <days>1-5</days>
+                     <weeks>1-12</weeks>
+                 </allowedSlots>
+    
+                 <allowedRooms sessionRooms="single">
+                     <room refId="H001"/>
+                     <room refId="H002"/>
+                     <room refId="H003"/>
+                 </allowedRooms>
+    
+                 <allowedTeachers sessionTeachers="1">
+                     <teacher refId="GOUDET Olivier" nrSessions="8"/>
+                 </allowedTeachers>
+             </part>
+    
+            <!-- Controle terminal
+                <part id="Traitement-de-donnees-en-Python-CT" nrSessions="1" sessionLength="2">
+    
+                    <classes>
+                        <class id="Traitement-de-donnees-en-Python-CT">
+                            <group refId="1-td1-tp1-pq" />
+                            <group refId="2-td1-tp3-ps" />
+                        </class>
+                    </classes>
+    
+                    <allowedRooms sessionRooms="single">
+                            <room refId="H001" />
+                            <room refId="H002" />
+                            <room refId="H003" />
+                    </allowedRooms>
+                    
+                    <allowedTeachers sessionTeachers="1">
+                        <teacher refId="GOUDET Olivier" nrSessions="1" />
+                    </allowedTeachers>
+    
+                </part>
+            -->
+            <!-- PROJET
+                <part id="Traitement-de-donnees-en-Python-PR" nrSessions="8" sessionLength="2" label="PR">
+    
+                    <classes>
+                        <class id="Traitement-de-donnees-en-Python-PR1">
+                            <group refId="1-td1-tp1-pq" />
+                            <group refId="2-td1-tp3-ps" />
+                        </class>
+                    </classes>
+    
+                    <allowedRooms sessionRooms="single">
+                        <room refId="H001" />
+                        <room refId="H002" />
+                        <room refId="H002" />
+                    </allowedRooms>
+                </part>-->
+          </course>
+    
+          <course id="Initiation-programmation-de-systemes-intelligents" label="L3-INFORMATIQUE,UE">
+            <part id="Initiation-programmation-de-systemes-intelligents-CM" nrSessions="2" label="CM">
+    
+                <classes>
+                    <class id="Initiation-programmation-de-systemes-intelligents-CM-1" maxHeadCount="80"/>
+                </classes>
+    
+                <!--Time precision to the part, we can precise more precily -->
+                <allowedSlots sessionLength="160">
+                <!--Slot quotition possible pour la part -->
+                <!-- 8h00-10h30 ; 09h30-12h20 ; 12h30-15h20 ; 14h00-16h50 ; 15h30-18h20 ; 17h00-19h50 -->
+                <!-- 11h00-13h50 a été retiré pour le repas : peut-être le laisser pour que la règle s'en charge ? -->
+                    <dailySlots>480,570,750,840,930,1020</dailySlots>
+                    <days>1-5</days>
+                    <weeks>1-12</weeks>
+                </allowedSlots>
+    
+                <allowedRooms sessionRooms="single">
+                    <room refId="AMPHI-A"/>
+                    <room refId="AMPHI-B"/>
+                </allowedRooms>
+    
+                <allowedTeachers sessionTeachers="1">
+                    <teacher refId="STEPHAN Igor" nrSessions="2"/>
+                </allowedTeachers>
+    
+            </part>
+    
+            <part id="Initiation-programmation-de-systemes-intelligents-TD" nrSessions="2" label="TD">
+    
+                <classes>
+                    <class id="Initiation-programmation-de-systemes-intelligents-TD-1" maxHeadCount="40" parent="Initiation-programmation-de-systemes-intelligents-CM-1"/>
+                </classes>
+    
+                <!--Time precision to the part, we can precise more precily -->
+                <allowedSlots sessionLength="160">
+                <!--Slot quotition possible pour la part -->
+                <!-- 8h00-10h30 ; 09h30-12h20 ; 12h30-15h20 ; 14h00-16h50 ; 15h30-18h20 ; 17h00-19h50 -->
+                <!-- 11h00-13h50 a été retiré pour le repas : peut-être le laisser pour que la règle s'en charge ? -->
+                    <dailySlots>480,570,750,840,930,1020</dailySlots>
+                    <days>1-5</days>
+                    <weeks>1-12</weeks>
+                </allowedSlots>
+    
+                <allowedRooms sessionRooms="single">
+                        <room refId="AMPHI-A"/>
+                        <room refId="AMPHI-B"/>
+                </allowedRooms>
+    
+                <allowedTeachers sessionTeachers="1">
+                    <teacher refId="DEVRED Caroline" nrSessions="2"/>
+                </allowedTeachers>
+    
+            </part>
+    
+            <part id="Initiation-programmation-de-systemes-intelligents-TP" nrSessions="10" label="TP">
+    
+                <classes>
+                    <class id="Initiation-programmation-de-systemes-intelligents-TP-1" maxHeadCount="20" parent="Initiation-programmation-de-systemes-intelligents-TD-1"/>
+                    <class id="Initiation-programmation-de-systemes-intelligents-TP-2" maxHeadCount="20" parent="Initiation-programmation-de-systemes-intelligents-TD-1"/>
+                    <class id="Initiation-programmation-de-systemes-intelligents-TP-3" maxHeadCount="20" parent="Initiation-programmation-de-systemes-intelligents-TD-1"/>
+                </classes>
+    
+                <!--Time precision to the part, we can precise more precily -->
+                <allowedSlots sessionLength="80">
+                <!--Slot quotition possible pour la part -->
+                    <dailySlots>480,570,660,750,840,930,1020,1110</dailySlots>
+                    <days>1-5</days>
+                    <weeks>1-12</weeks>
+                </allowedSlots>
+    
+                <allowedRooms sessionRooms="single">
+                        <room refId="H001"/>
+                        <room refId="H002"/>
+                        <room refId="H003"/>
+                </allowedRooms>
+    
+                <allowedTeachers sessionTeachers="1">
+                    <teacher refId="DEVRED Caroline" nrSessions="30"/>
+                </allowedTeachers>
+            </part>
+            <!-- Controle terminal
+            <part id="Initiation-programmation-de-systemes-intelligents-CT" nrSessions="1" sessionLength="2">
+    
+                <classes>
+                    <class id="Initiation-programmation-de-systemes-intelligents-CT">
+                        <group refId="2-td1-tp3-ps" />
+                        <group refId="3-td2-tp2-is" />
+                        <group refId="4-td2-tp2-qs" />
+                    </class>
+                </classes>
+    
+                <allowedRooms sessionRooms="single">
+                        <room refId="H001" />
+                        <room refId="H002" />
+                        <room refId="H003" />
+                </allowedRooms>
+    
+                <allowedTeachers sessionTeachers="1">
+                    <teacher refId="STEPHAN Igor" nrSessions="1" />
+                    <teacher refId="DEVRED Caroline" nrSessions="1" />
+                </allowedTeachers>
+            </part>-->
+            <!-- Projet
+            <part id="Initiation-programmation-de-systemes-intelligents-PR" nrSessions="8" sessionLength="2" label="PR">
+                <classes>
+                    <class id="Initiation-programmation-de-systemes-intelligents-PR1">
+                        <group refId="2-td1-tp3-ps" />
+                        <group refId="3-td2-tp2-is" />
+                        <group refId="4-td2-tp2-qs" />
+                    </class>
+                </classes>
+    
+                <allowedRooms sessionRooms="single">
+                        <room refId="H001" />
+                        <room refId="H002" />
+                        <room refId="H002" />
+                </allowedRooms>
+            </part>-->
+          </course>
+    
+          <course id="Developpement-interfaces-graphiques-avancees" label="L3-INFORMATIQUE,UE">
+            <part id="Developpement-interfaces-graphiques-avancees-CM" nrSessions="4" label="CM">
+    
+                <classes><!-- c'est implicite s'il n'y a pas de parent :c-->
+                    <class id="Developpement-interfaces-graphiques-avancees-CM-1" maxHeadCount="80"/>
+                </classes>
+    
+                <allowedSlots sessionLength="80">
+                <!--Slot quotidien possible pour la part -->
+                    <dailySlots>480,570,660,750,840,930,1020,1110</dailySlots>
+                    <days>1-5</days>
+                    <weeks>1-12</weeks>
+                </allowedSlots>
+    
+    
+                <allowedRooms sessionRooms="single">
+                    <room refId="AMPHI-A"/>
+                    <room refId="AMPHI-B"/>
+                </allowedRooms>
+                                
+                <allowedTeachers sessionTeachers="1">
+                    <teacher refId="LEGEAY Marc" nrSessions="4"/>
+                </allowedTeachers>
+    
+            </part>
+    
+            <part id="Developpement-interfaces-graphiques-avancees-TP" nrSessions="7" label="TP">
+    
+                <classes>
+                    <class id="Developpement-interfaces-graphiques-avancees-TP-1" maxHeadCount="20" parent="Developpement-interfaces-graphiques-avancees-CM-1"/>
+                    <class id="Developpement-interfaces-graphiques-avancees-TP-2" maxHeadCount="20" parent="Developpement-interfaces-graphiques-avancees-CM-1"/>
+                </classes>
+    
+                <allowedSlots sessionLength="160">
+                <!--Slot quotition possible pour la part -->
+                <!-- 8h00-10h30 ; 09h30-12h20 ; 12h30-15h20 ; 14h00-16h50 ; 15h30-18h20 ; 17h00-19h50 -->
+                <!-- 11h00-13h50 a été retiré pour le repas : peut-être le laisser pour que la règle s'en charge ? -->
+                    <dailySlots>480,570,750,840,930,1020</dailySlots>
+                    <days>1-5</days>
+                    <weeks>1-12</weeks>
+                </allowedSlots>
+    
+                <allowedRooms sessionRooms="single">
+                    <room refId="H001"/>
+                    <room refId="H002"/>
+                    <room refId="H003"/>
+                </allowedRooms>
+    
+                <allowedTeachers sessionTeachers="1">
+                    <teacher refId="LEGEAY Marc" nrSessions="14"/>
+                </allowedTeachers>
+            </part>
+    
+            <!-- Controle terminal
+            <part id="Developpement-interfaces-graphiques-avancees-CT" nrSessions="1" sessionLength="2">
+    
+                <classes>
+                    <class id="Developpement-interfaces-graphiques-avancees-CT">
+                        <group refId="4-td2-tp2-qs" />
+                        <group refId="1-td1-tp1-pq" />
+                    </class>
+                </classes>
+    
+                <allowedRooms sessionRooms="single">
+                        <room refId="H001" />
+                        <room refId="H002" />
+                        <room refId="H003" />
+                </allowedRooms>
+    
+                <allowedTeachers sessionTeachers="1">
+                    <teacher refId="LEGEAY Marc" nrSessions="1" />
+                </allowedTeachers>
+    
+            </part>-->
+            <!-- Projet
+            <part id="Developpement-interfaces-graphiques-avancees-PR" nrSessions="8" sessionLength="2" label="PR">
+    
+                <classes>
+                    <class id="Developpement-interfaces-graphiques-avancees-PR1">
+                        <group refId="4-td2-tp2-qs" />
+                        <group refId="1-td1-tp1-pq" />
+                    </class>
+                </classes>
+    
+                <allowedRooms sessionRooms="single">
+                        <room refId="H001" />
+                        <room refId="H002" />
+                        <room refId="H002" />
+                </allowedRooms>
+    
+            </part>-->
+          </course>
+    
+        <course id="Programmation-Fonctionnelle" label="L3-INFORMATIQUE,UE">
+            <part id="Programmation-Fonctionnelle-CM" nrSessions="7" label="CM"><!-- durée non variable-->
+    
+                <classes>
+                    <class id="Programmation-Fonctionnelle-CM-1" maxHeadCount="80"/>
+                </classes>
+    
+                <!--Time precision to the part, we can precise more precily -->
+                <allowedSlots sessionLength="80">
+                <!--Slot quotition possible pour la part -->
+                    <dailySlots>480,570,660,750,840,930,1020,1110</dailySlots>
+                    <days>1-5</days>
+                    <weeks>1-12</weeks>
+                </allowedSlots>
+    
+                <allowedRooms sessionRooms="single">
+                    <room refId="AMPHI-A"/>
+                    <room refId="AMPHI-B"/>
+                </allowedRooms>
+    
+                <allowedTeachers sessionTeachers="1">
+                    <teacher refId="LEFEVRE Claire" nrSessions="7"/>
+                </allowedTeachers>
+    
+            </part>
+    
+            <part id="Programmation-Fonctionnelle-TD" nrSessions="4" label="TD">
+                <classes>
+                    <class id="Programmation-Fonctionnelle-TD-1" maxHeadCount="40" parent="Programmation-Fonctionnelle-CM-1"/>
+                    <class id="Programmation-Fonctionnelle-TD-2" maxHeadCount="40" parent="Programmation-Fonctionnelle-CM-1"/>
+                </classes>
+    
+                <!--Time precision to the part, we can precise more precily -->
+                <allowedSlots sessionLength="80">
+                <!--Slot quotition possible pour la part -->
+                    <dailySlots>480,570,660,750,840,930,1020,1110</dailySlots>
+                    <days>1-5</days>
+                    <weeks>1-12</weeks>
+                </allowedSlots>
+    
+                <allowedRooms sessionRooms="single">
+                    <room refId="L201"/>
+                    <room refId="L202"/>
+                    <room refId="L206"/>
+                </allowedRooms>
+    
+                <allowedTeachers sessionTeachers="1">
+                    <teacher refId="LEFEVRE Claire" nrSessions="8"/>
+                </allowedTeachers>
+    
+            </part>
+    
+            <part id="Programmation-Fonctionnelle-TP" nrSessions="4" label="TP">
+    
+                <classes>
+                    <class id="Programmation-Fonctionnelle-TP-1" maxHeadCount="20" parent="Programmation-Fonctionnelle-TD-1"/>
+                    <class id="Programmation-Fonctionnelle-TP-2" maxHeadCount="20" parent="Programmation-Fonctionnelle-TD-2"/>
+                    <class id="Programmation-Fonctionnelle-TP-3" maxHeadCount="25" parent="Programmation-Fonctionnelle-TD-1"/>
+                </classes>
+    
+                <!--Time precision to the part, we can precise more precily -->
+                <allowedSlots sessionLength="160">
+                <!--Slot quotition possible pour la part -->
+                <!-- 8h00-10h30 ; 09h30-12h20 ; 12h30-15h20 ; 14h00-16h50 ; 15h30-18h20 ; 17h00-19h50 -->
+                <!-- 11h00-13h50 a été retiré pour le repas : peut-être le laisser pour que la règle s'en charge ? -->
+                    <dailySlots>480,570,750,840,930,1020</dailySlots>
+                    <days>1-5</days>
+                    <weeks>1-12</weeks>
+                </allowedSlots>
+    
+                 <allowedRooms sessionRooms="single">
+                        <room refId="H001"/>
+                        <room refId="H002"/>
+                        <room refId="H003"/>
+                </allowedRooms>   
+    
+                <allowedTeachers sessionTeachers="1">
+                    <teacher refId="LEFEVRE Claire" nrSessions="4"/>
+                    <teacher refId="DIEGUEZ Martin" nrSessions="4"/>
+                    <teacher refId="LEGEAY Marc" nrSessions="4"/>
+                </allowedTeachers>
+            </part>
+    
+            <!--<part id="Programmation-Fonctionnelle-CT"  nrSessions="1" sessionLength="2" label="CT">
+                    <allowedTeachers  sessionTeachers="1">
+                        <teacher refId="LEFEVRE Claire" nrSessions="1" />
+                    </allowedTeachers>
+    
+                     <allowedRooms  sessionRooms="single">
+                            <room refId="H001" />
+                            <room refId="H002" />
+                            <room refId="H003" />
+                    </allowedRooms>
+    
+                    <classes>
+                        <class id="Programmation-Logique-CT" >
+                            <group refId="1-td1-tp1-pq"  />
+                            <group refId="2-td1-tp3-ps"  />
+                            <group refId="3-td2-tp2-is"  />
+                            <group refId="4-td2-tp2-qs"  />
+                        </class>
+                    </classes>
+                </part>
+                -->
+               <!-- <part id="Programmation-Fonctionnelle-PR" nrSessions="8" sessionLength="1" label="PR">
+    
+                    <classes>
+                        <class id="Programmation-Fonctionnelle-PR1">
+                            <group refId="1-td1-tp1-pq" />
+                            <group refId="2-td1-tp3-ps" />
+                            <group refId="3-td2-tp2-is" />
+                            <group refId="4-td2-tp2-qs" />
+                        </class>
+                    </classes>
+    
+                     <allowedRooms  sessionRooms="single">
+                            <room refId="H001" />
+                            <room refId="H002" />
+                            <room refId="H003" />
+                    </allowedRooms>
+    
+                </part>
+                -->
+        </course>
+    
+    
+        <course id="Programmation-Logique" label="L3-INFORMATIQUE,UE">
+            <part id="Programmation-Logique-CM" nrSessions="6" label="CM">
+    
+                <classes>
+                    <class id="Programmation-Logique-CM-1" maxHeadCount="80"/>
+                </classes>
+    
+                <!--Time precision to the part, we can precise more precily -->
+                <allowedSlots sessionLength="80">
+                <!--Slot quotition possible pour la part -->
+                    <dailySlots>480,570,660,750,840,930,1020,1110</dailySlots>
+                    <days>1-5</days>
+                    <weeks>1-12</weeks>
+                </allowedSlots>
+    
+                <allowedRooms sessionRooms="single">
+                    <room refId="AMPHI-A"/>
+                    <room refId="AMPHI-B"/>
+                </allowedRooms>
+    
+                <allowedTeachers sessionTeachers="1">
+                    <teacher refId="STEPHAN Igor" nrSessions="6"/>
+                </allowedTeachers>
+    
+            </part>
+    
+            <part id="Programmation-Logique-TD" nrSessions="3" label="TD">
+    
+                <classes>
+                    <class id="Programmation-Logique-TD-1" maxHeadCount="40" parent="Programmation-Logique-CM-1"/>
+                    <class id="Programmation-Logique-TD-2" maxHeadCount="40" parent="Programmation-Logique-CM-1"/>
+                </classes>
+    
+                <!--Time precision to the part, we can precise more precily -->
+                <allowedSlots sessionLength="80">
+                <!--Slot quotition possible pour la part -->
+                    <dailySlots>480,570,660,750,840,930,1020,1110</dailySlots>
+                    <days>1-5</days>
+                    <weeks>1-12</weeks>
+                </allowedSlots>
+    
+                <allowedRooms sessionRooms="single">
+                        <room refId="H001"/>
+                        <room refId="H002"/>
+                        <room refId="H003"/>
+                </allowedRooms>
+    
+                <allowedTeachers sessionTeachers="1">
+                    <teacher refId="STEPHAN Igor" nrSessions="6"/>
+                </allowedTeachers>
+    
+            </part>
+    
+            <part id="Programmation-Logique-TP" nrSessions="4" label="TP">
+    
+                <classes>
+                    <class id="Programmation-Logique-TP-1" maxHeadCount="20" parent="Programmation-Logique-TD-1"/> 
+                    <class id="Programmation-Logique-TP-2" maxHeadCount="20" parent="Programmation-Logique-TD-2"/>
+                    <class id="Programmation-Logique-TP-3" maxHeadCount="20" parent="Programmation-Logique-TD-1"/>
+                </classes>
+    
+                <!--Time precision to the part, we can precise more precily -->
+                <allowedSlots sessionLength="160">
+                <!--Slot quotition possible pour la part -->
+                <!-- 8h00-10h30 ; 09h30-12h20 ; 12h30-15h20 ; 14h00-16h50 ; 15h30-18h20 ; 17h00-19h50 -->
+                <!-- 11h00-13h50 a été retiré pour le repas : peut-être le laisser pour que la règle s'en charge ? -->
+                    <dailySlots>480,570,750,840,930,1020</dailySlots>
+                    <days>1-5</days>
+                    <weeks>1-12</weeks>
+                </allowedSlots>
+    
+                 <allowedRooms sessionRooms="single">
+                        <room refId="H001"/>
+                        <room refId="H002"/>
+                        <room refId="H003"/>
+                </allowedRooms>
+    
+                <allowedTeachers sessionTeachers="1">
+                    <teacher refId="STEPHAN Igor" nrSessions="12"/>
+                </allowedTeachers>
+    
+            </part>
+                <!--
+            <part id="Programmation-Logique-CT" nrSessions="1" sessionLength="2" label="CT">  
+                <allowedTeachers  sessionTeachers="1">
+                    <teacher refId="STEPHAN Igor" nrSessions="1" />
+                </allowedTeachers>
+    
+                <allowedRooms  sessionRooms="single">
+                    <room refId="H001" />
+                    <room refId="H002" />
+                    <room refId="H003" />
+                </allowedRooms>
+    
+                <classes>
+                    <class id="Programmation-Logique-CT">
+                        <group refId="1-td1-tp1-pq" />
+                        <group refId="2-td1-tp3-ps" />
+                        <group refId="3-td2-tp2-is" />
+                        <group refId="4-td2-tp2-qs" />
+                    </class>
+                </classes>
+            </part>
+            -->
+                <!--
+                <part id="Programmation-Logique-PR" nrSessions="8" sessionLength="1" label="PR">
+    
+                    <classes>
+                        <class id="Programmation-Logique-PR1">
+                            <group refId="1-td1-tp1-pq" />
+                            <group refId="2-td1-tp3-ps" />
+                            <group refId="3-td2-tp2-is" />
+                            <group refId="4-td2-tp2-qs" />
+                        </class>
+                    </classes>
+    
+                     <allowedRooms sessionRooms="single">
+                            <room refId="H001" />
+                            <room refId="H002" />
+                            <room refId="H003" />
+                    </allowedRooms>
+    
+                </part>-->
+        </course>
+    
+    
+        <course id="Anglais" label="L3-INFORMATIQUE,UE">
+            <part id="Anglais-CM-TD" nrSessions="8" label="CM,TD">
+            
+                <classes>
+                    <class id="Anglais-CM-TD-1" maxHeadCount="30"/>
+                    <class id="Anglais-CM-TD-2" maxHeadCount="30"/>
+                    <class id="Anglais-CM-TD-3" maxHeadCount="30"/>
+                </classes>
+
+                <allowedSlots sessionLength="120">
+                <!--Slot quotition possible pour la part -->
+                <!-- 8h00-10h00 ; 8h50-10h50 ; 9h30-10h30 ; 10h20-12h20 ; 11h00-13h00 ; 11h50-13h50 ; 12h30-14h30 ; 13h20-15h20 ; 14h00-16h00 ; 14h50-16h50 ; 15h30-17h30 ; 16h20-18h20 ; 17h00-19h00 -->
+                    <dailySlots>480,530,570,620,660,710,750,800,840,890,930,980,1020</dailySlots>
+                    <days>1-5</days>
+                    <weeks>1-12</weeks>
+                </allowedSlots>
+
+                <allowedRooms sessionRooms="single">
+                    <room refId="L201"/>
+                    <room refId="L202"/>
+                    <room refId="L206"/>
+                </allowedRooms>
+
+                <allowedTeachers sessionTeachers="1">
+                    <teacher refId="LAUDIER Romain" nrSessions="24"/>
+                </allowedTeachers>
+            </part>
+
+            <part id="Anglais-CC" nrSessions="1" label="CC">
+                <classes>
+                    <class id="Anglais-CC-1" maxHeadCount="20" parent="Anglais-CM-TD-1"/>
+                </classes>
+
+                <allowedSlots sessionLength="120">
+                <!--Slot quotition possible pour la part -->
+                <!-- 8h00-10h00 ; 8h50-10h50 ; 9h30-10h30 ; 10h20-12h20 ; 11h00-13h00 ; 11h50-13h50 ; 12h30-14h30 ; 13h20-15h20 ; 14h00-16h00 ; 14h50-16h50 ; 15h30-17h30 ; 16h20-18h20 ; 17h00-19h00 -->
+                    <dailySlots>480,530,570,620,660,710,750,800,840,890,930,980,1020</dailySlots>
+                    <days>1-2,4-5</days>
+                    <weeks>1-12</weeks>
+                </allowedSlots>
+
+                <allowedRooms sessionRooms="single">
+                    <room refId="AMPHI-A" mandatory="true"/>
+                    <room refId="AMPHI-B"/>
+                </allowedRooms>  
+
+                <allowedTeachers sessionTeachers="1">
+                    <teacher refId="LAUDIER Romain" nrSessions="1"/>
+                </allowedTeachers>
+            </part>
+        </course>
+    </courses>
+
+    <students>
+        <student id="student L3 1" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+                
+                    <course refId="Traitement-de-donnees-en-Python"/>
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>
+            </student>
+            <student id="student L3 2" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+                
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                    <course refId="Developpement-interfaces-graphiques-avancees"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 3" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+                
+                    <course refId="Traitement-de-donnees-en-Python"/>
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 4" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>                
+                
+                    <course refId="Traitement-de-donnees-en-Python"/>
+                    <course refId="Developpement-interfaces-graphiques-avancees"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 5" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>                
+                
+                    <course refId="Traitement-de-donnees-en-Python"/>
+                    <course refId="Developpement-interfaces-graphiques-avancees"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 6" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>                
+                
+                    <course refId="Traitement-de-donnees-en-Python"/>
+                    <course refId="Developpement-interfaces-graphiques-avancees"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 7" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+    
+                
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                    <course refId="Image-de-Synthese"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 8" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+                
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                    <course refId="Developpement-interfaces-graphiques-avancees"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 9" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>                
+                
+                    <course refId="Traitement-de-donnees-en-Python"/>
+                    <course refId="Developpement-interfaces-graphiques-avancees"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 10" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+    
+                
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                    <course refId="Image-de-Synthese"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 11" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>                
+                
+                    <course refId="Traitement-de-donnees-en-Python"/>
+                    <course refId="Developpement-interfaces-graphiques-avancees"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 12" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+    
+                
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                    <course refId="Image-de-Synthese"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 13" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>                
+                
+                    <course refId="Traitement-de-donnees-en-Python"/>
+                    <course refId="Developpement-interfaces-graphiques-avancees"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 14" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+                
+                    <course refId="Traitement-de-donnees-en-Python"/>
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 15" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>                
+                
+                    <course refId="Traitement-de-donnees-en-Python"/>
+                    <course refId="Developpement-interfaces-graphiques-avancees"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 16" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>                
+                
+                    <course refId="Traitement-de-donnees-en-Python"/>
+                    <course refId="Developpement-interfaces-graphiques-avancees"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 17" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+    
+                
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                    <course refId="Image-de-Synthese"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 18" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>                
+                
+                    <course refId="Traitement-de-donnees-en-Python"/>
+                    <course refId="Developpement-interfaces-graphiques-avancees"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 19" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>                
+                
+                    <course refId="Traitement-de-donnees-en-Python"/>
+                    <course refId="Developpement-interfaces-graphiques-avancees"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 20" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>                
+                
+                    <course refId="Traitement-de-donnees-en-Python"/>
+                    <course refId="Developpement-interfaces-graphiques-avancees"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 21" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+                
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                    <course refId="Developpement-interfaces-graphiques-avancees"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 22" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+                
+                    <course refId="Traitement-de-donnees-en-Python"/>
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 23" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>                
+                
+                    <course refId="Traitement-de-donnees-en-Python"/>
+                    <course refId="Developpement-interfaces-graphiques-avancees"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 24" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+                
+                    <course refId="Traitement-de-donnees-en-Python"/>
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 25" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+                
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                    <course refId="Developpement-interfaces-graphiques-avancees"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 26" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>                
+                
+                    <course refId="Traitement-de-donnees-en-Python"/>
+                    <course refId="Developpement-interfaces-graphiques-avancees"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 27" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+                
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                    <course refId="Developpement-interfaces-graphiques-avancees"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 28" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+                
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                    <course refId="Developpement-interfaces-graphiques-avancees"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 29" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+                
+                    <course refId="Traitement-de-donnees-en-Python"/>
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 30" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+    
+                
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                    <course refId="Image-de-Synthese"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 31" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+    
+                
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                    <course refId="Image-de-Synthese"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 32" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+                
+                    <course refId="Traitement-de-donnees-en-Python"/>
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 33" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+                
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                    <course refId="Developpement-interfaces-graphiques-avancees"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 34" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>                
+                
+                    <course refId="Traitement-de-donnees-en-Python"/>
+                    <course refId="Developpement-interfaces-graphiques-avancees"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 35" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+                
+                    <course refId="Traitement-de-donnees-en-Python"/>
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 36" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>                
+                
+                    <course refId="Traitement-de-donnees-en-Python"/>
+                    <course refId="Developpement-interfaces-graphiques-avancees"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 37" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>                
+                
+                    <course refId="Traitement-de-donnees-en-Python"/>
+                    <course refId="Developpement-interfaces-graphiques-avancees"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 38" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+                
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                    <course refId="Developpement-interfaces-graphiques-avancees"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 39" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+                
+                    <course refId="Traitement-de-donnees-en-Python"/>
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 40" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+    
+                
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                    <course refId="Image-de-Synthese"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 41" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+                
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                    <course refId="Developpement-interfaces-graphiques-avancees"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 42" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+    
+                
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                    <course refId="Image-de-Synthese"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 43" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>                
+                
+                    <course refId="Traitement-de-donnees-en-Python"/>
+                    <course refId="Developpement-interfaces-graphiques-avancees"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 44" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+                
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                    <course refId="Developpement-interfaces-graphiques-avancees"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 45" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+                
+                    <course refId="Traitement-de-donnees-en-Python"/>
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 46" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+                
+                    <course refId="Traitement-de-donnees-en-Python"/>
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 47" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+                
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                    <course refId="Developpement-interfaces-graphiques-avancees"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 48" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+    
+                
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                    <course refId="Image-de-Synthese"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 49" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+                
+                    <course refId="Traitement-de-donnees-en-Python"/>
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 50" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+                
+                    <course refId="Traitement-de-donnees-en-Python"/>
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 51" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+                
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                    <course refId="Developpement-interfaces-graphiques-avancees"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 52" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+                
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                    <course refId="Developpement-interfaces-graphiques-avancees"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 53" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>                
+                
+                    <course refId="Traitement-de-donnees-en-Python"/>
+                    <course refId="Developpement-interfaces-graphiques-avancees"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 54" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+    
+                
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                    <course refId="Image-de-Synthese"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 55" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+                
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                    <course refId="Developpement-interfaces-graphiques-avancees"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 56" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+                
+                    <course refId="Traitement-de-donnees-en-Python"/>
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 57" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+                
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                    <course refId="Developpement-interfaces-graphiques-avancees"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 58" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+                
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                    <course refId="Developpement-interfaces-graphiques-avancees"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 59" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+                
+                    <course refId="Traitement-de-donnees-en-Python"/>
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 60" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+                
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                    <course refId="Developpement-interfaces-graphiques-avancees"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 61" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+                
+                    <course refId="Traitement-de-donnees-en-Python"/>
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 62" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+                
+                    <course refId="Traitement-de-donnees-en-Python"/>
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 63" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+                
+                    <course refId="Traitement-de-donnees-en-Python"/>
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 64" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+                
+                    <course refId="Traitement-de-donnees-en-Python"/>
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 65" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+                
+                    <course refId="Traitement-de-donnees-en-Python"/>
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 66" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+                
+                    <course refId="Traitement-de-donnees-en-Python"/>
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+            <student id="student L3 67" label="L3-INFORMATIQUE">
+                <courses>
+                    <course refId="Base-de-donnees-2"/>
+                
+                    <course refId="Developpement-Web"/>
+                
+                    <course refId="Traitement-de-donnees-en-Python"/>
+                    <course refId="Initiation-programmation-de-systemes-intelligents"/>
+                
+                    <course refId="Programmation-Fonctionnelle"/>
+                    <course refId="Programmation-Logique"/>
+                
+                    <course refId="Anglais"/>
+                </courses>       
+            </student>
+        </students>
+
+    <rules>
+
+        <rule>
+            <sessions groupBy="class" sessionsMask="1,3-8"> 
+                <filter type="part" attributeName="id" in="Base-de-donnees-2-CM"/>
+            </sessions>
+            <constraint name="weekly" type="hard">
+            </constraint>
+        </rule>
+
+        <rule>
+            <sessions groupBy="class">
+                <filter type="course" attributeName="id" in="Base-de-donnees-2"/>
+            </sessions>
+            <constraint name="sequenced" type="hard">
+            </constraint>
+        </rule>
+
+        <rule>
+            <sessions groupBy="class">
+                <filter type="part" attributeName="id" in="Base-de-donnees-2-TP,Base-de-donnees-2-TD"/>
+            </sessions>
+            <constraint name="weekly" type="hard">
+            </constraint>
+        </rule>
+
+        <rule>
+            <sessions groupBy="class" sessionsMask="1">
+                <filter type="part" attributeName="id" in="Base-de-donnees-2-TP"/>
+            </sessions>
+            <constraint name="sameWeek" type="hard">
+            </constraint>
+        </rule>
+
+        <rule>
+            <sessions groupBy="class">
+                <filter type="part" attributeName="id" in="Base-de-donnees-2-TP,Base-de-donnees-2-TD"/>
+            </sessions>
+            <constraint name="sequenced" type="hard">
+            </constraint>
+        </rule>
+
+        <rule>
+            <sessions groupBy="class" sessionsMask="2"> 
+                <filter type="part" attributeName="id" in="Base-de-donnees-2-CM"/>
+            </sessions>
+            <sessions groupBy="class" sessionsMask="1"> 
+                <filter type="part" attributeName="id" in="Base-de-donnees-2-TD"/>
+            </sessions>
+            <constraint name="sequenced" type="hard">
+            </constraint>
+        </rule>
+
+        <rule>
+            <sessions groupBy="class" sessionsMask="2"> 
+                <filter type="part" attributeName="id" in="Base-de-donnees-2-TD"/>
+            </sessions>
+            <sessions groupBy="class" sessionsMask="1"> 
+                <filter type="part" attributeName="id" in="Base-de-donnees-2-TP"/>
+            </sessions>
+            <constraint name="sequenced" type="hard">
+            </constraint>
+        </rule>
+
+        <!-- TP NOTE-->
+        <!-- Il faut avoir fait tout les CM avant le tp noté-->
+
+        <rule>
+            <sessions groupBy="class" sessionsMask="8"> 
+                <filter type="part" attributeName="id" in="Base-de-donnees-2-CM"/>
+            </sessions>
+            <sessions groupBy="class" sessionsMask="1"> 
+                <filter type="part" attributeName="id" in="Base-de-donnees-2-TPN"/>
+            </sessions>
+            <constraint name="sequenced" type="hard">
+            </constraint>
+        </rule>
+
+        <!-- Il faut avoir fait tout les TD avant le tp noté-->
+
+        <rule>
+            <sessions groupBy="class" sessionsMask="9"> 
+                <filter type="part" attributeName="id" in="Base-de-donnees-2-TD"/>
+            </sessions>
+            <sessions groupBy="class" sessionsMask="1"> 
+                <filter type="part" attributeName="id" in="Base-de-donnees-2-TPN"/>
+            </sessions>
+            <constraint name="sequenced" type="hard">
+            </constraint>
+        </rule>
+
+        <!-- Il faut avoir fait tout les tp avant le tp noté-->
+
+        <rule>
+            <sessions groupBy="class" sessionsMask="7"> 
+                <filter type="part" attributeName="id" in="Base-de-donnees-2-TP"/>
+            </sessions>
+            <sessions groupBy="class" sessionsMask="1"> 
+                <filter type="part" attributeName="id" in="Base-de-donnees-2-TPN"/>
+            </sessions>
+            <constraint name="sequenced" type="hard">
+            </constraint>
+        </rule>
+
+        <!-- TD en meme temps pour les classes -->
+
+       <rule>
+            <sessions groupBy="class" sessionsMask="1"> 
+                <filter type="part" attributeName="id" in="Base-de-donnees-2-TD"/>
+            </sessions>
+            <constraint name="sameWeek" type="hard">
+            </constraint>
+        </rule>
+
+        <!-- Meme prof pour cahque groupe-->
+        <rule>
+            <!-- chaque portée regroupe les séances d'une des classes d'une partie ciblée selon l'ordre conventionnel sur leurs indices -->
+            <sessions groupBy="class">
+                <filter type="course" attributeName="id" in="Base-de-donnees-2"/>
+             </sessions>
+            <!-- chaque contrainte est dure -->
+            <!-- le prédicat `sameTeachers` impose l'attribution des séances de sa portée aux mêmes enseignants -->
+            <constraint name="sameTeachers" type="hard">
+            </constraint>
+        </rule>
+
+        <rule>
+            <sessions groupBy="class">
+                <filter type="course" attributeName="id" in="Base-de-donnees-2"/>
+                <!--<filter type="part" attributeName="label" notIn="PR"/>-->
+             </sessions>
+            <constraint name="sameRooms" type="hard">
+            </constraint>
+        </rule>
+
+        <!--TPN en mm temps
+        <rule>
+            <sessions groupBy="part">
+                <filter type="part" attributeName="label" in="TPN"/>
+             </sessions>
+            <constraint name="sameSlots" type="hard">
+            </constraint>
+        </rule>
+-->
+    
+        
+        <rule>
+            <!-- chaque portée regroupe les séances d'une classe du cours ciblé selon l'ordre conventionnel de leurs indices -->
+            <sessions groupBy="class">
+                <filter type="course" attributeName="id" in="Developpement-Web"/>
+            </sessions>
+            <!-- chaque contrainte est dure -->
+            <!-- le prédicat `sequenced` impose le séquencement (sans chevauchement) des séances qui se suivent dans sa portée -->
+            <constraint name="sequenced" type="hard">
+            </constraint> 
+        </rule>
+
+        
+        <rule>
+            <!-- chaque portée regroupe les séances d'une classe de la partie ciblée selon l'ordre indiqué -->
+            <sessions groupBy="class" sessionsMask="1,4-12"><!-- `sessionsMask` (optionnel) : filtre sur les indices de séances -->
+                <filter type="part" attributeName="id" in="Developpement-Web-CM"/>
+            </sessions>
+
+            <!-- le prédicat `weekly` impose une programmation hebdomadaire sur le même créneau aux séances de sa portée -->
+            <constraint name="weekly" type="hard">
+            </constraint> 
+        </rule>
+
+    
+
+        
+       
+
+        <rule>
+            <sessions groupBy="class">
+                <filter type="part" attributeName="id" in="Developpement-Web-TP"/>
+            </sessions>
+             <constraint name="weekly" type="hard">
+            </constraint> 
+        </rule>
+
+        
+
+
+        
+        <rule>
+            <!-- chaque portée regroupe les séances de la partie ciblée dont les indices satisfont au critère `in` -->
+            <sessions groupBy="part" sessionsMask="1">
+                <filter type="part" attributeName="id" in="Developpement-Web-TP"/>
+             </sessions>
+            <!-- le prédicat `sameWeek` impose une programmation en même semaine aux séances de sa portée -->
+            <constraint name="sameWeek" type="hard">
+            </constraint>
+        </rule>
+
+
+        
+        <rule>
+            <!-- chaque portée regroupe les paires de séances dont les indices satisfont aux critères `in` pour les paires de parties ciblées -->
+            <sessions groupBy="class" sessionsMask="3">
+                <filter type="part" attributeName="id" in="Developpement-Web-CM"/>
+             </sessions>
+            <sessions groupBy="class" sessionsMask="1">
+                <filter type="part" attributeName="id" in="Developpement-Web-TP"/>
+             </sessions>
+            <!-- le prédicat `sequenced` impose le séquencement (sans chevauchement) des séances qui se suivent dans sa portée -->
+            <constraint name="sequenced" type="hard">
+            </constraint>
+        </rule>
+
+        
+        <rule>
+            <!-- chaque portée regroupe les séances d'une classe d'une partie du cours ciblé selon l'ordre conventionnel de leurs indices -->
+            <sessions groupBy="class">
+                <filter type="course" attributeName="id" in="Developpement-Web"/>
+                <filter type="part" attributeName="label" notIn="TPN"/>
+             </sessions>
+            <!-- le prédicat `sameRooms` impose le placement dans les mêmes salles des séances de sa portée -->
+            <constraint name="sameRooms" type="hard">
+            </constraint>
+        </rule>
+
+        
+        <rule>
+            <sessions groupBy="class">
+                <filter type="course" attributeName="id" in="Developpement-Web"/>
+               <!-- <filter type="part" attributeName="label" notIn="PR"/>-->
+                <!--<filter type="part" attributeName="label" notIn="TPN"/>-->
+             </sessions>
+            <!-- le prédicat `sameTeachers` impose l'attribution des séances de sa portée aux mêmes enseignants -->
+            <constraint name="sameTeachers" type="hard">
+                <!--<parameters>
+                 <parameter type="teacher" name="rooms">BATIMENT-A,BATIMENT-H,BATIMENT-A,BATIMENT-H</parameter>
+                </parameters>-->
+            </constraint>
+        </rule>
+
+        <rule>
+            <sessions groupBy="part">
+                <filter type="course" attributeName="id" in="Developpement-Web"/>
+                <filter type="part" attributeName="label" in="TPN"/>
+             </sessions>
+            <constraint name="sameSlots" type="hard">
+            </constraint>
+        </rule>
+
+        <rule>
+            <sessions groupBy="class" sessionsMask="5">
+                <filter type="course" attributeName="id" in="Developpement-Web"/>
+                <filter type="part" attributeName="label" in="TP"/>
+             </sessions>
+            <sessions groupBy="class" sessionsMask="1">
+                <filter type="course" attributeName="id" in="Developpement-Web"/>
+                <filter type="part" attributeName="label" in="TPN"/>
+             </sessions>
+            <constraint name="sequenced" type="hard">
+            </constraint>
+        </rule>
+
+        <rule>
+            <sessions groupBy="class" sessionsMask="1">
+                <filter type="course" attributeName="id" in="Developpement-Web"/>
+                <filter type="part" attributeName="label" in="TPN"/>
+             </sessions>
+             <!--<sessions groupBy="class" sessionsMask="6"  type="part" attributeName="id" in="Developpement-Web-TP">-->
+             <sessions groupBy="class" sessionsMask="6">
+                <filter type="part" attributeName="id" in="Developpement-Web-TP"/>
+                <!--<filter type="course" attributeName="id" in="Developpement-Web"/>
+                <filter type="part" attributeName="label" in="TPN"/>-->
+             </sessions>
+            <constraint name="sequenced" type="hard">
+            </constraint>
+        </rule>
+
+        
+
+
+       
+
+        
+       
+
+        <rule>
+            <sessions groupBy="class" sessionsMask="1">
+                <filter type="part" attributeName="id" in="Developpement-Web-CM"/>
+            </sessions>
+            <sessions groupBy="class" sessionsMask="1">
+                <filter type="part" attributeName="id" in="Developpement-Web-TP"/>
+		        <filter type="class" attributeName="id" notIn="Developpement-Web-TP-2"/>
+            </sessions>
+            <constraint name="sequenced" type="hard">
+            </constraint> 
+        </rule>
+
+
+
+
+    
+
+    
+
+        <rule>
+            <sessions groupBy="class"> 
+                <filter type="course" attributeName="label" in="OPTIONS-L3-INFO"/><!--Initiation-programmation-de-systemes-intelligents--><!--OPTIONS-L3-INFO-->
+                <filter type="part" attributeName="label" in="CM,TP"/>
+            </sessions>
+            <constraint name="weekly" type="hard">
+            </constraint>
+        </rule>
+
+        <rule>
+            <sessions groupBy="class"> 
+                <filter type="course" attributeName="label" in="OPTIONS-L3-INFO"/>
+                <filter type="part" attributeName="label" in="CM,TP"/>
+            </sessions>
+            <constraint name="sequenced" type="hard">
+            </constraint>
+        </rule>
+
+    
+    
+
+        <rule>
+            <sessions groupBy="class"> 
+                <filter type="part" attributeName="id" in="Initiation-programmation-de-systemes-intelligents-TD"/>
+            </sessions>
+            <constraint name="sequenced" type="hard">
+            </constraint>
+        </rule>
+
+    
+
+        
+        
+        
+
+       
+
+
+    
+
+        <rule>
+            <sessions groupBy="class" sessionsMask="2">
+                <filter type="part" attributeName="id" in="Initiation-programmation-de-systemes-intelligents-CM"/>
+            </sessions>
+            <sessions groupBy="class" sessionsMask="1"> 
+                <filter type="part" attributeName="id" in="Initiation-programmation-de-systemes-intelligents-TP"/>
+            </sessions>
+            <constraint name="sequenced" type="hard">
+            </constraint>
+        </rule>
+
+    
+
+        <rule>
+            <sessions groupBy="class" sessionsMask="2">
+                <filter type="part" attributeName="id" in="Initiation-programmation-de-systemes-intelligents-CM"/>
+            </sessions>
+            <sessions groupBy="class" sessionsMask="1"> 
+                <filter type="part" attributeName="id" in="Initiation-programmation-de-systemes-intelligents-TD"/>
+            </sessions>
+            <constraint name="sequenced" type="hard">
+            </constraint>
+        </rule>
+
+    
+
+        <rule>
+            <sessions groupBy="class" sessionsMask="2">
+                <filter type="part" attributeName="id" in="Initiation-programmation-de-systemes-intelligents-TD"/>
+            </sessions>
+            <sessions groupBy="class" sessionsMask="1"> 
+                <filter type="part" attributeName="id" in="Initiation-programmation-de-systemes-intelligents-TP"/>
+            </sessions>
+            <constraint name="sequenced" type="hard">
+            </constraint>
+        </rule>
+
+    
+
+    
+
+        
+        
+        
+        
+        
+      
+
+        <rule>
+            <sessions groupBy="class" sessionsMask="1">
+                <filter type="course" attributeName="label" in="OPTIONS-L3-INFO"/>
+                <filter type="part" attributeName="label" in="TP"/>
+            </sessions>
+            <constraint name="sameWeek" type="hard">
+            </constraint>
+        </rule>
+
+        
+        
+
+        
+        <rule>
+            <sessions groupBy="class">
+               <!-- <filter type="course" attributeName="label" in="UE"/>-->
+             </sessions>
+            <constraint name="sameTeachers" type="hard">
+            </constraint>
+        </rule>
+
+
+            
+        
+        
+
+        
+
+        <rule>
+            <sessions groupBy="class" sessionsMask="1,4-6"> 
+                <filter type="part" attributeName="id" in="Programmation-Logique-CM"/>
+            </sessions>
+            <constraint name="weekly" type="hard">
+            </constraint>
+        </rule>
+
+        <rule>
+            <sessions groupBy="class" sessionsMask="1,3-7"> 
+                <filter type="part" attributeName="id" in="Programmation-Fonctionnelle-CM"/>
+            </sessions>
+            <constraint name="weekly" type="hard">
+            </constraint>
+        </rule>
+
+       
+
+    
+
+        <rule>
+            <sessions groupBy="class"> 
+                <filter type="course" attributeName="id" in="Programmation-Logique"/>
+                <filter type="part" attributeName="label" in="TP,TD"/>
+            </sessions>
+            <constraint name="weekly" type="hard">
+            </constraint>
+        </rule>
+
+        <rule>
+            <sessions groupBy="class"> 
+                <filter type="course" attributeName="id" in="Programmation-Fonctionnelle"/>
+                <filter type="part" attributeName="label" in="TP,TD"/>
+            </sessions>
+            <constraint name="weekly" type="hard">
+            </constraint>
+        </rule>
+
+        <rule>
+            <sessions groupBy="class">
+                <filter type="course" attributeName="id" in="Programmation-Fonctionnelle"/>
+                <filter type="part" attributeName="label" in="TP,TD"/>
+            </sessions>
+            <constraint name="sequenced" type="hard">
+            </constraint>
+        </rule>
+
+        <rule>
+            <sessions groupBy="class">
+                <filter type="course" attributeName="id" in="Programmation-Logique"/> 
+                <filter type="part" attributeName="label" in="TP,TD"/>
+            </sessions>
+            <constraint name="sequenced" type="hard">
+            </constraint>
+        </rule>
+
+
+    
+    
+    
+    
+
+        <rule>
+            <sessions groupBy="class" sessionsMask="6">
+                <filter type="part" attributeName="id" in="Programmation-Logique-CM"/>
+            </sessions>
+            <sessions groupBy="class" sessionsMask="1"> 
+                <filter type="part" attributeName="id" in="Programmation-Logique-TP"/>
+            </sessions>
+            <constraint name="sequenced" type="hard">
+            </constraint>
+        </rule>
+
+    
+
+        <rule>
+            <sessions groupBy="class" sessionsMask="6">
+                <filter type="part" attributeName="id" in="Programmation-Logique-CM"/>
+            </sessions>
+            <sessions groupBy="class" sessionsMask="1"> 
+                <filter type="part" attributeName="id" in="Programmation-Logique-TD"/>
+            </sessions>
+            <constraint name="sequenced" type="hard">
+            </constraint>
+        </rule>
+
+        <rule>
+            <sessions groupBy="class" sessionsMask="3">
+                <filter type="part" attributeName="id" in="Programmation-Fonctionnelle-CM"/>
+            </sessions>
+            <sessions groupBy="class" sessionsMask="1"> 
+                <filter type="part" attributeName="id" in="Programmation-Fonctionnelle-TD"/>
+            </sessions>
+            <constraint name="sequenced" type="hard">
+            </constraint>
+        </rule>
+
+        
+
+        <rule>
+            <sessions groupBy="class" sessionsMask="1">
+                <filter type="part" attributeName="id" in="Programmation-Logique-TP"/>
+            </sessions>
+            <sessions groupBy="class" sessionsMask="1"> 
+                <filter type="part" attributeName="id" in="Programmation-Logique-TD"/>
+            </sessions>
+            <constraint name="sequenced" type="hard">
+            </constraint>
+        </rule>
+
+        <rule>
+            <sessions groupBy="class" sessionsMask="4">
+                <filter type="part" attributeName="id" in="Programmation-Fonctionnelle-TD"/>
+            </sessions>
+            <sessions groupBy="class" sessionsMask="1"> 
+                <filter type="part" attributeName="id" in="Programmation-Fonctionnelle-TP"/>
+            </sessions>
+            <constraint name="sequenced" type="hard">
+            </constraint>
+        </rule>
+
+        
+
+        
+
+        
+
+        <rule>
+            <sessions groupBy="part" sessionsMask="1"> 
+                <filter type="course" attributeName="id" in="Programmation-Logique"/>
+                <filter type="part" attributeName="label" in="TD,TP"/>
+            </sessions>
+            <constraint name="sameWeek" type="hard">
+            </constraint>
+        </rule>
+        <rule>
+            <sessions groupBy="part" sessionsMask="1"> 
+               <filter type="course" attributeName="id" in="Programmation-Fonctionnelle"/>
+                <filter type="part" attributeName="label" in="TD,TP"/>
+            </sessions>
+            <constraint name="sameWeek" type="hard">
+            </constraint>
+        </rule>
+
+
+        
+
+        
+        <rule>
+            <sessions groupBy="class">
+           <!-- <filter type="part" attributeName="label" notIn="PR"/>-->
+               <!-- <filter type="course" attributeName="label" in="UE"/>-->
+             </sessions>
+            <constraint name="sameTeachers" type="hard">
+            </constraint>
+        </rule>
+
+        <rule>
+            <sessions groupBy="class">
+                <filter type="course" attributeName="id" in="Programmation-Fonctionnelle"/>
+               <!-- <filter type="part" attributeName="label" notIn="PR"/>-->
+             </sessions>
+            <constraint name="sameRooms" type="hard">
+            </constraint>
+        </rule>
+       
+
+        
+        
+
+    
+
+        <rule>
+            <sessions groupBy="class"> 
+                <filter type="part" attributeName="id" in="Anglais-CM-TD"/>
+            </sessions>
+            <constraint name="weekly" type="hard">
+            </constraint>
+        </rule>
+
+        <rule>
+            <sessions groupBy="class">
+                <filter type="part" attributeName="id" in="Anglais-CM-TD"/>
+            </sessions>
+            <constraint name="sequenced" type="hard">
+            </constraint>
+        </rule>
+
+        <rule>
+            <sessions groupBy="class" sessionsMask="8">
+                <filter type="part" attributeName="id" in="Anglais-CM-TD"/>
+            </sessions>
+            <sessions groupBy="class" sessionsMask="1">
+                <filter type="part" attributeName="id" in="Anglais-CC"/>
+            </sessions>
+            <constraint name="sequenced" type="hard">
+            </constraint>
+        </rule>
+
+        <rule>
+            <sessions groupBy="class" sessionsMask="1">
+                <filter type="part" attributeName="id" in="Anglais-CM-TD"/>
+            </sessions>
+            <constraint name="sameWeek" type="hard">
+                <parameters>
+                    <parameter name="slot">1</parameter>
+                </parameters>
+            </constraint>
+        </rule>
+        
+        <rule>
+            <!-- chaque portée regroupe les séances d'une des classes d'une partie ciblée selon l'ordre conventionnel sur leurs indices -->
+            <sessions groupBy="class">
+                <filter type="course" attributeName="id" in="Anglais"/>
+             </sessions>
+            <!-- chaque contrainte est dure -->
+            <!-- le prédicat `sameTeachers` impose l'attribution des séances de sa portée aux mêmes enseignants -->
+            <constraint name="sameTeachers" type="hard">
+            </constraint>
+        </rule>
+
+        <rule>
+            <sessions groupBy="class" sessionsMask= "1,5-7">
+                <filter type="part" attributeName="id" in="Anglais-CM-TD"/>
+                <!--<filter type="part" attributeName="label" notIn="PR"/>-->
+             </sessions>
+             <sessions groupBy="class" sessionsMask= "1,5-7">
+                <filter type="part" attributeName="id" in="Anglais-CM-TD"/>
+                <!--<filter type="part" attributeName="label" notIn="PR"/>-->
+             </sessions>
+
+            <constraint name="sameRooms" type="hard">
+                <parameters>
+                    <parameter name="slot" type="slots">72,78</parameter>
+                </parameters>
+            </constraint>
+        </rule>
+
+    
+    </rules>
+
+    <solution> <!-- Solution parties groupes -->
+        <groups>
+             <group id="1-td1-tp1-pq" headCount="18">
+                 <students>
+                     <student refId="student L3 4"/>
+                     <student refId="student L3 5"/>
+                     <student refId="student L3 6"/>
+                     <student refId="student L3 9"/>
+                     <student refId="student L3 11"/>
+                     <student refId="student L3 13"/>
+                     <student refId="student L3 15"/>
+                     <student refId="student L3 16"/>
+                     <student refId="student L3 18"/>
+                     <student refId="student L3 19"/>
+                     <student refId="student L3 20"/>
+                     <student refId="student L3 23"/>
+                     <student refId="student L3 26"/>
+                     <student refId="student L3 34"/>
+                     <student refId="student L3 36"/>
+                     <student refId="student L3 37"/>
+                     <student refId="student L3 43"/>
+                     <student refId="student L3 53"/>
+    
+                 
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+    
+                 
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+         
+                     
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+
+             
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+    
+                 </students>
+                 <classes>
+                     <class refId="Base-de-donnees-2-CM-1"/>
+                     <class refId="Base-de-donnees-2-TD-1"/>
+                     <class refId="Base-de-donnees-2-TP-1"/>
+                     <class refId="Base-de-donnees-2-TPN-1"/>
+                 
+                     <class refId="Developpement-Web-CM-1"/>
+                     <class refId="Developpement-Web-TP-1"/>
+                 
+                         <class refId="Traitement-de-donnees-en-Python-CM-TD-1"/>
+                         <class refId="Traitement-de-donnees-en-Python-TP-1"/>
+                         <class refId="Developpement-interfaces-graphiques-avancees-CM-1"/>
+                         <class refId="Developpement-interfaces-graphiques-avancees-TP-1"/>
+                     
+                 <class refId="Programmation-Fonctionnelle-CM-1"/>
+                 <class refId="Programmation-Fonctionnelle-TD-1"/>
+                 <class refId="Programmation-Fonctionnelle-TP-1"/>
+                 <class refId="Programmation-Logique-CM-1"/>
+                 <class refId="Programmation-Logique-TD-1"/>
+                 <class refId="Programmation-Logique-TP-1"/>
+             
+                     <class refId="Anglais-CM-TD-1"/>
+                     <class refId="Anglais-CC-1"/>
+                 </classes>
+             </group>
+             <group id="2-td1-tp3-ps" headCount="22">
+                 <students>
+                     <student refId="student L3 1"/>
+                     <student refId="student L3 3"/>
+                     <student refId="student L3 14"/>
+                     <student refId="student L3 22"/>
+                     <student refId="student L3 24"/>
+                     <student refId="student L3 29"/>
+                     <student refId="student L3 32"/>
+                     <student refId="student L3 35"/>
+                     <student refId="student L3 39"/>
+                     <student refId="student L3 45"/>
+                     <student refId="student L3 46"/>
+                     <student refId="student L3 49"/>
+                     <student refId="student L3 50"/>
+                     <student refId="student L3 56"/>
+                     <student refId="student L3 59"/>
+                     <student refId="student L3 61"/>
+                     <student refId="student L3 62"/>
+                     <student refId="student L3 63"/>
+                     <student refId="student L3 64"/>
+                     <student refId="student L3 65"/>
+                     <student refId="student L3 66"/>
+                     <student refId="student L3 67"/>
+                 
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                 
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                     
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+             
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                 </students>
+                 <classes>
+                     <class refId="Base-de-donnees-2-CM-1"/>
+                     <class refId="Base-de-donnees-2-TD-1"/>
+                     <class refId="Base-de-donnees-2-TP-3"/>
+                     <class refId="Base-de-donnees-2-TPN-3"/>
+                 
+                     <class refId="Developpement-Web-CM-1"/>
+                     <class refId="Developpement-Web-TP-3"/>
+                 
+                         <class refId="Traitement-de-donnees-en-Python-CM-TD-1"/>
+                         <class refId="Traitement-de-donnees-en-Python-TP-2"/>
+                         <class refId="Initiation-programmation-de-systemes-intelligents-CM-1"/>
+                         <class refId="Initiation-programmation-de-systemes-intelligents-TD-1"/>
+                         <class refId="Initiation-programmation-de-systemes-intelligents-TP-1"/>
+                     
+                 <class refId="Programmation-Fonctionnelle-CM-1"/>
+                 <class refId="Programmation-Fonctionnelle-TD-1"/>
+                 <class refId="Programmation-Fonctionnelle-TP-3"/>
+                 <class refId="Programmation-Logique-CM-1"/>
+                 <class refId="Programmation-Logique-TD-1"/>
+                 <class refId="Programmation-Logique-TP-3"/>
+             
+                     <class refId="Anglais-CM-TD-3"/>
+                     <class refId="Anglais-CC-1"/>
+                 </classes>
+             </group>
+    
+             <group id="3-td2-tp2-is" headCount="10">
+                 <students>
+                     <student refId="student L3 7"/>
+                     <student refId="student L3 10"/>
+                     <student refId="student L3 12"/>
+                     <student refId="student L3 17"/>
+                     <student refId="student L3 30"/>
+                     <student refId="student L3 31"/>
+                     <student refId="student L3 40"/>
+                     <student refId="student L3 42"/>
+                     <student refId="student L3 48"/>
+                     <student refId="student L3 54"/>
+                 
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                 
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                     
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+             
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                 </students>
+                 <classes>
+                     <class refId="Base-de-donnees-2-CM-1"/>
+                     <class refId="Base-de-donnees-2-TD-2"/>
+                     <class refId="Base-de-donnees-2-TP-2"/>
+                     <class refId="Base-de-donnees-2-TPN-2"/>
+                 
+                     <class refId="Developpement-Web-CM-1"/>
+                     <class refId="Developpement-Web-TP-2"/>
+                 
+                         <class refId="Image-de-Synthese-CM-1"/>
+                         <class refId="Image-de-Synthese-TP-1"/>
+                         <class refId="Initiation-programmation-de-systemes-intelligents-CM-1"/>
+                         <class refId="Initiation-programmation-de-systemes-intelligents-TD-1"/>
+                         <class refId="Initiation-programmation-de-systemes-intelligents-TP-2"/>
+                     
+                 <class refId="Programmation-Fonctionnelle-CM-1"/>
+                 <class refId="Programmation-Fonctionnelle-TD-2"/>
+                 <class refId="Programmation-Fonctionnelle-TP-2"/>
+                 <class refId="Programmation-Logique-CM-1"/>
+                 <class refId="Programmation-Logique-TD-2"/>
+                 <class refId="Programmation-Logique-TP-2"/>
+             
+                     <class refId="Anglais-CM-TD-2"/>
+                     <class refId="Anglais-CC-1"/>
+                 </classes>
+             </group>
+             <group id="4-td2-tp2-qs" headCount="17">
+                 <students>
+                     <student refId="student L3 2"/>
+                     <student refId="student L3 8"/>
+                     <student refId="student L3 21"/>
+                     <student refId="student L3 25"/>
+                     <student refId="student L3 27"/>
+                     <student refId="student L3 28"/>
+                     <student refId="student L3 33"/>
+                     <student refId="student L3 38"/>
+                     <student refId="student L3 41"/>
+                     <student refId="student L3 44"/>
+                     <student refId="student L3 47"/>
+                     <student refId="student L3 51"/>
+                     <student refId="student L3 52"/>
+                     <student refId="student L3 55"/>
+                     <student refId="student L3 57"/>
+                     <student refId="student L3 58"/>
+                     <student refId="student L3 60"/>
+    
+                 
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+    
+                 
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+         
+                     
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+
+             
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+    
+                 </students>
+                 <classes>
+                     <class refId="Base-de-donnees-2-CM-1"/>
+                     <class refId="Base-de-donnees-2-TD-2"/>
+                     <class refId="Base-de-donnees-2-TP-2"/>
+                     <class refId="Base-de-donnees-2-TPN-2"/>
+                 
+                     <class refId="Developpement-Web-CM-1"/>
+                     <class refId="Developpement-Web-TP-2"/>
+                 
+                         <class refId="Initiation-programmation-de-systemes-intelligents-CM-1"/>
+                         <class refId="Initiation-programmation-de-systemes-intelligents-TD-1"/>
+                         <class refId="Initiation-programmation-de-systemes-intelligents-TP-3"/>
+                         <class refId="Developpement-interfaces-graphiques-avancees-CM-1"/>
+                         <class refId="Developpement-interfaces-graphiques-avancees-TP-2"/>
+                     
+                 <class refId="Programmation-Fonctionnelle-CM-1"/>
+                 <class refId="Programmation-Fonctionnelle-TD-2"/>
+                 <class refId="Programmation-Fonctionnelle-TP-2"/>
+                 <class refId="Programmation-Logique-CM-1"/>
+                 <class refId="Programmation-Logique-TD-2"/>
+                 <class refId="Programmation-Logique-TP-2"/>
+             
+                     <class refId="Anglais-CM-TD-2"/>
+                     <class refId="Anglais-CC-1"/>
+                 </classes>
+             </group>
+    
+         </groups> 
+
+         <classes>
+            <class refId="Base-de-donnees-2-CM-1">
+                <rooms>
+                    <room refId="AMPHI-A"/>
+                    <room refId="AMPHI-B"/>
+                </rooms>
+                <teachers>
+                    <teacher refId="AIT EL MEKKI Touria"/>
+                </teachers>
+                <groups>
+                    <group refId="1-td1-tp1-pq"/>
+                    <group refId="2-td1-tp3-ps"/>
+                    <group refId="3-td2-tp2-is"/>
+                    <group refId="4-td2-tp2-qs"/>
+                </groups>
+            </class>
+
+            <class refId="Base-de-donnees-2-TD-1">
+                <rooms>
+                    <room refId="L201"/>
+                    <room refId="L202"/>
+                </rooms>
+                <teachers>
+                    <teacher refId="AIT EL MEKKI Touria"/>
+                </teachers>
+                <groups>
+                    <group refId="1-td1-tp1-pq"/>
+                    <group refId="2-td1-tp3-ps"/>
+                </groups>
+            </class>
+
+
+            <class refId="Base-de-donnees-2-TD-2">
+                <rooms>
+                    <room refId="L201"/>
+                    <room refId="L206"/>
+                </rooms>
+                <teachers>
+                    <teacher refId="AIT EL MEKKI Touria"/>
+                </teachers>
+                <groups>
+                    <group refId="3-td2-tp2-is"/>
+                    <group refId="4-td2-tp2-qs"/>
+                </groups>
+            </class>
+
+
+            <class refId="Base-de-donnees-2-TP-1">
+                <rooms>
+                    <room refId="H001"/>
+                    <room refId="H002"/>
+                </rooms>
+                <teachers>
+                    <teacher refId="AIT EL MEKKI Touria"/>
+                    <teacher refId="GARCIA Laurent"/>
+                </teachers>
+                <groups>
+                    <group refId="1-td1-tp1-pq"/>
+                </groups>
+            </class>
+
+            <class refId="Base-de-donnees-2-TP-2">
+                <rooms>
+                    <room refId="H002"/>
+                    <room refId="H003"/>
+                </rooms>
+                <teachers>
+                    <teacher refId="AIT EL MEKKI Touria"/>
+                </teachers>
+                <groups>
+                    <group refId="3-td2-tp2-is"/>
+                    <group refId="4-td2-tp2-qs"/>
+                </groups>
+            </class>
+
+            <class refId="Base-de-donnees-2-TP-3">
+                <rooms>
+                    <room refId="H001"/>
+                    <room refId="H002"/>
+                    <room refId="H003"/>
+                </rooms>
+                <teachers>
+                    <teacher refId="AIT EL MEKKI Touria"/>
+                    <teacher refId="GARCIA Laurent"/>
+                </teachers>
+                <groups>
+                    <group refId="2-td1-tp3-ps"/>
+                </groups>
+            </class>
+            <!--tpn-->
+            <class refId="Base-de-donnees-2-TPN-1">
+                <rooms>
+                    <room refId="H001"/>
+                    <room refId="H002"/>
+                </rooms>
+                <teachers>
+                    <teacher refId="AIT EL MEKKI Touria"/>
+                    <teacher refId="GARCIA Laurent"/>
+                    <teacher refId="RICHER Jean-Michel"/>
+                </teachers>
+                <groups>
+                    <group refId="1-td1-tp1-pq"/>
+                </groups>
+            </class>
+            <class refId="Base-de-donnees-2-TPN-3">
+                <rooms>
+                    <room refId="H002"/>
+                    <room refId="H003"/>
+                </rooms>
+                <teachers>
+                    <teacher refId="AIT EL MEKKI Touria"/>
+                    <teacher refId="GARCIA Laurent"/>
+                </teachers>
+                <groups>
+                    <group refId="2-td1-tp3-ps"/>
+                </groups>
+            </class>
+            <class refId="Base-de-donnees-2-TPN-2">
+                <rooms>
+                    <room refId="H002"/>
+                    <room refId="H003"/>
+                </rooms>
+                <teachers>
+                    <teacher refId="AIT EL MEKKI Touria"/>
+                    <teacher refId="GARCIA Laurent"/>
+                    <teacher refId="RICHER Jean-Michel"/>
+                </teachers>
+                <groups>
+                    <group refId="3-td2-tp2-is"/>
+                    <group refId="4-td2-tp2-qs"/>
+                </groups>
+            </class>
+
+
+         <class refId="Developpement-Web-CM-1">
+                <rooms>
+                    <room refId="AMPHI-A"/>
+                    <room refId="AMPHI-B"/>
+                </rooms>
+                <teachers>
+                    <teacher refId="LESAINT David"/>
+                </teachers> 
+                <groups>
+                    <group refId="1-td1-tp1-pq"/>
+                    <group refId="2-td1-tp3-ps"/>
+                    <group refId="3-td2-tp2-is"/>
+                    <group refId="4-td2-tp2-qs"/>
+                </groups>
+             </class><class refId="Developpement-Web-TP-1">
+                <rooms>
+                    <room refId="H001"/>
+                    <room refId="H002"/>
+                    <room refId="H003"/>
+                </rooms>
+                <teachers>
+                    <teacher refId="LESAINT David"/>
+                    <teacher refId="JAMIN Antoine"/>
+                </teachers> 
+                <groups>
+                    <group refId="1-td1-tp1-pq"/>
+                </groups>
+             </class><class refId="Developpement-Web-TP-2">
+                <rooms>
+                    <room refId="H001"/>
+                    <room refId="H002"/>
+                    <room refId="H003"/>
+                </rooms>
+                <teachers>
+                    <teacher refId="LESAINT David"/>
+                    <teacher refId="JAMIN Antoine"/>
+                </teachers> 
+                <groups>
+                    <group refId="3-td2-tp2-is"/>
+                    <group refId="4-td2-tp2-qs"/>
+                </groups>
+             </class><class refId="Developpement-Web-TP-3">
+                <rooms>
+                    <room refId="H001"/>
+                    <room refId="H002"/>
+                    <room refId="H003"/>
+                </rooms>
+                <teachers>
+                    <teacher refId="LESAINT David"/>
+                    <teacher refId="JAMIN Antoine"/>
+                </teachers> 
+                <groups>
+                    <group refId="2-td1-tp3-ps"/>
+                </groups>
+             </class><class refId="Developpement-Web-TPN-1">
+                <rooms>
+                    <room refId="H001"/>
+                    <room refId="H002"/>
+                    <room refId="H003"/>
+                </rooms>
+                <teachers>
+                    <teacher refId="LESAINT David"/>
+                    <teacher refId="JAMIN Antoine"/>
+                    <teacher refId="LEGEAY Marc"/>
+                </teachers>
+                <groups>
+                    <group refId="1-td1-tp1-pq"/>
+                </groups>
+             </class><class refId="Developpement-Web-TPN-2">
+                <rooms>
+                    <room refId="H001"/>
+                    <room refId="H002"/>
+                    <room refId="H003"/>
+                </rooms>
+                <teachers>
+                    <teacher refId="LESAINT David"/>
+                    <teacher refId="JAMIN Antoine"/>
+                    <teacher refId="LEGEAY Marc"/>
+                </teachers>
+                <groups>
+                    <group refId="3-td2-tp2-is"/>
+                    <group refId="4-td2-tp2-qs"/>
+                </groups>
+             </class><class refId="Developpement-Web-TPN-3">
+                <rooms>
+                    <room refId="H001"/>
+                    <room refId="H002"/>
+                    <room refId="H003"/>
+                </rooms>
+                <teachers>
+                    <teacher refId="LESAINT David"/>
+                    <teacher refId="JAMIN Antoine"/>
+                    <teacher refId="LEGEAY Marc"/>
+                </teachers>
+                <groups>
+                    <group refId="2-td1-tp3-ps"/>
+                </groups>
+             </class><class refId="Image-de-Synthese-CM-1">
+                   <rooms>
+                       <room refId="AMPHI-A"/>
+                       <room refId="AMPHI-B"/>
+                   </rooms>
+                   <teachers>
+                       <teacher refId="STEPHAN Igor"/>
+                   </teachers> 
+                   <groups>
+                       <group refId="3-td2-tp2-is"/>
+                   </groups>
+                </class><class refId="Image-de-Synthese-TP-1">
+                   <rooms>
+                       <room refId="H001"/>
+                       <room refId="H002"/>
+                       <room refId="H003"/>
+                   </rooms>
+                   <teachers>
+                    <teacher refId="STEPHAN Igor"/>
+                   </teachers> 
+                   <groups>
+                       <group refId="3-td2-tp2-is"/>
+                   </groups>
+                </class><class refId="Traitement-de-donnees-en-Python-CM-TD-1">
+                   <rooms>
+                       <room refId="H001"/>
+                       <room refId="H002"/>
+                       <room refId="H003"/>
+                   </rooms>
+                   <teachers>
+                       <teacher refId="GOUDET Olivier"/>
+                   </teachers> 
+                   <groups>
+                       <group refId="1-td1-tp1-pq"/>
+                       <group refId="2-td1-tp3-ps"/>
+                   </groups>
+                </class><class refId="Traitement-de-donnees-en-Python-TP-1">
+                   <rooms>
+                        <room refId="H001"/>
+                        <room refId="H002"/>
+                        <room refId="H003"/>
+                   </rooms>
+                   <teachers>
+                        <teacher refId="GOUDET Olivier"/>
+                   </teachers> 
+                   <groups>
+                        <group refId="1-td1-tp1-pq"/>
+                   </groups>
+                </class><class refId="Traitement-de-donnees-en-Python-TP-2">
+                   <rooms>
+                        <room refId="H001"/>
+                        <room refId="H002"/>
+                        <room refId="H003"/>
+                   </rooms>
+                   <teachers>
+                        <teacher refId="GOUDET Olivier"/>
+                   </teachers> 
+                   <groups>
+                        <group refId="2-td1-tp3-ps"/>
+                   </groups>
+                </class><class refId="Initiation-programmation-de-systemes-intelligents-CM-1">
+                   <rooms>
+                        <room refId="AMPHI-A"/>
+                        <room refId="AMPHI-B"/>
+                   </rooms>
+                   <teachers>
+                        <teacher refId="STEPHAN Igor"/>
+                   </teachers> 
+                    <groups>
+                        <group refId="2-td1-tp3-ps"/>
+                        <group refId="3-td2-tp2-is"/>
+                        <group refId="4-td2-tp2-qs"/>
+                    </groups>
+                </class><class refId="Initiation-programmation-de-systemes-intelligents-TD-1">
+                    <rooms>
+                        <room refId="L201"/>
+                        <room refId="L202"/>
+                        <room refId="L206"/>
+                    </rooms>
+                    <teachers>
+                        <teacher refId="DEVRED Caroline"/>
+                    </teachers> 
+                    <groups>
+                        <group refId="2-td1-tp3-ps"/>
+                        <group refId="3-td2-tp2-is"/>
+                        <group refId="4-td2-tp2-qs"/>
+                    </groups>
+                </class><class refId="Initiation-programmation-de-systemes-intelligents-TP-1">
+                    <rooms>
+                       <room refId="H001"/>
+                       <room refId="H002"/>
+                       <room refId="H003"/>
+                   </rooms>
+                   <teachers>
+                    <teacher refId="DEVRED Caroline"/>
+               </teachers> 
+               <groups>
+                    <group refId="2-td1-tp3-ps"/>
+               </groups>
+                </class><class refId="Initiation-programmation-de-systemes-intelligents-TP-2">
+                   <rooms>
+                       <room refId="H001"/>
+                       <room refId="H002"/>
+                       <room refId="H003"/>
+                   </rooms>
+                   <teachers>
+                       <teacher refId="DEVRED Caroline"/>
+                   </teachers>
+                   <groups>
+                    <group refId="3-td2-tp2-is"/>
+                   </groups>
+                </class><class refId="Initiation-programmation-de-systemes-intelligents-TP-3">
+                   <rooms>
+                       <room refId="H001"/>
+                       <room refId="H002"/>
+                       <room refId="H003"/>
+                   </rooms>
+                   <teachers>
+                       <teacher refId="DEVRED Caroline"/>
+                   </teachers>
+                   <groups>
+                        <group refId="4-td2-tp2-qs"/>
+                   </groups>
+                </class><class refId="Developpement-interfaces-graphiques-avancees-CM-1">
+                    <rooms>
+                        <room refId="AMPHI-A"/>
+                        <room refId="AMPHI-B"/>
+                    </rooms>
+                    <teachers>
+                        <teacher refId="LEGEAY Marc"/>
+                    </teachers>
+                    <groups>
+                        <group refId="1-td1-tp1-pq"/>
+                        <group refId="4-td2-tp2-qs"/>
+                    </groups>
+                 </class><class refId="Developpement-interfaces-graphiques-avancees-TP-1">
+                    <rooms>
+                        <room refId="H001"/>
+                        <room refId="H002"/>
+                        <room refId="H003"/>
+                    </rooms>
+                    <teachers>
+                        <teacher refId="LEGEAY Marc"/>
+                    </teachers>
+                    <groups>
+                        <group refId="1-td1-tp1-pq"/>
+                    </groups>
+                 </class><class refId="Developpement-interfaces-graphiques-avancees-TP-2">
+                    <rooms>
+                        <room refId="H001"/>
+                        <room refId="H002"/>
+                        <room refId="H003"/>
+                    </rooms>
+                    <teachers>
+                        <teacher refId="LEGEAY Marc"/>
+                    </teachers>
+                    <groups>
+                        <group refId="4-td2-tp2-qs"/>
+                    </groups>
+                 </class><class refId="Programmation-Fonctionnelle-CM-1">
+            <rooms>
+                <room refId="AMPHI-A"/>
+                <room refId="AMPHI-B"/>
+            </rooms>
+            <teachers>
+                <teacher refId="LEFEVRE Claire"/>
+            </teachers>
+            <groups>
+                <group refId="1-td1-tp1-pq"/>
+                <group refId="2-td1-tp3-ps"/>
+                <group refId="3-td2-tp2-is"/>
+                <group refId="4-td2-tp2-qs"/>
+            </groups>
+        </class><class refId="Programmation-Fonctionnelle-TD-1">
+            <rooms>
+                <room refId="L201"/>
+                <room refId="L202"/>
+                <room refId="L206"/>
+            </rooms>
+            <teachers>
+                <teacher refId="LEFEVRE Claire"/>
+            </teachers>
+            <groups>
+                <group refId="1-td1-tp1-pq"/>
+                <group refId="2-td1-tp3-ps"/>
+            </groups>
+        </class><class refId="Programmation-Fonctionnelle-TD-2">
+            <rooms>
+                <room refId="L201"/>
+                <room refId="L202"/>
+                <room refId="L206"/>
+            </rooms>
+            <teachers>
+                <teacher refId="LEFEVRE Claire"/>
+            </teachers>
+            <groups>
+                <group refId="3-td2-tp2-is"/>
+                <group refId="4-td2-tp2-qs"/>
+            </groups>
+        </class><class refId="Programmation-Fonctionnelle-TP-1">
+            <rooms>
+                <room refId="H001"/>
+                <room refId="H002"/>
+                <room refId="H003"/>
+            </rooms>
+            <teachers>
+                <teacher refId="LEFEVRE Claire"/>
+                <teacher refId="DIEGUEZ Martin"/>
+                <teacher refId="LEGEAY Marc"/>
+            </teachers>
+            <groups>
+                <group refId="1-td1-tp1-pq"/>
+            </groups>
+        </class><class refId="Programmation-Fonctionnelle-TP-2">
+            <rooms>
+                <room refId="H001"/>
+                <room refId="H002"/>
+                <room refId="H003"/>
+            </rooms>
+            <teachers>
+                <teacher refId="LEFEVRE Claire"/>
+                <teacher refId="DIEGUEZ Martin"/>
+                <teacher refId="LEGEAY Marc"/>
+            </teachers>
+            <groups>
+                <group refId="3-td2-tp2-is"/>
+                <group refId="4-td2-tp2-qs"/>
+            </groups>
+        </class><class refId="Programmation-Fonctionnelle-TP-3">
+            <rooms>
+                <room refId="H001"/>
+                <room refId="H002"/>
+                <room refId="H003"/>
+            </rooms>
+            <teachers>
+                <teacher refId="LEFEVRE Claire"/>
+                <teacher refId="DIEGUEZ Martin"/>
+                <teacher refId="LEGEAY Marc"/>
+            </teachers>
+            <groups>
+                <group refId="2-td1-tp3-ps"/>
+            </groups>
+        </class><class refId="Programmation-Logique-CM-1">
+            <rooms>
+                <room refId="AMPHI-A"/>
+                <room refId="AMPHI-B"/>
+            </rooms>
+            <teachers>
+                <teacher refId="STEPHAN Igor"/>
+            </teachers>
+            <groups>
+                <group refId="1-td1-tp1-pq"/>
+                <group refId="2-td1-tp3-ps"/>
+                <group refId="3-td2-tp2-is"/>
+                <group refId="4-td2-tp2-qs"/>
+            </groups>
+        </class><class refId="Programmation-Logique-TD-1">
+            <rooms>
+                <room refId="H001"/>
+                <room refId="H002"/>
+                <room refId="H003"/>
+            </rooms>
+            <teachers>
+                <teacher refId="STEPHAN Igor"/>
+            </teachers>
+            <groups>
+                <group refId="1-td1-tp1-pq"/>
+                <group refId="2-td1-tp3-ps"/>
+            </groups>
+        </class><class refId="Programmation-Logique-TD-2">
+            <rooms>
+                <room refId="H001"/>
+                <room refId="H002"/>
+                <room refId="H003"/>
+            </rooms>
+            <teachers>
+                <teacher refId="STEPHAN Igor"/>
+            </teachers>
+            <groups>
+                <group refId="3-td2-tp2-is"/>
+                <group refId="4-td2-tp2-qs"/>
+            </groups>
+        </class><class refId="Programmation-Logique-TP-1">
+            <rooms>
+                <room refId="H001"/>
+                <room refId="H002"/>
+                <room refId="H003"/>
+            </rooms>
+            <teachers>
+                <teacher refId="STEPHAN Igor"/>
+            </teachers>
+            <groups>
+                <group refId="1-td1-tp1-pq"/>
+            </groups>
+        </class><class refId="Programmation-Logique-TP-2">
+            <rooms>
+                <room refId="H001"/>
+                <room refId="H002"/>
+                <room refId="H003"/>
+            </rooms>
+            <teachers>
+                <teacher refId="STEPHAN Igor"/>
+            </teachers>
+            <groups>
+                <group refId="3-td2-tp2-is"/>
+                <group refId="4-td2-tp2-qs"/>
+            </groups>
+        </class><class refId="Programmation-Logique-TP-3">
+            <rooms>
+                <room refId="H001"/>
+                <room refId="H002"/>
+                <room refId="H003"/>
+            </rooms>
+            <teachers>
+                <teacher refId="STEPHAN Igor"/>
+            </teachers>
+            <groups>
+                <group refId="2-td1-tp3-ps"/>
+            </groups>
+        </class>
+
+         <class refId="Anglais-CM-TD-1">
+                <rooms>
+                    <room refId="L201"/>
+                    <room refId="L202"/>
+                    <room refId="L206"/>
+                </rooms>
+                <teachers>
+                    <teacher refId="LAUDIER Romain"/>
+                </teachers>
+                <groups>
+                    <group refId="1-td1-tp1-pq"/>
+                </groups>
+            </class><class refId="Anglais-CM-TD-2">
+                <rooms>
+                    <room refId="L201"/>
+                    <room refId="L202"/>
+                    <room refId="L206"/>
+                </rooms>
+                <teachers>
+                    <teacher refId="LAUDIER Romain"/>
+                </teachers>
+                <groups>
+                    <group refId="3-td2-tp2-is"/>
+                    <group refId="4-td2-tp2-qs"/>
+                </groups>
+            </class><class refId="Anglais-CM-TD-3">
+                <rooms>
+                    <room refId="L201"/>
+                    <room refId="L202"/>
+                    <room refId="L206"/>
+                </rooms>
+                <teachers>
+                    <teacher refId="LAUDIER Romain"/>
+                </teachers>
+                <groups>
+                    <group refId="2-td1-tp3-ps"/>
+                </groups>
+            </class><class refId="Anglais-CC-1">
+                <rooms>
+                    <room refId="AMPHI-A"/>
+                    <room refId="AMPHI-B"/>
+                </rooms>
+                <teachers>
+                    <teacher refId="LAUDIER Romain"/>
+                </teachers>
+                <groups>
+                    <group refId="1-td1-tp1-pq"/>
+                    <group refId="2-td1-tp3-ps"/>
+                    <group refId="3-td2-tp2-is"/>
+                    <group refId="4-td2-tp2-qs"/>
+                </groups>
+            </class>
+        </classes>
+     </solution>
+
+</timetabling>
