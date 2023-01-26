@@ -32,6 +32,9 @@ public class GraphUTP {
 	
 	private Label[] labels;
 	
+	private Evenement[] evenements;
+	private sessionSolution[] sessionSolutions;
+	
 	//private Rule[] rules;
 	private Constraint[] constraints;
 	//==================
@@ -80,9 +83,9 @@ public class GraphUTP {
 			Session[] ss = new Session[sumSS];
 			int iSS = 0;
 			for(int cl = 0; cl < this.instanceUTPArray.group_classes.get(student_group-1).size() ;cl++) {
-				cls[cl] = this.classes[this.instanceUTPArray.group_classes.get(student_group-1).get(cl)];
-				for(int s = 0; s < this.instanceUTPArray.class_sessions.get(this.instanceUTPArray.group_classes.get(student_group-1).get(cl)).size() ;s++) {
-					ss[iSS] = this.sessions[this.instanceUTPArray.class_sessions.get(this.instanceUTPArray.group_classes.get(student_group-1).get(cl)).get(s)-1];
+				cls[cl] = this.classes[this.instanceUTPArray.group_classes.get(student_group-1).get(cl)-1];
+				for(int s = 0; s < this.instanceUTPArray.class_sessions.get(this.instanceUTPArray.group_classes.get(student_group-1).get(cl)-1).size() ;s++) {
+					ss[iSS] = this.sessions[this.instanceUTPArray.class_sessions.get(this.instanceUTPArray.group_classes.get(student_group-1).get(cl)-1).get(s)-1];
 					iSS++;
 				}
 			}
@@ -151,14 +154,14 @@ public class GraphUTP {
 		int cl = 0;
 		for (int i = 0; i < this.instanceUTPArray.nr_parts ;i++) {
 			for(int j = 0; j < this.instanceUTPArray.part_classes.get(i).size() ;j++) {
-				Session[] sessions = new Session[this.instanceUTPArray.part_classes.get(i).size()];
+				Session[] sessions = new Session[this.instanceUTPArray.part_nr_sessions[i]];
 				for(int k = 0; k < this.instanceUTPArray.part_nr_sessions[i] ;k++) {
-					sessions[sess] = this.sessions[sess];
+					sessions[k] = this.sessions[sess];
 					sess++;
 				}
 				//Label[] lbls = getLabel(this.instanceUTPArray.label);
-				tab[i] = new Class(this.instanceUTPArray.class_name[this.instanceUTPArray.part_classes.get(i).get(j)],cl+1,"class",sessions);
-				
+				tab[cl] = new Class(this.instanceUTPArray.class_name[this.instanceUTPArray.part_classes.get(i).get(j)-1],cl+1,"class",sessions);
+				cl++;
 				}
 			}
 		this.classes = tab;
@@ -178,6 +181,7 @@ public class GraphUTP {
 					sess++;
 				}
 				cls[j] = this.classes[this.instanceUTPArray.part_classes.get(i).get(j)-1];
+				//System.out.println("part "+this.instanceUTPArray.part_name[i]+" class "+cls[j].getId());
 			}
 			Label[] lbls = getLabel(this.instanceUTPArray.part_label.get(i));
 			int[] service_t = new int[this.instanceUTPArray.part_teachers.get(i).size()];//this.instanceUTPArray.part_teacher_sessions_count[i];
@@ -257,7 +261,7 @@ public class GraphUTP {
 		Label[] tab = new Label[labels.size()];
 		
 		for(int i = 0; i < labels.size() ;i++) {
-			tab[i] = this.labels[labels.get(i-1)]; 
+			tab[i] = this.labels[labels.get(i)-1]; 
 		}
 		
 		return tab;
@@ -314,5 +318,62 @@ public class GraphUTP {
 	public Constraint[] getConstraints() {
 		return constraints;
 	}//FinMethod
+	
+	public Session getSessionWithIdSession() {
+		return this.sessions[0];
+	}//FinMethod
+	
+	public void searchGoodSessionsTime(int d, int w,Vector<Session> s) {
+		/*int nrdayperweek = this.instanceUTPArray.nr_days_per_week;
+		int nrslotday = this.instanceUTPArray.nr_slots_per_day;
+		int daystart = ((w-1) * (nrslotday * nrdayperweek))+(nrslotday * (d-1)) + d;*/
+		Vector<Integer> tabInt = new Vector<Integer>();
+		for(int  i = 0; i < this.sessionSolutions.length ;i++) {
+			//int slot = this.sessionSolutions[i].getDailySlot() * this.sessionSolutions[i].getWeek() *;
+			if(d == this.sessionSolutions[i].getDay() && w == this.sessionSolutions[i].getWeek()) {
+				tabInt.add(this.sessionSolutions[i].getCpt());
+			}
+		}
+		
+		for(int i = 0; i < tabInt.size() ;i++) {
+			for(int j = 0; j < this.sessions.length ;j++) {
+				if(sessions[j].getCpt() == tabInt.get(i)) {
+					s.add(sessions[j]);
+					break;
+				}
+			}
+		}
+		
+	}//FinMethod
+	
+	/*public Session[] getSessionsWith(Evenement e) {
+		Vector<Session> tab = new Vector<Session>();
+		
+		for(int i = 0; i < 5 ;i++) {
+			
+		}
+		
+		Session[] tabFinal = new Session[tab.size()];
+		for(int i = 0; i < tab.size() ;i++) {
+			tabFinal[i] = tab.get(i);
+		}
+		return tabFinal;
+	}//FinMethod*/
 	 
+	public void perturbedSessions(Evenement[] evenements) {
+		this.evenements = evenements;
+		for(int e = 0; e < this.evenements.length ;e++) {
+			if(this.evenements[e].getName().equals("unmarkedDay")) {
+				Vector<Session> sess = new Vector<Session>();
+				searchGoodSessionsTime(Integer.parseInt(this.evenements[e].parameter_search("day")) ,Integer.parseInt(this.evenements[e].parameter_search("week")),sess);
+			}
+			else {System.out.println("Evenement non implémenté ");}
+		}
+		
+	}//FinMethod
+
+	public Evenement[] getEvenements() {
+		return this.evenements;
+	}//FinMethod
+	
 }//FinClass

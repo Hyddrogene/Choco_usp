@@ -1,0 +1,26 @@
+<course id="Algorithmes-intelligents" label="UE,Informatique,M2,IA">
+
+    <part id="Algorithmes-intelligents-CM" nrSessions="10" label="CM">
+        <classes maxHeadCount="80">
+            <class id="Algorithmes-intelligents-CM-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="180"> <!-- 3h -->
+            <dailySlots>480,540,840</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>1-6</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+        	<room refId="H005" />
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="SAUBION Frédéric" nrSessions="5"/>
+            <teacher refId="LARDEUX Frédéric" nrSessions="5" />
+        </allowedTeachers>
+    </part>
+
+    <!-- ========================== -->
+
+</course>

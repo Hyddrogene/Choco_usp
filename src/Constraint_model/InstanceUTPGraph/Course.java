@@ -8,6 +8,7 @@ public class Course extends CourseElement {
 	
 	public Course(String id, int cpt, String type, Label[] label, Part[] parts) {
 		super(id, cpt, type, label);
+		this.parts = parts;
 	}//FinMethod
 
 	

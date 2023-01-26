@@ -16,8 +16,11 @@ public class Exec {
 		//String filename = "/home/etud/timetabling/instances/benchmarks/ua_l1_p1-p2/ua_l1_p1_v4_extension_v2.json";
 		String filename = "/home/etud/eclipse-workspace/Constraint_model/instance/ua_l1-l2_p1-p6_extension_v5.json";
 		String filenamexml = "/home/etud/eclipse-workspace/Constraint_model/instance/ua_l1-l2_p1-p6_bis.xml";
-		filename = "/home/etud/eclipse-workspace/Constraint_model/instance/ua_l1-l2_p1-p6_l3info_v2_extension_v2.json";
-		filenamexml = "/home/etud/eclipse-workspace/Constraint_model/instance/ua_l1-l2_p1-p6_l3info_v2.xml";
+		//filename = "/home/etud/eclipse-workspace/Constraint_model/instance/ua_l1-l2_p1-p6_l3info_v2_extension_v2.json";
+		//filenamexml = "/home/etud/eclipse-workspace/Constraint_model/instance/ua_l1-l2_p1-p6_l3info_v2.xml";
+		filename = "/home/etud/eclipse-workspace/Constraint_model/instance/ua_l1-l2_p1-p6_l3info_v3_extension_v2.json";
+		filenamexml = "/home/etud/eclipse-workspace/Constraint_model/instance/ua_l1-l2_p1-p6_l3info_v3.xml";
+
 		
 		//filename = "/home/etud/eclipse-workspace/Constraint_model/instance/ua_l3info_2021_bdd_dw-noPR_opt_plf_anglais_extension_v2.json";
 		//filenamexml = "/home/etud/eclipse-workspace/Constraint_model/instance/ua_l3info_2021_bdd_dw-noPR_opt_plf_anglais.xml";
@@ -46,6 +49,7 @@ public class Exec {
 
 		}
 		System.out.println("Finish");
+		//GraphUTP gutp = new GraphUTP(g.getInstanceUTPArray());
 		
 
 	}//FinMethod

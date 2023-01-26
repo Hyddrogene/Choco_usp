@@ -1,0 +1,25 @@
+<course id="Métaheuristiques" label="UE,Informatique,M2,IA">
+
+    <part id="Métaheuristiques-CM" nrSessions="10" label="CM">
+        <classes maxHeadCount="80">
+            <class id="Métaheuristiques-CM-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="180"> <!-- 3h -->
+            <dailySlots>480,540,840</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>1-6</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+        	<room refId="H005" />
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="HAO Jin-Kao" nrSessions="10"/>
+        </allowedTeachers>
+    </part>
+
+    <!-- ========================== -->
+
+</course>

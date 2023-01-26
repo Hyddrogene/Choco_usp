@@ -54,8 +54,8 @@
         <course id="Base-de-donnees-2" label="L3-INFORMATIQUE,UE">
             <part id="Base-de-donnees-2-CM" nrSessions="8" label="CM">
                 
-                <classes>
-                    <class id="Base-de-donnees-2-CM-1" maxHeadCount="80"/>
+                <classes maxHeadCount="80">
+                    <class id="Base-de-donnees-2-CM-1" />
                 </classes>
 
                 <allowedSlots sessionLength="80">
@@ -77,9 +77,9 @@
 
             <part id="Base-de-donnees-2-TD" nrSessions="9" label="TD">
                 <!--Parenté unique && sameStudent-->
-                <classes>
-                    <class id="Base-de-donnees-2-TD-1" maxHeadCount="40" parent="Base-de-donnees-2-CM-1"/>
-                    <class id="Base-de-donnees-2-TD-2" maxHeadCount="40" parent="Base-de-donnees-2-CM-1"/>
+                <classes maxHeadCount="40">
+                    <class id="Base-de-donnees-2-TD-1" parent="Base-de-donnees-2-CM-1"/>
+                    <class id="Base-de-donnees-2-TD-2" parent="Base-de-donnees-2-CM-1"/>
                 </classes>
 
                 <allowedSlots sessionLength="80">
@@ -103,10 +103,10 @@
 
             <part id="Base-de-donnees-2-TP" nrSessions="7" label="TP">
 
-                <classes>
-                    <class id="Base-de-donnees-2-TP-1" maxHeadCount="20" parent="Base-de-donnees-2-TD-1"/>
-                    <class id="Base-de-donnees-2-TP-2" maxHeadCount="20" parent="Base-de-donnees-2-TD-2"/>
-                    <class id="Base-de-donnees-2-TP-3" maxHeadCount="20" parent="Base-de-donnees-2-TD-1"/>
+                <classes maxHeadCount="20">
+                    <class id="Base-de-donnees-2-TP-1" parent="Base-de-donnees-2-TD-1"/>
+                    <class id="Base-de-donnees-2-TP-2" parent="Base-de-donnees-2-TD-2"/>
+                    <class id="Base-de-donnees-2-TP-3" parent="Base-de-donnees-2-TD-1"/>
                 </classes>
 
                 <allowedSlots sessionLength="160">
@@ -154,10 +154,10 @@
             -->
 
             <part id="Base-de-donnees-2-TPN" nrSessions="1" label="TPN">
-                <classes>
-                    <class id="Base-de-donnees-2-TPN-1" maxHeadCount="20" parent="Base-de-donnees-2-TP-1"/>
-                    <class id="Base-de-donnees-2-TPN-2" maxHeadCount="20" parent="Base-de-donnees-2-TP-2"/>
-                    <class id="Base-de-donnees-2-TPN-3" maxHeadCount="20" parent="Base-de-donnees-2-TP-3"/>
+                <classes maxHeadCount="20">
+                    <class id="Base-de-donnees-2-TPN-1"  parent="Base-de-donnees-2-TP-1"/>
+                    <class id="Base-de-donnees-2-TPN-2"  parent="Base-de-donnees-2-TP-2"/>
+                    <class id="Base-de-donnees-2-TPN-3"  parent="Base-de-donnees-2-TP-3"/>
                 </classes>
 
                 <allowedSlots sessionLength="160">
@@ -206,8 +206,8 @@
                 <!-- les séances d'une classe sont chacune dispensées à tous les groupes de la classe -->
                 <!-- les contraintes de programmation de séances se formulent par contraintes -->
 
-                <classes>
-                    <class id="Developpement-Web-CM-1" maxHeadCount="80"/>
+                <classes maxHeadCount="80">
+                    <class id="Developpement-Web-CM-1" />
                 </classes>
                 
                 <!--Time precision to the part, we can precise more precily -->
@@ -241,10 +241,10 @@
  
             <part id="Developpement-Web-TP" nrSessions="8" label="TP,TP1">
                 
-                <classes>
-                    <class id="Developpement-Web-TP-1" maxHeadCount="25" parent="Developpement-Web-CM-1"/>
-                    <class id="Developpement-Web-TP-2" maxHeadCount="28" parent="Developpement-Web-CM-1"/>
-                    <class id="Developpement-Web-TP-3" maxHeadCount="25" parent="Developpement-Web-CM-1"/>
+                <classes maxHeadCount="25">
+                    <class id="Developpement-Web-TP-1" parent="Developpement-Web-CM-1"/>
+                    <class id="Developpement-Web-TP-2" parent="Developpement-Web-CM-1"/>
+                    <class id="Developpement-Web-TP-3" parent="Developpement-Web-CM-1"/>
                 </classes>
 
                 <!--Time precision to the part, we can precise more precily -->
@@ -271,10 +271,10 @@
 
         <part id="Developpement-Web-TPN" nrSessions="1" label="TPN">
 
-            <classes>
-                <class id="Developpement-Web-TPN-1" maxHeadCount="40" parent="Developpement-Web-TP-1"/>
-                <class id="Developpement-Web-TPN-2" maxHeadCount="40" parent="Developpement-Web-TP-2"/>
-                <class id="Developpement-Web-TPN-3" maxHeadCount="40" parent="Developpement-Web-TP-3"/>
+            <classes maxHeadCount="40">
+                <class id="Developpement-Web-TPN-1" parent="Developpement-Web-TP-1"/>
+                <class id="Developpement-Web-TPN-2" parent="Developpement-Web-TP-2"/>
+                <class id="Developpement-Web-TPN-3" parent="Developpement-Web-TP-3"/>
             </classes>
 
             <allowedSlots sessionLength="160">
@@ -303,8 +303,8 @@
         <course id="Image-de-Synthese" label="L3-INFORMATIQUE,UE,OPTIONS-L3-INFO">
             <part id="Image-de-Synthese-CM" nrSessions="7" label="CM">
     
-                <classes>
-                    <class id="Image-de-Synthese-CM-1" maxHeadCount="80"/>
+                <classes maxHeadCount="80">
+                    <class id="Image-de-Synthese-CM-1"/>
                 </classes>
     
                 <!--Time precision to the part, we can precise more precily -->
@@ -327,8 +327,8 @@
     
             <part id="Image-de-Synthese-TP" nrSessions="5" label="TP">
                
-                <classes>
-                    <class id="Image-de-Synthese-TP-1" maxHeadCount="40" parent="Image-de-Synthese-CM-1"/>
+                <classes maxHeadCount="40">
+                    <class id="Image-de-Synthese-TP-1" parent="Image-de-Synthese-CM-1"/>
                 </classes>
     
                 <!--Time precision to the part, we can precise more precily -->
@@ -389,8 +389,8 @@
           <course id="Traitement-de-donnees-en-Python" label="L3-INFORMATIQUE,UE">
     
             <part id="Traitement-de-donnees-en-Python-CM-TD" nrSessions="5" label="CM,TD">
-                <classes>
-                     <class id="Traitement-de-donnees-en-Python-CM-TD-1" maxHeadCount="40"/>
+                <classes maxHeadCount="40">
+                     <class id="Traitement-de-donnees-en-Python-CM-TD-1"/>
                  </classes>
     
                  <!--Time precision to the part, we can precise more precily -->
@@ -417,9 +417,9 @@
     
              <part id="Traitement-de-donnees-en-Python-TP" nrSessions="4" label="TP">
     
-                 <classes>
-                     <class id="Traitement-de-donnees-en-Python-TP-1" maxHeadCount="20" parent="Traitement-de-donnees-en-Python-CM-TD-1"/>
-                     <class id="Traitement-de-donnees-en-Python-TP-2" maxHeadCount="20" parent="Traitement-de-donnees-en-Python-CM-TD-1"/>        
+                 <classes maxHeadCount="20">
+                     <class id="Traitement-de-donnees-en-Python-TP-1" parent="Traitement-de-donnees-en-Python-CM-TD-1"/>
+                     <class id="Traitement-de-donnees-en-Python-TP-2" parent="Traitement-de-donnees-en-Python-CM-TD-1"/>        
                  </classes>
                  <!--Time precision to the part, we can precise more precily -->
                  <allowedSlots sessionLength="160">
@@ -485,8 +485,8 @@
           <course id="Initiation-programmation-de-systemes-intelligents" label="L3-INFORMATIQUE,UE">
             <part id="Initiation-programmation-de-systemes-intelligents-CM" nrSessions="2" label="CM">
     
-                <classes>
-                    <class id="Initiation-programmation-de-systemes-intelligents-CM-1" maxHeadCount="80"/>
+                <classes maxHeadCount="80">
+                    <class id="Initiation-programmation-de-systemes-intelligents-CM-1" />
                 </classes>
     
                 <!--Time precision to the part, we can precise more precily -->
@@ -512,8 +512,8 @@
     
             <part id="Initiation-programmation-de-systemes-intelligents-TD" nrSessions="2" label="TD">
     
-                <classes>
-                    <class id="Initiation-programmation-de-systemes-intelligents-TD-1" maxHeadCount="40" parent="Initiation-programmation-de-systemes-intelligents-CM-1"/>
+                <classes maxHeadCount="40">
+                    <class id="Initiation-programmation-de-systemes-intelligents-TD-1" parent="Initiation-programmation-de-systemes-intelligents-CM-1"/>
                 </classes>
     
                 <!--Time precision to the part, we can precise more precily -->
@@ -539,10 +539,10 @@
     
             <part id="Initiation-programmation-de-systemes-intelligents-TP" nrSessions="10" label="TP">
     
-                <classes>
-                    <class id="Initiation-programmation-de-systemes-intelligents-TP-1" maxHeadCount="20" parent="Initiation-programmation-de-systemes-intelligents-TD-1"/>
-                    <class id="Initiation-programmation-de-systemes-intelligents-TP-2" maxHeadCount="20" parent="Initiation-programmation-de-systemes-intelligents-TD-1"/>
-                    <class id="Initiation-programmation-de-systemes-intelligents-TP-3" maxHeadCount="20" parent="Initiation-programmation-de-systemes-intelligents-TD-1"/>
+                <classes maxHeadCount="20">
+                    <class id="Initiation-programmation-de-systemes-intelligents-TP-1" parent="Initiation-programmation-de-systemes-intelligents-TD-1"/>
+                    <class id="Initiation-programmation-de-systemes-intelligents-TP-2" parent="Initiation-programmation-de-systemes-intelligents-TD-1"/>
+                    <class id="Initiation-programmation-de-systemes-intelligents-TP-3" parent="Initiation-programmation-de-systemes-intelligents-TD-1"/>
                 </classes>
     
                 <!--Time precision to the part, we can precise more precily -->
@@ -606,8 +606,8 @@
           <course id="Developpement-interfaces-graphiques-avancees" label="L3-INFORMATIQUE,UE">
             <part id="Developpement-interfaces-graphiques-avancees-CM" nrSessions="4" label="CM">
     
-                <classes><!-- c'est implicite s'il n'y a pas de parent :c-->
-                    <class id="Developpement-interfaces-graphiques-avancees-CM-1" maxHeadCount="80"/>
+                <classes maxHeadCount="80"><!-- c'est implicite s'il n'y a pas de parent :c-->
+                    <class id="Developpement-interfaces-graphiques-avancees-CM-1" />
                 </classes>
     
                 <allowedSlots sessionLength="80">
@@ -631,9 +631,9 @@
     
             <part id="Developpement-interfaces-graphiques-avancees-TP" nrSessions="7" label="TP">
     
-                <classes>
-                    <class id="Developpement-interfaces-graphiques-avancees-TP-1" maxHeadCount="20" parent="Developpement-interfaces-graphiques-avancees-CM-1"/>
-                    <class id="Developpement-interfaces-graphiques-avancees-TP-2" maxHeadCount="20" parent="Developpement-interfaces-graphiques-avancees-CM-1"/>
+                <classes maxHeadCount="20">
+                    <class id="Developpement-interfaces-graphiques-avancees-TP-1" parent="Developpement-interfaces-graphiques-avancees-CM-1"/>
+                    <class id="Developpement-interfaces-graphiques-avancees-TP-2" parent="Developpement-interfaces-graphiques-avancees-CM-1"/>
                 </classes>
     
                 <allowedSlots sessionLength="160">
@@ -699,8 +699,8 @@
         <course id="Programmation-Fonctionnelle" label="L3-INFORMATIQUE,UE">
             <part id="Programmation-Fonctionnelle-CM" nrSessions="7" label="CM"><!-- durée non variable-->
     
-                <classes>
-                    <class id="Programmation-Fonctionnelle-CM-1" maxHeadCount="80"/>
+                <classes maxHeadCount="80">
+                    <class id="Programmation-Fonctionnelle-CM-1"/>
                 </classes>
     
                 <!--Time precision to the part, we can precise more precily -->
@@ -723,9 +723,9 @@
             </part>
     
             <part id="Programmation-Fonctionnelle-TD" nrSessions="4" label="TD">
-                <classes>
-                    <class id="Programmation-Fonctionnelle-TD-1" maxHeadCount="40" parent="Programmation-Fonctionnelle-CM-1"/>
-                    <class id="Programmation-Fonctionnelle-TD-2" maxHeadCount="40" parent="Programmation-Fonctionnelle-CM-1"/>
+                <classes maxHeadCount="40">
+                    <class id="Programmation-Fonctionnelle-TD-1" parent="Programmation-Fonctionnelle-CM-1"/>
+                    <class id="Programmation-Fonctionnelle-TD-2" parent="Programmation-Fonctionnelle-CM-1"/>
                 </classes>
     
                 <!--Time precision to the part, we can precise more precily -->
@@ -750,10 +750,10 @@
     
             <part id="Programmation-Fonctionnelle-TP" nrSessions="4" label="TP">
     
-                <classes>
-                    <class id="Programmation-Fonctionnelle-TP-1" maxHeadCount="20" parent="Programmation-Fonctionnelle-TD-1"/>
-                    <class id="Programmation-Fonctionnelle-TP-2" maxHeadCount="20" parent="Programmation-Fonctionnelle-TD-2"/>
-                    <class id="Programmation-Fonctionnelle-TP-3" maxHeadCount="25" parent="Programmation-Fonctionnelle-TD-1"/>
+                <classes maxHeadCount="25">
+                    <class id="Programmation-Fonctionnelle-TP-1" parent="Programmation-Fonctionnelle-TD-1"/>
+                    <class id="Programmation-Fonctionnelle-TP-2" parent="Programmation-Fonctionnelle-TD-2"/>
+                    <class id="Programmation-Fonctionnelle-TP-3" parent="Programmation-Fonctionnelle-TD-1"/>
                 </classes>
     
                 <!--Time precision to the part, we can precise more precily -->
@@ -825,8 +825,8 @@
         <course id="Programmation-Logique" label="L3-INFORMATIQUE,UE">
             <part id="Programmation-Logique-CM" nrSessions="6" label="CM">
     
-                <classes>
-                    <class id="Programmation-Logique-CM-1" maxHeadCount="80"/>
+                <classes maxHeadCount="80">
+                    <class id="Programmation-Logique-CM-1"/>
                 </classes>
     
                 <!--Time precision to the part, we can precise more precily -->
@@ -850,9 +850,9 @@
     
             <part id="Programmation-Logique-TD" nrSessions="3" label="TD">
     
-                <classes>
-                    <class id="Programmation-Logique-TD-1" maxHeadCount="40" parent="Programmation-Logique-CM-1"/>
-                    <class id="Programmation-Logique-TD-2" maxHeadCount="40" parent="Programmation-Logique-CM-1"/>
+                <classes maxHeadCount="40">
+                    <class id="Programmation-Logique-TD-1" parent="Programmation-Logique-CM-1"/>
+                    <class id="Programmation-Logique-TD-2" parent="Programmation-Logique-CM-1"/>
                 </classes>
     
                 <!--Time precision to the part, we can precise more precily -->
@@ -877,10 +877,10 @@
     
             <part id="Programmation-Logique-TP" nrSessions="4" label="TP">
     
-                <classes>
-                    <class id="Programmation-Logique-TP-1" maxHeadCount="20" parent="Programmation-Logique-TD-1"/> 
-                    <class id="Programmation-Logique-TP-2" maxHeadCount="20" parent="Programmation-Logique-TD-2"/>
-                    <class id="Programmation-Logique-TP-3" maxHeadCount="20" parent="Programmation-Logique-TD-1"/>
+                <classes maxHeadCount="20">
+                    <class id="Programmation-Logique-TP-1" parent="Programmation-Logique-TD-1"/> 
+                    <class id="Programmation-Logique-TP-2" parent="Programmation-Logique-TD-2"/>
+                    <class id="Programmation-Logique-TP-3" parent="Programmation-Logique-TD-1"/>
                 </classes>
     
                 <!--Time precision to the part, we can precise more precily -->
@@ -951,10 +951,10 @@
         <course id="Anglais" label="L3-INFORMATIQUE,UE">
             <part id="Anglais-CM-TD" nrSessions="8" label="CM,TD">
             
-                <classes>
-                    <class id="Anglais-CM-TD-1" maxHeadCount="30"/>
-                    <class id="Anglais-CM-TD-2" maxHeadCount="30"/>
-                    <class id="Anglais-CM-TD-3" maxHeadCount="30"/>
+                <classes maxHeadCount="30">
+                    <class id="Anglais-CM-TD-1" />
+                    <class id="Anglais-CM-TD-2" />
+                    <class id="Anglais-CM-TD-3" />
                 </classes>
 
                 <allowedSlots sessionLength="120">
@@ -977,8 +977,8 @@
             </part>
 
             <part id="Anglais-CC" nrSessions="1" label="CC">
-                <classes>
-                    <class id="Anglais-CC-1" maxHeadCount="20" parent="Anglais-CM-TD-1"/>
+                <classes maxHeadCount="20">
+                    <class id="Anglais-CC-1" parent="Anglais-CM-TD-1"/>
                 </classes>
 
                 <allowedSlots sessionLength="120">

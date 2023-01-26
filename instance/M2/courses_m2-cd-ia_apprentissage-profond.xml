@@ -1,0 +1,42 @@
+<course id="Apprentissage-profond" label="UE,Informatique,M2,CD,IA">
+
+    <part id="Apprentissage-profond-CM" nrSessions="5" label="CM">
+        <classes maxHeadCount="80">
+            <class id="Apprentissage-profond-CM-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="180"> <!-- 1h20 -->
+            <dailySlots>540,840</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>1-6</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+        	<room refId="H006" />
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="LAMPRIER Sylvain" nrSessions="5" />
+        </allowedTeachers>
+    </part>
+
+    <part id="Apprentissage-profond-TD" nrSessions="5" label="TD">
+        <classes maxHeadCount="80">
+            <class id="Apprentissage-profond-TD-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="180"> <!-- 1h20 -->
+            <dailySlots>540,840</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>1-6</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+        	<room refId="H006" />
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="LAMPRIER Sylvain" nrSessions="5" />
+        </allowedTeachers>
+    </part>
+</course>

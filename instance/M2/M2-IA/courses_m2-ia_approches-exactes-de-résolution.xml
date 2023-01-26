@@ -1,0 +1,46 @@
+<course id="Approches-exactes-de-résolution" label="UE,Informatique,M2,IA">
+
+    <part id="Approches-exactes-de-résolution-CM" nrSessions="10" label="CM">
+        <classes maxHeadCount="80">
+            <class id="Approches-exactes-de-résolution-CM-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="180"> <!-- 3h -->
+            <dailySlots>480,540,840</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>1-20</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+        	<room refId="H005" />
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="LESAINT David" nrSessions="5"/>
+            <teacher refId="MONFROY Eric" nrSessions="5" />
+        </allowedTeachers>
+    </part>
+
+    <part id="Approches-exactes-de-résolution-CT" nrSessions="1" label="CT">
+        <classes maxHeadCount="80">
+            <class id="Approches-exactes-de-résolution-CT-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="90"> <!-- 3h -->
+            <dailySlots>480,540,840</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>1-20</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+        	<room refId="H005" />
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="LESAINT David" nrSessions="1"/>
+        </allowedTeachers>
+    </part>
+
+    <!-- ========================== -->
+
+</course>

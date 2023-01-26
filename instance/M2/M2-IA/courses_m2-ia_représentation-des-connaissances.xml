@@ -1,0 +1,48 @@
+<course id="Représentation-des-connaissances" label="UE,Informatique,M2,IA">
+
+    <part id="Représentation-des-connaissances-3h-CM" nrSessions="10" label="CM">
+        <classes maxHeadCount="80">
+            <class id="Représentation-des-connaissances-3h-CM-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="180"> <!-- 3h -->
+            <dailySlots>480,540,840</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>1-6</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+        	<room refId="H005" />
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="LOISEAU Stephane" nrSessions="10"/>
+        </allowedTeachers>
+    </part>
+
+    <part id="Représentation-des-connaissances-2h-CM" nrSessions="11" label="CM">
+        <classes maxHeadCount="80">
+            <class id="Représentation-des-connaissances-2h-CM-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="120"> <!-- 3h -->
+            <dailySlots>480,540,600,840</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>1-6</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+        	<room refId="H005" />
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="GARCIA Laurent" nrSessions="11"/>
+            <teacher refId="LEFEVRE Claire" nrSessions="11"/>
+            <teacher refId="STEPHAN Igor" nrSessions="11"/>
+            <teacher refId="AMGHAR Tassadit" nrSessions="11"/>
+        </allowedTeachers>
+    </part>
+
+    <!-- ========================== -->
+
+</course>

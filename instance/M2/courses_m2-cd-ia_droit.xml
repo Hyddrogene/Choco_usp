@@ -1,0 +1,22 @@
+<course id="Droit" label="UE,Informatique,M2,CD,IA">
+
+    <part id="Droit-CM" nrSessions="3" label="CM">
+        <classes maxHeadCount="80">
+            <class id="Droit-CM-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="240"> <!-- 1h20 -->
+            <dailySlots>480,840</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>1-6</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+        	<room refId="H006" />
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="DUMONT Ingrid" nrSessions="3" />
+        </allowedTeachers>
+    </part>
+</course>

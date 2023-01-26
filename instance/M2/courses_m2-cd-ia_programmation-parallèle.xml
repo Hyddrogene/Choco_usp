@@ -1,0 +1,64 @@
+<course id="Programmation-parallèle" label="UE,Informatique,M2,CD,IA">
+
+    <part id="Programmation-parallèle-CM" nrSessions="9" label="CM">
+        <classes maxHeadCount="80">
+            <class id="Programmation-parallèle-CM-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="180"> <!-- 1h20 -->
+            <dailySlots>540,840</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>1-6</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+        	<room refId="H006" />
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="RICHER Jean-Michel" nrSessions="9" />
+        </allowedTeachers>
+    </part>
+
+    <part id="Programmation-parallèle-TD" nrSessions="2" label="TD">
+        <classes maxHeadCount="80">
+            <class id="Programmation-parallèle-TD-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="180"> <!-- 1h20 -->
+            <dailySlots>540,840</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>1-6</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+        	<room refId="H006" />
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="RICHER Jean-Michel" nrSessions="2" />
+        </allowedTeachers>
+    </part>
+
+    <part id="Programmation-parallèle-TP" nrSessions="4" label="TP">
+        <!-- chaque classe CTD sectionnée en 2 classes TP -->
+        <classes maxHeadCount="20">
+            <class id="Programmation-parallèle-TP-1A" parent="Programmation-parallèle-CM-1" label="TP-A" />
+            <class id="Programmation-parallèle-TP-1B" parent="Programmation-parallèle-CM-1" label="TP-B" />
+        </classes>
+
+        <allowedSlots sessionLength="180"> <!-- 1h20 -->
+            <dailySlots>540,840</dailySlots> <!-- 08h00-09h30 jusqu'à 17h00-18h30 -->
+            <days>1-5</days>
+            <weeks>1-6</weeks>
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single"> <!-- salles informatiques équipées d'AIO -->
+            <room refId="H006" />
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+            <teacher refId="RICHER Jean-Michel" nrSessions="8" />
+        </allowedTeachers>
+    </part>
+</course>

@@ -1,0 +1,47 @@
+<course id="Anglais-M2" label="UE,Informatique,M2,CD,IA">
+    <part id="Anglais-M2-TP" nrSessions="15" label="TP">
+        <classes maxHeadCount="80">
+            <class id="Anglais-M2-TP-1A" label="TP-A"/> 
+            <class id="Anglais-M2-TP-1B" label="TP-B"/> 
+        </classes>
+
+        <allowedSlots sessionLength="80"> <!-- 1h20 -->
+            <dailySlots>480,570,660,750,840,930,1020</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>1-6</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+        	<room refId="A116" />
+			<room refId="A117" />
+			<room refId="A118" />
+			<room refId="A119" />
+			<room refId="A120" />
+			<room refId="L101" />
+			<room refId="L102" />
+			<room refId="L103" />
+			<room refId="L104" />
+			<room refId="L105" />
+			<room refId="L106" />
+			<room refId="L107" />
+			<room refId="L201" />
+			<room refId="L202" />
+			<room refId="L203" />
+			<room refId="L204" />
+			<room refId="L205" />
+			<room refId="L206" />
+			<room refId="L207" />
+			<room refId="L208" />
+			<room refId="L209" />
+			<room refId="L210" />
+			<room refId="L229" />
+			<room refId="L230" />
+			<room refId="L231" />
+			<room refId="L232" />
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="MENAN Bruno" nrSessions="30" />
+        </allowedTeachers>
+    </part>
+</course>

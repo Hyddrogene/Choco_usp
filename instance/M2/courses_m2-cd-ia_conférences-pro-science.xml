@@ -1,0 +1,82 @@
+<course id="Conférences-pro-et-science" label="UE,Informatique,M2,CD,IA">
+
+    <part id="Conférences-pro-et-science-long-CM" nrSessions="2" label="CM">
+        <classes maxHeadCount="80">
+            <class id="Conférences-pro-et-science-long-CM-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="180"> <!-- 1h20 -->
+            <dailySlots>480,540,840</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>1-6</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+        	<room refId="H006" />
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="Intervenant" nrSessions="2" />
+        </allowedTeachers>
+    </part>
+
+    <part id="Conférences-pro-et-science-moyen-CM" nrSessions="1" label="CM">
+        <classes maxHeadCount="80">
+            <class id="Conférences-pro-et-science-moyen-CM-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="150"> <!-- 1h20 -->
+            <dailySlots>480-560,840</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>1-6</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+        	<room refId="H006" />
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="BLOT" nrSessions="1" />
+        </allowedTeachers>
+    </part>
+
+    <part id="Conférences-pro-et-science-THALES-CM" nrSessions="1" label="CM">
+        <classes maxHeadCount="80">
+            <class id="Conférences-pro-et-science-THALES-CM-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="120"> <!-- 1h20 -->
+            <dailySlots>480,510,540,570,600,840</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>1-6</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+        	<room refId="H006" />
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="Intervenant Thales" nrSessions="1" />
+        </allowedTeachers>
+    </part>
+    <part id="Conférences-pro-et-science-CAP-GEMINI-CM" nrSessions="1" label="CM">
+        <classes maxHeadCount="80">
+            <class id="Conférences-pro-et-science-CAP-GEMINI-CM-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="120"> <!-- 1h20 -->
+            <dailySlots>480,840</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>1-6</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+        	<room refId="H006" />
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="Intervenant CapGemini" nrSessions="1" />
+        </allowedTeachers>
+    </part>
+
+</course>

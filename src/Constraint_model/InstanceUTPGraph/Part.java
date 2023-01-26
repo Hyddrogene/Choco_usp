@@ -21,9 +21,10 @@ public class Part extends CourseElement {
 		this.lecturers = lecturers;
 		this.lecturer_service = lecturer_service;
 		this.mandatory= mandatory; 
-		this.countSessions();
+		
 		this.session_length = session_length;
 		this.classes = classes;
+		this.countSessions();
 	}//FinMethod
 	
 	public int getNr_sessions_per_class() {

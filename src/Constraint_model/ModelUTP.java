@@ -691,7 +691,7 @@ public class ModelUTP {
 			System.out.println("MAUVAISE : "+constraint.getConstraint()+" "+constraint.getRule());
 			//return;
 		}*/
-		System.out.println(constraint.getConstraint()+" "+constraint.getRule());
+		//System.out.println(constraint.getConstraint()+" "+constraint.getRule());
 		this.model.allEqual(generateXSlot(constraint.getSessions())).post();
 		this.model.allDifferentExcept0(generateXrooms(constraint.getSessions())).post();
 		/*for (int i = 0; i < constraint.getSessions().get(0).size()-1 ;i++) {
@@ -1232,7 +1232,8 @@ public class ModelUTP {
 		Search.intVarSearch(
                 new FirstFail(model),
                 new IntDomainMin(),
-                //new decisionWeekEquilibrate(t, sort_xslot1(),this.x_slot,this.instanceUTP),
+                //new IntDomainRandom((long) ran),
+                //new decisionWeekEquilibrate(1, sort_xslot1(),this.x_slot,this.instanceUTP),
                 sort_xslot1()
 				),
 		Search.intVarSearch(
@@ -1370,7 +1371,7 @@ public class ModelUTP {
 		//this.solver.showStatisticsDuringResolution(1000);
 		this.solver.setNoLearning();
 		//this.solver.showDecisions();
-		this.solver.showDashboard();
+		//this.solver.showDashboard();
 		this.solver.isLearnOff();
 		//this.solver.showShortStatistics();
 		this.solution = this.solver.findSolution();
@@ -1588,6 +1589,7 @@ public class ModelUTP {
 		   //System.out.println(this.solution.toString());
 		}
 		else {
+			 
 			String out = "UNSAT";
 			return out;
 		}
