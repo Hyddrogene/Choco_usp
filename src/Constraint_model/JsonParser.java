@@ -53,4 +53,4 @@ public class JsonParser {
 	public void setInstanceFilenameJson(String instanceFilenameJson) {
 		this.instanceFilenameJson = instanceFilenameJson;
 	}//FinMethod
-}
+}//FinClass

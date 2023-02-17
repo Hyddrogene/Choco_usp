@@ -44,11 +44,14 @@ public class ModelUTP {
 	private static String filename_solution;
 	private IntVar[] x_teachers;
 	private IntVar[] x_rooms;
+	private int strategie_choice;
+	private StrategieBuilt strategie;
 
 	//private IntVar[] t_m_r;
 	//Method
 	public ModelUTP(InstanceUTPArray instanceUTP) {
 		this.model = new Model("Modele USP");
+		this.strategie_choice = 2;//TODO
 		this.instanceUTP = instanceUTP;
 		x_slot = new IntVar[instanceUTP.nr_sessions];
 		x_room = new IntVar[instanceUTP.nr_classes];
@@ -179,11 +182,101 @@ public class ModelUTP {
 		}
 		
 		for(int i = 0; i < instanceUTP.nr_classes ;i++ ) {
-			x_teacher[i] = model.intVar("x_teacher_"+i,part_i_slots(this.instanceUTP.part_teachers.get(this.instanceUTP.class_part[i]-1)));
+			if(this.instanceUTP.part_teachers.get(this.instanceUTP.class_part[i]-1).size() == 0) {
+				x_teacher[i] = model.intVar("x_teacher_"+i,0);
+			}
+			else {
+				x_teacher[i] = model.intVar("x_teacher_"+i,part_i_slots(this.instanceUTP.part_teachers.get(this.instanceUTP.class_part[i]-1)));
+			}
 		}
 		
 		for(int i = 0; i < instanceUTP.nr_classes ;i++ ) {
-			x_room[i] = model.intVar("x_room_"+i,part_i_slots(this.instanceUTP.part_rooms.get(this.instanceUTP.class_part[i]-1)));
+			if(this.instanceUTP.part_rooms.get(this.instanceUTP.class_part[i]-1).size() == 0 ) {
+				x_room[i] = model.intVar("x_room_"+i,0);
+			}
+			else {
+				x_room[i] = model.intVar("x_room_"+i,part_i_slots(this.instanceUTP.part_rooms.get(this.instanceUTP.class_part[i]-1)));
+			}
+			
+		}
+	}//FinMethod
+	
+	public boolean labelExist(int part) {
+		String[] labels = new String[] {"REPAS","CC","EXAM","CT","EEO"};
+		//System.out.println("Size of : "+this.instanceUTP.part_label.get(part).size());
+		for(int pl = 0; pl < this.instanceUTP.part_label.get(part).size() ;pl++) {
+			for(int lnum = 0; lnum < labels.length ; lnum++) {
+				//System.out.println(part+" "+labels[lnum]+": l : "+this.instanceUTP.label_name[this.instanceUTP.part_label.get(part).get(pl)-1]);
+				if(this.instanceUTP.label_name[this.instanceUTP.part_label.get(part).get(pl)-1].equals(labels[lnum])) {
+					//System.out.println(part+" "+labels[lnum]);
+					return true;
+				}
+			}	 
+		}
+		return false;
+	}//FinMethod
+	
+	public void constraint_day_share(int part) {
+		if(this.instanceUTP.group_of_classes_eq.get(part).size() == 3) {
+			//int[] day = new int[]{1,2,4};
+			int[] day = new int[]{1,1250,2500};
+			//int[] day = new int[]{1,3000,6000};
+
+			for(int p_bench = 0; p_bench < day.length ;p_bench++) {
+				for( int i = 0; i < this.instanceUTP.group_of_classes_eq.get(part).get(p_bench).size(); i++){
+					int classe = this.instanceUTP.group_of_classes_eq.get(part).get(p_bench).get(i);
+					//this.model.arithm(x_slot[this.instanceUTP.class_sessions.get(classe-1).get(0)].div(this.instanceUTP.nr_slots_per_day).sub(1).mod(this.instanceUTP.nr_days_per_week).add(1).intVar(),">=",day[p_bench]).post();
+					//this.model.arithm(x_slot[this.instanceUTP.class_sessions.get(classe-1).get(0)].sub(1).mod(7200).add(1).intVar(),">=",day[p_bench]).post();
+					this.model.arithm(x_slot[this.instanceUTP.class_sessions.get(classe-1).get(0)],">=",day[p_bench]).post();
+				}
+			}
+		}
+		else if(this.instanceUTP.group_of_classes_eq.get(part).size() == 4){
+			//int[] day = new int[]{1,2,4,5};
+			//int[] day = new int[]{1,1440,4320,5000};//2880
+			//int[] day = new int[]{1,1800,3600,5200};//2880
+			int[] day = new int[]{1,4000,4000,4000};//2880
+			//int[] day = new int[]{1,2000,4000,6000};//2880
+			for(int p_bench = 0; p_bench < day.length ;p_bench++) {
+				for( int i = 0; i < this.instanceUTP.group_of_classes_eq.get(part).get(p_bench).size(); i++){
+					int classe = this.instanceUTP.group_of_classes_eq.get(part).get(p_bench).get(i);
+					//this.model.arithm(x_slot[this.instanceUTP.class_sessions.get(classe-1).get(0)-1].sub(1).div(this.instanceUTP.nr_slots_per_day).mod(this.instanceUTP.nr_days_per_week).add(1).intVar(),">=",day[p_bench]).post();//-1)*this.instanceUTP.nr_slots_per_day
+					this.model.arithm(x_slot[this.instanceUTP.class_sessions.get(classe-1).get(0)],">=",day[p_bench]).post();
+				}
+			}
+		}
+		else if(this.instanceUTP.group_of_classes_eq.get(part).size() == 5) {
+			//int[] day = new int[]{1,2,3,4,5};
+			//int[] day = new int[]{1,1440,2880,4320,5760};
+			//int[] day = new int[]{1,1500,3000,4500,6000};//2880
+			int[] day = new int[]{1,4000,4000,4000,4000};//2880
+			for(int p_bench = 0; p_bench < day.length ; p_bench++) {
+				for( int i = 0; i < this.instanceUTP.group_of_classes_eq.get(part).get(p_bench).size(); i++){
+					int classe = this.instanceUTP.group_of_classes_eq.get(part).get(p_bench).get(i);
+					//this.model.arithm(x_slot[this.instanceUTP.class_sessions.get(classe-1).get(0)].div(this.instanceUTP.nr_slots_per_day).sub(1).mod(this.instanceUTP.nr_days_per_week).add(1).intVar(),">=",day[p_bench]).post();
+					this.model.arithm(x_slot[this.instanceUTP.class_sessions.get(classe-1).get(0)],">=",day[p_bench]).post();
+
+				}
+			}
+		}
+		/* out = part+": {";
+		for(int j =0;j< this.instanceUTP.group_of_classes_eq.get(part).size();j++) {
+			out+="[";
+			for(int u =0;u< this.instanceUTP.group_of_classes_eq.get(part).get(j).size();u++){
+				out+=""+this.instanceUTP.group_of_classes_eq.get(part).get(j).get(u)+",";
+			}
+			out+="],";
+		}
+		out+="}\n";
+		System.out.println(out);*/
+		
+	}//FinMethod
+	
+	public void bench_class_equlibrate() {
+		for(int p = 0; p < this.instanceUTP.nr_parts ; p++) {
+			if(!labelExist(p)) {
+				constraint_day_share(p);
+			}
 		}
 	}//FinMethod
 	
@@ -196,6 +289,7 @@ public class ModelUTP {
 		size_of_multiroom();
 		//cardinal_x_rooms();
 		flatten_constraint();
+		bench_class_equlibrate();
 		//search_strategie();
 	}//FinMethod
 	
@@ -263,13 +357,15 @@ public class ModelUTP {
 		for(int p = 0; p < this.instanceUTP.nr_parts ;p++) {
 			//System.out.println("size : "+part_i_slots(this.instanceUTP.part_teachers.get(p)).length);
 			//System.out.println("size : "+t_s_v2_cards(p).length);
-			if(this.instanceUTP.part_session_teacher_count[p] <= 1) {
-				model.globalCardinality(t_s_v2_vars(p),part_i_slots(this.instanceUTP.part_teachers.get(p)),t_s_v2_cards(p),true).post();			
-			}
-			else {
-				//System.out.println(this.instanceUTP.part_name[p]);
-				//System.out.println("size "+t_ss_v2_vars(p).length);
-				model.globalCardinality(t_ss_v2_vars(p),part_i_slots(this.instanceUTP.part_teachers.get(p)),t_s_v2_cards(p),true).post();			
+			if(this.instanceUTP.part_teachers.get(p).size() !=0 ) {
+				if(this.instanceUTP.part_session_teacher_count[p] <= 1) {
+					model.globalCardinality(t_s_v2_vars(p),part_i_slots(this.instanceUTP.part_teachers.get(p)),t_s_v2_cards(p),true).post();			
+				}
+				else {
+					//System.out.println(this.instanceUTP.part_name[p]);
+					//System.out.println("size "+t_ss_v2_vars(p).length);
+					model.globalCardinality(t_ss_v2_vars(p),part_i_slots(this.instanceUTP.part_teachers.get(p)),t_s_v2_cards(p),true).post();			
+				}
 			}
 		}
 	}//FinMethod
@@ -934,6 +1030,32 @@ public class ModelUTP {
 			//}
 	}//FinMethod
 	
+	public IntVar[] generateWeek(ConstraintUTP cons) {
+		int m = this.instanceUTP.nr_slots_per_day*this.instanceUTP.nr_days_per_week;
+		IntVar[] tab = new IntVar[cons.getSessions().get(0).size()];
+		for(int i = 0; i < cons.getSessions().get(0).size() ;i++) {
+			tab[i] = x_slot[cons.getSessions().get(0).get(i)-1].sub(1).div(m).add(1).intVar();
+		}
+		return tab;
+	}//FinMethod
+	
+	public void differentWeek(ConstraintUTP constraint) {
+		 model.allDifferent(generateWeek(constraint)).post();;
+	}//FinMethod
+	
+	public IntVar[] generateSlots(ConstraintUTP cons) {
+		IntVar[] tab = new IntVar[cons.getSessions().get(0).size()];
+		for(int i = 0; i < cons.getSessions().get(0).size() ;i++) {
+			tab[i] = x_slot[cons.getSessions().get(0).get(i)-1];
+		}
+		return tab;
+	}//FinMethod
+	
+	public void differentSlots(ConstraintUTP constraint) {
+		 model.allDifferent(generateSlots(constraint)).post();
+	}//FinMethod
+	
+	
 	public void disjunct(ConstraintUTP constraint) {
 		//System.out.println();
 	}//FinMethod
@@ -959,6 +1081,8 @@ public class ModelUTP {
 			else if(this.instanceUTP.constraints.get(i).getConstraint().equals("disjunct")) {disjunct(this.instanceUTP.constraints.get(i));}
 			else if(this.instanceUTP.constraints.get(i).getConstraint().equals("differentWeekDay")) {differentWeekDay(this.instanceUTP.constraints.get(i));}
 			else if(this.instanceUTP.constraints.get(i).getConstraint().equals("weekly")) {weekly(this.instanceUTP.constraints.get(i));}
+			else if(this.instanceUTP.constraints.get(i).getConstraint().equals("differentWeek")) {differentWeek(this.instanceUTP.constraints.get(i));}
+			else if(this.instanceUTP.constraints.get(i).getConstraint().equals("differentSlots")) {differentSlots(this.instanceUTP.constraints.get(i));}
 			else if(this.instanceUTP.constraints.get(i).getConstraint().equals("forbiddenRooms")) {forbiddenRooms(this.instanceUTP.constraints.get(i));}
 			else System.out.println("Constraint "+this.instanceUTP.constraints.get(i).getConstraint()+" is not implemented"+" provide from rule : "+this.instanceUTP.constraints.get(i).getRule());
 			
@@ -1061,6 +1185,26 @@ public class ModelUTP {
 		return tab;
 	}//FinMethod
 	
+	public int[] tab_REPAS_course() {
+		Vector<Integer> CC = new Vector<Integer>();
+		for(int i = 0; i < this.instanceUTP.nr_sessions  ;i++) {
+			for(int j = 0; j < this.instanceUTP.part_label.get(this.instanceUTP.class_part[this.instanceUTP.session_class[i]-1]-1).size() ;j++) {
+				if(this.instanceUTP.label_name[this.instanceUTP.part_label.get(this.instanceUTP.class_part[this.instanceUTP.session_class[i]-1]-1).get(j)-1].equals("REPAS") || this.instanceUTP.label_name[this.instanceUTP.part_label.get(this.instanceUTP.class_part[this.instanceUTP.session_class[i]-1]-1).get(j)-1].equals("REPAS") || this.instanceUTP.label_name[this.instanceUTP.part_label.get(this.instanceUTP.class_part[this.instanceUTP.session_class[i]-1]-1).get(j)-1].equals("REPAS")) {
+					//System.out.println("Session "+i+" "+this.instanceUTP.class_name[this.instanceUTP.session_class[i]-1]);
+					CC.add(i+1);
+					break;
+				}
+			}
+		}
+		int[] tab = new int[CC.size()];
+		for(int i = 0; i < CC.size() ;i++) {
+			tab[i] = CC.get(i).intValue();
+		}
+		return tab;
+	}//FinMethod
+	
+	
+	
 	public boolean session_not_in(int session,int[] tab) {
 		for(int i = 0; i < tab.length ;i++) {
 			if(tab[i] == session) {
@@ -1073,8 +1217,9 @@ public class ModelUTP {
 	public SessionRank[] tab_normal_course() {
 		Vector<SessionRank> normalCourse = new Vector<SessionRank>();
 		int[] tab = tab_CC_course();
+		int[] tab2 = tab_REPAS_course();
 		for(int i = 0; i < this.instanceUTP.nr_sessions  ;i++) {
-			if(session_not_in(i+1,tab)) {
+			if(session_not_in(i+1,tab) && session_not_in(i+1,tab2)) {
 				int rank = i - this.instanceUTP.class_sessions.get(this.instanceUTP.session_class[i]-1).get(0).intValue() + 1;
 				normalCourse.add(new SessionRank(i+1,rank));
 
@@ -1098,6 +1243,7 @@ public class ModelUTP {
 		SessionRank[] tt = tab_normal_course();
 		IntVar[] tab = new IntVar[tt.length/2];
 		for(int i = 0; i < tt.length/2 ;i++) {	
+			//System.out.println(" tt "+this.instanceUTP.class_name[this.instanceUTP.session_class[tt[i].cpt-1]-1]);
 			tab[i] =  x_slot[tt[i].cpt-1];
 		}
 
@@ -1135,13 +1281,204 @@ public class ModelUTP {
 		return tab;
 	}//FinMethod
 	
+	public IntVar[] sort_xslot4() {
+
+		int[] CC = tab_REPAS_course();
+		IntVar[] tab = new IntVar[CC.length];
+		for(int i = 0; i < CC.length;i++) {
+			tab[i] =  x_slot[CC[i]-1];
+		}
+		
+		//System.out.println("size slot4 :  "+CC.length);
+		return tab;
+	}//FinMethod
+	
+	public void setStrategie(StrategieBuilt sb) {
+		this.strategie = sb;
+		this.strategie_choice = 3;
+	}//FinMethod
+	
+//===========================
+	public boolean inIntTab(int value,Vector<Integer> tab) {
+		for(int i = 0;i<tab.size();i++) {
+			if(tab.get(i) == value) {
+				return true;
+			}
+		}
+		return false;
+	}//FinMethod
+	
+	public IntVar[] convertVecToTab(Vector<IntVar> tab) {
+		IntVar[] res = new IntVar[tab.size()];
+		for(int i =0; i<tab.size() ;i++) {
+			res[i] = tab.get(i);
+		}
+		return res;
+	}//FinMethod
+//=============  Label ==============
+	public boolean labelVectorExist(int session,Vector<String> forbidden) {
+		int part = this.instanceUTP.class_part[this.instanceUTP.session_class[session]-1];
+		for(int pl = 0; pl < this.instanceUTP.part_label.get(part-1).size() ;pl++) {
+			for(int lnum = 0; lnum < forbidden.size() ; lnum++) {
+				if(this.instanceUTP.label_name[this.instanceUTP.part_label.get(part-1).get(pl)-1].equals(forbidden.get(lnum))) {
+					return true;
+				}
+			}	 
+		}
+		return false;
+	}//FinMethod
+
+	public boolean labelVectorExistClass(int classe,Vector<String> forbidden) {
+		int part = this.instanceUTP.class_part[classe]-1;
+		for(int pl = 0; pl < this.instanceUTP.part_label.get(part).size() ;pl++) {
+			for(int lnum = 0; lnum < forbidden.size() ; lnum++) {
+				if(this.instanceUTP.label_name[this.instanceUTP.part_label.get(part).get(pl)-1].equals(forbidden.get(lnum))) {
+					return true;
+				}
+			}
+		}
+		return false;
+	}//FinMethod
+	
+//=============  Label ==============	
+	public void createFunctionAndVerificationStrategie(ElementStrategie s,Vector<String> labelTab,int[] rankTab) {
+		if (s.filterScope.equals("label")) {
+			String[] t = s.filter.split(",");
+			for(int ti = 0 ; ti < t.length ;ti++) {
+				labelTab.add(t[ti]);
+			}
+		}
+		else if(s.filterScope.equals("rank")) {
+			for(int ii = 0; ii < s.ranks.size() ;ii++) {
+				rankTab[s.ranks.get(ii)] = 0;//
+			}
+		}
+		else {
+			System.out.println("Strategie don't exist\n");
+		}
+		
+	}//FinMethod
+	
+//======== SLOT ==========
+	public IntVar[] getSlotStrategieRank(Vector<String> forbiddenLabel,Vector<Integer> rank) {
+		Vector<IntVar> vec = new Vector<IntVar>();
+		for(int i = 1; i <= this.instanceUTP.nr_sessions ;i++) {
+			if(inIntTab(this.instanceUTP.session_rank[i],rank) && !labelVectorExist(i-1,forbiddenLabel)) {
+				vec.add(this.x_slot[i-1]);
+			}
+		}
+		
+		return convertVecToTab(vec);
+	}//FinMethod
+	
+	public IntVar[] getSlotStrategieLabel(String[] label1) {
+		Vector<IntVar> vec = new Vector<IntVar>();
+		Vector<String> label = new Vector<String>(label1.length);
+		for(int i = 0;i< label1.length;i++) {
+			label.add(i, label1[i]);
+		}
+		for(int i = 1; i <= this.instanceUTP.nr_sessions ;i++) {
+			if(labelVectorExist(i-1,label)) {
+				vec.add(this.x_slot[i-1]);
+			}
+		}
+		return convertVecToTab(vec);
+	}//FinMethod
+	
+//======== Room ==========
+	
+	public IntVar[] getRoomStrategieLabel(String[] label1) {
+		Vector<IntVar> vec = new Vector<IntVar>();
+		Vector<String> label = new Vector<String>(label1.length);
+		for(int i = 0;i< label1.length;i++) {
+			label.add(i, label1[i]);
+		}
+		for(int i = 1; i <= this.instanceUTP.nr_classes ;i++) {
+			if(labelVectorExistClass(i-1,label)) {
+				vec.add(this.x_room[i-1]);
+			}
+		}
+		return convertVecToTab(vec);
+	}//FinMethod
+	/*
+	public IntVar[] getRoomStrategieLabelForbidden(Vector<String> forbiddenLabel) {
+		
+		Vector<IntVar> vec = new Vector<IntVar>();
+		for(int i = 1; i <= this.instanceUTP.nr_sessions ;i++) {
+			if(!labelVectorExistClass(i-1,forbiddenLabel)) {
+				vec.add(this.x_room[i-1]);
+			}
+		}
+		Vector<IntVar> vec = new Vector<IntVar>();
+		
+		Vector<String> label = new Vector<String>(label1.length);
+		for(int i = 0;i< label1.length;i++) {
+			label.add(i, label1[i]);
+		}
+		for(int i = 1; i <= this.instanceUTP.nr_classes ;i++) {
+			if(labelVectorExist(i-1,label)) {
+				vec.add(this.x_room[i-1]);
+			}
+		}
+		return convertVecToTab(vec);
+	}//FinMethod
+	*/
+	
+//======== Teacher ==========
+
+//===========================
+	public void search_strategie_set() {
+		Vector<String> label_x_rooms = new Vector<String>();
+		Vector<String> label_x_teachers = new Vector<String>();
+		Vector<String> label_x_slot =  new Vector<String>();
+		
+		int[] rank_x_rooms = new int[this.instanceUTP.max_part_sessions];
+		int[] rank_x_teachers = new int[this.instanceUTP.max_part_sessions];
+		int[] rank_x_slot =  new int[this.instanceUTP.max_part_sessions];
+		
+		for(int i = 0; i < this.instanceUTP.max_part_sessions ;i++) {
+			rank_x_slot[i] =i+1;
+			rank_x_teachers[i] =i+1;
+			rank_x_rooms[i] =i+1;
+		}
+		
+		for(int i = 0; i < this.strategie.strategies.length ;i++) {
+			if(this.strategie.strategies[i].var.equals("x_slot")) {
+				createFunctionAndVerificationStrategie(this.strategie.strategies[i],label_x_slot,rank_x_slot);
+			}
+			else if(this.strategie.strategies[i].var.equals("x_rooms")){
+				createFunctionAndVerificationStrategie(this.strategie.strategies[i],label_x_rooms,rank_x_rooms);
+			}
+			else if(this.strategie.strategies[i].var.equals("x_teachers")) {
+				createFunctionAndVerificationStrategie(this.strategie.strategies[i],label_x_teachers,rank_x_teachers);
+			}
+		}
+		
+		for(int i =0 ; i < this.strategie.strategies.length  ;i++) {
+			if(this.strategie.strategies[i].var.equals("x_slot")) {
+				if(this.strategie.strategies[i].filterScope.equals("label")) {
+					getSlotStrategieLabel(this.strategie.strategies[i].filter.split(","));
+				}
+				else if(this.strategie.strategies[i].filterScope.equals("rank")) {
+					getSlotStrategieRank(label_x_slot,this.strategie.strategies[i].ranks);
+				}
+			}
+			else if(this.strategie.strategies[i].var.equals("x_rooms")){
+				createFunctionAndVerificationStrategie(this.strategie.strategies[i],label_x_rooms,rank_x_rooms);
+			}
+			else if(this.strategie.strategies[i].var.equals("x_teachers")) {
+				createFunctionAndVerificationStrategie(this.strategie.strategies[i],label_x_teachers,rank_x_teachers);
+			}
+		}
+	}//FinMethod
+	
 	public void strategie_choice() {
-		int strategie = 1;
-		switch(strategie) {
+		switch(this.strategie_choice) {
 		case 0: search_strategie();break;
 		case 1: search_strategie_2();break;
 		case 2: search_strategie_3();break;
-		default :System.out.println("Strategie not referecend");
+		case 3: search_strategie_set();break;
+		default :System.out.println("Strategie not referenced");
 		}
 	}//FinMethod
 	
@@ -1156,14 +1493,15 @@ public class ModelUTP {
 		this.solver.setSearch(
 				Search.intVarSearch(
 		                new FirstFail(model),
-		                //new IntDomainMin(),
-		                new decisionWeekEquilibrate(t, sort_xslot1(),this.x_slot,this.instanceUTP),
+		                new IntDomainMin(),
+		                //new decisionWeekEquilibrate(t, sort_xslot1(),this.x_slot,this.instanceUTP),
 		                sort_xslot1()
 						),
 				Search.intVarSearch(
                 //new FirstFail(model),
                 new AntiFirstFail(model),
-                new IntDomainRandom((long) ran),
+                new EquilibrateRoomDisposition(x_room,this.instanceUTP,this.instanceUTP.nr_rooms),
+                //new IntDomainRandom((long) ran),
                 x_room
 				),
 		Search.intVarSearch(
@@ -1231,11 +1569,19 @@ public class ModelUTP {
 				),
 		Search.intVarSearch(
                 new FirstFail(model),
+                new IntDomainMax(),
+                //new IntDomainRandom((long) ran),
+                //new decisionWeekEquilibrate(1, sort_xslot1(),this.x_slot,this.instanceUTP),
+                sort_xslot4()
+				),
+		Search.intVarSearch(
+                new FirstFail(model),
                 new IntDomainMin(),
                 //new IntDomainRandom((long) ran),
                 //new decisionWeekEquilibrate(1, sort_xslot1(),this.x_slot,this.instanceUTP),
                 sort_xslot1()
 				),
+
 		Search.intVarSearch(
                 new FirstFail(model),
                 new IntDomainMiddle(true),
@@ -1370,6 +1716,7 @@ public class ModelUTP {
 		//this.solver.verboseSolving(100);
 		//this.solver.showStatisticsDuringResolution(1000);
 		this.solver.setNoLearning();
+		this.solver.limitTime("20s");
 		//this.solver.showDecisions();
 		//this.solver.showDashboard();
 		this.solver.isLearnOff();
@@ -1515,7 +1862,13 @@ public class ModelUTP {
 			}
 		}
 		else {
-			out += "        <teacher refId=\""+this.instanceUTP.teacher_name[this.solution.getIntVal(this.x_teacher[cl-1])-1]+"\" />\n";
+			if(this.instanceUTP.part_teachers.get(part-1).size() != 0) {
+				out += "        <teacher refId=\""+this.instanceUTP.teacher_name[this.solution.getIntVal(this.x_teacher[cl-1])-1]+"\" />\n";
+			}
+			
+		}
+		if(out.equals("")) {
+			out = "        <teacher refId=\"vide\" />\n";
 		}
 		return out;
 	}//FinMethod

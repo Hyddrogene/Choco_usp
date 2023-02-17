@@ -5,6 +5,33 @@ import java.util.Vector;
 
 public class InstanceUTPArray {
 	//Attribute
+	static public String[] constraint_hard = new String[] {
+			"implicite_sequenced_sessions",
+			"teacher_service",
+			"disjunctive_teacher",
+			"disjunctive_group",
+			"disjunctive_room",
+			"size_of_multiroom"
+	};
+	static public String[] constraint_soft = new String[] {
+			"sameSlot",
+			"forbiddenPeriod",
+			"sameTeachers",
+			"sameRooms",
+			"periodic",
+			"weekly",
+			"allowedPeriod",
+			"sequenced",
+			"sameWeek",
+			"assignRoom",
+			"forbiddenRooms",
+			"sameWeekDay",
+			"sameWeeklySlot",
+			"differentWeekDay",
+			"differentWeek",
+			"differentSlots",
+			"disjunct"
+	}; 
 	//DATA
 	public InstanceUTP UTPInstance;
 	public int nr_weeks;
@@ -148,6 +175,8 @@ public class InstanceUTPArray {
 	public int var_same_teachers;
 	
 	public int[] class_rank;
+	
+	public Vector<Vector<Vector<Integer>>> group_of_classes_eq;
 	
 	//Method
 	
@@ -558,6 +587,75 @@ public class InstanceUTPArray {
 		this.class_rank = class_rank;
 	}//FinMethod
 	
+	public Vector<Vector<Integer>>  bitDay(int a,int s,int part) {
+		int sBitDay = s;
+		int[] bitDay = new int [sBitDay];
+		Arrays.fill(bitDay,0);
+		int u = 0;
+		for (int i = 0;i < a;i++) {
+			u = i % sBitDay;
+			bitDay[u]++;
+		}
+		
+		int cl = 0;
+		Vector<Vector<Integer>> tab = new Vector<Vector<Integer>>(s);
+		for(int sbd = 0 ; sbd < s ;sbd++) {
+			Vector<Integer> tmp = new Vector<Integer>(bitDay[sbd]);
+			for(int c = 0; c < bitDay[sbd] ;c++) {
+				tmp.add(c, this.part_classes.get(part).get(cl));
+				cl++;
+			}
+			tab.add(sbd,tmp);
+		}
+		
+		return tab;
+	}//FinMethod
+	
+	public void bach_classes() {
+		Vector<Vector<Vector<Integer>>> tab = new Vector<Vector<Vector<Integer>>>();
+		for(int p = 0; p < this.nr_parts ;p++) {
+			int a = this.part_classes.get(p).size();
+			Vector<Vector<Integer>> benchClasses;
+			int sa1 = 1;
+			int sa2 = 8;
+			int sa3 = 10;
+			
+			
+			if(a >= sa1 && a < sa2) {
+				int u = 3;
+				benchClasses = bitDay(a,u,p); 
+			}
+			else if(a >= sa2 && a < sa3 ){
+				int u = 4;
+				benchClasses = bitDay(a,u,p); 
+			}
+			else if(a >= sa2) { 
+				int u = 5;
+				benchClasses = bitDay(a,u,p); 
+			}
+			else {
+				benchClasses = new Vector<Vector<Integer>>(); 
+			}
+
+			tab.add(benchClasses);
+		}
+		
+		/*String out = "";
+		for(int i =0; i < tab.size();i++) {
+			out+=i+": {";
+			for(int j =0;j< tab.get(i).size();j++) {
+				out+="[";
+				for(int u =0;u< tab.get(i).get(j).size();u++){
+					out+=""+tab.get(i).get(j).get(u)+",";
+				}
+				out+="],";
+			}
+			out+="}\n";
+		}
+		System.out.println(out);*/
+		this.group_of_classes_eq = tab;
+	}//FinMethod
+	
 	public void calcul() {
 		nr_slot();
 		part_slots();
@@ -582,6 +680,7 @@ public class InstanceUTPArray {
 		sessions_xrooms();
 		sessions_xteachers();
 		class_rank();
+		bach_classes();
 	}//FinMethod
 
 }//FinClass

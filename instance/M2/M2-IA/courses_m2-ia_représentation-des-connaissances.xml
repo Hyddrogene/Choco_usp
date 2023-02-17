@@ -16,13 +16,14 @@
         </allowedRooms>
 
         <allowedTeachers sessionTeachers="1">
-			<teacher refId="LOISEAU Stephane" nrSessions="10"/>
+            <teacher refId="LEFEVRE Claire" nrSessions="2"/>
+            <teacher refId="GARCIA Laurent" nrSessions="1"/>
         </allowedTeachers>
     </part>
 
-    <part id="Représentation-des-connaissances-2h-CM" nrSessions="11" label="CM">
+    <part id="Représentation-des-connaissances-2h30-CM" nrSessions="11" label="CM">
         <classes maxHeadCount="80">
-            <class id="Représentation-des-connaissances-2h-CM-1" /> 
+            <class id="Représentation-des-connaissances-2h30-CM-1" /> 
         </classes>
 
         <allowedSlots sessionLength="120"> <!-- 3h -->
@@ -36,10 +37,9 @@
         </allowedRooms>
 
         <allowedTeachers sessionTeachers="1">
-			<teacher refId="GARCIA Laurent" nrSessions="11"/>
-            <teacher refId="LEFEVRE Claire" nrSessions="11"/>
-            <teacher refId="STEPHAN Igor" nrSessions="11"/>
-            <teacher refId="AMGHAR Tassadit" nrSessions="11"/>
+			<teacher refId="GARCIA Laurent" nrSessions="1"/>
+            <teacher refId="STEPHAN Igor" nrSessions="3"/>
+            <teacher refId="AMGHAR Tassadit" nrSessions="3"/>
         </allowedTeachers>
     </part>
 

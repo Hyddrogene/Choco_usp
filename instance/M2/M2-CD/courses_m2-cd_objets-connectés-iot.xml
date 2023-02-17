@@ -1,0 +1,46 @@
+
+<course id="Objets-connectés-et-IoT" label="UE,Informatique,M2,CD">
+
+    <part id="Objets-connectés-et-IoT-CM" nrSessions="5" label="CM">
+        <classes maxHeadCount="80">
+            <class id="Objets-connectés-et-IoT-CM-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="150"> <!-- 2h30 -->
+            <dailySlots>480,540,840</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>1-6</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+        	<room refId="H006" />
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="GARREAU Fabien" nrSessions="5"/>
+        </allowedTeachers>
+    </part>
+
+    <part id="Objets-connectés-et-IoT-TP" nrSessions="4" label="TP">
+        <classes maxHeadCount="80">
+            <class id="Objets-connectés-et-IoT-TP-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="180"> <!-- 3h -->
+            <dailySlots>480,540,840</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>1-6</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+        	<room refId="H006" />
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="GARREAU Fabien" nrSessions="4"/>
+        </allowedTeachers>
+    </part>
+
+    <!-- ========================== -->
+
+</course>

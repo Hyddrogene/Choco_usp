@@ -17,7 +17,9 @@ public class ReparationUTP {
 	public void  repareEngine_v1() {
 		
 		for(int e = 0; e < graphUTP.getEvenements().length ;e++) {
-			
+			for(int s = 0; s < graphUTP.getEvenements()[e].getSessions().length ;s++) {
+				//applyrepair()
+			}
 		}
 		
 	}//FinMethod

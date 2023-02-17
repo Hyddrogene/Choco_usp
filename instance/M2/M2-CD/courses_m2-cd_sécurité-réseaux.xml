@@ -1,0 +1,86 @@
+
+<course id="Sécurité-et-réseaux" label="UE,Informatique,M2,CD">
+
+    <part id="Sécurité-et-réseaux-CM" nrSessions=">6" label="CM">
+        <classes maxHeadCount="80">
+            <class id="Sécurité-et-réseaux-CM-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="180"> <!-- 3h -->
+            <dailySlots>480,540,840</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>1-6</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+        	<room refId="H006" />
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="HAMIEZ Jean-Phillipe" nrSessions="6"/>
+        </allowedTeachers>
+    </part>
+
+    <part id="Sécurité-et-réseaux-TP" nrSessions="2" label="TP">
+        <classes maxHeadCount="80">
+            <class id="Sécurité-et-réseaux-TP-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="180"> <!-- 3h -->
+            <dailySlots>480,540,840</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>1-6</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+        	<room refId="H006" />
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="HAMIEZ Jean-Phillipe" nrSessions="2"/>
+        </allowedTeachers>
+    </part>
+
+    <part id="Sécurité-et-réseaux-TD" nrSessions="1" label="TD">
+        <classes maxHeadCount="80">
+            <class id="Sécurité-et-réseaux-TD-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="180"> <!-- 3h -->
+            <dailySlots>480,540,840</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>1-6</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+        	<room refId="H006" />
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="HAMIEZ Jean-Phillipe" nrSessions="1"/>
+        </allowedTeachers>
+    </part>
+
+    <part id="Sécurité-et-réseaux-CC" nrSessions="1" label="CC">
+        <classes maxHeadCount="80">
+            <class id="Sécurité-et-réseaux-CC-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="150"> <!-- 3h -->
+            <dailySlots>480,540,600,840</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>1-6</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+        	<room refId="H006" />
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="HAMIEZ Jean-Phillipe" nrSessions="1"/>
+        </allowedTeachers>
+    </part>
+
+    <!-- ========================== -->
+
+</course>

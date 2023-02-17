@@ -13,6 +13,7 @@ public class ConstraintUTP {
 	private int[] elements;
 	private Vector<Vector<Integer>> sessions;
 	private int[] parameters;
+	private int isActivate;
 	
 	//Method
 	public ConstraintUTP(int cpt,int rule,String constraint,String hardness,int arity,String[] type,int[] elements,Vector<Vector<Integer>> sessions,int[] parameters) {
@@ -25,6 +26,15 @@ public class ConstraintUTP {
 		this.elements = elements;
 		this.sessions = sessions;
 		this.parameters = parameters;
+		this.isActivate = 0;
+	}//FinMethod
+
+	public int getIsActivate() {
+		return isActivate;
+	}//FinMethod
+
+	public void setIsActivate(int isActivate) {
+		this.isActivate = isActivate;
 	}//FinMethod
 
 	public int getRule() {

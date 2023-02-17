@@ -1,0 +1,66 @@
+
+<course id="Architecture-distribuée" label="UE,Informatique,M2,CD">
+
+    <part id="Architecture-distribuée-CM" nrSessions="5" label="CM">
+        <classes maxHeadCount="80">
+            <class id="Architecture-distribuée-CM-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="180"> <!-- 3h -->
+            <dailySlots>480,540,840</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>1-6</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+        	<room refId="H006" />
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="DIGUEZ Martin" nrSessions="5"/>
+        </allowedTeachers>
+    </part>
+
+    <part id="Architecture-distribuée-TP" nrSessions="4" label="TP">
+        <classes maxHeadCount="80">
+            <class id="Architecture-distribuée-TP-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="180"> <!-- 3h -->
+            <dailySlots>480,540,840</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>1-6</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+        	<room refId="H006" />
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="DIGUEZ Martin" nrSessions="4"/>
+        </allowedTeachers>
+    </part>
+<!--
+    <part id="Architecture-distribuée-CT" nrSessions="1" label="CT">
+        <classes maxHeadCount="80">
+            <class id="Architecture-distribuée-CT-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="90"> 
+            <dailySlots>480,540,600,840</dailySlots> 
+            <days>1-5</days>
+            <weeks>1-6</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+        	<room refId="H006" />
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="DIGUEZ Martin" nrSessions="1"/>
+        </allowedTeachers>
+    </part>
+-->
+    <!-- ========================== -->
+
+</course>
