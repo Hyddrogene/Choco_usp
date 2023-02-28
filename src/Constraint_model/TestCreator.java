@@ -36,7 +36,6 @@ public class TestCreator {
 		}
 		return false;
 	}//FinMethod
-	
 	public void changeUTP( StrategieBuilt sb){
 		Vector<String> deactivate = new Vector<String>();
 		for(int  i = 0; i < this.utp.constraints.size();i++) {
@@ -50,12 +49,31 @@ public class TestCreator {
 				}
 			}
 		}
-		String out = "contrainte desactivate : [";
-		for(int i = 0; i < deactivate.size()-1 ;i++) {
-			out += deactivate.get(i)+", ";
+		if(deactivate.size()>0) {
+			String out = "contrainte desactivate : [";
+			for(int i = 0; i < deactivate.size()-1 ;i++) {
+				out += deactivate.get(i)+", ";
+			}
+			out += deactivate.get(deactivate.size()-1)+"]\n";
+			System.out.println(out);
 		}
-		out += deactivate.get(deactivate.size()-1)+"]\n";
-		System.out.println(out);
+		
+		for(int k = 0; k < sb.deactivate_rule.size() ;k++) {
+			for(int c = 0; c < this.utp.constraints.size() ;c++) {
+				if( this.utp.constraints.get(c).getRule() == sb.deactivate_rule.get(k)) {
+					this.utp.constraints.get(c).setIsActivate(0);
+				}
+			}
+		}
+		
+		for(int k = 0; k < sb.deactivate_constraint.size() ;k++) {
+			for(int c = 0; c < this.utp.constraints.size() ;c++) {
+				if( this.utp.constraints.get(c).getCpt() == sb.deactivate_constraint.get(k)) {
+					this.utp.constraints.get(c).setIsActivate(0);
+				}
+			}
+		}
+
 	}//FinMethod
 	
 	@SuppressWarnings("static-access")
@@ -69,14 +87,13 @@ public class TestCreator {
 		
 		ModelUTP utp = new ModelUTP(this.utp);
 		utp.setFilename_solution(solution_name);
-		//utp.setStrategie(sb);
+		utp.setStrategie(sb);
 		utp.solve();
 		if(isXML) {
 			utp.write_solution_file(utp.print_xml(),isXML,this.filenameXML);
 		}
 		else {
 			utp.write_solution_file(utp.print(),isXML,this.filenameXML);
-
 		}
 		System.out.println("Finish");
 	}//FinMethod

@@ -28,6 +28,8 @@ public class Exec {
 		//filenamexml = "/home/etud/eclipse-workspace/Constraint_model/instance/ua_l3info_2021_bdd_dw-noPR_opt_plf_anglais.xml";
 		
 		String strategie1 = "/home/etud/testdestratégie.json";
+		strategie1 = "/home/etud/test_strategie_v2.json";
+
 		TestCreator tc = new TestCreator(filename,filenamexml,isXML);
 		tc.runTest(strategie1);
 		

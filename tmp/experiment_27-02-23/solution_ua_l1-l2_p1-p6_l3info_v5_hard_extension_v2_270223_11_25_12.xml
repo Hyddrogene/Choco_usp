@@ -330,7 +330,7 @@
                 <!--Slot quotition possible pour la part -->
                 <!-- 8h00-10h30 ; 09h30-12h20 ; 12h30-15h20 ; 14h00-16h50 ; 15h30-18h20 ; 17h00-19h50 -->
                 <!-- 11h00-13h50 a été retiré pour le repas : peut-être le laisser pour que la règle s'en charge ? -->
-                    <dailySlots>480,570,660,750,840,930</dailySlots>
+                    <dailySlots>480,570,750,840,930,1020</dailySlots>
                     <days>1-5</days>
                     <weeks>1-12</weeks>
                 </allowedSlots>
@@ -381,7 +381,7 @@
                 <!--Slot quotition possible pour la part -->
                 <!-- 8h00-10h30 ; 09h30-12h20 ; 12h30-15h20 ; 14h00-16h50 ; 15h30-18h20 ; 17h00-19h50 -->
                 <!-- 11h00-13h50 a été retiré pour le repas : peut-être le laisser pour que la règle s'en charge ? -->
-                    <dailySlots>480,570,660,750,840,930</dailySlots>
+                    <dailySlots>480,570,750,840,930,1020</dailySlots>
                     <days>1-2,4-5</days>
                     <weeks>1-12</weeks>
                 </allowedSlots>
@@ -469,7 +469,7 @@
                 <!--Slot quotition possible pour la part -->
                 <!-- 8h00-10h30 ; 09h30-12h20 ; 12h30-15h20 ; 14h00-16h50 ; 15h30-18h20 ; 17h00-19h50 -->
                 <!-- 11h00-13h50 a été retiré pour le repas : peut-être le laisser pour que la règle s'en charge ? -->
-                    <dailySlots>480,570,660,750,840,930</dailySlots>
+                    <dailySlots>480,570,750,840,930,1020</dailySlots>
                     <days>1-5</days>
                     <weeks>1-12</weeks>
                 </allowedSlots>
@@ -497,7 +497,7 @@
             <allowedSlots sessionLength="160">
                 <!-- 8h00-10h30 ; 09h30-12h20 ; 12h30-15h20 ; 14h00-16h50 ; 15h30-18h20 ; 17h00-19h50 -->
                 <!-- 11h00-13h50 a été retiré pour le repas : peut-être le laisser pour que la règle s'en charge ? -->
-                <dailySlots>480,570,660,750,840,930</dailySlots>
+                <dailySlots>480,570,750,840,930,1020</dailySlots>
                 <days>1-5</days>
                 <weeks>1-12</weeks>
             </allowedSlots>
@@ -553,7 +553,7 @@
                 <!--Slot quotition possible pour la part -->
                 <!-- 8h00-10h30 ; 09h30-12h20 ; 12h30-15h20 ; 14h00-16h50 ; 15h30-18h20 ; 17h00-19h50 -->
                 <!-- 11h00-13h50 a été retiré pour le repas : peut-être le laisser pour que la règle s'en charge ? -->
-                    <dailySlots>480,570,660,750,840,930</dailySlots>
+                    <dailySlots>480,570,750,840,930,1020</dailySlots>
                     <days>1-5</days>
                     <weeks>1-12</weeks>
                 </allowedSlots>
@@ -603,7 +603,7 @@
             -->
           </course>
     
-          <course id="Traitement-de-donnees-en-Python" label="L3-INFORMATIQUE,UE,OPTIONS-L3-INFO">
+          <course id="Traitement-de-donnees-en-Python" label="L3-INFORMATIQUE,UE">
     
             <part id="Traitement-de-donnees-en-Python-CM-TD" nrSessions="5" label="CM,TD">
                 <classes maxHeadCount="40">
@@ -615,8 +615,7 @@
                  <!--Slot quotition possible pour la part -->
                  <!-- 8h00-10h30 ; 09h30-12h20 ; 12h30-15h20 ; 14h00-16h50 ; 15h30-18h20 ; 17h00-19h50 -->
                 <!-- 11h00-13h50 a été retiré pour le repas : peut-être le laisser pour que la règle s'en charge ? -->
-                    <!--<dailySlots>480,570,750,840,930,1020</dailySlots>-->
-                    <dailySlots>480,570,660,750,840,930</dailySlots>
+                    <dailySlots>480,570,750,840,930,1020</dailySlots>
                      <days>1-5</days>
                      <weeks>1-12</weeks>
                  </allowedSlots>
@@ -644,7 +643,7 @@
                  <!--Slot quotition possible pour la part -->
                  <!-- 8h00-10h30 ; 09h30-12h20 ; 12h30-15h20 ; 14h00-16h50 ; 15h30-18h20 ; 17h00-19h50 -->
                 <!-- 11h00-13h50 a été retiré pour le repas : peut-être le laisser pour que la règle s'en charge ? -->
-                    <dailySlots>480,570,660,750,840,930</dailySlots>
+                    <dailySlots>480,570,750,840,930,1020</dailySlots>
                      <days>1-5</days>
                      <weeks>1-12</weeks>
                  </allowedSlots>
@@ -700,7 +699,7 @@
                 </part>-->
           </course>
     
-          <course id="Initiation-programmation-de-systemes-intelligents" label="L3-INFORMATIQUE,UE,OPTIONS-L3-INFO">
+          <course id="Initiation-programmation-de-systemes-intelligents" label="L3-INFORMATIQUE,UE">
             <part id="Initiation-programmation-de-systemes-intelligents-CM" nrSessions="2" label="CM">
     
                 <classes maxHeadCount="80">
@@ -712,7 +711,7 @@
                 <!--Slot quotition possible pour la part -->
                 <!-- 8h00-10h30 ; 09h30-12h20 ; 12h30-15h20 ; 14h00-16h50 ; 15h30-18h20 ; 17h00-19h50 -->
                 <!-- 11h00-13h50 a été retiré pour le repas : peut-être le laisser pour que la règle s'en charge ? -->
-                    <dailySlots>480,570,660,750,840,930</dailySlots>
+                    <dailySlots>480,570,750,840,930,1020</dailySlots>
                     <days>1-5</days>
                     <weeks>1-12</weeks>
                 </allowedSlots>
@@ -739,7 +738,7 @@
                 <!--Slot quotition possible pour la part -->
                 <!-- 8h00-10h30 ; 09h30-12h20 ; 12h30-15h20 ; 14h00-16h50 ; 15h30-18h20 ; 17h00-19h50 -->
                 <!-- 11h00-13h50 a été retiré pour le repas : peut-être le laisser pour que la règle s'en charge ? -->
-                    <dailySlots>480,570,660,750,840,930</dailySlots>
+                    <dailySlots>480,570,750,840,930,1020</dailySlots>
                     <days>1-5</days>
                     <weeks>1-12</weeks>
                 </allowedSlots>
@@ -821,7 +820,7 @@
             </part>-->
           </course>
     
-          <course id="Developpement-interfaces-graphiques-avancees" label="L3-INFORMATIQUE,UE,OPTIONS-L3-INFO">
+          <course id="Developpement-interfaces-graphiques-avancees" label="L3-INFORMATIQUE,UE">
             <part id="Developpement-interfaces-graphiques-avancees-CM" nrSessions="4" label="CM">
     
                 <classes maxHeadCount="80"><!-- c'est implicite s'il n'y a pas de parent :c-->
@@ -858,7 +857,7 @@
                 <!--Slot quotition possible pour la part -->
                 <!-- 8h00-10h30 ; 09h30-12h20 ; 12h30-15h20 ; 14h00-16h50 ; 15h30-18h20 ; 17h00-19h50 -->
                 <!-- 11h00-13h50 a été retiré pour le repas : peut-être le laisser pour que la règle s'en charge ? -->
-                    <dailySlots>480,570,660,750,840,930</dailySlots>
+                    <dailySlots>480,570,750,840,930,1020</dailySlots>
                     <days>1-5</days>
                     <weeks>1-12</weeks>
                 </allowedSlots>
@@ -979,7 +978,7 @@
                 <!--Slot quotition possible pour la part -->
                 <!-- 8h00-10h30 ; 09h30-12h20 ; 12h30-15h20 ; 14h00-16h50 ; 15h30-18h20 ; 17h00-19h50 -->
                 <!-- 11h00-13h50 a été retiré pour le repas : peut-être le laisser pour que la règle s'en charge ? -->
-                    <dailySlots>480,570,660,750,840,930</dailySlots>
+                    <dailySlots>480,570,750,840,930,1020</dailySlots>
                     <days>1-5</days>
                     <weeks>1-12</weeks>
                 </allowedSlots>
@@ -1106,7 +1105,7 @@
                 <!--Slot quotition possible pour la part -->
                 <!-- 8h00-10h30 ; 09h30-12h20 ; 12h30-15h20 ; 14h00-16h50 ; 15h30-18h20 ; 17h00-19h50 -->
                 <!-- 11h00-13h50 a été retiré pour le repas : peut-être le laisser pour que la règle s'en charge ? -->
-                    <dailySlots>480,570,660,750,840,930</dailySlots>
+                    <dailySlots>480,570,750,840,930,1020</dailySlots>
                     <days>1-5</days>
                     <weeks>1-12</weeks>
                 </allowedSlots>
@@ -1178,7 +1177,7 @@
                 <allowedSlots sessionLength="120">
                 <!--Slot quotition possible pour la part -->
                 <!-- 8h00-10h00 ; 8h50-10h50 ; 9h30-10h30 ; 10h20-12h20 ; 11h00-13h00 ; 11h50-13h50 ; 12h30-14h30 ; 13h20-15h20 ; 14h00-16h00 ; 14h50-16h50 ; 15h30-17h30 ; 16h20-18h20 ; 17h00-19h00 -->
-                    <dailySlots>480,530,570,620,660,710,750,800,840,890,930,980</dailySlots>
+                    <dailySlots>480,530,570,620,660,710,750,800,840,890,930,980,1020</dailySlots>
                     <days>1-5</days>
                     <weeks>1-12</weeks>
                 </allowedSlots>
@@ -1218,7 +1217,6 @@
             </part>
         </course>
 
-
         <course id="REPAS" label="L3-INFORMATIQUE,UE">
             <part id="REPAS-LUNDI" nrSessions="12" label="REPAS">
                 <classes maxHeadCount="30">
@@ -1234,6 +1232,15 @@
                     <days>1</days>
                     <weeks>1-12</weeks>
                 </allowedSlots>
+				<allowedRooms sessionRooms="single">
+					<room refId="Amphi-B" />
+				</allowedRooms>  
+		
+				<allowedTeachers sessionTeachers="1">
+					<teacher refId="LESAINT David" nrSessions="12"/>
+				</allowedTeachers>
+				
+
             </part>
             <part id="REPAS-MARDI" nrSessions="12" label="REPAS">
                 <classes maxHeadCount="30">
@@ -1249,6 +1256,13 @@
                     <days>2</days>
                     <weeks>1-12</weeks>
                 </allowedSlots>
+				<allowedRooms sessionRooms="single">
+					<room refId="Amphi-B" />
+				</allowedRooms>  
+		
+				<allowedTeachers sessionTeachers="1">
+					<teacher refId="LESAINT David" nrSessions="12"/>
+				</allowedTeachers>
             </part>
             <part id="REPAS-MERCREDI" nrSessions="12" label="REPAS">
                 <classes maxHeadCount="30">
@@ -1264,6 +1278,13 @@
                     <days>3</days>
                     <weeks>1-12</weeks>
                 </allowedSlots>
+				<allowedRooms sessionRooms="single">
+					<room refId="Amphi-B" />
+				</allowedRooms>  
+		
+				<allowedTeachers sessionTeachers="1">
+					<teacher refId="LESAINT David" nrSessions="12"/>
+				</allowedTeachers>
             </part>
             <part id="REPAS-JEUDI" nrSessions="12" label="REPAS">
                 <classes maxHeadCount="30">
@@ -1279,6 +1300,13 @@
                     <days>4</days>
                     <weeks>1-12</weeks>
                 </allowedSlots>
+				<allowedRooms sessionRooms="single">
+					<room refId="Amphi-B" />
+				</allowedRooms>  
+		
+				<allowedTeachers sessionTeachers="1">
+					<teacher refId="LESAINT David" nrSessions="12"/>
+				</allowedTeachers>
             </part>
             <part id="REPAS-VENDREDI" nrSessions="12" label="REPAS">
                 <classes maxHeadCount="30">
@@ -1294,6 +1322,13 @@
                     <days>5</days>
                     <weeks>1-12</weeks>
                 </allowedSlots>
+				<allowedRooms sessionRooms="single">
+					<room refId="Amphi-B" />
+				</allowedRooms>  
+		
+				<allowedTeachers sessionTeachers="1">
+					<teacher refId="LESAINT David" nrSessions="12"/>
+				</allowedTeachers>
             </part>
         </course>
     
@@ -2720,8 +2755,8 @@
 
 
 
-<course id="EEO2" label="UE,L1,MI,MI-M,MI-I,MPC,MPC-PC,M*PC-PC,M*PC-M,EEO">
-    <part id="EEO2-CTD" nrSessions="2" label="CTD,EEO">
+<course id="EEO2" label="UE,L1,MI,MI-M,MI-I,MPC,MPC-PC,M*PC-PC,M*PC-M">
+    <part id="EEO2-CTD" nrSessions="2" label="CTD">
         <classes maxHeadCount="40">
             <class id="EEO2-CTD-MPC-1"/> <!-- CMI PSI + CMI CE -->
             <class id="EEO2-CTD-MPC-2"/>
@@ -2773,7 +2808,7 @@
             <teacher refId="PICAVEZ Hugues" nrSessions="18"/>
         </allowedTeachers>
     </part>
-    <part id="EEO2-TP" nrSessions="2" label="TP,EEO">
+    <part id="EEO2-TP" nrSessions="2" label="TP">
         <classes maxHeadCount="20">
             <class id="EEO2-TP-MPC-1a" parent="EEO2-CTD-MPC-1"/> <!-- CMI PSI -->
             <class id="EEO2-TP-MPC-1b" parent="EEO2-CTD-MPC-1"/> <!-- CMI CE -->
@@ -2837,8 +2872,8 @@
 </course>
 
 
-<course id="EEO1-MPC" label="UE,L1,MPC,MPC-PC,M*PC-PC,M*PC-M,EEO">
-    <part id="EEO1-MPC-CTD" nrSessions="5" label="CTD,EEO">
+<course id="EEO1-MPC" label="UE,L1,MPC,MPC-PC,M*PC-PC,M*PC-M">
+    <part id="EEO1-MPC-CTD" nrSessions="5" label="CTD">
         <classes maxHeadCount="40">
             <class id="EEO1-MPC-CTD-1"/>
             <class id="EEO1-MPC-CTD-2"/>
@@ -2889,8 +2924,8 @@
     </part>
 </course>
 
-<course id="EEO1-MI" label="UE,L1,MI,MI-M,MI-I,EEO">
-    <part id="EEO1-MI-CTD" nrSessions="5" label="CTD,EEO">
+<course id="EEO1-MI" label="UE,L1,MI,MI-M,MI-I">
+    <part id="EEO1-MI-CTD" nrSessions="5" label="CTD">
         <classes maxHeadCount="40">
             <class id="EEO1-MI-CTD-1"/>
             <class id="EEO1-MI-CTD-2"/>
@@ -12472,7 +12507,7 @@
             </constraint>
         </rule>
 
-       <!-- <rule>
+        <rule>
             <selector generator="(class, *)" filters="course[id='REPAS']"/>
             <constraint name="periodic" type="hard">
                 <parameters>
@@ -12480,14 +12515,8 @@
                     <parameter name="unit">week</parameter>
                 </parameters>
             </constraint>
-        </rule>-->
-
-      <rule>
-            <selector generator="(class, *)" filters="course[id='REPAS']"/>
-            <constraint name="differentWeek" type="hard">
-            </constraint>
-        </rule> 
-
+        </rule>
+    
     
 
 
@@ -14739,284 +14768,6 @@
 	</constraint>
 </rule>
 
-<!-- Commencer après 9h
-<rule>
-    <selector generator="(course,*)" filters="" />
-    <constraint name="forbiddenPeriod" type="hard" >
-        <parameters>
-            <parameter name="first" >480</parameter>
-            <parameter name="last" >550</parameter>
-            <parameter name="period" >week</parameter>
-        </parameters>
-    </constraint>
-</rule>
-
-<rule>
-    <selector generator="(course,*)" filters="" />
-    <constraint name="forbiddenPeriod" type="hard" >
-        <parameters>
-            <parameter name="first" >1920</parameter>
-            <parameter name="last" >1990</parameter>
-            <parameter name="period" >week</parameter>
-        </parameters>
-    </constraint>
-</rule>
-
-<rule>
-    <selector generator="(course,*)" filters="" />
-    <constraint name="forbiddenPeriod" type="hard" >
-        <parameters>
-            <parameter name="first" >3360</parameter>
-            <parameter name="last" >3430</parameter>
-            <parameter name="period" >week</parameter>
-        </parameters>
-    </constraint>
-</rule>
-
-<rule>
-    <selector generator="(course,*)" filters="" />
-    <constraint name="forbiddenPeriod" type="hard" >
-        <parameters>
-            <parameter name="first" >4800</parameter>
-            <parameter name="last" >4870</parameter>
-            <parameter name="period" >week</parameter>
-        </parameters>
-    </constraint>
-</rule>
-
-<rule>
-    <selector generator="(course,*)" filters="" />
-    <constraint name="forbiddenPeriod" type="hard" >
-        <parameters>
-            <parameter name="first" >6240</parameter>
-            <parameter name="last" >6310</parameter>
-            <parameter name="period" >week</parameter>
-        </parameters>
-    </constraint>
-</rule>-->
-<!-- version 9h
-<rule>
-    <selector generator="(course,*)" filters="course[label='L1']|course[label='L3-INFORMATIQUE']" />
-    <constraint name="forbiddenPeriod" type="hard" >
-        <parameters>
-            <parameter name="first" >480</parameter>
-            <parameter name="last" >540</parameter>
-            <parameter name="period" >week</parameter>
-        </parameters>
-    </constraint>
-</rule>
-
-<rule>
-    <selector generator="(course,*)" filters="course[label='L1']|course[label='L3-INFORMATIQUE']" />
-    <constraint name="forbiddenPeriod" type="hard" >
-        <parameters>
-            <parameter name="first" >1920</parameter>
-            <parameter name="last" >1980</parameter>
-            <parameter name="period" >week</parameter>
-        </parameters>
-    </constraint>
-</rule>
-
-<rule>
-    <selector generator="(course,*)" filters="course[label='L1']|course[label='L3-INFORMATIQUE']" />
-    <constraint name="forbiddenPeriod" type="hard" >
-        <parameters>
-            <parameter name="first" >3360</parameter>
-            <parameter name="last" >3420</parameter>
-            <parameter name="period" >week</parameter>
-        </parameters>
-    </constraint>
-</rule>
-
-<rule>
-    <selector generator="(course,*)" filters="course[label='L1']|course[label='L3-INFORMATIQUE']" />
-    <constraint name="forbiddenPeriod" type="hard" >
-        <parameters>
-            <parameter name="first" >4800</parameter>
-            <parameter name="last" >4860</parameter>
-            <parameter name="period" >week</parameter>
-        </parameters>
-    </constraint>
-</rule>
-
-<rule>
-    <selector generator="(course,*)" filters="course[label='L1']|course[label='L3-INFORMATIQUE']" />
-    <constraint name="forbiddenPeriod" type="hard" >
-        <parameters>
-            <parameter name="first" >6240</parameter>
-            <parameter name="last" >6300</parameter>
-            <parameter name="period" >week</parameter>
-        </parameters>
-    </constraint>
-</rule>-->
-<!-- finir vers 16h50
-<rule>
-    <selector generator="(course,*)" filters="" />
-    <constraint name="forbiddenPeriod" type="hard" >
-        <parameters>
-            <parameter name="first" >1080</parameter>
-            <parameter name="last" >1260</parameter>
-            <parameter name="period" >week</parameter>
-        </parameters>
-    </constraint>
-</rule>
-
-<rule>
-    <selector generator="(course,*)" filters="" />
-    <constraint name="forbiddenPeriod" type="hard" >
-        <parameters>
-            <parameter name="first" >2520</parameter>
-            <parameter name="last" >2700</parameter>
-            <parameter name="period" >week</parameter>
-        </parameters>
-    </constraint>
-</rule>
-
-<rule>
-    <selector generator="(course,*)" filters="" />
-    <constraint name="forbiddenPeriod" type="hard" >
-        <parameters>
-            <parameter name="first" >3960</parameter>
-            <parameter name="last" >4140</parameter>
-            <parameter name="period" >week</parameter>
-        </parameters>
-    </constraint>
-</rule>
-
-<rule>
-    <selector generator="(course,*)" filters="" />
-    <constraint name="forbiddenPeriod" type="hard" >
-        <parameters>
-            <parameter name="first" >5400</parameter>
-            <parameter name="last" >5580</parameter>
-            <parameter name="period" >week</parameter>
-        </parameters>
-    </constraint>
-</rule>
-
-<rule>
-    <selector generator="(course,*)" filters="" />
-    <constraint name="forbiddenPeriod" type="hard" >
-        <parameters>
-            <parameter name="first" >6840</parameter>
-            <parameter name="last" >7020</parameter>
-            <parameter name="period" >week</parameter>
-        </parameters>
-    </constraint>
-</rule>-->
-<!-- version 17h -->
-<rule>
-    <selector generator="(course,*)" filters="course[label='L3-INFORMATIQUE']" />
-    <constraint name="forbiddenPeriod" type="hard" >
-        <parameters>
-            <parameter name="first" >1000</parameter>
-            <parameter name="last" >1260</parameter>
-            <parameter name="period" >week</parameter>
-        </parameters>
-    </constraint>
-</rule>
-
-<rule>
-    <selector generator="(course,*)" filters="course[label='L3-INFORMATIQUE']" />
-    <constraint name="forbiddenPeriod" type="hard" >
-        <parameters>
-            <parameter name="first" >2440</parameter>
-            <parameter name="last" >2700</parameter>
-            <parameter name="period" >week</parameter>
-        </parameters>
-    </constraint>
-</rule>
-
-<rule>
-    <selector generator="(course,*)" filters="course[label='L3-INFORMATIQUE']" />
-    <constraint name="forbiddenPeriod" type="hard" >
-        <parameters>
-            <parameter name="first" >3880</parameter>
-            <parameter name="last" >4140</parameter>
-            <parameter name="period" >week</parameter>
-        </parameters>
-    </constraint>
-</rule>
-
-<rule>
-    <selector generator="(course,*)" filters="course[label='L3-INFORMATIQUE']" />
-    <constraint name="forbiddenPeriod" type="hard" >
-        <parameters>
-            <parameter name="first" >5320</parameter>
-            <parameter name="last" >5580</parameter>
-            <parameter name="period" >week</parameter>
-        </parameters>
-    </constraint>
-</rule>
-
-<rule>
-    <selector generator="(course,*)" filters="course[label='L3-INFORMATIQUE']" />
-    <constraint name="forbiddenPeriod" type="hard" >
-        <parameters>
-            <parameter name="first" >6760</parameter>
-            <parameter name="last" >7020</parameter>
-            <parameter name="period" >week</parameter>
-        </parameters>
-    </constraint>
-</rule>
-
-<!-- version 17h L1 
-<rule>
-    <selector generator="(course,*)" filters="course[label='L1']" />
-    <constraint name="forbiddenPeriod" type="hard" >
-        <parameters>
-            <parameter name="first" >1000</parameter>
-            <parameter name="last" >1260</parameter>
-            <parameter name="period" >week</parameter>
-        </parameters>
-    </constraint>
-</rule>
-
-<rule>
-    <selector generator="(course,*)" filters="course[label='L1']" />
-    <constraint name="forbiddenPeriod" type="hard" >
-        <parameters>
-            <parameter name="first" >2440</parameter>
-            <parameter name="last" >2700</parameter>
-            <parameter name="period" >week</parameter>
-        </parameters>
-    </constraint>
-</rule>
-
-<rule>
-    <selector generator="(course,*)" filters="course[label='L1']" />
-    <constraint name="forbiddenPeriod" type="hard" >
-        <parameters>
-            <parameter name="first" >3880</parameter>
-            <parameter name="last" >4140</parameter>
-            <parameter name="period" >week</parameter>
-        </parameters>
-    </constraint>
-</rule>
-
-<rule>
-    <selector generator="(course,*)" filters="course[label='L1']" />
-    <constraint name="forbiddenPeriod" type="hard" >
-        <parameters>
-            <parameter name="first" >5320</parameter>
-            <parameter name="last" >5580</parameter>
-            <parameter name="period" >week</parameter>
-        </parameters>
-    </constraint>
-</rule>
-
-<rule>
-    <selector generator="(course,*)" filters="course[label='L1']" />
-    <constraint name="forbiddenPeriod" type="hard" >
-        <parameters>
-            <parameter name="first" >6760</parameter>
-            <parameter name="last" >7020</parameter>
-            <parameter name="period" >week</parameter>
-        </parameters>
-    </constraint>
-</rule>-->
-
-
 </rules>
 
     <solution> <!-- Solution parties groupes -->
@@ -16878,6 +16629,6 @@
     
          </groups> 
 
-     </solution>
-
+<!-- UNSAT ->
+</solution>
 </timetabling>
