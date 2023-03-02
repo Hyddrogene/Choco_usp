@@ -1,0 +1,15 @@
+<rule>
+    <selector generator="(class,*)" filters="part[id='Programmation-parallèle-CM']"/>
+    <constraint name="sameWeeklySlot" type="hard"/>
+</rule>
+
+<rule>
+    <selector generator="(class,*)" filters="part[id='Programmation-parallèle-TP']"/>
+    <constraint name="sameWeeklySlot" type="hard"/>
+</rule>
+
+<rule>
+	<selector generator="(class,{5})" filters="part[id='Programmation-parallèle-CM']"/>
+	<selector generator="(class,{1})" filters="part[id='Programmation-parallèle-TP']"/>
+	<constraint name="sequenced" type="hard"/>
+</rule>

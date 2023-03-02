@@ -1,0 +1,26 @@
+<rule>
+    <selector generator="(class,*)" filters="part[id='Optimisation-appliquée-CM']"/>
+    <constraint name="sameWeeklySlot" type="hard"/>
+</rule>
+
+<rule>
+    <selector generator="(class,*)" filters="part[id='Optimisation-appliquée-TD']"/>
+    <constraint name="sameWeeklySlot" type="hard"/>
+</rule>
+
+<rule>
+    <selector generator="(class,*)" filters="part[id='Optimisation-appliquée-TP']"/>
+    <constraint name="sameWeeklySlot" type="hard"/>
+</rule>
+
+<rule>
+	<selector generator="(class,{2})" filters="part[id='Optimisation-appliquée-CM']"/>
+	<selector generator="(class,{1})" filters="part[id='Optimisation-appliquée-TD']"/>
+	<constraint name="sequenced" type="hard"/>
+</rule>
+
+<rule>
+	<selector generator="(class,{2})" filters="part[id='Optimisation-appliquée-TD']"/>
+	<selector generator="(class,{1})" filters="part[id='Optimisation-appliquée-TP']"/>
+	<constraint name="sequenced" type="hard"/>
+</rule>

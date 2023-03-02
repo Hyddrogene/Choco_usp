@@ -24,11 +24,16 @@ public class Exec {
 		filename = "/home/etud/eclipse-workspace/Constraint_model/instance/ua_l1-l2_p1-p6_l3info_v5_hard_extension_v2.json";
 		filenamexml = "/home/etud/eclipse-workspace/Constraint_model/instance/ua_l1-l2_p1-p6_l3info_v5bis.xml";
 		
+		//filename = "/home/etud/eclipse-workspace/Constraint_model/instance/M2/ua_m2-informatique-s1-s2_extension_v2.json";
+		//filenamexml = "/home/etud/eclipse-workspace/Constraint_model/instance/M2/ua_m2-informatique-s1-s2Bis.xml";
+
+		
 		//filename = "/home/etud/eclipse-workspace/Constraint_model/instance/ua_l3info_2021_bdd_dw-noPR_opt_plf_anglais_extension_v2.json";
 		//filenamexml = "/home/etud/eclipse-workspace/Constraint_model/instance/ua_l3info_2021_bdd_dw-noPR_opt_plf_anglais.xml";
 		
 		String strategie1 = "/home/etud/testdestratégie.json";
-		strategie1 = "/home/etud/test_strategie_v2.json";
+		//strategie1 = "/home/etud/test_strategie_v2.json";
+		//strategie1 = "/home/etud/strategie_master.json";
 
 		TestCreator tc = new TestCreator(filename,filenamexml,isXML);
 		tc.runTest(strategie1);

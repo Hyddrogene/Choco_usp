@@ -1,0 +1,40 @@
+<rule>
+	<selector generator="(class, *)" filters="part[id='Conférences-pro-et-science-long-CM']"/>
+    <constraint name="allowedPeriod" type="hard">
+    	<parameters>
+    		<parameter name="first">67681</parameter>
+    		<parameter name="last">72000</parameter>
+		</parameters>
+	</constraint>
+</rule>
+
+<rule>
+	<selector generator="(class, *)" filters="part[id='Conférences-pro-et-science-moyen-CM']"/>
+    <constraint name="allowedPeriod" type="hard">
+    	<parameters>
+    		<parameter name="first">92161</parameter>
+    		<parameter name="last">93600</parameter>
+		</parameters>
+	</constraint>
+</rule>
+
+
+<rule>
+	<selector generator="(class, *)" filters="part[id='Conférences-pro-et-science-THALES-CM']"/>
+    <constraint name="allowedPeriod" type="hard">
+    	<parameters>
+    		<parameter name="first">93600</parameter>
+    		<parameter name="last">95040</parameter>
+		</parameters>
+	</constraint>
+</rule>
+
+<rule>
+	<selector generator="(class, *)" filters="part[id='Conférences-pro-et-science-CAP-GEMINI-CM']"/>
+    <constraint name="allowedPeriod" type="hard">
+    	<parameters>
+    		<parameter name="first">99360</parameter>
+    		<parameter name="last">100080</parameter>
+		</parameters>
+	</constraint>
+</rule>

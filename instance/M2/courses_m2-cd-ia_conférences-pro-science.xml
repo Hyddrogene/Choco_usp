@@ -8,7 +8,7 @@
         <allowedSlots sessionLength="180"> <!-- 1h20 -->
             <dailySlots>480,540,840</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
             <days>1-5</days>
-            <weeks>1-6</weeks> 
+            <weeks>10-24</weeks> 
         </allowedSlots>
 
         <allowedRooms sessionRooms="single">
@@ -28,7 +28,7 @@
         <allowedSlots sessionLength="150"> <!-- 1h20 -->
             <dailySlots>480-560,840</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
             <days>1-5</days>
-            <weeks>1-6</weeks> 
+            <weeks>10-24</weeks> 
         </allowedSlots>
 
         <allowedRooms sessionRooms="single">
@@ -48,7 +48,7 @@
         <allowedSlots sessionLength="120"> <!-- 1h20 -->
             <dailySlots>480,510,540,570,600,840</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
             <days>1-5</days>
-            <weeks>1-6</weeks> 
+            <weeks>10-24</weeks> 
         </allowedSlots>
 
         <allowedRooms sessionRooms="single">
@@ -67,7 +67,7 @@
         <allowedSlots sessionLength="120"> <!-- 1h20 -->
             <dailySlots>480,840</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
             <days>1-5</days>
-            <weeks>1-6</weeks> 
+            <weeks>10-24</weeks> 
         </allowedSlots>
 
         <allowedRooms sessionRooms="single">

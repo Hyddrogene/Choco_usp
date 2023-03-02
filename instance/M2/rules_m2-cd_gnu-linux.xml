@@ -1,0 +1,15 @@
+<rule>
+    <selector generator="(class,{1,3,5})" filters="part[id='GNU-Linux-CM']"/>
+    <constraint name="sameWeeklySlot" type="hard"/>
+</rule>
+
+<rule>
+    <selector generator="(course,*)" filters="part[id='GNU-Linux-CM']{2,4}|part[id='GNU-Linux-TP']"/>
+    <constraint name="sameWeeklySlot" type="hard"/>
+</rule>
+
+<rule>
+	<selector generator="(class,{5})" filters="part[id='GNU-Linux-CM']"/>
+	<selector generator="(class,{1})" filters="part[id='GNU-Linux-TP']"/>
+	<constraint name="sequenced" type="hard"/>
+</rule>

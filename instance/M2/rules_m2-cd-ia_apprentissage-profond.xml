@@ -1,0 +1,30 @@
+<rule>
+    <selector generator="(class,*)" filters="part[id='Apprentissage-profond-CM']"/>
+    <constraint name="sameWeeklySlot" type="hard"/>
+</rule>
+
+<rule>
+    <selector generator="(class,*)" filters="part[id='Apprentissage-profond-CM']"/>
+    <constraint name="sameWeeklySlot" type="hard"/>
+</rule>
+
+<rule>
+    <selector generator="(class,*)" filters="part[id='Apprentissage-profond-TD']"/>
+    <constraint name="sameWeeklySlot" type="hard"/>
+</rule>
+
+<rule>
+	<selector generator="(class,{1})" filters="part[id='Apprentissage-profond-CM']"/>
+	<selector generator="(class,{1})" filters="part[id='Apprentissage-profond-TD']"/>
+	<constraint name="sequenced" type="hard"/>
+</rule>
+
+<rule>
+	<selector generator="(class, *)" filters="course[id='Apprentissage-profond']"/>
+	<constraint name="forbiddenPeriod" type="hard">
+		<parameters> <!-- Lundi 11h-12h20 -->
+			<parameter name="first">1</parameter>
+			<parameter name="last">72000</parameter>
+		</parameters>
+	</constraint>
+</rule>

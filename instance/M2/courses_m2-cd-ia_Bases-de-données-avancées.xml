@@ -1,6 +1,6 @@
 <course id="Bases-de-données-avancées" label="UE,Informatique,M2,CD,IA">
 
-    <part id="Bases-de-données-avancées-CM" nrSessions="5" label="CM">
+    <part id="Bases-de-données-avancées-CM" nrSessions="6" label="CM">
         <classes maxHeadCount="80">
             <class id="Bases-de-données-avancées-CM-1" /> 
         </classes>
@@ -17,6 +17,7 @@
 
         <allowedTeachers sessionTeachers="1">
 			<teacher refId="LOISEAU Stephane" nrSessions="5" />
+            <teacher refId="GENEST David" nrSessions="1" />
         </allowedTeachers>
     </part>
 
@@ -42,8 +43,8 @@
 
     <part id="Bases-de-données-avancées-TP" nrSessions="1" label="TP">
         <classes maxHeadCount="80">
-            <class id="Bases-de-données-avancées-TP-1A" parent="Bases-de-données-avancées-CM-1" label="TP-A" /> 
-            <class id="Bases-de-données-avancées-TP-1B" parent="Bases-de-données-avancées-CM-1" label="TP-B" /> 
+            <class id="Bases-de-données-avancées-TP-1A" parent="Bases-de-données-avancées-TD-1" label="TP-A" /> 
+            <class id="Bases-de-données-avancées-TP-1B" parent="Bases-de-données-avancées-TD-1" label="TP-B" /> 
         </classes>
 
         <allowedSlots sessionLength="180"> <!-- 1h20 -->

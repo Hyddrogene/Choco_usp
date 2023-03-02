@@ -1,0 +1,19 @@
+
+
+<rule>
+    <selector generator="(course, *)" filters="course[id='Objets-connectés-et-IoT']"/>
+    <constraint name="sameWeekDay" type="hard">
+    </constraint>
+</rule> 
+
+<rule>
+    <selector generator="(course, *)" filters="course[id='Objets-connectés-et-IoT']"/>
+    <constraint name="sameWeeklySlot" type="hard">
+    </constraint>
+</rule> 
+
+<rule>
+	<selector generator="(class,{5})" filters="part[id='Objets-connectés-et-IoT-CM']"/>
+	<selector generator="(class,{1})" filters="part[id='Objets-connectés-et-IoT-TP']"/>
+	<constraint name="sequenced" type="hard"/>
+</rule>

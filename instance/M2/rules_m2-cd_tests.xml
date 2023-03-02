@@ -1,0 +1,23 @@
+<rule>
+    <selector generator="(course, *)" filters="course[id='Tests']"/>
+    <constraint name="sameWeeklySlot" type="hard">
+    </constraint>
+</rule> 
+
+<rule>
+    <selector generator="(course, *)" filters="course[id='Tests']"/>
+    <constraint name="sameWeekDay" type="hard">
+    </constraint>
+</rule> 
+
+<rule>
+	<selector generator="(class,{1})" filters="part[id='Tests-CM']"/>
+	<selector generator="(class,{1})" filters="part[id='Tests-TP']"/>
+	<constraint name="sequenced" type="hard"/>
+</rule>
+
+<rule>
+	<selector generator="(class,{3})" filters="part[id='Tests-TP']"/>
+	<selector generator="(class,{2})" filters="part[id='Tests-CM']"/>
+	<constraint name="sequenced" type="hard"/>
+</rule>

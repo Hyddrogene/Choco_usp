@@ -1,0 +1,10 @@
+<rule>
+    <selector generator="(class,*)" filters="part[id='Systèmes-à-base-de-connaissances-CM']"/>
+    <constraint name="sameWeeklySlot" type="hard"/>
+</rule>
+
+<rule>
+	<selector generator="(class,{10})" filters="part[id='Systèmes-à-base-de-connaissances-CM']"/>
+	<selector generator="(class,{1})" filters="part[id='Systèmes-à-base-de-connaissances-CT']"/>
+	<constraint name="sequenced" type="hard"/>
+</rule>

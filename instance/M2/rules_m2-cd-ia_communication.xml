@@ -1,0 +1,15 @@
+<rule>
+    <selector generator="(class,*)" filters="part[id='Communication1-M2-CM']"/>
+    <constraint name="sameWeeklySlot" type="hard"/>
+</rule>
+
+<rule>
+    <selector generator="(class,*)" filters="part[id='Communication2-M2-CM']"/>
+    <constraint name="sameWeeklySlot" type="hard"/>
+</rule>
+
+<rule>
+	<selector generator="(class,{3})" filters="part[id='Communication1-M2-CM']"/>
+	<selector generator="(class,{1})" filters="part[id='Communication1-M2-TP']"/>
+	<constraint name="sequenced" type="hard"/>
+</rule>

@@ -1,0 +1,20 @@
+<rule>
+    <selector generator="(class,*)" filters="part[id='Architecture-distribuée-CM']"/>
+    <constraint name="sameWeeklySlot" type="hard"/>
+</rule>
+
+<rule>
+    <selector generator="(class,{1,2,4})" filters="part[id='Architecture-distribuée-TP']"/>
+    <constraint name="sameWeeklySlot" type="hard"/>
+</rule>
+
+<rule>
+    <selector generator="(course,*)" filters="part[id='Architecture-distribuée-CM']{5}|part[id='Architecture-distribuée-TP']{3}"/>
+    <constraint name="sameWeeklySlot" type="hard"/>
+</rule>
+
+<rule>
+	<selector generator="(class,{3})" filters="part[id='Architecture-distribuée-CM']"/>
+	<selector generator="(class,{1})" filters="part[id='Architecture-distribuée-TP']"/>
+	<constraint name="sequenced" type="hard"/>
+</rule>

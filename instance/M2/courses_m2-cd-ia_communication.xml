@@ -1,14 +1,59 @@
-<course id="Communication" label="UE,Informatique,M2,CD,IA">
+<course id="Communication-M2" label="UE,Informatique,M2,CD,IA">
 
-    <part id="Communication-M-CM" nrSessions="2" label="CM">
+    <part id="Communication1-M2-CM" nrSessions="4" label="CM">
         <classes maxHeadCount="80">
-            <class id="Communication-M-CM-1" /> 
+            <class id="Communication1-CM-1" /> 
         </classes>
 
         <allowedSlots sessionLength="180"> <!-- 3h -->
             <dailySlots>480,540,840</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
             <days>1-5</days>
-            <weeks>1-6</weeks> 
+            <weeks>10-24</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+        	<room refId="H006" />
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="MAILLET Chloé" nrSessions="4" />
+        </allowedTeachers>
+    </part>
+
+    <!-- ========================== -->
+
+    <part id="Communication2-M2-CM" nrSessions="2" label="CM">
+        <classes maxHeadCount="80">
+            <class id="Communication2-CM-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="180"> <!-- 3h -->
+            <dailySlots>480,540,840</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>10-24</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+        	<room refId="H006" />
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+            <teacher refId="GRIMAULT Virginie" nrSessions="2" />
+        </allowedTeachers>
+    </part>
+
+    <!-- ========================== -->
+
+    <part id="Communication1-M2-TP" nrSessions="1" label="TP">
+        <classes maxHeadCount="80">
+            <class id="Communication1-M2-TPA" /> 
+            <class id="Communication1-M2-TPB" /> 
+        </classes>
+
+        <allowedSlots sessionLength="180"> <!-- 3h -->
+            <dailySlots>480,540,840</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>10-24</weeks> 
         </allowedSlots>
 
         <allowedRooms sessionRooms="single">
@@ -21,90 +66,5 @@
     </part>
 
     <!-- ========================== -->
-
-    <part id="Communication-G-CM" nrSessions="1" label="CM">
-        <classes maxHeadCount="80">
-            <class id="Communication-G-CM-1" /> 
-        </classes>
-
-        <allowedSlots sessionLength="120"> <!-- 2h -->
-            <dailySlots>480,540,600,840</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
-            <days>1-5</days>
-            <weeks>1-6</weeks> 
-        </allowedSlots>
-
-        <allowedRooms sessionRooms="single">
-        	<room refId="H006" />
-        </allowedRooms>
-
-        <allowedTeachers sessionTeachers="1">
-            <teacher refId="GRIMAULT Virginie" nrSessions="1" />
-        </allowedTeachers>
-    </part>
-
-    <!-- ========================== -->
-
-    <part id="Communication-M-TPA" nrSessions="1" label="TP">
-        <classes maxHeadCount="80">
-            <class id="Communication-M-TPA-1" /> 
-        </classes>
-
-        <allowedSlots sessionLength="180"> <!-- 3h -->
-            <dailySlots>480,540,840</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
-            <days>1-5</days>
-            <weeks>1-6</weeks> 
-        </allowedSlots>
-
-        <allowedRooms sessionRooms="single">
-        	<room refId="H006" />
-        </allowedRooms>
-
-        <allowedTeachers sessionTeachers="1">
-			<teacher refId="MAILLET Chloé" nrSessions="1" />
-        </allowedTeachers>
-    </part>
-
-
-    <part id="Communication-M-TPB" nrSessions="1" label="TP">
-        <classes maxHeadCount="80">
-            <class id="Communication-M-TPB-1" /> 
-        </classes>
-
-        <allowedSlots sessionLength="120"> <!-- 2h -->
-            <dailySlots>480,540,600,840</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
-            <days>1-5</days>
-            <weeks>1-6</weeks> 
-        </allowedSlots>
-
-        <allowedRooms sessionRooms="single">
-        	<room refId="H006" />
-        </allowedRooms>
-
-        <allowedTeachers sessionTeachers="1">
-			<teacher refId="MAILLET Chloé" nrSessions="1" />
-        </allowedTeachers>
-    </part>
-
-    <!-- ========================== -->
-
-    <part id="Communication-G-TP" nrSessions="1" label="TP">
-        <classes maxHeadCount="80">
-            <class id="Communication-G-TP-1" /> 
-        </classes>
-
-        <allowedSlots sessionLength="180"> <!-- 3h -->
-            <dailySlots>480,540,840</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
-            <days>1-5</days>
-            <weeks>1-6</weeks> 
-        </allowedSlots>
-
-        <allowedRooms sessionRooms="single">
-        	<room refId="H006" />
-        </allowedRooms>
-
-        <allowedTeachers sessionTeachers="1">
-			<teacher refId="GRIMAULT Virginie" nrSessions="1" />
-        </allowedTeachers>
-    </part>
 
 </course>

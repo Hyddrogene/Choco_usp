@@ -1,0 +1,46 @@
+
+<course id="Technologies-pro-émergentes" label="UE,Informatique,M2,CD">
+
+    <part id="Technologies-pro-émergentes-CM1" nrSessions="3" label="CM">
+        <classes maxHeadCount="80">
+            <class id="Technologies-pro-émergentes-CM1-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="120"> <!-- 3h -->
+            <dailySlots>480,540,600,840</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>1-24</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+        	<room refId="H006" />
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="GUILLMER Y" nrSessions="3"/>
+        </allowedTeachers>
+    </part>
+
+    <part id="Technologies-pro-émergentes-CM2" nrSessions="2" label="CM">
+        <classes maxHeadCount="80">
+            <class id="Technologies-pro-émergentes-CM2-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="180"> <!-- 3h -->
+            <dailySlots>480,540,840</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>1-24</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+        	<room refId="H006" />
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="DUPIN Nicolas" nrSessions="2"/>
+        </allowedTeachers>
+    </part>
+
+    <!-- ========================== -->
+
+</course>

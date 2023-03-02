@@ -1,14 +1,14 @@
-<course id="Droit" label="UE,Informatique,M2,CD,IA">
+<course id="Droit-M2" label="UE,Informatique,M2,CD,IA">
 
-    <part id="Droit-CM" nrSessions="3" label="CM">
+    <part id="Droit-M2-CM" nrSessions="3" label="CM">
         <classes maxHeadCount="80">
-            <class id="Droit-CM-1" /> 
+            <class id="Droit-M2-CM-1" /> 
         </classes>
 
         <allowedSlots sessionLength="240"> <!-- 1h20 -->
             <dailySlots>480,840</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
-            <days>1-5</days>
-            <weeks>1-6</weeks> 
+            <days>1</days>
+            <weeks>2,5,10,13</weeks> 
         </allowedSlots>
 
         <allowedRooms sessionRooms="single">

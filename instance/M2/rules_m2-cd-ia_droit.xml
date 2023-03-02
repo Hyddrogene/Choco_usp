@@ -1,0 +1,4 @@
+<rule>
+    <selector generator="(class,*)" filters="part[id='Droit-M2-CM']"/>
+    <constraint name="sameWeeklySlot" type="hard"/>
+</rule>

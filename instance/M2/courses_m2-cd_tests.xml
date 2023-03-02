@@ -1,0 +1,46 @@
+
+<course id="Tests" label="UE,Informatique,M2,CD">
+
+    <part id="Tests-CM" nrSessions="3" label="CM">
+        <classes maxHeadCount="80">
+            <class id="Tests-CM-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="180"> <!-- 3h -->
+            <dailySlots>480,540,840</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>1-24</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+        	<room refId="H006" />
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="LAMPRIER Sylvain" nrSessions="3"/>
+        </allowedTeachers>
+    </part>
+
+    <part id="Tests-TP" nrSessions="3" label="TP">
+        <classes maxHeadCount="80">
+            <class id="Tests-TP-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="180"> <!-- 3h -->
+            <dailySlots>480,540,840</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>1-24</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+        	<room refId="H006" />
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="LAMPRIER Sylvain" nrSessions="3"/>
+        </allowedTeachers>
+    </part>
+
+    <!-- ========================== -->
+
+</course>

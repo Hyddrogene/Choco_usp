@@ -1,0 +1,502 @@
+
+    <student id="student-M2-Informatique-1" label="M2-INFORMATIQUE,M2,informatique,IA">
+        <courses>
+            <course refId="Anglais-M2"/>
+            <course refId="Apprentissage-profond"/>
+            <course refId="Bases-de-données-avancées"/>
+            <course refId="Communication-M2"/>
+            <course refId="Conférences-pro-et-science"/>
+            <course refId="Droit-M2"/>
+            <course refId="Optimisation-appliquée"/>
+            <course refId="Programmation-parallèle"/>
+            <course refId="Algorithmes-intelligents"/>
+            <course refId="Approches-exactes-de-résolution"/>
+            <course refId="Métaheuristiques"/>
+            <course refId="Représentation-des-connaissances"/>
+            <course refId="Systèmes-base-de-connaissances"/>
+        </courses>
+    </student>
+    <student id="student-M2-Informatique-2" label="M2-INFORMATIQUE,M2,informatique,CD">
+        <courses>
+            <course refId="Anglais-M2"/>
+            <course refId="Apprentissage-profond"/>
+            <course refId="Bases-de-données-avancées"/>
+            <course refId="Communication-M2"/>
+            <course refId="Conférences-pro-et-science"/>
+            <course refId="Droit-M2"/>
+            <course refId="Optimisation-appliquée"/>
+            <course refId="Programmation-parallèle"/>
+            <course refId="Architecture-distribuée"/>
+            <course refId="GNU-Linux"/>
+            <course refId="Initiation-R-et-D"/>
+            <course refId="Objets-connectés-et-IoT"/>
+            <course refId="Sécurité-et-réseaux"/>
+            <course refId="Technologies-pro-émergentes"/>
+            <course refId="Tests"/>
+        </courses>
+    </student>
+    <student id="student-M2-Informatique-3" label="M2-INFORMATIQUE,M2,informatique,IA">
+        <courses>
+            <course refId="Anglais-M2"/>
+            <course refId="Apprentissage-profond"/>
+            <course refId="Bases-de-données-avancées"/>
+            <course refId="Communication-M2"/>
+            <course refId="Conférences-pro-et-science"/>
+            <course refId="Droit-M2"/>
+            <course refId="Optimisation-appliquée"/>
+            <course refId="Programmation-parallèle"/>
+            <course refId="Algorithmes-intelligents"/>
+            <course refId="Approches-exactes-de-résolution"/>
+            <course refId="Métaheuristiques"/>
+            <course refId="Représentation-des-connaissances"/>
+            <course refId="Systèmes-base-de-connaissances"/>
+        </courses>
+    </student>
+    <student id="student-M2-Informatique-4" label="M2-INFORMATIQUE,M2,informatique,CD,ALTERNANT">
+        <courses>
+            <course refId="Anglais-M2"/>
+            <course refId="Apprentissage-profond"/>
+            <course refId="Bases-de-données-avancées"/>
+            <course refId="Communication-M2"/>
+            <course refId="Conférences-pro-et-science"/>
+            <course refId="Droit-M2"/>
+            <course refId="Optimisation-appliquée"/>
+            <course refId="Programmation-parallèle"/>
+            <course refId="Architecture-distribuée"/>
+            <course refId="GNU-Linux"/>
+            <course refId="Initiation-R-et-D"/>
+            <course refId="Objets-connectés-et-IoT"/>
+            <course refId="Sécurité-et-réseaux"/>
+            <course refId="Technologies-pro-émergentes"/>
+            <course refId="Tests"/>
+        </courses>
+    </student>
+    <student id="student-M2-Informatique-5" label="M2-INFORMATIQUE,M2,informatique,IA">
+        <courses>
+            <course refId="Anglais-M2"/>
+            <course refId="Apprentissage-profond"/>
+            <course refId="Bases-de-données-avancées"/>
+            <course refId="Communication-M2"/>
+            <course refId="Conférences-pro-et-science"/>
+            <course refId="Droit-M2"/>
+            <course refId="Optimisation-appliquée"/>
+            <course refId="Programmation-parallèle"/>
+            <course refId="Algorithmes-intelligents"/>
+            <course refId="Approches-exactes-de-résolution"/>
+            <course refId="Métaheuristiques"/>
+            <course refId="Représentation-des-connaissances"/>
+            <course refId="Systèmes-base-de-connaissances"/>
+        </courses>
+    </student>
+    <student id="student-M2-Informatique-6" label="M2-INFORMATIQUE,M2,informatique,CD,ALTERNANT">
+        <courses>
+            <course refId="Anglais-M2"/>
+            <course refId="Apprentissage-profond"/>
+            <course refId="Bases-de-données-avancées"/>
+            <course refId="Communication-M2"/>
+            <course refId="Conférences-pro-et-science"/>
+            <course refId="Droit-M2"/>
+            <course refId="Optimisation-appliquée"/>
+            <course refId="Programmation-parallèle"/>
+            <course refId="Architecture-distribuée"/>
+            <course refId="GNU-Linux"/>
+            <course refId="Initiation-R-et-D"/>
+            <course refId="Objets-connectés-et-IoT"/>
+            <course refId="Sécurité-et-réseaux"/>
+            <course refId="Technologies-pro-émergentes"/>
+            <course refId="Tests"/>
+        </courses>
+    </student>
+    <student id="student-M2-Informatique-7" label="M2-INFORMATIQUE,M2,informatique,CD,ALTERNANT">
+        <courses>
+            <course refId="Anglais-M2"/>
+            <course refId="Apprentissage-profond"/>
+            <course refId="Bases-de-données-avancées"/>
+            <course refId="Communication-M2"/>
+            <course refId="Conférences-pro-et-science"/>
+            <course refId="Droit-M2"/>
+            <course refId="Optimisation-appliquée"/>
+            <course refId="Programmation-parallèle"/>
+            <course refId="Architecture-distribuée"/>
+            <course refId="GNU-Linux"/>
+            <course refId="Initiation-R-et-D"/>
+            <course refId="Objets-connectés-et-IoT"/>
+            <course refId="Sécurité-et-réseaux"/>
+            <course refId="Technologies-pro-émergentes"/>
+            <course refId="Tests"/>
+        </courses>
+    </student>
+    <student id="student-M2-Informatique-8" label="M2-INFORMATIQUE,M2,informatique,IA">
+        <courses>
+            <course refId="Anglais-M2"/>
+            <course refId="Apprentissage-profond"/>
+            <course refId="Bases-de-données-avancées"/>
+            <course refId="Communication-M2"/>
+            <course refId="Conférences-pro-et-science"/>
+            <course refId="Droit-M2"/>
+            <course refId="Optimisation-appliquée"/>
+            <course refId="Programmation-parallèle"/>
+            <course refId="Algorithmes-intelligents"/>
+            <course refId="Approches-exactes-de-résolution"/>
+            <course refId="Métaheuristiques"/>
+            <course refId="Représentation-des-connaissances"/>
+            <course refId="Systèmes-base-de-connaissances"/>
+        </courses>
+    </student>
+    <student id="student-M2-Informatique-9" label="M2-INFORMATIQUE,M2,informatique,IA">
+        <courses>
+            <course refId="Anglais-M2"/>
+            <course refId="Apprentissage-profond"/>
+            <course refId="Bases-de-données-avancées"/>
+            <course refId="Communication-M2"/>
+            <course refId="Conférences-pro-et-science"/>
+            <course refId="Droit-M2"/>
+            <course refId="Optimisation-appliquée"/>
+            <course refId="Programmation-parallèle"/>
+            <course refId="Algorithmes-intelligents"/>
+            <course refId="Approches-exactes-de-résolution"/>
+            <course refId="Métaheuristiques"/>
+            <course refId="Représentation-des-connaissances"/>
+            <course refId="Systèmes-base-de-connaissances"/>
+        </courses>
+    </student>
+    <student id="student-M2-Informatique-10" label="M2-INFORMATIQUE,M2,informatique,IA">
+        <courses>
+            <course refId="Anglais-M2"/>
+            <course refId="Apprentissage-profond"/>
+            <course refId="Bases-de-données-avancées"/>
+            <course refId="Communication-M2"/>
+            <course refId="Conférences-pro-et-science"/>
+            <course refId="Droit-M2"/>
+            <course refId="Optimisation-appliquée"/>
+            <course refId="Programmation-parallèle"/>
+            <course refId="Algorithmes-intelligents"/>
+            <course refId="Approches-exactes-de-résolution"/>
+            <course refId="Métaheuristiques"/>
+            <course refId="Représentation-des-connaissances"/>
+            <course refId="Systèmes-base-de-connaissances"/>
+        </courses>
+    </student>
+    <student id="student-M2-Informatique-11" label="M2-INFORMATIQUE,M2,informatique,CD,ALTERNANT">
+        <courses>
+            <course refId="Anglais-M2"/>
+            <course refId="Apprentissage-profond"/>
+            <course refId="Bases-de-données-avancées"/>
+            <course refId="Communication-M2"/>
+            <course refId="Conférences-pro-et-science"/>
+            <course refId="Droit-M2"/>
+            <course refId="Optimisation-appliquée"/>
+            <course refId="Programmation-parallèle"/>
+            <course refId="Architecture-distribuée"/>
+            <course refId="GNU-Linux"/>
+            <course refId="Initiation-R-et-D"/>
+            <course refId="Objets-connectés-et-IoT"/>
+            <course refId="Sécurité-et-réseaux"/>
+            <course refId="Technologies-pro-émergentes"/>
+            <course refId="Tests"/>
+        </courses>
+    </student>
+    <student id="student-M2-Informatique-12" label="M2-INFORMATIQUE,M2,informatique,CD,ALTERNANT">
+        <courses>
+            <course refId="Anglais-M2"/>
+            <course refId="Apprentissage-profond"/>
+            <course refId="Bases-de-données-avancées"/>
+            <course refId="Communication-M2"/>
+            <course refId="Conférences-pro-et-science"/>
+            <course refId="Droit-M2"/>
+            <course refId="Optimisation-appliquée"/>
+            <course refId="Programmation-parallèle"/>
+            <course refId="Architecture-distribuée"/>
+            <course refId="GNU-Linux"/>
+            <course refId="Initiation-R-et-D"/>
+            <course refId="Objets-connectés-et-IoT"/>
+            <course refId="Sécurité-et-réseaux"/>
+            <course refId="Technologies-pro-émergentes"/>
+            <course refId="Tests"/>
+        </courses>
+    </student>
+    <student id="student-M2-Informatique-13" label="M2-INFORMATIQUE,M2,informatique,CD,ALTERNANT">
+        <courses>
+            <course refId="Anglais-M2"/>
+            <course refId="Apprentissage-profond"/>
+            <course refId="Bases-de-données-avancées"/>
+            <course refId="Communication-M2"/>
+            <course refId="Conférences-pro-et-science"/>
+            <course refId="Droit-M2"/>
+            <course refId="Optimisation-appliquée"/>
+            <course refId="Programmation-parallèle"/>
+            <course refId="Architecture-distribuée"/>
+            <course refId="GNU-Linux"/>
+            <course refId="Initiation-R-et-D"/>
+            <course refId="Objets-connectés-et-IoT"/>
+            <course refId="Sécurité-et-réseaux"/>
+            <course refId="Technologies-pro-émergentes"/>
+            <course refId="Tests"/>
+        </courses>
+    </student>
+    <student id="student-M2-Informatique-14" label="M2-INFORMATIQUE,M2,informatique,CD,ALTERNANT">
+        <courses>
+            <course refId="Anglais-M2"/>
+            <course refId="Apprentissage-profond"/>
+            <course refId="Bases-de-données-avancées"/>
+            <course refId="Communication-M2"/>
+            <course refId="Conférences-pro-et-science"/>
+            <course refId="Droit-M2"/>
+            <course refId="Optimisation-appliquée"/>
+            <course refId="Programmation-parallèle"/>
+            <course refId="Architecture-distribuée"/>
+            <course refId="GNU-Linux"/>
+            <course refId="Initiation-R-et-D"/>
+            <course refId="Objets-connectés-et-IoT"/>
+            <course refId="Sécurité-et-réseaux"/>
+            <course refId="Technologies-pro-émergentes"/>
+            <course refId="Tests"/>
+        </courses>
+    </student>
+    <student id="student-M2-Informatique-15" label="M2-INFORMATIQUE,M2,informatique,CD,ALTERNANT">
+        <courses>
+            <course refId="Anglais-M2"/>
+            <course refId="Apprentissage-profond"/>
+            <course refId="Bases-de-données-avancées"/>
+            <course refId="Communication-M2"/>
+            <course refId="Conférences-pro-et-science"/>
+            <course refId="Droit-M2"/>
+            <course refId="Optimisation-appliquée"/>
+            <course refId="Programmation-parallèle"/>
+            <course refId="Architecture-distribuée"/>
+            <course refId="GNU-Linux"/>
+            <course refId="Initiation-R-et-D"/>
+            <course refId="Objets-connectés-et-IoT"/>
+            <course refId="Sécurité-et-réseaux"/>
+            <course refId="Technologies-pro-émergentes"/>
+            <course refId="Tests"/>
+        </courses>
+    </student>
+    <student id="student-M2-Informatique-16" label="M2-INFORMATIQUE,M2,informatique,CD,ALTERNANT">
+        <courses>
+            <course refId="Anglais-M2"/>
+            <course refId="Apprentissage-profond"/>
+            <course refId="Bases-de-données-avancées"/>
+            <course refId="Communication-M2"/>
+            <course refId="Conférences-pro-et-science"/>
+            <course refId="Droit-M2"/>
+            <course refId="Optimisation-appliquée"/>
+            <course refId="Programmation-parallèle"/>
+            <course refId="Architecture-distribuée"/>
+            <course refId="GNU-Linux"/>
+            <course refId="Initiation-R-et-D"/>
+            <course refId="Objets-connectés-et-IoT"/>
+            <course refId="Sécurité-et-réseaux"/>
+            <course refId="Technologies-pro-émergentes"/>
+            <course refId="Tests"/>
+        </courses>
+    </student>
+    <student id="student-M2-Informatique-17" label="M2-INFORMATIQUE,M2,informatique,CD,ALTERNANT">
+        <courses>
+            <course refId="Anglais-M2"/>
+            <course refId="Apprentissage-profond"/>
+            <course refId="Bases-de-données-avancées"/>
+            <course refId="Communication-M2"/>
+            <course refId="Conférences-pro-et-science"/>
+            <course refId="Droit-M2"/>
+            <course refId="Optimisation-appliquée"/>
+            <course refId="Programmation-parallèle"/>
+            <course refId="Architecture-distribuée"/>
+            <course refId="GNU-Linux"/>
+            <course refId="Initiation-R-et-D"/>
+            <course refId="Objets-connectés-et-IoT"/>
+            <course refId="Sécurité-et-réseaux"/>
+            <course refId="Technologies-pro-émergentes"/>
+            <course refId="Tests"/>
+        </courses>
+    </student>
+    <student id="student-M2-Informatique-18" label="M2-INFORMATIQUE,M2,informatique,CD,ALTERNANT">
+        <courses>
+            <course refId="Anglais-M2"/>
+            <course refId="Apprentissage-profond"/>
+            <course refId="Bases-de-données-avancées"/>
+            <course refId="Communication-M2"/>
+            <course refId="Conférences-pro-et-science"/>
+            <course refId="Droit-M2"/>
+            <course refId="Optimisation-appliquée"/>
+            <course refId="Programmation-parallèle"/>
+            <course refId="Architecture-distribuée"/>
+            <course refId="GNU-Linux"/>
+            <course refId="Initiation-R-et-D"/>
+            <course refId="Objets-connectés-et-IoT"/>
+            <course refId="Sécurité-et-réseaux"/>
+            <course refId="Technologies-pro-émergentes"/>
+            <course refId="Tests"/>
+        </courses>
+    </student>
+    <student id="student-M2-Informatique-19" label="M2-INFORMATIQUE,M2,informatique,CD,ALTERNANT">
+        <courses>
+            <course refId="Anglais-M2"/>
+            <course refId="Apprentissage-profond"/>
+            <course refId="Bases-de-données-avancées"/>
+            <course refId="Communication-M2"/>
+            <course refId="Conférences-pro-et-science"/>
+            <course refId="Droit-M2"/>
+            <course refId="Optimisation-appliquée"/>
+            <course refId="Programmation-parallèle"/>
+            <course refId="Architecture-distribuée"/>
+            <course refId="GNU-Linux"/>
+            <course refId="Initiation-R-et-D"/>
+            <course refId="Objets-connectés-et-IoT"/>
+            <course refId="Sécurité-et-réseaux"/>
+            <course refId="Technologies-pro-émergentes"/>
+            <course refId="Tests"/>
+        </courses>
+    </student>
+    <student id="student-M2-Informatique-20" label="M2-INFORMATIQUE,M2,informatique,CD">
+        <courses>
+            <course refId="Anglais-M2"/>
+            <course refId="Apprentissage-profond"/>
+            <course refId="Bases-de-données-avancées"/>
+            <course refId="Communication-M2"/>
+            <course refId="Conférences-pro-et-science"/>
+            <course refId="Droit-M2"/>
+            <course refId="Optimisation-appliquée"/>
+            <course refId="Programmation-parallèle"/>
+            <course refId="Architecture-distribuée"/>
+            <course refId="GNU-Linux"/>
+            <course refId="Initiation-R-et-D"/>
+            <course refId="Objets-connectés-et-IoT"/>
+            <course refId="Sécurité-et-réseaux"/>
+            <course refId="Technologies-pro-émergentes"/>
+            <course refId="Tests"/>
+        </courses>
+    </student>
+    <student id="student-M2-Informatique-21" label="M2-INFORMATIQUE,M2,informatique,CD">
+        <courses>
+            <course refId="Anglais-M2"/>
+            <course refId="Apprentissage-profond"/>
+            <course refId="Bases-de-données-avancées"/>
+            <course refId="Communication-M2"/>
+            <course refId="Conférences-pro-et-science"/>
+            <course refId="Droit-M2"/>
+            <course refId="Optimisation-appliquée"/>
+            <course refId="Programmation-parallèle"/>
+            <course refId="Architecture-distribuée"/>
+            <course refId="GNU-Linux"/>
+            <course refId="Initiation-R-et-D"/>
+            <course refId="Objets-connectés-et-IoT"/>
+            <course refId="Sécurité-et-réseaux"/>
+            <course refId="Technologies-pro-émergentes"/>
+            <course refId="Tests"/>
+        </courses>
+    </student>
+    <student id="student-M2-Informatique-22" label="M2-INFORMATIQUE,M2,informatique,CD">
+        <courses>
+            <course refId="Anglais-M2"/>
+            <course refId="Apprentissage-profond"/>
+            <course refId="Bases-de-données-avancées"/>
+            <course refId="Communication-M2"/>
+            <course refId="Conférences-pro-et-science"/>
+            <course refId="Droit-M2"/>
+            <course refId="Optimisation-appliquée"/>
+            <course refId="Programmation-parallèle"/>
+            <course refId="Architecture-distribuée"/>
+            <course refId="GNU-Linux"/>
+            <course refId="Initiation-R-et-D"/>
+            <course refId="Objets-connectés-et-IoT"/>
+            <course refId="Sécurité-et-réseaux"/>
+            <course refId="Technologies-pro-émergentes"/>
+            <course refId="Tests"/>
+        </courses>
+    </student>
+    <student id="student-M2-Informatique-23" label="M2-INFORMATIQUE,M2,informatique,CD">
+        <courses>
+            <course refId="Anglais-M2"/>
+            <course refId="Apprentissage-profond"/>
+            <course refId="Bases-de-données-avancées"/>
+            <course refId="Communication-M2"/>
+            <course refId="Conférences-pro-et-science"/>
+            <course refId="Droit-M2"/>
+            <course refId="Optimisation-appliquée"/>
+            <course refId="Programmation-parallèle"/>
+            <course refId="Architecture-distribuée"/>
+            <course refId="GNU-Linux"/>
+            <course refId="Initiation-R-et-D"/>
+            <course refId="Objets-connectés-et-IoT"/>
+            <course refId="Sécurité-et-réseaux"/>
+            <course refId="Technologies-pro-émergentes"/>
+            <course refId="Tests"/>
+        </courses>
+    </student>
+    <student id="student-M2-Informatique-24" label="M2-INFORMATIQUE,M2,informatique,CD">
+        <courses>
+            <course refId="Anglais-M2"/>
+            <course refId="Apprentissage-profond"/>
+            <course refId="Bases-de-données-avancées"/>
+            <course refId="Communication-M2"/>
+            <course refId="Conférences-pro-et-science"/>
+            <course refId="Droit-M2"/>
+            <course refId="Optimisation-appliquée"/>
+            <course refId="Programmation-parallèle"/>
+            <course refId="Architecture-distribuée"/>
+            <course refId="GNU-Linux"/>
+            <course refId="Initiation-R-et-D"/>
+            <course refId="Objets-connectés-et-IoT"/>
+            <course refId="Sécurité-et-réseaux"/>
+            <course refId="Technologies-pro-émergentes"/>
+            <course refId="Tests"/>
+        </courses>
+    </student>
+    <student id="student-M2-Informatique-25" label="M2-INFORMATIQUE,M2,informatique,CD">
+        <courses>
+            <course refId="Anglais-M2"/>
+            <course refId="Apprentissage-profond"/>
+            <course refId="Bases-de-données-avancées"/>
+            <course refId="Communication-M2"/>
+            <course refId="Conférences-pro-et-science"/>
+            <course refId="Droit-M2"/>
+            <course refId="Optimisation-appliquée"/>
+            <course refId="Programmation-parallèle"/>
+            <course refId="Architecture-distribuée"/>
+            <course refId="GNU-Linux"/>
+            <course refId="Initiation-R-et-D"/>
+            <course refId="Objets-connectés-et-IoT"/>
+            <course refId="Sécurité-et-réseaux"/>
+            <course refId="Technologies-pro-émergentes"/>
+            <course refId="Tests"/>
+        </courses>
+    </student>
+    <student id="student-M2-Informatique-26" label="M2-INFORMATIQUE,M2,informatique,CD">
+        <courses>
+            <course refId="Anglais-M2"/>
+            <course refId="Apprentissage-profond"/>
+            <course refId="Bases-de-données-avancées"/>
+            <course refId="Communication-M2"/>
+            <course refId="Conférences-pro-et-science"/>
+            <course refId="Droit-M2"/>
+            <course refId="Optimisation-appliquée"/>
+            <course refId="Programmation-parallèle"/>
+            <course refId="Architecture-distribuée"/>
+            <course refId="GNU-Linux"/>
+            <course refId="Initiation-R-et-D"/>
+            <course refId="Objets-connectés-et-IoT"/>
+            <course refId="Sécurité-et-réseaux"/>
+            <course refId="Technologies-pro-émergentes"/>
+            <course refId="Tests"/>
+        </courses>
+    </student>
+    <student id="student-M2-Informatique-27" label="M2-INFORMATIQUE,M2,informatique,CD">
+        <courses>
+            <course refId="Anglais-M2"/>
+            <course refId="Apprentissage-profond"/>
+            <course refId="Bases-de-données-avancées"/>
+            <course refId="Communication-M2"/>
+            <course refId="Conférences-pro-et-science"/>
+            <course refId="Droit-M2"/>
+            <course refId="Optimisation-appliquée"/>
+            <course refId="Programmation-parallèle"/>
+            <course refId="Architecture-distribuée"/>
+            <course refId="GNU-Linux"/>
+            <course refId="Initiation-R-et-D"/>
+            <course refId="Objets-connectés-et-IoT"/>
+            <course refId="Sécurité-et-réseaux"/>
+            <course refId="Technologies-pro-émergentes"/>
+            <course refId="Tests"/>
+        </courses>
+    </student>

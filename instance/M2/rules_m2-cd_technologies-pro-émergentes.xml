@@ -1,0 +1,17 @@
+<rule>
+    <selector generator="(course, *)" filters="course[id='Technologies-pro-émergentes']"/>
+    <constraint name="differentWeek" type="hard">
+    </constraint>
+</rule> 
+
+<rule>
+    <selector generator="(course, *)" filters="course[id='Technologies-pro-émergentes']"/>
+    <constraint name="sameWeeklySlot" type="hard">
+    </constraint>
+</rule> 
+
+<rule>
+    <selector generator="(course, *)" filters="course[id='Technologies-pro-émergentes']"/>
+    <constraint name="sameWeekDay" type="hard">
+    </constraint>
+</rule> 

@@ -1,0 +1,53 @@
+<rule>
+    <selector generator="(class,{1,3,5})" filters="part[id='Bases-de-données-avancées-CM']"/>
+    <constraint name="sameWeeklySlot" type="hard"/>
+</rule>
+
+<rule>
+    <selector generator="(class,{1,2})" filters="part[id='Bases-de-données-avancées-TD']"/>
+    <constraint name="sameWeeklySlot" type="hard"/>
+</rule>
+
+<rule>
+    <selector generator="(class,{2,4})" filters="part[id='Bases-de-données-avancées-CM']"/>
+    <constraint name="sameWeeklySlot" type="hard"/>
+</rule>
+
+<rule>
+    <selector generator="(class,{1,3})" filters="part[id='Bases-de-données-avancées-TD']"/>
+    <constraint name="sameWeeklySlot" type="hard"/>
+</rule>
+
+<rule>
+	<selector generator="(class,{2})" filters="part[id='Bases-de-données-avancées-CM']"/>
+	<selector generator="(class,{1})" filters="part[id='Bases-de-données-avancées-TD']"/>
+	<constraint name="sequenced" type="hard"/>
+</rule>
+
+<rule>
+    <selector generator="(class,{1})" filters="part[id='Bases-de-données-avancées-TD']|class[id='Bases-de-données-avancées-TP-1A']"/>
+    <constraint name="sameWeeklySlot" type="hard"/>
+</rule>
+
+<rule>
+    <selector generator="(class,{1})" filters="part[id='Bases-de-données-avancées-TD']|class[id='Bases-de-données-avancées-TP-1B']"/>
+    <constraint name="sameWeeklySlot" type="hard"/>
+</rule>
+
+
+<rule>
+	<selector generator="(class,{4})" filters="part[id='Bases-de-données-avancées-TD']"/>
+	<selector generator="(class,{1})" filters="part[id='Bases-de-données-avancées-TP']"/>
+	<constraint name="sequenced" type="hard"/>
+</rule>
+
+
+<rule>
+	<selector generator="(class, *)" filters="course[id='Apprentissage-profond']"/>
+	<constraint name="allowedPeriod" type="hard">
+		<parameters> <!-- Lundi 11h-12h20 -->
+			<parameter name="first">43201</parameter>
+			<parameter name="last">144000</parameter>
+		</parameters>
+	</constraint>
+</rule>

@@ -1,0 +1,30 @@
+<rule>
+    <selector generator="(class, *)" filters="part[id='Sécurité-et-réseaux-CM']"/>
+    <constraint name="sameWeeklySlot" type="hard">
+    </constraint>
+</rule> 
+
+<rule>
+    <selector generator="(class, *)" filters="part[id='Sécurité-et-réseaux-TD']"/>
+    <constraint name="sameWeeklySlot" type="hard">
+    </constraint>
+</rule> 
+
+<rule>
+	<selector generator="(class,{3})" filters="part[id='Sécurité-et-réseaux-CM']"/>
+	<selector generator="(class,{1})" filters="part[id='Sécurité-et-réseaux-TD']"/>
+	<constraint name="sequenced" type="hard"/>
+</rule>
+
+<rule>
+	<selector generator="(class,{2})" filters="part[id='Sécurité-et-réseaux-CM']"/>
+	<selector generator="(class,{1})" filters="part[id='Sécurité-et-réseaux-TP']"/>
+	<constraint name="sequenced" type="hard"/>
+</rule>
+
+
+<rule>
+	<selector generator="(class,{6})" filters="part[id='Sécurité-et-réseaux-CM']"/>
+	<selector generator="(class,{1})" filters="part[id='Sécurité-et-réseaux-CC']"/>
+	<constraint name="sequenced" type="hard"/>
+</rule>

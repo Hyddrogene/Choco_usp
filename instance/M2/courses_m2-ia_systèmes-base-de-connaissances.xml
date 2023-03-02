@@ -1,0 +1,46 @@
+
+<course id="Systèmes-base-de-connaissances" label="UE,Informatique,M2,IA">
+
+    <part id="Systèmes-base-de-connaissances-CM" nrSessions="10" label="CM">
+        <classes maxHeadCount="80">
+            <class id="Systèmes-base-de-connaissances-CM-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="180"> <!-- 3h -->
+            <dailySlots>480,540,840</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>1-15</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+        	<room refId="H005" />
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="LOISEAU Stephane" nrSessions="10"/>
+        </allowedTeachers>
+    </part>
+
+    <part id="Systèmes-base-de-connaissances-CT" nrSessions="1" label="CT">
+        <classes maxHeadCount="80">
+            <class id="Systèmes-base-de-connaissances-CT-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="90"> <!-- 3h -->
+            <dailySlots>480,540,600,840</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>1-15</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+        	<room refId="H005" />
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="LOISEAU Stephane" nrSessions="1"/>
+        </allowedTeachers>
+    </part>
+
+    <!-- ========================== -->
+
+</course>

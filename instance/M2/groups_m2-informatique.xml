@@ -1,0 +1,146 @@
+<group id="m2-informatique-tp-cd-alternant" headCount="12">
+    <students>
+        <student refId="student-M2-Informatique-4" />
+        <student refId="student-M2-Informatique-6" />
+        <student refId="student-M2-Informatique-7" />
+        <student refId="student-M2-Informatique-11" />
+        <student refId="student-M2-Informatique-12" />
+        <student refId="student-M2-Informatique-13" />
+        <student refId="student-M2-Informatique-14" />
+        <student refId="student-M2-Informatique-15" />
+        <student refId="student-M2-Informatique-16" />
+        <student refId="student-M2-Informatique-17" />
+        <student refId="student-M2-Informatique-18" />
+        <student refId="student-M2-Informatique-19" />
+    </students>
+    <classes>
+          <!-- P1 -->
+          <class refId="Anglais-M2-TP-1A"/>
+          <class refId="Apprentissage-profond-CM-1"/>
+          <class refId="Apprentissage-profond-TD-1"/>
+          <class refId="Bases-de-données-avancées-CM-1"/>
+          <class refId="Bases-de-données-avancées-TD-1"/>
+          <class refId="Bases-de-données-avancées-TP-1A"/>
+          <class refId="Communication1-CM-1"/>
+          <class refId="Communication1-M2-TPA"/>
+          <class refId="Communication2-CM-1"/>
+          <class refId="Conférences-pro-et-science-long-CM-1"/>
+          <class refId="Conférences-pro-et-science-moyen-CM-1"/>
+          <class refId="Conférences-pro-et-science-THALES-CM-1"/>
+          <class refId="Conférences-pro-et-science-CAP-GEMINI-CM-1"/>
+          <class refId="Droit-M2-CM-1"/>
+          <class refId="Optimisation-appliquée-CM-1"/> 
+          <class refId="Optimisation-appliquée-TD-1"/>
+          <class refId="Optimisation-appliquée-TP-1"/>
+          <class refId="Programmation-parallèle-CM-1"/>
+          <class refId="Programmation-parallèle-TP-1A"/>
+          <class refId="Architecture-distribuée-CM-1"/> 
+          <class refId="Architecture-distribuée-TP-1"/>
+          <class refId="GNU-Linux-CM-1"/>
+          <class refId="GNU-Linux-TP-1"/>
+          <class refId="Initiation-R-et-D-CM-1"/>
+          <class refId="Initiation-R-et-D-TP-1"/>
+          <class refId="Objets-connectés-et-IoT-CM-1"/>
+          <class refId="Objets-connectés-et-IoT-TP-1"/>
+          <class refId="Sécurité-et-réseaux-CM-1"/>
+          <class refId="Sécurité-et-réseaux-TD-1"/>
+          <class refId="Sécurité-et-réseaux-TP-1"/>
+          <class refId="Sécurité-et-réseaux-CC-1"/>
+          <class refId="Technologies-pro-émergentes-CM1-1"/>
+          <class refId="Technologies-pro-émergentes-CM2-1"/>
+          <class refId="Tests-CM-1"/>
+          <class refId="Tests-TP-1"/>
+    </classes>
+</group>
+
+<group id="m2-informatique-tp-cd" headCount="9">
+    <students>
+        <student refId="student-M2-Informatique-2"/>
+        <student refId="student-M2-Informatique-20"/>
+        <student refId="student-M2-Informatique-21"/>
+        <student refId="student-M2-Informatique-22"/>
+        <student refId="student-M2-Informatique-23"/>
+        <student refId="student-M2-Informatique-24"/>
+        <student refId="student-M2-Informatique-25"/>
+        <student refId="student-M2-Informatique-26"/>
+        <student refId="student-M2-Informatique-27"/>
+    </students>
+    <classes>
+          <!-- P1 -->
+          <class refId="Anglais-M2-TP-1B"/>
+          <class refId="Apprentissage-profond-CM-1"/>
+          <class refId="Apprentissage-profond-TD-1"/>
+          <class refId="Bases-de-données-avancées-CM-1"/>
+          <class refId="Bases-de-données-avancées-TD-1"/>
+          <class refId="Bases-de-données-avancées-TP-1B"/>
+          <class refId="Communication1-CM-1"/>
+          <class refId="Communication1-M2-TPB"/>
+          <class refId="Communication2-CM-1"/>
+          <class refId="Conférences-pro-et-science-long-CM-1"/>
+          <class refId="Conférences-pro-et-science-moyen-CM-1"/>
+          <class refId="Conférences-pro-et-science-THALES-CM-1"/>
+          <class refId="Conférences-pro-et-science-CAP-GEMINI-CM-1"/>
+          <class refId="Droit-M2-CM-1"/>
+          <class refId="Optimisation-appliquée-CM-1"/> 
+          <class refId="Optimisation-appliquée-TD-1"/>
+          <class refId="Optimisation-appliquée-TP-1"/>
+          <class refId="Programmation-parallèle-CM-1"/>
+          <class refId="Programmation-parallèle-TP-1B"/>
+          <class refId="Architecture-distribuée-CM-1"/> 
+          <class refId="Architecture-distribuée-TP-1"/>
+          <class refId="GNU-Linux-CM-1"/>
+          <class refId="GNU-Linux-TP-1"/>
+          <class refId="Initiation-R-et-D-CM-1"/>
+          <class refId="Initiation-R-et-D-TP-1"/>
+          <class refId="Objets-connectés-et-IoT-CM-1"/>
+          <class refId="Objets-connectés-et-IoT-TP-1"/>
+          <class refId="Sécurité-et-réseaux-CM-1"/>
+          <class refId="Sécurité-et-réseaux-TD-1"/>
+          <class refId="Sécurité-et-réseaux-TP-1"/>
+          <class refId="Sécurité-et-réseaux-CC-1"/>
+          <class refId="Technologies-pro-émergentes-CM1-1"/>
+          <class refId="Technologies-pro-émergentes-CM2-1"/>
+          <class refId="Tests-CM-1"/>
+          <class refId="Tests-TP-1"/>
+    </classes>
+</group>
+
+<group id="m2-informatique-tp-ia" headCount="12">
+    <students>
+        <student refId="student-M2-Informatique-1"/>
+        <student refId="student-M2-Informatique-3"/>
+        <student refId="student-M2-Informatique-5"/>
+        <student refId="student-M2-Informatique-8"/>
+        <student refId="student-M2-Informatique-9"/>
+        <student refId="student-M2-Informatique-10"/>
+    </students>
+    <classes>
+          <!-- P1 -->
+          <class refId="Anglais-M2-TP-1B"/>
+          <class refId="Apprentissage-profond-CM-1"/>
+          <class refId="Apprentissage-profond-TD-1"/>
+          <class refId="Bases-de-données-avancées-CM-1"/>
+          <class refId="Bases-de-données-avancées-TD-1"/>
+          <class refId="Bases-de-données-avancées-TP-1B"/>
+          <class refId="Communication1-CM-1"/>
+          <class refId="Communication1-M2-TPB"/>
+          <class refId="Communication2-CM-1"/>
+          <class refId="Conférences-pro-et-science-long-CM-1"/>
+          <class refId="Conférences-pro-et-science-moyen-CM-1"/>
+          <class refId="Conférences-pro-et-science-THALES-CM-1"/>
+          <class refId="Conférences-pro-et-science-CAP-GEMINI-CM-1"/>
+          <class refId="Droit-M2-CM-1"/>
+          <class refId="Optimisation-appliquée-CM-1"/> 
+          <class refId="Optimisation-appliquée-TD-1"/>
+          <class refId="Optimisation-appliquée-TP-1"/>
+          <class refId="Programmation-parallèle-CM-1"/>
+          <class refId="Programmation-parallèle-TP-1B"/>
+          <class refId="Algorithmes-intelligents-CM-1"/> 
+          <class refId="Approches-exactes-de-résolution-CM-1"/> 
+          <class refId="Approches-exactes-de-résolution-CT-1"/> 
+          <class refId="Métaheuristiques-CM-1"/> 
+          <class refId="Représentation-des-connaissances-CM-1"/> 
+          <class refId="Systèmes-base-de-connaissances-CM-1"/> 
+          <class refId="Systèmes-base-de-connaissances-CT-1"/> 
+    </classes>
+</group>

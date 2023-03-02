@@ -1,0 +1,69 @@
+<!-- generated with grep -h "<teacher refId=" *.xml | sed -e "s/.*refId=/\<teacher id=/g" | sed -e "s/ nrSessions.*/ \/>/g" | sort | uniq > teachers_l1-mi-mpc.xml -->
+<teacher label="UFR-Sciences" id="AAFARANI Maha" />
+<teacher label="UFR-Sciences" id="AG ABOUBACRINE ASSADECK Mohamed Alfaki" />
+<teacher label="UFR-Sciences" id="AIT EL MEKKI Touria" />
+<teacher label="UFR-Sciences" id="AMGHAR Tassadit" />
+<teacher label="UFR-Sciences" id="ASSI Daniel" />
+<teacher label="UFR-Sciences" id="AUBERT Tiffany" />
+<teacher label="UFR-Sciences" id="BAKKI Aicha" />
+<teacher label="UFR-Sciences" id="BARICHARD Vincent" />
+<teacher label="UFR-Sciences" id="BAUTHAMY Sabrina" />
+<teacher label="UFR-Sciences" id="BEHUET Corentin" />
+<teacher label="UFR-Sciences" id="BERNARD Francois" />
+<teacher label="UFR-Sciences" id="BERNARD Francois2" /> <!-- Utiliser pour les CC communs -->
+<teacher label="UFR-Sciences" id="BOITREL Aurore" />
+<teacher label="UFR-Sciences" id="BOUDEBS Georges" />
+<teacher label="UFR-Sciences" id="BOU RAHHAL Elie" />
+<teacher label="UFR-Sciences" id="BROUQUIER Recherche" />
+<teacher label="UFR-Sciences" id="CAMPESATO Jean-Baptiste" />
+<teacher label="UFR-Sciences" id="CHAUSSEDENT Stephane" />
+<teacher label="UFR-Sciences" id="CIRET Charles" />
+<teacher label="UFR-Sciences" id="DARNIERE Jack-Luck" />
+<teacher label="UFR-Sciences" id="DARNIERE Jack-Luck2" /> <!-- Utiliser pour les CC communs -->
+<teacher label="UFR-Sciences" id="DEVRED Caroline" />
+<teacher label="UFR-Sciences" id="DIEGUEZ LODEIRO Martin" />
+<teacher label="UFR-Sciences" id="DUL Marie-Claire" />
+<teacher label="UFR-Sciences" id="EGEA Maxime" />
+<teacher label="UFR-Sciences" id="EL GHAYOURY Abdelkrim" />
+<teacher label="UFR-Sciences" id="EVAIN Laurent" />
+<teacher label="UFR-Sciences" id="EVAIN Laurent2" /> <!-- Utiliser pour les CC communs -->
+<teacher label="UFR-Sciences" id="FAHS Rayan" />
+<teacher label="UFR-Sciences" id="GARCIA Laurent" />
+<teacher label="UFR-Sciences" id="GARREAU Fabien" />
+<teacher label="UFR-Sciences" id="GAUMER Nathalie" />
+<teacher label="UFR-Sciences" id="GENEST David" />
+<teacher label="UFR-Sciences" id="GOEFFON Adrien" />
+<teacher label="UFR-Sciences" id="GOUDET Olivier" />
+<teacher label="UFR-Sciences" id="GOUJON Antoine" />
+<teacher label="UFR-Sciences" id="GRELIER Cyril" />
+<teacher label="UFR-Sciences" id="HAMIEZ Jean-Philippe" />
+<teacher label="UFR-Sciences" id="HARDMAN David" />
+<teacher label="UFR-Sciences" id="JAMIN Antoine" />
+<teacher label="UFR-Sciences" id="JAMIN Theo" />
+<teacher label="UFR-Sciences" id="KAMGAR Amir" />
+<teacher label="UFR-Sciences" id="LABATTE Jean-Marc" />
+<teacher label="UFR-Sciences" id="LARDEUX Frederic" />
+<teacher label="UFR-Sciences" id="LAUDIER Romain" />
+<teacher label="UFR-Sciences" id="LEFEVRE Claire" />
+<teacher label="UFR-Sciences" id="LEGUY Jules" />
+<teacher label="UFR-Sciences" id="LESAINT David" />
+<teacher label="UFR-Sciences" id="MARTIN-BAILLON Florestan" />
+<teacher label="UFR-Sciences" id="MASTROPASQUA TALAMO Maurizio" />
+<teacher label="UFR-Sciences" id="MENICHI Luc" />
+<teacher label="UFR-Sciences" id="MONFROY Eric" />
+<teacher label="UFR-Sciences" id="OCAFRAIN Maitena" />
+<teacher label="UFR-Sciences" id="PICAVEZ Hugues" />
+<teacher label="UFR-Sciences" id="PICQUET Virginie" />
+<teacher label="UFR-Sciences" id="POIRIER Laurent" />
+<teacher label="UFR-Sciences" id="RICHER Jean-Michel" />
+<teacher label="UFR-Sciences" id="ROULLEAU Xavier" />
+<teacher label="UFR-Sciences" id="SANCHEZ Francois" />
+<teacher label="UFR-Sciences" id="SANGUINET Lionel" />
+<teacher label="UFR-Sciences" id="SAUBION Frederic" />
+<teacher label="UFR-Sciences" id="SEMAAN Georges" />
+<teacher label="UFR-Sciences" id="SOURISSEAU Sebastien" />
+<teacher label="UFR-Sciences" id="TORRES Philippe" />
+<teacher label="UFR-Sciences" id="VASCONCELLOS Claudia" />
+<teacher label="UFR-Sciences" id="YALIN Sinan" />
+<teacher label="UFR-Sciences" id="YALIN Sinan2" /> <!-- Utiliser pour les CC communs -->
+<teacher label="UFR-Sciences" id="ZIGON Nicolas" />

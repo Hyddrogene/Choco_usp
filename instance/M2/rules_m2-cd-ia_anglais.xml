@@ -1,0 +1,27 @@
+<rule>
+    <selector generator="(class,*)" filters="part[id='Anglais-M2-TP']"/>
+    <constraint name="sameWeeklySlot" type="hard"/>
+</rule>
+
+
+<!-- periode de vacance + projet pour les non alternants week 7 8 9 -->
+<rule>
+	<selector generator="(class, *)" filters="course[label='M2'],course[label='Informatique']"/>
+	<constraint name="forbiddenPeriod" type="hard">
+		<parameters> <!-- Lundi 11h-12h20 -->
+			<parameter name="first">43201</parameter>
+			<parameter name="last">57600</parameter>
+		</parameters>
+	</constraint>
+</rule>
+
+<!-- periode de vacance + projet pour les non alternants week 15 16 17 18 -->
+<rule>
+	<selector generator="(class, *)" filters="course[label='M2'],course[label='Informatique']"/>
+	<constraint name="forbiddenPeriod" type="hard">
+		<parameters> <!-- Lundi 11h-12h20 -->
+			<parameter name="first">100800</parameter>
+			<parameter name="last">122400</parameter>
+		</parameters>
+	</constraint>
+</rule>

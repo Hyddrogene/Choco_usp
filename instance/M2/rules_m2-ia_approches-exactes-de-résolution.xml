@@ -1,0 +1,40 @@
+<rule>
+    <selector generator="(class,{1-5})" filters="part[id='Approches-exactes-de-résolution-CM']"/>
+    <constraint name="sameWeeklySlot" type="hard"/>
+</rule>
+
+<rule>
+    <selector generator="(course,{1})" filters="part[id='Approches-exactes-de-résolution-CM']|part[id='Approches-exactes-de-résolution-CT']"/>
+    <constraint name="sameWeeklySlot" type="hard"/>
+</rule>
+
+<rule>
+    <selector generator="(class,{6-10})" filters="part[id='Approches-exactes-de-résolution-CM']"/>
+    <constraint name="sameWeeklySlot" type="hard"/>
+</rule>
+
+<rule>
+    <selector generator="(class,{1-5})" filters="part[id='Approches-exactes-de-résolution-CM']"/>
+    <constraint name="allowedPeriod" type="hard">
+    	<parameters>
+    		<parameter name="first">1</parameter>
+    		<parameter name="last">72000</parameter>
+    		</parameters>
+    </constraint>
+</rule>
+
+<rule>
+    <selector generator="(class,{6-10})" filters="part[id='Approches-exactes-de-résolution-CM']"/>
+    <constraint name="allowedPeriod" type="hard">
+    	<parameters>
+    		<parameter name="first">129601</parameter>
+    		<parameter name="last">172800</parameter>
+    		</parameters>
+    </constraint>
+</rule>
+
+<rule>
+	<selector generator="(class,{5})" filters="part[id='Approches-exactes-de-résolution-CM']"/>
+	<selector generator="(class,{1})" filters="part[id='Approches-exactes-de-résolution-CT']"/>
+	<constraint name="sequenced" type="hard"/>
+</rule>

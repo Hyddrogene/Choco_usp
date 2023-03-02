@@ -23,7 +23,7 @@
 
     <part id="Technologies-pro-émergentes-CM2" nrSessions="2" label="CM">
         <classes maxHeadCount="80">
-            <class id="Technologies-pro-émergentes-CM1-1" /> 
+            <class id="Technologies-pro-émergentes-CM2-1" /> 
         </classes>
 
         <allowedSlots sessionLength="180"> <!-- 3h -->

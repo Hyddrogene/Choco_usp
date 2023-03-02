@@ -347,7 +347,7 @@ public class ModelUTP {
 		//this.instanceUTP.part_teachers.get(p)
 		for(int i = 0; i < this.instanceUTP.part_teachers.get(p).size() ;i++) {
 			int val = this.instanceUTP.part_teacher_sessions_count[p][this.instanceUTP.part_teachers.get(p).get(i)-1]/this.instanceUTP.part_nr_sessions[p];
-			//System.out.println("Part "+(p+1)+" Teacher "+this.instanceUTP.part_teachers.get(p).get(i)+" val :"+val+" serv "+this.instanceUTP.part_teacher_sessions_count[p][this.instanceUTP.part_teachers.get(p).get(i)-1]);
+			System.out.println("Part "+(p+1)+" Teacher "+(this.instanceUTP.part_teachers.get(p).get(i)-1)+" val :"+val+" serv "+this.instanceUTP.part_teacher_sessions_count[p][this.instanceUTP.part_teachers.get(p).get(i)-1]);
 			tab[i] = model.intVar("",val);
 		}
 		/*int j= 0;
@@ -363,7 +363,7 @@ public class ModelUTP {
 	 * */
 	public void teacher_service_v2() {
 		for(int p = 0; p < this.instanceUTP.nr_parts ;p++) {
-			//System.out.println("size : "+part_i_slots(this.instanceUTP.part_teachers.get(p)).length);
+			System.out.println("size : "+part_i_slots(this.instanceUTP.part_teachers.get(p)).length+" "+this.instanceUTP.part_name[p]);
 			//System.out.println("size : "+t_s_v2_cards(p).length);
 			if(this.instanceUTP.part_teachers.get(p).size() !=0 ) {
 				if(this.instanceUTP.part_session_teacher_count[p] <= 1) {
@@ -1882,7 +1882,7 @@ public class ModelUTP {
 		//this.solver.limitTime("20s");
 		//search_strategie();
 		strategie_choice();
-		//this.solver.showContradiction();
+		this.solver.showContradiction();
 		//this.solver.verboseSolving(100);
 		//this.solver.showStatisticsDuringResolution(1000);
 		this.solver.setNoLearning();

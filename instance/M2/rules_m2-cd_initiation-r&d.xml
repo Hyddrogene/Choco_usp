@@ -1,0 +1,11 @@
+<rule>
+    <selector generator="(class, *)" filters="part[id='Initiation-R-et-D-CM']"/>
+    <constraint name="differentWeek" type="hard">
+    </constraint>
+</rule> 
+
+<rule>
+	<selector generator="(class,{2})" filters="part[id='Initiation-R-et-D-CM']"/>
+	<selector generator="(class,{1})" filters="part[id='Initiation-R-et-D-TP']"/>
+	<constraint name="sequenced" type="hard"/>
+</rule>

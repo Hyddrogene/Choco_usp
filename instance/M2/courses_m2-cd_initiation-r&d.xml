@@ -1,0 +1,48 @@
+
+<course id="Initiation-R-et-D" label="UE,Informatique,M2,CD">
+
+    <part id="Initiation-R-et-D-CM" nrSessions="5" label="CM">
+        <classes maxHeadCount="80">
+            <class id="Initiation-R-et-D-CM-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="180"> <!-- 3h -->
+            <dailySlots>480,540,840</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>15-24</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+        	<room refId="H006" />
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="HAO Jin-Kao" nrSessions="1"/>
+            <teacher refId="DUPIN Nicolas" nrSessions="3"/>
+            <teacher refId="LOISEAU Stephane" nrSessions="1"/>
+        </allowedTeachers>
+    </part>
+
+    <part id="Initiation-R-et-D-TP" nrSessions="1" label="TP">
+        <classes maxHeadCount="80">
+            <class id="Initiation-R-et-D-TP-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="180"> <!-- 3h -->
+            <dailySlots>480,540,840</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>15-24</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+        	<room refId="H006" />
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+            <teacher refId="HAO Jin-Kao" nrSessions="1"/>
+        </allowedTeachers>
+    </part>
+
+    <!-- ========================== -->
+
+</course>
