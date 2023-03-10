@@ -1,0 +1,5 @@
+
+<rule>
+    <selector generator="(class,*)" filters="part[id='Conférences-professionnelles-CM']"/>
+    <constraint name="differentWeek" type="hard" />
+</rule>

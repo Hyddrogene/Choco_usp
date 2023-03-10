@@ -1,0 +1,55 @@
+<rule>
+    <selector generator="(class,*)" filters="course[id='Design-patterns']"/>
+    <constraint name="sameRooms" type="hard" />
+</rule>
+
+<rule>
+    <selector generator="(class,*)" filters="course[id='Design-patterns']"/>
+    <constraint name="sameTeachers" type="hard" />
+</rule>
+
+<rule >
+	<selector generator="(class,{1})" filters="part[id='Design-patterns-CTD']"/>
+	<selector generator="(class,{1})" filters="part[id='Design-patterns-TP']"/>
+	<constraint name="sequenced" type="hard"/>
+</rule>
+
+<rule >
+	<selector generator="(class,{2})" filters="part[id='Design-patterns-CM']"/>
+	<selector generator="(class,{1})" filters="part[id='Design-patterns-TP']"/>
+	<constraint name="sequenced" type="hard"/>
+</rule>
+
+<rule >
+	<selector generator="(class,*)" filters="part[id='Design-patterns-TP']"/>
+	<selector generator="(class,{1})" filters="part[id='Design-patterns-CC']"/>
+	<constraint name="sequenced" type="hard"/>
+</rule>
+
+<!-- =================== -->
+
+<rule>
+    <selector generator="(part, *)" filters="part[id='Design-patterns-TPA']"/>
+    <constraint name="sameWeeklySlot" type="hard" />
+</rule>
+
+<rule>
+    <selector generator="(part,*)" filters="part[id='Design-patterns-TPB']"/>
+    <constraint name="sameWeeklySlot" type="hard" />
+</rule>
+
+<rule >
+	<selector generator="(class,{1})" filters="class[id='Design-patterns-TPA']"/>
+	<selector generator="(class,{1})" filters="class[id='Design-patterns-TPB']"/>
+	<constraint name="sequenced" type="hard"/>
+</rule>
+
+<rule>
+	<selector generator="(class, *)" filters="part[id='Design-patterns-CTD']"/>
+	<constraint name="periodic" type="hard">
+		<parameters>
+			<parameter name="value">1</parameter>
+			<parameter name="unit">week</parameter>
+		</parameters>
+	</constraint>
+</rule>

@@ -1,0 +1,32 @@
+<rule>
+    <selector generator="(class,*)" filters="part[id='Genie-logiciel-CM']"/>
+    <constraint name="differentWeek" type="hard" />
+</rule>
+<rule>
+    <selector generator="(class,*)" filters="part[id='Genie-logiciel-CM']"/>
+    <constraint name="sameWeeklySlot" type="hard" />
+</rule>
+<rule>
+    <selector generator="(class,*)" filters="part[id='Genie-logiciel-TD']"/>
+    <constraint name="sameWeeklySlot" type="hard" />
+</rule>
+<rule>
+    <selector generator="(course,{1})" filters="part[id='Genie-logiciel']"/>
+    <constraint name="sameWeeklySlot" type="hard" />
+</rule>
+
+<rule>
+    <selector generator="(class,*)" filters="part[id='Genie-logiciel-TD']"/>
+    <constraint name="sameTeachers" type="hard" />
+</rule>
+
+<rule>
+    <selector generator="(class, *)" filters="course[id='Genie-logiciel']"/>
+    <constraint name="sameRooms" type="hard" />
+</rule>
+
+<rule>
+    <selector generator="(class,*)" filters="part[id='Genie-logiciel-CM']"/>
+    <selector generator="(class,{1})" filters="part[id='Genie-logiciel-TP']"/>
+    <constraint name="sequenced" type="hard" />
+</rule>

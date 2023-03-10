@@ -1,0 +1,66 @@
+<course id="Machine-learning-m1" label="UE,Informatique,M1,Option">
+
+    <part id="Machine-learning-m1-CM" nrSessions="4" label="CM">
+        <classes maxHeadCount="80">
+            <class id="Machine-learning-m1-CM-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="160">
+            <dailySlots>480,570,660,750,840,930,1020,1110</dailySlots>
+            <days>1-5</days>
+            <weeks>12-24</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+            <room refId="H007"/>
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="LAMPRIER Sylvain" nrSessions="4"/>
+        </allowedTeachers>
+    </part>
+
+    <part id="Machine-learning-m1-TP" nrSessions="4" label="TP">
+        <classes maxHeadCount="80">
+            <class id="Machine-learning-m1-TPA" /> 
+            <class id="Machine-learning-m1-TPB" /> 
+        </classes>
+
+        <allowedSlots sessionLength="160">
+            <dailySlots>480,570,660,750,840,930,1020,1110</dailySlots>
+            <days>1-5</days>
+            <weeks>12-24</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+            <room refId="H007"/>
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="LAMPRIER Sylvain" nrSessions="8"/>
+        </allowedTeachers>
+    </part>
+    <!-- ========================== -->
+
+    <!-- <part id="Machine-learning-m1-TP" nrSessions="6" label="TP">
+        <classes maxHeadCount="80">
+            <class id="Machine-learning-m1-TPA" />
+            <class id="Machine-learning-m1-TPB" /> 
+        </classes>
+
+        <allowedSlots sessionLength="120">
+            <dailySlots>480,570,660,750,840,930,1020,1110</dailySlots>
+            <days>1-5</days>
+            <weeks>1-12</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+            <room refId="H007"/>
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="LAMPRIER Sylvain" nrSessions="12"/>
+        </allowedTeachers>
+    </part>-->
+
+</course>

@@ -1,0 +1,88 @@
+
+<course id="Design-patterns" label="UE,Informatique,M1">
+
+    <part id="Design-patterns-CTD" nrSessions="6" label="CTD">
+        <classes maxHeadCount="80">
+            <class id="Design-patterns-CTD-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="160"> <!-- 2h40 -->
+            <dailySlots>480,570,660,750,840,930,1020,1110</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>1-12</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+            <room refId="H007"/>
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="GOUDET Olivier" nrSessions="6"/>
+        </allowedTeachers>
+    </part>
+
+    <!-- <part id="Design-patterns-CTD" nrSessions="1
+        7" label="CTD">
+        <classes maxHeadCount="80">
+            <class id="Design-patterns-CTD-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="120"> 
+            <dailySlots>480,570,660,750,840,930,1020,1110</dailySlots> 
+            <days>1-5</days>
+            <weeks>1-12</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+            <room refId="H007"/>
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="GRIMAULT Virginie" nrSessions="7"/>
+        </allowedTeachers>
+    </part> -->
+
+    <part id="Design-patterns-TP" nrSessions="5" label="TP">
+        <classes maxHeadCount="80">
+            <class id="Design-patterns-TPA" /> 
+            <class id="Design-patterns-TPB" /> 
+        </classes>
+
+        <allowedSlots sessionLength="240"> <!-- 4h -->
+            <dailySlots>480,570,660,750,840,930,1020,1110</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>1-12</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+            <room refId="H007"/>
+            <room refId="H113"/>
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="GOUDET Olivier" nrSessions="10"/>
+        </allowedTeachers>
+    </part>
+
+    <part id="Design-patterns-CC" nrSessions="1" label="CC">
+        <classes maxHeadCount="80">
+            <class id="Design-patterns-CC-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="160"> <!-- 4h -->
+            <dailySlots>480,570,660,750,840,930,1020,1110</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>1-12</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+            <room refId="H007"/>
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="GOUDET Olivier" nrSessions="1"/>
+        </allowedTeachers>
+    </part>
+    <!-- ========================== -->
+
+</course>

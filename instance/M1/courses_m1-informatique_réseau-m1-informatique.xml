@@ -1,0 +1,125 @@
+
+<course id="Reseau-m1-informatique" label="UE,Informatique,M1">
+
+    <part id="Reseau-m1-informatique-CM" nrSessions="4" label="CM">
+        <classes maxHeadCount="80">
+            <class id="Reseau-m1-informatique-CM-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="160"> <!-- 3h0 -->
+            <dailySlots>480,570,660,750,840,930,1020,1110</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>1-12</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+            <room refId="H007"/>
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="DA MOTA Benoit" nrSessions="4"/>
+        </allowedTeachers>
+    </part>
+
+    <!--<part id="Reseau-m1-informatique-TD" nrSessions="3" label="TD">
+        <classes maxHeadCount="80">
+            <class id="Reseau-m1-informatique-TD-1" />    
+        </classes>
+
+        <allowedSlots sessionLength="160">
+            <dailySlots>480,570,660,750,840,930,1020,1110</dailySlots>
+            <days>1-5</days>
+            <weeks>1-12</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+            <room refId="H007"/>
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="DA MOTA Benoit" nrSessions="3"/>
+        </allowedTeachers>
+    </part>-->
+
+    <part id="Reseau-m1-informatique-TP" nrSessions="6" label="TP">
+        <classes maxHeadCount="80">
+            <class id="Reseau-m1-informatique-TP-1" />    
+        </classes>
+
+        <allowedSlots sessionLength="160">
+            <dailySlots>480,570,660,750,840,930,1020,1110</dailySlots>
+            <days>1-5</days>
+            <weeks>1-12</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+            <room refId="H007"/>
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="DA MOTA Benoit" nrSessions="6"/>
+        </allowedTeachers>
+    </part>
+
+    <part id="Reseau-m1-informatique-CC" nrSessions="1" label="CC">
+        <classes maxHeadCount="80">
+            <class id="Reseau-m1-informatique-CC-1" />    
+        </classes>
+
+        <allowedSlots sessionLength="160">
+            <dailySlots>480,570,660,750,840,930,1020,1110</dailySlots>
+            <days>1-5</days>
+            <weeks>1-12</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+            <room refId="H007"/>
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="DA MOTA Benoit" nrSessions="1"/>
+        </allowedTeachers>
+    </part>
+    <!-- ========================== -->
+    <!--
+    <part id="Reseau-m1-informatique-TD" nrSessions="4" label="TD">
+        <classes maxHeadCount="80">
+            <class id="Reseau-m1-informatique-TD-1" />    
+        </classes>
+
+        <allowedSlots sessionLength="120">
+            <dailySlots>480,570,660,750,840,930,1020,1110</dailySlots>
+            <days>1-5</days>
+            <weeks>1-12</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+            <room refId="H007"/>
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="DA MOTA Benoit" nrSessions="4"/>
+        </allowedTeachers>
+    </part>
+
+    <part id="Reseau-m1-informatique-TP" nrSessions="4" label="TP">
+        <classes maxHeadCount="80">
+            <class id="Reseau-m1-informatique-TP-1" />    
+        </classes>
+
+        <allowedSlots sessionLength="120">
+            <dailySlots>480,570,660,750,840,930,1020,1110</dailySlots>
+            <days>1-5</days>
+            <weeks>1-12</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+            <room refId="H007"/>
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="DA MOTA Benoit" nrSessions="4"/>
+        </allowedTeachers>
+    </part>
+-->
+</course>

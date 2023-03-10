@@ -1,0 +1,31 @@
+<rule>
+    <selector generator="(class,*)" filters="part[id='Anglais-m1-informatique-s1-TP']"/>
+    <constraint name="periodic" type="hard">
+		<parameters>
+			<parameter name="value">1</parameter>
+			<parameter name="unit">week</parameter>
+		</parameters>
+	</constraint>
+</rule>
+
+<rule>
+    <selector generator="(class,*)" filters="part[id='Anglais-m1-informatique-s1-TP']"/>
+    <constraint name="sameRooms" type="hard" />
+</rule>
+
+<rule>
+    <selector generator="(class,*)" filters="part[id='Anglais-m1-informatique-s1-TP']"/>
+    <constraint name="sameTeachers" type="hard" />
+</rule>
+
+<rule>
+    <selector generator="(part,{1})" filters="part[id='Anglais-m1-informatique-s1-TP']"/>
+    <constraint name="sameWeekDay" type="hard" />
+</rule>
+
+
+<rule>
+    <selector generator="(class,*)" filters="part[id='Anglais-m1-informatique-s1-TP']"/>
+    <selector generator="(class,*)" filters="part[id='Anglais-m1-informatique-s1-CC']"/>
+    <constraint name="sequenced" type="hard" />
+</rule>

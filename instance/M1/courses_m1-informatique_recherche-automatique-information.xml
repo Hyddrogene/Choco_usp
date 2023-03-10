@@ -1,0 +1,125 @@
+
+<course id="Recherche-automatique-information" label="UE,Informatique,M1,Option">
+
+    <part id="Recherche-automatique-information-CM" nrSessions="4" label="CM">
+        <classes maxHeadCount="80">
+            <class id="Recherche-automatique-information-CM-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="160"> <!-- 3h00 -->
+            <dailySlots>480,570,660,750,840,930,1020,1110</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>1-12</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+            <room refId="H007"/>
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="AMGHAR Tassadit" nrSessions="4"/>
+        </allowedTeachers>
+    </part>
+
+    <part id="Recherche-automatique-information-TD" nrSessions="3" label="TD">
+        <classes maxHeadCount="80">
+            <class id="Recherche-automatique-information-TD-1" />    
+        </classes>
+
+        <allowedSlots sessionLength="160"> <!-- 4h00 -->
+            <dailySlots>480,570,660,750,840,930,1020,1110</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>1-12</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+            <room refId="H007"/>
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="AMGHAR Tassadit" nrSessions="3"/>
+        </allowedTeachers>
+    </part>
+
+    <part id="Recherche-automatique-information-TP" nrSessions="1" label="TP">
+        <classes maxHeadCount="80">
+            <class id="Recherche-automatique-information-TP-1" />    
+        </classes>
+
+        <allowedSlots sessionLength="240"> <!-- 4h -->
+            <dailySlots>480,570,660,750,840,930,1020,1110</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>1-12</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+            <room refId="H007"/>
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="AMGHAR Tassadit" nrSessions="1"/>
+        </allowedTeachers>
+    </part>
+    <!-- ========================== -->
+<!--
+    <part id="Recherche-automatique-information-CM" nrSessions="6" label="CM">
+        <classes maxHeadCount="80">
+            <class id="Recherche-automatique-information-CM-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="120"> 
+            <dailySlots>480,570,660,750,840,930,1020,1110</dailySlots>
+            <days>1-5</days>
+            <weeks>1-12</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+            <room refId="H007"/>
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="AMGHAR Tassadit" nrSessions="6"/>
+        </allowedTeachers>
+    </part>
+
+    <part id="Recherche-automatique-information-TD" nrSessions="4" label="TD">
+        <classes maxHeadCount="80">
+            <class id="Recherche-automatique-information-TD-1" />    
+        </classes>
+
+        <allowedSlots sessionLength="120">
+            <dailySlots>480,570,660,750,840,930,1020,1110</dailySlots> 
+            <days>1-5</days>
+            <weeks>1-12</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+            <room refId="H007"/>
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="AMGHAR Tassadit" nrSessions="4"/>
+        </allowedTeachers>
+    </part>
+
+    <part id="Recherche-automatique-information-TP" nrSessions="2" label="TP">
+        <classes maxHeadCount="80">
+            <class id="Recherche-automatique-information-TP-1" />    
+        </classes>
+
+        <allowedSlots sessionLength="240">
+            <dailySlots>480,570,660,750,840,930,1020,1110</dailySlots> 
+            <days>1-5</days>
+            <weeks>1-12</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+            <room refId="H007"/>
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="AMGHAR Tassadit" nrSessions="2"/>
+        </allowedTeachers>
+    </part>
+-->
+</course>

@@ -1,0 +1,33 @@
+<course id="Droit-m1" label="UE,Informatique,M1">
+
+    <part id="Droit-m1-CM" nrSessions="1" label="CM">
+        <classes maxHeadCount="80">
+            <class id="Droit-m1-CM-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="240"> <!-- 4h0 -->
+            <dailySlots>480,570,660,750,840,930,1020,1110</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>6-12</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+            <room refId="Amphi-A"/>
+            <room refId="Amphi-B"/>
+            <room refId="Amphi-D"/>
+            <room refId="Amphi-E"/>
+            <room refId="Amphi-L001"/>
+            <room refId="Amphi-L002"/>
+            <room refId="Amphi-L003"/>
+            <room refId="Amphi-L004"/>
+            <room refId="Amphi-L005"/>
+            <room refId="Amphi-L006"/>
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="DUMONT Ingrid" nrSessions="1"/>
+        </allowedTeachers>
+    </part>
+    <!-- ========================== -->
+
+</course>

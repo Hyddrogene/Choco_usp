@@ -1,0 +1,37 @@
+<rule>
+    <selector generator="(class,*)" filters="course[id='Web-avance']"/>
+    <constraint name="sameWeeklySlot" type="hard" />
+</rule>
+
+<rule>
+    <selector generator="(class,*)" filters="course[id='Web-avance']"/>
+    <constraint name="sameRooms" type="hard" />
+</rule>
+
+<rule>
+    <selector generator="(class,*)" filters="course[id='Web-avance']"/>
+    <constraint name="sameTeachers" type="hard" />
+</rule>
+
+<rule>
+    <selector generator="(class,*)" filters="part[id='Web-avance-CM']"/>
+    <selector generator="(class,*)" filters="part[id='Web-avance-TP']"/>
+    <constraint name="sequenced" type="hard" />
+</rule>
+
+<rule>
+    <selector generator="(part,{1})" filters="part[id='Web-avance-TP']"/>
+    <constraint name="sameWeekDay" type="hard" />
+</rule>
+
+<rule>
+    <selector generator="(class,*)" filters="part[id='Web-avance-CM']"/>
+    <selector generator="(class,*)" filters="part[id='Web-avance-CC']"/>
+    <constraint name="sequenced" type="hard" />
+</rule>
+
+<rule>
+    <selector generator="(class,*)" filters="part[id='Web-avance-TP']"/>
+    <selector generator="(class,*)" filters="part[id='Web-avance-CC']"/>
+    <constraint name="sequenced" type="hard" />
+</rule>

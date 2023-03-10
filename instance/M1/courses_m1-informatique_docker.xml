@@ -1,0 +1,44 @@
+<course id="Docker" label="UE,Informatique,M1,Option">
+
+    <part id="Docker-CM" nrSessions="1" label="CM">
+        <classes maxHeadCount="80">
+            <class id="Docker-CM-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="240">
+            <dailySlots>480,570,660,750,840,930,1020,1110</dailySlots>
+            <days>1-5</days>
+            <weeks>1-12</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+            <room refId="H007"/>
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="CHANTREIN Jean-Mathieu" nrSessions="1"/>
+        </allowedTeachers>
+    </part>
+
+    <part id="Docker-TP" nrSessions="5" label="TP">
+        <classes maxHeadCount="80">
+            <class id="Docker-TP-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="240">
+            <dailySlots>480,570,660,750,840,930,1020,1110</dailySlots>
+            <days>1-5</days>
+            <weeks>1-12</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+            <room refId="H007"/>
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="CHANTREIN Jean-Mathieu" nrSessions="5"/>
+        </allowedTeachers>
+    </part>
+    <!-- ========================== -->
+
+</course>

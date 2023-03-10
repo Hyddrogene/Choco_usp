@@ -1,0 +1,21 @@
+<rule>
+    <selector generator="(class,*)" filters="part[id='Optimisation-linéaire-CTD']"/>
+    <constraint name="sameRooms" type="hard" />
+</rule>
+
+<rule>
+    <selector generator="(class,*)" filters="part[id='Optimisation-linéaire-CTD']"/>
+    <constraint name="sameTeachers" type="hard" />
+</rule>
+
+<rule>
+    <selector generator="(class,*)" filters="part[id='Optimisation-linéaire-CTD']"/>
+    <constraint name="sameWeeklySlot" type="hard" />
+</rule>
+
+
+<rule>
+    <selector generator="(class,*)" filters="part[id='Optimisation-linéaire-CTD']"/>
+    <selector generator="(class,{1})" filters="part[id='Optimisation-linéaire-CC']"/>
+    <constraint name="sequenced" type="hard" />
+</rule>

@@ -1,0 +1,38 @@
+<rule>
+    <selector generator="(class,*)" filters="course[id='Optimisation-combinatoire']"/>
+    <constraint name="sameWeeklySlot" type="hard" />
+</rule>
+
+<rule>
+    <selector generator="(class,*)" filters="course[id='Optimisation-combinatoire']"/>
+    <constraint name="sameRooms" type="hard" />
+</rule>
+
+<rule>
+    <selector generator="(class,*)" filters="course[id='Optimisation-combinatoire']"/>
+    <constraint name="sameTeachers" type="hard" />
+</rule>
+
+<rule>
+    <selector generator="(class,*)" filters="part[id='Optimisation-combinatoire-CM']"/>
+    <selector generator="(class,*)" filters="part[id='Optimisation-combinatoire-TP']"/>
+    <constraint name="sequenced" type="hard" />
+</rule>
+
+
+<rule>
+    <selector generator="(class,*)" filters="part[id='Optimisation-combinatoire-TP']|part[id='Optimisation-combinatoire-CC']" />
+    <constraint name="sameWeeklySlot" type="hard" />
+</rule>
+
+<rule>
+    <selector generator="(class,*)" filters="part[id='Optimisation-combinatoire-CM']"/>
+    <selector generator="(class,{1})" filters="part[id='Optimisation-combinatoire-CC']"/>
+    <constraint name="sequenced" type="hard" />
+</rule>
+
+<rule>
+    <selector generator="(class,*)" filters="part[id='Optimisation-combinatoire-TP']"/>
+    <selector generator="(class,{1})" filters="part[id='Optimisation-combinatoire-CC']"/>
+    <constraint name="sequenced" type="hard" />
+</rule>

@@ -1,0 +1,47 @@
+
+<course id="Communication-s2" label="UE,Informatique,M1">
+
+    <part id="Communication-s2-CM" nrSessions="2" label="CM">
+        <classes maxHeadCount="80">
+            <class id="Communication-s2-CM-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="240"> <!-- 1h20 -->
+            <dailySlots>480,570,660,750,840,930,1020,1110</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>12-24</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+            <room refId="H007"/>
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="GRIMAULT Virginie" nrSessions="2"/>
+        </allowedTeachers>
+    </part>
+
+    <part id="Communication-s2-TP" nrSessions="1" label="TP">
+        <classes maxHeadCount="80">
+            <class id="Communication-s2-TPA" /> 
+            <class id="Communication-s2-TPB" /> 
+        </classes>
+
+        <allowedSlots sessionLength="240"> <!-- 1h20 -->
+            <dailySlots>480,570,660,750,840,930,1020,1110</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>12-24</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+            <room refId="H007"/>
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="GRIMAULT Virginie" nrSessions="2"/>
+        </allowedTeachers>
+    </part>
+
+    <!-- ========================== -->
+
+</course>

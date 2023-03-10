@@ -1,0 +1,26 @@
+<rule>
+    <selector generator="(class,*)" filters="course[id='Introduction-resolution-probleme']"/>
+    <constraint name="sameRooms" type="hard" />
+</rule>
+
+<rule>
+    <selector generator="(class,*)" filters="part[id='Anglais-m1-informatique-s2-TP']"/>
+    <constraint name="sameTeachers" type="hard" />
+</rule>
+
+
+<rule>
+    <selector generator="(class,{1-6})" filters="part[id='Introduction-resolution-probleme-CM']"/>
+    <constraint name="periodic" type="hard">
+        <parameter name="value">1</parameter>
+        <parameter name="unit">week</parameter>
+    </constraint>
+</rule>
+
+<rule>
+    <selector generator="(class,{7-9})" filters="part[id='Introduction-resolution-probleme-CM']"/>
+    <constraint name="periodic" type="hard">
+        <parameter name="value">1</parameter>
+        <parameter name="unit">week</parameter>
+    </constraint>
+</rule>

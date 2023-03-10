@@ -1,0 +1,51 @@
+<rule>
+    <selector generator="(class, *)" filters="course[id='Intelligence-artificielle-1']"/>
+    <constraint name="sameWeeklySlot" type="hard" />
+</rule>
+
+<rule>
+    <selector generator="(class, *)" filters="course[id='Intelligence-artificielle-1']"/>
+    <constraint name="sameTeachers" type="hard" />
+</rule>
+
+<rule>
+    <selector generator="(class, *)" filters="course[id='Intelligence-artificielle-1']"/>
+    <constraint name="sameRooms" type="hard" />
+</rule>
+
+<!-- sequenced -->
+<rule>
+    <selector generator="(class,*)" filters="part[id='Intelligence-artificielle-1-CM']"/>
+    <selector generator="(class,{1})" filters="part[id='Intelligence-artificielle-1-TD']"/>
+    <constraint name="sequenced" type="hard" />
+</rule>
+
+<rule>
+    <selector generator="(class,*)" filters="part[id='Intelligence-artificielle-1-CM']"/>
+    <selector generator="(class,{1})" filters="part[id='Intelligence-artificielle-1-TP']"/>
+    <constraint name="sequenced" type="hard" />
+</rule>
+
+<rule>
+    <selector generator="(class,*)" filters="part[id='Intelligence-artificielle-1-CM']"/>
+    <selector generator="(class,{1})" filters="part[id='Intelligence-artificielle-1-CC']"/>
+    <constraint name="sequenced" type="hard" />
+</rule>
+<!-- -->
+<rule>
+    <selector generator="(class,*)" filters="part[id='Intelligence-artificielle-1-TD']"/>
+    <selector generator="(class,{1})" filters="part[id='Intelligence-artificielle-1-TP']"/>
+    <constraint name="sequenced" type="hard" />
+</rule>
+
+<rule>
+    <selector generator="(class,*)" filters="part[id='Intelligence-artificielle-1-TD']"/>
+    <selector generator="(class,{1})" filters="part[id='Intelligence-artificielle-1-CC']"/>
+    <constraint name="sequenced" type="hard" />
+</rule>
+
+<rule>
+    <selector generator="(class,*)" filters="part[id='Intelligence-artificielle-1-TP']"/>
+    <selector generator="(class,{1})" filters="part[id='Intelligence-artificielle-1-CC']"/>
+    <constraint name="sequenced" type="hard" />
+</rule>
