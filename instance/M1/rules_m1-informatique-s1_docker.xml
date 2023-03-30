@@ -1,0 +1,25 @@
+<rule>
+    <selector generator="(class,*)" filters="course[id='Docker']"/>
+    <constraint name="sameTeachers" type="hard" />
+</rule>
+
+<rule>
+    <selector generator="(class,*)" filters="course[id='Docker']"/>
+    <constraint name="sameRooms" type="hard" />
+</rule>
+
+<rule>
+    <selector generator="(class,*)" filters="course[id='Docker']"/>
+    <constraint name="sameWeeklySlot" type="hard" />
+</rule>
+
+<rule>
+    <selector generator="(course,{1})" filters="course[id='Docker']"/>
+    <constraint name="sameWeeklySlot" type="hard" />
+</rule>
+
+<rule>
+    <selector generator="(class, *)" filters="part[id='Docker-CM']"/>
+    <selector generator="(class,{1})" filters="part[id='Docker-TP']"/>
+    <constraint name="sameWeeklySlot" type="hard" />
+</rule>

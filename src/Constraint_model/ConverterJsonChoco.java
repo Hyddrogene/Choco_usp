@@ -231,7 +231,7 @@ public class ConverterJsonChoco {
 	}//FinMethod
 	
 	public int[][] createIntArray2d(JSONObject j,String f) {
-		System.out.println(f);
+		//System.out.println(f);
 		JSONArray setArray = (JSONArray) j.get(f);
 		if(setArray.size() <= 0){return new int[0][0] ;}
 		else {

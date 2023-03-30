@@ -535,8 +535,8 @@ public class InstanceUTPArray {
 		this.session_xrooms = session_xrooms;
 		this.vars_room = vars;
 		this.var_same_room = var_same;
-		System.out.println(Arrays.toString(session_xrooms));
-		System.out.println("vars = "+vars+" var_same = "+var_same+" nr_sessions = "+nr_sessions);
+		//System.out.println(Arrays.toString(session_xrooms));
+		//System.out.println("vars = "+vars+" var_same = "+var_same+" nr_sessions = "+nr_sessions);
 	}//FinMethod
 	
 	public void sessions_xteachers() {
@@ -571,8 +571,8 @@ public class InstanceUTPArray {
 		this.session_xteachers = session_xrooms;
 		this.vars_teachers = vars;
 		this.var_same_teachers = var_same;
-		System.out.println(Arrays.toString(session_xrooms));
-		System.out.println("teacher vars = "+vars+" var_same = "+var_same+" nr_sessions = "+nr_sessions);
+		//System.out.println(Arrays.toString(session_xrooms));
+		//System.out.println("teacher vars = "+vars+" var_same = "+var_same+" nr_sessions = "+nr_sessions);
 	}//FinMethod
 	
 	public void class_rank() {

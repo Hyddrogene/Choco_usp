@@ -1,0 +1,23 @@
+<rule>
+    <selector generator="(class,*)" filters="course[id='Communication-s1']"/>
+    <constraint name="sameRooms" type="hard" />
+</rule>
+
+<rule>
+    <selector generator="(class,*)" filters="course[id='Communication-s1']"/>
+    <constraint name="sameTeachers" type="hard" />
+</rule>
+
+
+
+<rule >
+	<selector generator="(class,*)" filters="part[id='Communication-s1-CM']"/>
+	<selector generator="(class,{1})" filters="part[id='Communication-s1-TP']"/>
+	<constraint name="sequenced" type="hard"/>
+</rule>
+
+
+<rule>
+    <selector generator="(class,*)" filters="course[id='Communication-s1']"/>
+    <constraint name="differentWeek" type="hard" />
+</rule>

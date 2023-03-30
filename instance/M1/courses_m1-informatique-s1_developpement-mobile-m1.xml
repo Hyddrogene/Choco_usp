@@ -1,0 +1,66 @@
+
+<course id="Developpement-mobile-m1" label="UE,Informatique,M1">
+
+    <part id="Developpement-mobile-m1-CM" nrSessions="2" label="CM">
+        <classes maxHeadCount="80">
+            <class id="Developpement-mobile-m1-CM-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="240"> <!-- 4h0 -->
+            <dailySlots>480,570,660,750,840,930,1020,1110</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>1-19</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+            <room refId="H007-H008"/>
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="BARICHARD Vincent" nrSessions="2"/>
+        </allowedTeachers>
+    </part>
+
+    <part id="Developpement-mobile-m1-TP" nrSessions="5" label="TP">
+        <classes maxHeadCount="80">
+            <class id="Developpement-mobile-m1-TPA" /> 
+            <class id="Developpement-mobile-m1-TPB" /> 
+        </classes>
+
+        <allowedSlots sessionLength="240"> <!-- 4h -->
+            <dailySlots>480,570,660,750,840,930,1020,1110</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>1-19</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+            <room refId="H007-H008"/>
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="BARICHARD Vincent" nrSessions="10"/>
+        </allowedTeachers>
+    </part>
+
+    <part id="Developpement-mobile-m1-CC" nrSessions="1" label="CC">
+        <classes maxHeadCount="80">
+            <class id="Developpement-mobile-m1-CC-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="160"> <!-- 4h -->
+            <dailySlots>480,570,660,750,840,930,1020,1110</dailySlots> <!-- 08h00-09h20 jusqu'à 17h00-18h20 -->
+            <days>1-5</days>
+            <weeks>1-19</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+            <room refId="H007-H008"/>
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="BARICHARD Vincent" nrSessions="1"/>
+        </allowedTeachers>
+    </part>
+    <!-- ========================== -->
+
+</course>

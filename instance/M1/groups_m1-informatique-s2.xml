@@ -1,0 +1,380 @@
+<group id="m1-informatique-options1-1-options2-1" headCount="4">
+    <students>
+        <student refId="student-m1-informatique-7" />
+        <student refId="student-m1-informatique-28" />
+        <student refId="student-m1-informatique-33" />
+        <student refId="student-m1-informatique-34" />
+        
+    </students>
+    <classes>
+
+        <class refId="Anglais-m1-informatique-s2-TPB"/>
+        <class refId="Anglais-m1-informatique-s2-CC-1"/>
+
+        <class refId="Communication-s2-CM-1"/>
+        <class refId="Communication-s2-TPB"/>
+
+        <class refId="Intelligence-artificielle-2-CM-1"/>
+        <class refId="Intelligence-artificielle-2-TPB"/>
+        <class refId="Intelligence-artificielle-2-CC-1"/>
+
+        <class refId="Optimisation-combinatoire-CM-1"/>
+        <class refId="Optimisation-combinatoire-TPB"/>
+        <class refId="Optimisation-combinatoire-CC-1"/>
+
+        <class refId="Programmation-réseaux-m1-CM-1"/>
+        <class refId="Programmation-réseaux-m1-TPB"/>
+        <class refId="Programmation-réseaux-m1-CC-1"/>
+
+        <class refId="Programmation-système-m1-CM-1"/>
+        <class refId="Programmation-système-m1-TPB"/>
+        <class refId="Programmation-système-m1-CC-1"/>
+
+        <class refId="Representation-connaissances-m1-CM-1"/>
+        <class refId="Representation-connaissances-m1-TP-1"/>
+
+        <class refId="Web-avance-CM-1"/>
+        <class refId="Web-avance-TPB"/>
+        <class refId="Web-avance-CC-1"/>
+        <class refId="Web-des-données-CM-1"/>
+        <class refId="Web-des-données-TPB"/>
+        <class refId="Web-des-données-CC-1"/>
+    </classes>
+</group>
+
+<group id="m1-informatique-options1-1-options2-2" headCount="4">
+    <students>
+        <student refId="student-m1-informatique-9" />
+        <student refId="student-m1-informatique-14" />
+        <student refId="student-m1-informatique-19" />
+        <student refId="student-m1-informatique-20" />
+        
+    </students>
+    <classes>
+        <class refId="Anglais-m1-informatique-s2-TPA"/>
+        <class refId="Anglais-m1-informatique-s2-CC-1"/>
+
+        <class refId="Apprentissage-artificiel-CTD-1"/>
+        <class refId="Apprentissage-artificiel-TP-1"/>
+
+        <class refId="Communication-s2-CM-1"/>
+        <class refId="Communication-s2-TPA"/>
+
+        <class refId="Intelligence-artificielle-2-CM-1"/>
+        <class refId="Intelligence-artificielle-2-TPA"/>
+        <class refId="Intelligence-artificielle-2-CC-1"/>
+
+        <class refId="Optimisation-combinatoire-CM-1"/>
+        <class refId="Optimisation-combinatoire-TPA"/>
+        <class refId="Optimisation-combinatoire-CC-1"/>
+
+        <class refId="Programmation-réseaux-m1-CM-1"/>
+        <class refId="Programmation-réseaux-m1-TPA"/>
+        <class refId="Programmation-réseaux-m1-CC-1"/>
+        <class refId="Programmation-système-m1-CM-1"/>
+        <class refId="Programmation-système-m1-TPA"/>
+        <class refId="Programmation-système-m1-CC-1"/>
+
+        <class refId="Web-avance-CM-1"/>
+        <class refId="Web-avance-TPA"/>
+        <class refId="Web-avance-CC-1"/>
+        <class refId="Web-des-données-CM-1"/>
+        <class refId="Web-des-données-TPA"/>
+        <class refId="Web-des-données-CC-1"/>  
+         
+    </classes>
+</group>
+<group id="m1-informatique-options1-1-options2-3" headCount="4">
+    <students>
+        <student refId="student-m1-informatique-4" />
+        <student refId="student-m1-informatique-5" />
+        <student refId="student-m1-informatique-12" />
+        <student refId="student-m1-informatique-13" />
+        
+    </students>
+    <classes>
+
+        <class refId="Anglais-m1-informatique-s2-TPA"/>
+        <class refId="Anglais-m1-informatique-s2-CC-1"/>
+
+        <class refId="Communication-s2-CM-1"/>
+        <class refId="Communication-s2-TPA"/>
+
+        <class refId="Intelligence-artificielle-2-CM-1"/>
+        <class refId="Intelligence-artificielle-2-TPA"/>
+        <class refId="Intelligence-artificielle-2-CC-1"/>
+
+        <class refId="Optimisation-combinatoire-CM-1"/>
+        <class refId="Optimisation-combinatoire-TPA"/>
+        <class refId="Optimisation-combinatoire-CC-1"/>
+
+        <class refId="Programmation-réseaux-m1-CM-1"/>
+        <class refId="Programmation-réseaux-m1-TPA"/>
+        <class refId="Programmation-réseaux-m1-CC-1"/>
+        <class refId="Programmation-système-m1-CM-1"/>
+        <class refId="Programmation-système-m1-TPA"/>
+        <class refId="Programmation-système-m1-CC-1"/>
+
+        <class refId="TALN-m1-CM-1"/>
+        <class refId="TALN-m1-TP-1"/>
+        <class refId="Web-avance-CM-1"/>
+        <class refId="Web-avance-TPA"/>
+        <class refId="Web-avance-CC-1"/>
+        <class refId="Web-des-données-CM-1"/>
+        <class refId="Web-des-données-TPA"/>
+        <class refId="Web-des-données-CC-1"/>
+         
+    </classes>
+</group>
+<group id="m1-informatique-options1-2-options2-1" headCount="4">
+    <students>
+        <student refId="student-m1-informatique-15" />
+        <student refId="student-m1-informatique-21" />
+        <student refId="student-m1-informatique-22" />
+        <student refId="student-m1-informatique-30" />
+        
+    </students>
+    <classes>
+        <class refId="Anglais-m1-informatique-s2-TPA"/>
+        <class refId="Anglais-m1-informatique-s2-CC-1"/>
+
+        <class refId="Communication-s2-CM-1"/>
+        <class refId="Communication-s2-TPA"/>
+
+        <class refId="Intelligence-artificielle-2-CM-1"/>
+        <class refId="Intelligence-artificielle-2-TPA"/>
+        <class refId="Intelligence-artificielle-2-CC-1"/>
+
+        <class refId="Optimisation-combinatoire-CM-1"/>
+        <class refId="Optimisation-combinatoire-TPA"/>
+        <class refId="Optimisation-combinatoire-CC-1"/>
+
+        <class refId="Programmation-réseaux-m1-CM-1"/>
+        <class refId="Programmation-réseaux-m1-TPA"/>
+        <class refId="Programmation-réseaux-m1-CC-1"/>
+        <class refId="Programmation-système-m1-CM-1"/>
+        <class refId="Programmation-système-m1-TPA"/>
+        <class refId="Programmation-système-m1-CC-1"/>
+
+        <class refId="Representation-connaissances-m1-CM-1"/>
+        <class refId="Representation-connaissances-m1-TP-1"/>
+
+        <class refId="Web-avance-CM-1"/>
+        <class refId="Web-avance-TPA"/>
+        <class refId="Web-avance-CC-1"/>
+        <class refId="Web-des-données-CM-1"/>
+        <class refId="Web-des-données-TPA"/>
+        <class refId="Web-des-données-CC-1"/>
+         
+    </classes>
+</group>
+<group id="m1-informatique-options1-2-options2-2" headCount="4">
+    <students>
+        <student refId="student-m1-informatique-6" />
+        <student refId="student-m1-informatique-8" />
+        <student refId="student-m1-informatique-11" />
+        <student refId="student-m1-informatique-25" />
+        
+    </students>
+    <classes>
+
+        <class refId="Anglais-m1-informatique-s2-TPA"/>
+        <class refId="Anglais-m1-informatique-s2-CC-1"/>
+        <class refId="Apprentissage-artificiel-CTD-1"/>
+        <class refId="Apprentissage-artificiel-TP-1"/>
+
+        <class refId="Communication-s2-CM-1"/>
+        <class refId="Communication-s2-TPA"/>
+
+        <class refId="Intelligence-artificielle-2-CM-1"/>
+        <class refId="Intelligence-artificielle-2-TPA"/>
+        <class refId="Intelligence-artificielle-2-CC-1"/>
+
+        <class refId="Optimisation-combinatoire-CM-1"/>
+        <class refId="Optimisation-combinatoire-TPA"/>
+        <class refId="Optimisation-combinatoire-CC-1"/>
+
+        <class refId="Programmation-réseaux-m1-CM-1"/>
+        <class refId="Programmation-réseaux-m1-TPA"/>
+        <class refId="Programmation-réseaux-m1-CC-1"/>
+        <class refId="Programmation-système-m1-CM-1"/>
+        <class refId="Programmation-système-m1-TPA"/>
+        <class refId="Programmation-système-m1-CC-1"/>
+
+        <class refId="Web-avance-CM-1"/>
+        <class refId="Web-avance-TPA"/>
+        <class refId="Web-avance-CC-1"/>
+        <class refId="Web-des-données-CM-1"/>
+        <class refId="Web-des-données-TPA"/>
+        <class refId="Web-des-données-CC-1"/>
+         
+    </classes>
+</group>
+<group id="m1-informatique-options1-2-options2-3" headCount="4">
+    <students>
+        <student refId="student-m1-informatique-2" />
+        <student refId="student-m1-informatique-17" />
+        <student refId="student-m1-informatique-24" />
+        <student refId="student-m1-informatique-31" />
+        
+    </students>
+    <classes>
+        <class refId="Anglais-m1-informatique-s2-TPA"/>
+        <class refId="Anglais-m1-informatique-s2-CC-1"/>
+
+        <class refId="Communication-s2-CM-1"/>
+        <class refId="Communication-s2-TPA"/>
+
+        <class refId="Intelligence-artificielle-2-CM-1"/>
+        <class refId="Intelligence-artificielle-2-TPA"/>
+        <class refId="Intelligence-artificielle-2-CC-1"/>
+
+        <class refId="Optimisation-combinatoire-CM-1"/>
+        <class refId="Optimisation-combinatoire-TPA"/>
+        <class refId="Optimisation-combinatoire-CC-1"/>
+
+        <class refId="Programmation-réseaux-m1-CM-1"/>
+        <class refId="Programmation-réseaux-m1-TPA"/>
+        <class refId="Programmation-réseaux-m1-CC-1"/>
+        <class refId="Programmation-système-m1-CM-1"/>
+        <class refId="Programmation-système-m1-TPA"/>
+        <class refId="Programmation-système-m1-CC-1"/>
+
+        <class refId="TALN-m1-CM-1"/>
+        <class refId="TALN-m1-TP-1"/>
+        <class refId="Web-avance-CM-1"/>
+        <class refId="Web-avance-TPA"/>
+        <class refId="Web-avance-CC-1"/>
+        <class refId="Web-des-données-CM-1"/>
+        <class refId="Web-des-données-TPA"/>
+        <class refId="Web-des-données-CC-1"/>
+         
+    </classes>
+</group>
+<group id="m1-informatique-options1-3-options2-1" headCount="4">
+    <students>
+        <student refId="student-m1-informatique-3" />
+        <student refId="student-m1-informatique-23" />
+        <student refId="student-m1-informatique-27" />
+        <student refId="student-m1-informatique-32" />
+        
+    </students>
+    <classes>
+
+        <class refId="Anglais-m1-informatique-s2-TPB"/>
+        <class refId="Anglais-m1-informatique-s2-CC-1"/>
+
+        <class refId="Communication-s2-CM-1"/>
+        <class refId="Communication-s2-TPB"/>
+
+        <class refId="Intelligence-artificielle-2-CM-1"/>
+        <class refId="Intelligence-artificielle-2-TPB"/>
+        <class refId="Intelligence-artificielle-2-CC-1"/>
+
+        <class refId="Optimisation-combinatoire-CM-1"/>
+        <class refId="Optimisation-combinatoire-TPB"/>
+        <class refId="Optimisation-combinatoire-CC-1"/>
+
+        <class refId="Programmation-réseaux-m1-CM-1"/>
+        <class refId="Programmation-réseaux-m1-TPB"/>
+        <class refId="Programmation-réseaux-m1-CC-1"/>
+        <class refId="Programmation-système-m1-CM-1"/>
+        <class refId="Programmation-système-m1-TPB"/>
+        <class refId="Programmation-système-m1-CC-1"/>
+        <class refId="Representation-connaissances-m1-CM-1"/>
+        <class refId="Representation-connaissances-m1-TP-1"/>
+
+        <class refId="Web-avance-CM-1"/>
+        <class refId="Web-avance-TPB"/>
+        <class refId="Web-avance-CC-1"/>
+        <class refId="Web-des-données-CM-1"/>
+        <class refId="Web-des-données-TPB"/>
+        <class refId="Web-des-données-CC-1"/>
+                
+    </classes>
+</group>
+<group id="m1-informatique-options1-3-options2-2" headCount="4">
+    <students>
+        <student refId="student-m1-informatique-1" />
+        <student refId="student-m1-informatique-10" />
+        <student refId="student-m1-informatique-18" />
+        <student refId="student-m1-informatique-29" />
+        
+    </students>
+    <classes>
+
+        <class refId="Anglais-m1-informatique-s2-TPB"/>
+        <class refId="Anglais-m1-informatique-s2-CC-1"/>
+        <class refId="Apprentissage-artificiel-CTD-1"/>
+        <class refId="Apprentissage-artificiel-TP-1"/>
+
+        <class refId="Communication-s2-CM-1"/>
+        <class refId="Communication-s2-TPB"/>
+
+        <class refId="Intelligence-artificielle-2-CM-1"/>
+        <class refId="Intelligence-artificielle-2-TPB"/>
+        <class refId="Intelligence-artificielle-2-CC-1"/>
+
+        <class refId="Optimisation-combinatoire-CM-1"/>
+        <class refId="Optimisation-combinatoire-TPB"/>
+        <class refId="Optimisation-combinatoire-CC-1"/>
+
+        <class refId="Programmation-réseaux-m1-CM-1"/>
+        <class refId="Programmation-réseaux-m1-TPB"/>
+        <class refId="Programmation-réseaux-m1-CC-1"/>
+        <class refId="Programmation-système-m1-CM-1"/>
+        <class refId="Programmation-système-m1-TPB"/>
+        <class refId="Programmation-système-m1-CC-1"/>
+
+        <class refId="Web-avance-CM-1"/>
+        <class refId="Web-avance-TPB"/>
+        <class refId="Web-avance-CC-1"/>
+        <class refId="Web-des-données-CM-1"/>
+        <class refId="Web-des-données-TPB"/>
+        <class refId="Web-des-données-CC-1"/>  
+         
+    </classes>
+</group>
+<group id="m1-informatique-options1-3-options2-3" headCount="4">
+    <students>
+        <student refId="student-m1-informatique-16" />
+        <student refId="student-m1-informatique-26" />
+        <student refId="student-m1-informatique-35" />
+        <student refId="student-m1-informatique-36" />
+        
+    </students>
+    <classes>
+
+        <class refId="Anglais-m1-informatique-s2-TPB"/>
+        <class refId="Anglais-m1-informatique-s2-CC-1"/>
+
+        <class refId="Communication-s2-CM-1"/>
+        <class refId="Communication-s2-TPB"/>
+
+        <class refId="Intelligence-artificielle-2-CM-1"/>
+        <class refId="Intelligence-artificielle-2-TPB"/>
+        <class refId="Intelligence-artificielle-2-CC-1"/>
+
+        <class refId="Optimisation-combinatoire-CM-1"/>
+        <class refId="Optimisation-combinatoire-TPB"/>
+        <class refId="Optimisation-combinatoire-CC-1"/>
+
+        <class refId="Programmation-réseaux-m1-CM-1"/>
+        <class refId="Programmation-réseaux-m1-TPB"/>
+        <class refId="Programmation-réseaux-m1-CC-1"/>
+        <class refId="Programmation-système-m1-CM-1"/>
+        <class refId="Programmation-système-m1-TPB"/>
+        <class refId="Programmation-système-m1-CC-1"/>
+        
+        <class refId="TALN-m1-CM-1"/>
+        <class refId="TALN-m1-TP-1"/>
+
+        <class refId="Web-avance-CM-1"/>
+        <class refId="Web-avance-TPB"/>
+        <class refId="Web-avance-CC-1"/>
+        <class refId="Web-des-données-CM-1"/>
+        <class refId="Web-des-données-TPB"/>
+        <class refId="Web-des-données-CC-1"/> 
+         
+    </classes>
+</group>

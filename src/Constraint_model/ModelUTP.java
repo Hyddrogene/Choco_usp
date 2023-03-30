@@ -27,6 +27,7 @@ import org.chocosolver.solver.search.strategy.selectors.variables.FirstFail;
 import org.chocosolver.solver.search.strategy.selectors.variables.InputOrder;
 import org.chocosolver.solver.search.strategy.selectors.variables.Largest;
 import org.chocosolver.solver.search.strategy.selectors.variables.Smallest;
+import org.chocosolver.solver.search.strategy.selectors.variables.Random;
 import org.chocosolver.solver.search.strategy.selectors.variables.VariableSelector;
 import org.chocosolver.solver.search.strategy.strategy.AbstractStrategy;
 import org.chocosolver.solver.search.strategy.strategy.IntStrategy;
@@ -53,6 +54,8 @@ public class ModelUTP {
 	private int strategie_choice;
 	private StrategieBuilt strategie;
 	
+	private IntVar[] x_session;
+	
 	private double ran;
 
 	//private IntVar[] t_m_r;
@@ -63,7 +66,7 @@ public class ModelUTP {
 		this.instanceUTP = instanceUTP;
 		x_slot = new IntVar[instanceUTP.nr_sessions];
 		x_room = new IntVar[instanceUTP.nr_classes];
-		x_teacher = new IntVar[instanceUTP.nr_classes];
+		x_teacher = new IntVar[instanceUTP.nr_sessions];
 		
 		x_rooms = new IntVar[instanceUTP.nr_class_multiple_room];
 		
@@ -189,12 +192,12 @@ public class ModelUTP {
 			x_slot[i] = model.intVar("x_slot_"+(i+1),part_i_slots(this.instanceUTP.part_slots.get(this.instanceUTP.class_part[this.instanceUTP.session_class[i]-1]-1)));
 		}
 		
-		for(int i = 0; i < instanceUTP.nr_classes ;i++ ) {
-			if(this.instanceUTP.part_teachers.get(this.instanceUTP.class_part[i]-1).size() == 0) {
+		for(int i = 0; i < instanceUTP.nr_sessions ;i++ ) {
+			if(this.instanceUTP.part_teachers.get(this.instanceUTP.class_part[this.instanceUTP.session_class[i]-1]-1).size() == 0) {
 				x_teacher[i] = model.intVar("x_teacher_"+i,0);
 			}
 			else {
-				x_teacher[i] = model.intVar("x_teacher_"+i,part_i_slots(this.instanceUTP.part_teachers.get(this.instanceUTP.class_part[i]-1)));
+				x_teacher[i] = model.intVar("x_teacher_"+i,part_i_slots(this.instanceUTP.part_teachers.get(this.instanceUTP.class_part[this.instanceUTP.session_class[i]-1]-1)));
 			}
 		}
 		
@@ -288,6 +291,14 @@ public class ModelUTP {
 		}
 	}//FinMethod
 	
+	public void x_session_generator() {
+		int nr_day = this.instanceUTP.nr_days_per_week * this.instanceUTP.nr_weeks;
+		this.x_session = new IntVar[nr_day];
+		for(int i =0 ; i < nr_day ;i++) {
+			this.x_session[i] = model.intVar("x_session_d"+i,1,this.instanceUTP.nr_sessions);
+		}
+	}//FinMethod
+	
 	public void constraint() {
 		implicite_sequenced_sessions();
 		teacher_service_v2();
@@ -334,9 +345,13 @@ public class ModelUTP {
 	}//FinMethod	
 	
 	public IntVar[] t_s_v2_vars(int p) {
-		IntVar[] tab = new IntVar[this.instanceUTP.part_classes.get(p).size()];
+		IntVar[] tab = new IntVar[this.instanceUTP.part_classes.get(p).size() * this.instanceUTP.part_nr_sessions[p]];
+		int count = 0;
 		for(int i = 0; i < this.instanceUTP.part_classes.get(p).size() ;i++) {
-			tab[i] = x_teacher[this.instanceUTP.part_classes.get(p).get(i)-1];
+			for(int j = 0;j < this.instanceUTP.class_sessions.get(this.instanceUTP.part_classes.get(p).get(i)-1).size(); j++) {
+				tab[count] = x_teacher[this.instanceUTP.class_sessions.get(this.instanceUTP.part_classes.get(p).get(i)-1).get(j)-1];
+				count++;
+			}
 		}
 		//System.out.println("t.size "+tab.length);
 		return tab;
@@ -346,8 +361,8 @@ public class ModelUTP {
 		IntVar[] tab = new IntVar[this.instanceUTP.part_teachers.get(p).size()];
 		//this.instanceUTP.part_teachers.get(p)
 		for(int i = 0; i < this.instanceUTP.part_teachers.get(p).size() ;i++) {
-			int val = this.instanceUTP.part_teacher_sessions_count[p][this.instanceUTP.part_teachers.get(p).get(i)-1]/this.instanceUTP.part_nr_sessions[p];
-			System.out.println("Part "+(p+1)+" Teacher "+(this.instanceUTP.part_teachers.get(p).get(i)-1)+" val :"+val+" serv "+this.instanceUTP.part_teacher_sessions_count[p][this.instanceUTP.part_teachers.get(p).get(i)-1]);
+			int val = this.instanceUTP.part_teacher_sessions_count[p][this.instanceUTP.part_teachers.get(p).get(i)-1];///this.instanceUTP.part_nr_sessions[p];
+			//System.out.println("Part "+(p+1)+" Teacher "+(this.instanceUTP.part_teachers.get(p).get(i)-1)+" val :"+val+" serv "+this.instanceUTP.part_teacher_sessions_count[p][this.instanceUTP.part_teachers.get(p).get(i)-1]);
 			tab[i] = model.intVar("",val);
 		}
 		/*int j= 0;
@@ -363,7 +378,7 @@ public class ModelUTP {
 	 * */
 	public void teacher_service_v2() {
 		for(int p = 0; p < this.instanceUTP.nr_parts ;p++) {
-			System.out.println("size : "+part_i_slots(this.instanceUTP.part_teachers.get(p)).length+" "+this.instanceUTP.part_name[p]);
+			//System.out.println("size : "+part_i_slots(this.instanceUTP.part_teachers.get(p)).length+" "+this.instanceUTP.part_name[p]);
 			//System.out.println("size : "+t_s_v2_cards(p).length);
 			if(this.instanceUTP.part_teachers.get(p).size() !=0 ) {
 				if(this.instanceUTP.part_session_teacher_count[p] <= 1) {
@@ -445,7 +460,7 @@ public class ModelUTP {
 				//System.out.println("c : "+classe);
 				for(int k = 0; k < this.instanceUTP.class_sessions.get(classe-1).size() ;k++) {
 					tab[it] = model.intVar(0,1);
-					tabBool[it] = model.intEqView(x_teacher[classe-1], t+1);
+					tabBool[it] = model.intEqView(x_teacher[this.instanceUTP.class_sessions.get(classe-1).get(k)-1], t+1);
 					model.arithm(tab[it], "=", tabBool[it].intVar()).post(); 
 					//model.arithm(tabBool[it],"=",x_teacher[classe],"=",(t+1));
 					it++;
@@ -476,7 +491,7 @@ public class ModelUTP {
 		Vector<Integer> part_concerned =new Vector<Integer>(); 
 		for (int i = 0; i < this.instanceUTP.nr_parts ; i++) {
 			if(this.instanceUTP.part_teacher_sessions_count[i][t-1] > 0) {
-				part_service_t[i] = this.instanceUTP.part_teacher_sessions_count[i][t-1] / this.instanceUTP.part_nr_sessions[i];
+				part_service_t[i] = this.instanceUTP.part_teacher_sessions_count[i][t-1]; /// this.instanceUTP.part_nr_sessions[i];
 				part_concerned.add(i+1);
 				s_max += part_service_t[i];
 			}
@@ -486,8 +501,13 @@ public class ModelUTP {
 		IntVar[] tabTmp =new IntVar[s_max];
 		for(int i = 0; i < part_concerned.size() ;i++) {
 			for(int j = 0; j < this.instanceUTP.part_classes.get(i).size() ;j++) {//part_service_t[part_concerned.get(i)-1] ;j++) {
-				x_teacher[this.instanceUTP.part_classes.get(i).get(j)-1].eq(t).imp(tabTmp[k].eq(this.instanceUTP.part_classes.get(i).get(j))).post();	
-				k++;
+				int cl = this.instanceUTP.part_classes.get(i).get(j)-1;
+				for(int m=0; m < instanceUTP.class_sessions.get(cl).size() ;m++){
+					int sessi = instanceUTP.class_sessions.get(cl).get(m) -1;
+					x_teacher[sessi].eq(t).imp(tabTmp[k].eq(this.instanceUTP.part_classes.get(i).get(j))).post();	
+					k++;
+				}
+				
 				
 			}
 		}
@@ -834,7 +854,7 @@ public class ModelUTP {
 			for(int i = 0; i < constraint.getSessions().get(0).size() ;i++) {
 				for(int j = 0; j < unite_bound ;j++) {
 					try {
-						x_slot[constraint.getSessions().get(0).get(i)-1].removeInterval(valuePeriod[j][0], valuePeriod[j][1], solution);
+						x_slot[constraint.getSessions().get(0).get(i)-1].removeInterval(valuePeriod[j][0]-this.instanceUTP.part_session_length[this.instanceUTP.class_part[this.instanceUTP.session_class[constraint.getSessions().get(0).get(i)-1]-1]-1], valuePeriod[j][1], solution);
 					} catch (ContradictionException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
@@ -859,6 +879,11 @@ public class ModelUTP {
 	
 	
 	public void sameTeachers(ConstraintUTP constraint) {
+		IntVar[] tab = new IntVar[constraint.getSessions().get(0).size()];
+		for(int i = 0; i < constraint.getSessions().get(0).size() ;i++) {
+			tab[i] = x_teacher[constraint.getSessions().get(0).get(i)-1];
+		}
+		model.allEqual(tab).post();
 		//System.out.println();
 	}//FinMethod
 	
@@ -875,6 +900,33 @@ public class ModelUTP {
 		  int value = Integer.parseInt(this.instanceUTP.parameter_value.get(value_num).get(0));
 		  int unite = unit_value(this.instanceUTP.parameter_value.get(unite_num).get(0));
 		  int sum_val = value * unite;
+		  
+		  if(constraint.getSessions().get(0).size()>1) {
+			  for(int i = 1; i < constraint.getSessions().get(0).size() ;i++) {
+				  model.arithm(x_slot[constraint.getSessions().get(0).get(i)-1], "=", x_slot[constraint.getSessions().get(0).get(0)-1],"+",sum_val*i).post();
+			  }
+		  }
+		//System.out.println();
+	}//FinMethod
+	
+	public void soft_periodic(ConstraintUTP constraint) {
+		  //System.out.println("SOFT PERIODIC");
+		  int value_num = search_value(constraint,"value");
+		  int unite_num = search_value(constraint,"unit");
+		  //System.out.println("Val "+value_num+" unite "+unite_num);
+		  int value = Integer.parseInt(this.instanceUTP.parameter_value.get(value_num).get(0));
+		  int unite = unit_value(this.instanceUTP.parameter_value.get(unite_num).get(0));
+		  int sum_val = value * unite;
+		  
+		  IntVar[] X = new IntVar[constraint.getSessions().get(0).size()];
+		  for(int i = 0 ; i < constraint.getSessions().get(0).size() ; i++ ) {
+			  X[i] = model.intVar(1,this.instanceUTP.nr_days_per_week);
+			  
+		  }
+		  for(int i = 0; i < constraint.getSessions().get(0).size() ;i++) {
+			  //X[i] == x_slot[i]-> 
+			  //model.arithm(, filename_solution, i)
+		  }
 		  
 		  if(constraint.getSessions().get(0).size()>1) {
 			  for(int i = 1; i < constraint.getSessions().get(0).size() ;i++) {
@@ -1010,10 +1062,12 @@ public class ModelUTP {
 		 int unite = this.instanceUTP.nr_slots_per_day * this.instanceUTP.nr_days_per_week;
 		 //int unite2 = this.instanceUTP.nr_days_per_week;
 			
-		for (int i = 0; i < constraint.getSessions().get(0).size()-1 ;i++) {
-			for(int j = i+1; j < constraint.getSessions().get(0).size() ;j++) {
-				model.arithm(x_slot[constraint.getSessions().get(0).get(j)-1].mod(unite).intVar(), "=", x_slot[constraint.getSessions().get(0).get(i)-1].mod(unite).intVar()).post();
-				//precedence()
+		if(constraint.getSessions().get(0).size() > 1 ) {
+			for (int i = 0; i < constraint.getSessions().get(0).size()-1 ;i++) {
+				for(int j = i+1; j < constraint.getSessions().get(0).size() ;j++) {
+					model.arithm(x_slot[constraint.getSessions().get(0).get(j)-1].mod(unite).intVar(), "=", x_slot[constraint.getSessions().get(0).get(i)-1].mod(unite).intVar()).post();
+					//precedence()
+				}
 			}
 		}
 	}//FinMethod
@@ -1454,8 +1508,9 @@ public class ModelUTP {
 		for(int i = 0;i< label1.length;i++) {
 			label.add(i, label1[i]);
 		}
-		for(int i = 1; i <= this.instanceUTP.nr_classes ;i++) {
-			if(labelVectorExistClass(i-1,label)) {
+		for(int i = 1; i <= this.instanceUTP.nr_sessions ;i++) {
+			int cl =  this.instanceUTP.session_class[i-1]-1;
+			if(labelVectorExistClass(cl,label)) {
 				vec.add(this.x_teacher[i-1]);
 			}
 		}
@@ -1465,16 +1520,17 @@ public class ModelUTP {
 	public IntVar[] getTeacherStrategieLabelForbidden(Vector<String> forbiddenLabel) {
 		
 		Vector<IntVar> vec = new Vector<IntVar>();
-		for(int i = 1; i <= this.instanceUTP.nr_classes ;i++) {
-			if(!labelVectorExistClass(i-1,forbiddenLabel)) {
-				int part = this.instanceUTP.class_part[i-1];
+		for(int i = 1; i <= this.instanceUTP.nr_sessions ;i++) {
+			int cl =  this.instanceUTP.session_class[i-1]-1;
+			if(!labelVectorExistClass(cl,forbiddenLabel)) {
+				int part = this.instanceUTP.class_part[cl];
 				if(this.instanceUTP.part_session_teacher_count[part-1] == 1) {
 					vec.add(this.x_teacher[i-1]);
 				}
 				else {
 					//vec.add(this.x_teacher[i-1]);
 					for(int h = 0; h < this.instanceUTP.part_session_teacher_count[part-1] ;h++) {
-						vec.add(this.x_teachers[this.instanceUTP.class_position_multiple_teacher[i-1]+h]);
+						vec.add(this.x_teachers[this.instanceUTP.class_position_multiple_teacher[cl]+h]);
 					}
 				}
 			}
@@ -1523,6 +1579,9 @@ public class ModelUTP {
 		}
 		else if (vo.equals("dom_over_wdeg")) {
 			return new  DomOverWDeg<IntVar>(t,(long) this.ran);
+		}
+		else if (vo.equals("random")) {
+			return new  Random<IntVar>((long) ran);
 		}
 		else {
 			System.out.println("ERROR");
@@ -1882,7 +1941,7 @@ public class ModelUTP {
 		//this.solver.limitTime("20s");
 		//search_strategie();
 		strategie_choice();
-		this.solver.showContradiction();
+		//this.solver.showContradiction();
 		//this.solver.verboseSolving(100);
 		//this.solver.showStatisticsDuringResolution(1000);
 		this.solver.setNoLearning();
@@ -2007,6 +2066,30 @@ public class ModelUTP {
 	}//FinMethod
 	
 	
+	public String print_xml2() {
+		if(this.solution == null) {
+			return "<!-- UNSAT ->";
+		}
+		String out ="";
+		out += "<sessions>\n";
+		for(int i = 0; i<this.instanceUTP.nr_sessions;i++) {
+			int[] slot2time = slot2Time(this.solution.getIntVal(x_slot[i]));
+			out +=  "<session rank=\""+(this.instanceUTP.session_rank[i]-1)+"\" class=\""+this.instanceUTP.class_name[this.instanceUTP.session_class[i]-1]+"\">\n";
+			out += "    <startingSlot dailySlot=\""+slot2time[3]+"\" day =\""+slot2time[2]+"\" week =\""+slot2time[1]+"\" />\n";
+			if(!print_xml_room_solution(i).equals("        <room refId =\"vide\" />\n")) {
+				out += "    <rooms>\n"+print_xml_room_solution(i)+"    </rooms>\n";
+			}
+			if(!print_xml_teacher_solution(i).equals("        <teacher refId=\"vide\" />\n")) {
+				out += "    <teachers>\n"+print_xml_teacher_solution(i)+"    </teachers>\n";
+			}
+			out += "</session>\n";
+			//out +=  x_s[i]+" ";
+		}
+		out +="</sessions>\n";
+		
+		return out;
+	}//FinMethod
+	
 	public String print_xml_group_solution(int session) {
 		String out = "";
 		Vector<Integer> groups = this.instanceUTP.class_groups.get(this.instanceUTP.session_class[session]-1);
@@ -2033,7 +2116,7 @@ public class ModelUTP {
 		}
 		else {
 			if(this.instanceUTP.part_teachers.get(part-1).size() != 0) {
-				out += "        <teacher refId=\""+this.instanceUTP.teacher_name[this.solution.getIntVal(this.x_teacher[cl-1])-1]+"\" />\n";
+				out += "        <teacher refId=\""+this.instanceUTP.teacher_name[this.solution.getIntVal(this.x_teacher[session])-1]+"\" />\n";
 			}
 			
 		}
@@ -2116,6 +2199,25 @@ public class ModelUTP {
 			String out = "UNSAT";
 			return out;
 		}
+	}//FinMethod
+	
+	public String print_json() {
+		if(this.solution == null) {
+			return "{ \"solution\" : \"UNSAT\" }";
+		}
+		String out = "\"sessions\" : ";
+		for(int i = 0; i<this.instanceUTP.nr_sessions;i++) {
+			int[] slot2time = slot2Time(this.solution.getIntVal(x_slot[i]));
+			out +=  "<session rank=\""+(this.instanceUTP.session_rank[i]-1)+"\" class=\""+this.instanceUTP.class_name[this.instanceUTP.session_class[i]-1]+"\">\n";
+			out += "    <startingSlot dailySlot=\""+slot2time[3]+"\" day =\""+slot2time[2]+"\" week =\""+slot2time[1]+"\" />\n";
+			out += "    <rooms>\n"+print_xml_room_solution(i)+"    </rooms>\n";
+			out += "    <teachers>\n"+print_xml_teacher_solution(i)+"    </teachers>\n";
+			out += "</session>\n";
+			//out +=  x_s[i]+" ";
+		}
+		out +="</sessions>\n";
+		
+		return out;
 	}//FinMethod
 	
 }//FinClass

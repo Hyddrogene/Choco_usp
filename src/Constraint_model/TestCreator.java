@@ -90,7 +90,7 @@ public class TestCreator {
 		utp.setStrategie(sb);
 		utp.solve();
 		if(isXML) {
-			utp.write_solution_file(utp.print_xml(),isXML,this.filenameXML);
+			utp.write_solution_file(utp.print_xml2(),isXML,this.filenameXML);
 		}
 		else {
 			utp.write_solution_file(utp.print(),isXML,this.filenameXML);

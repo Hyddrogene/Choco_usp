@@ -1,0 +1,34 @@
+<rule>
+    <selector generator="(class,*)" filters="course[id='Reseau-m1-informatique']"/>
+    <constraint name="sameRooms" type="hard" />
+</rule>
+
+<rule>
+    <selector generator="(class,*)" filters="course[id='Reseau-m1-informatique']"/>
+    <constraint name="sameTeachers" type="hard" />
+</rule>
+
+<rule>
+    <selector generator="(class,*)" filters="part[id='Reseau-m1-informatique-TP']"/>
+    <constraint name="sameWeeklySlot" type="hard" />
+</rule>
+
+<rule>
+    <selector generator="(class, *)" filters="part[id='Reseau-m1-informatique-CM']"/>
+    <constraint name="periodic" type="hard">
+        <parameter name="value">1</parameter>
+        <parameter name="unit">week</parameter>
+    </constraint>
+</rule>
+
+<rule>
+    <selector generator="(class,*)" filters="part[id='Reseau-m1-informatique-CM']"/>
+    <selector generator="(class,{1})" filters="part[id='Reseau-m1-informatique-TP']"/>
+    <constraint name="sequenced" type="hard" />
+</rule>
+
+<rule>
+    <selector generator="(class,*)" filters="part[id='Reseau-m1-informatique-CM']"/>
+    <selector generator="(class,{1})" filters="part[id='Reseau-m1-informatique-CC']"/>
+    <constraint name="sequenced" type="hard" />
+</rule>

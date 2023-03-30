@@ -24,16 +24,26 @@ public class Exec {
 		filename = "/home/etud/eclipse-workspace/Constraint_model/instance/ua_l1-l2_p1-p6_l3info_v5_hard_extension_v2.json";
 		filenamexml = "/home/etud/eclipse-workspace/Constraint_model/instance/ua_l1-l2_p1-p6_l3info_v5bis.xml";
 		
-		//filename = "/home/etud/eclipse-workspace/Constraint_model/instance/M2/ua_m2-informatique-s1-s2_extension_v2.json";
-		//filenamexml = "/home/etud/eclipse-workspace/Constraint_model/instance/M2/ua_m2-informatique-s1-s2Bis.xml";
+		filename = "/home/etud/eclipse-workspace/Constraint_model/instance/M2/ua_m2-informatique-s1-s2_extension_v2.json";
+		filenamexml = "/home/etud/eclipse-workspace/Constraint_model/instance/M2/ua_m2-informatique-s1-s2Bis.xml";
 
+		filename = "/home/etud/eclipse-workspace/Constraint_model/instance/M1/ua_m1-informatique-s1-s2_extension_v2.json";
+		filenamexml = "/home/etud/eclipse-workspace/Constraint_model/instance/M1/ua_m1-informatique-s1-s2-bis.xml";
+		
+		filename = "/home/etud/timetabling/tools/tools_php/ua_m1-informatique-s1_extension_v2.json";
+		filenamexml = "/home/etud/timetabling/tools/tools_php/ua_m1-informatique-s1.xml";
+
+		filename = "/home/etud/timetabling/tools/tools_php/ua_l1-l2_p1-p6_l3info_m1info-s1_m2info-s1-s2_v1_extension_v2.json";
+		filenamexml = "/home/etud/eclipse-workspace/Constraint_model/instance/ua_l1-l2_p1-p6_l3info_m1info-s1_m2info-s1-s2_v1_bis.xml";
+		filenamexml = "/home/etud/timetabling/tools/tools_php/ua_l1-l2_p1-p6_l3info_m1info-s1_m2info-s1-s2_v1.xml";
 		
 		//filename = "/home/etud/eclipse-workspace/Constraint_model/instance/ua_l3info_2021_bdd_dw-noPR_opt_plf_anglais_extension_v2.json";
 		//filenamexml = "/home/etud/eclipse-workspace/Constraint_model/instance/ua_l3info_2021_bdd_dw-noPR_opt_plf_anglais.xml";
 		
 		String strategie1 = "/home/etud/testdestratégie.json";
-		//strategie1 = "/home/etud/test_strategie_v2.json";
+		strategie1 = "/home/etud/test_strategie_v2.json";
 		//strategie1 = "/home/etud/strategie_master.json";
+		//strategie1 = "/home/etud/test_strategie_v3.json";
 
 		TestCreator tc = new TestCreator(filename,filenamexml,isXML);
 		tc.runTest(strategie1);
@@ -41,7 +51,7 @@ public class Exec {
 		/*
 		ConverterJsonChoco g = new ConverterJsonChoco(filename);
 		g.CreateInstance();
-		
+
 		//int n = 4;//size
 		//ModelnQueen nqueen = new ModelnQueen(n);
 		//nqueen.solve();
@@ -63,7 +73,6 @@ public class Exec {
 		}
 		System.out.println("Finish");*/
 		//GraphUTP gutp = new GraphUTP(g.getInstanceUTPArray());
-		
 
 	}//FinMethod
 

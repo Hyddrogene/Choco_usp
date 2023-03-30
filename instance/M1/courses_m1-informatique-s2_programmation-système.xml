@@ -1,0 +1,88 @@
+<course id="Programmation-système-m1" label="UE,Informatique,M1">
+
+    <part id="Programmation-système-m1-CM" nrSessions="3" label="CM">
+        <classes maxHeadCount="80">
+            <class id="Programmation-système-m1-CM-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="160">
+            <dailySlots>480,570,660,750,840,930,1020,1110</dailySlots>
+            <days>1-5</days>
+            <weeks>20-33</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+            <room refId="H007-H008"/>
+            <room refId="H113"/>
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="GENEST David" nrSessions="3"/>
+        </allowedTeachers>
+    </part>
+
+    <part id="Programmation-système-m1-TP" nrSessions="4" label="TP">
+        <classes maxHeadCount="80">
+            <class id="Programmation-système-m1-TPA" /> 
+            <class id="Programmation-système-m1-TPB" /> 
+        </classes>
+
+        <allowedSlots sessionLength="160">
+            <dailySlots>480,570,660,750,840,930,1020,1110</dailySlots>
+            <days>1-5</days>
+            <weeks>20-33</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+            <room refId="H007-H008"/>
+            <room refId="H113"/>
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="GENEST David" nrSessions="8"/>
+        </allowedTeachers>
+    </part>
+
+    <part id="Programmation-système-m1-CC" nrSessions="1" label="CC">
+        <classes maxHeadCount="80">
+            <class id="Programmation-système-m1-CC-1" /> 
+        </classes>
+
+        <allowedSlots sessionLength="80">
+            <dailySlots>480,570,660,750,840,930,1020,1110</dailySlots>
+            <days>1-5</days>
+            <weeks>20-33</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+            <room refId="H007-H008"/>
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="GENEST David" nrSessions="1"/>
+        </allowedTeachers>
+    </part>
+    <!-- ========================== -->
+<!--
+    <part id="Programmation-système-m1-TP" nrSessions="6" label="TP">
+        <classes maxHeadCount="80">
+            <class id="Programmation-système-m1-TPA" /> 
+            <class id="Programmation-système-m1-TPB" /> 
+        </classes>
+
+        <allowedSlots sessionLength="120">
+            <dailySlots>480,570,660,750,840,930,1020,1110</dailySlots>
+            <days>1-5</days>
+            <weeks>1-12</weeks> 
+        </allowedSlots>
+
+        <allowedRooms sessionRooms="single">
+            <room refId="H007-H008"/>
+        </allowedRooms>
+
+        <allowedTeachers sessionTeachers="1">
+			<teacher refId="GENEST David" nrSessions="6"/>
+        </allowedTeachers>
+    </part>
+-->
+</course>

@@ -485,9 +485,9 @@
         <class refId="Programmation-système-m1-CM-1"/>
         <class refId="Programmation-système-m1-TPB"/>
         <class refId="Programmation-système-m1-CC-1"/>
-        <class refId="Recherche-automatique-information-CM-1"/>
+        <!--<class refId="Recherche-automatique-information-CM-1"/>
         <class refId="Recherche-automatique-information-TD-1"/>
-        <class refId="Recherche-automatique-information-TP-1"/>
+        <class refId="Recherche-automatique-information-TP-1"/>-->
         <class refId="Web-avance-CM-1"/>
         <class refId="Web-avance-TPB"/>
         <class refId="Web-avance-CC-1"/>

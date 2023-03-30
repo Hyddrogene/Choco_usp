@@ -1,5 +1,4 @@
-    <students>
-        <student id="student-m1-informatique-1" label="M1-INFORMATIQUE,M1,informatique,options1-3,options2-2">
+ <student id="student-m1-informatique-1" label="M1-INFORMATIQUE,M1,informatique,options1-3,options2-2">
             <courses>
                 <course refId="Anglais-m1-informatique-s1"/>
                 <course refId="Anglais-m1-informatique-s2"/> 
@@ -872,4 +871,3 @@
                 <course refId="TALN-m1"/>
             </courses>
         </student>
-    </students>

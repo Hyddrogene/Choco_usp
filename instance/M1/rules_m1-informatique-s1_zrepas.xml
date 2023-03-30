@@ -1,0 +1,73 @@
+<rule>
+	<selector generator="(courses, *)" filters=""/>
+	<constraint name="forbiddenPeriod" type="hard">
+		<parameters> <!-- Lundi 11h-12h20 -->
+			<parameter name="first">660</parameter>
+			<parameter name="last">740</parameter>
+			<parameter name="period">week</parameter>
+		</parameters>
+	</constraint>
+</rule>
+<rule>
+	<selector generator="(courses, *)" filters=""/>
+	<constraint name="forbiddenPeriod" type="hard">
+		<parameters> <!-- Mardi 12h30-13h50 -->
+			<parameter name="first">2190</parameter>
+			<parameter name="last">2270</parameter>
+			<parameter name="period">week</parameter>
+		</parameters>
+	</constraint>
+</rule>
+<rule>
+	<selector generator="(courses, *)" filters=""/>
+	<constraint name="forbiddenPeriod" type="hard">
+		<parameters> <!-- Mercredi 11h-12h20 -->
+			<parameter name="first">3540</parameter>
+			<parameter name="last">3620</parameter>
+			<parameter name="period">week</parameter>
+		</parameters>
+	</constraint>
+</rule>
+<rule>
+	<selector generator="(courses, *)" filters=""/>
+	<constraint name="forbiddenPeriod" type="hard">
+		<parameters> <!-- Jeudi 12h30-13h50 -->
+			<parameter name="first">5070</parameter>
+			<parameter name="last">5150</parameter>
+			<parameter name="period">week</parameter>
+		</parameters>
+	</constraint>
+</rule>
+<rule>
+	<selector generator="(courses, *)" filters=""/>
+	<constraint name="forbiddenPeriod" type="hard">
+		<parameters> <!-- Vendredi 11h-12h20 -->
+			<parameter name="first">6420</parameter>
+			<parameter name="last">6500</parameter>
+			<parameter name="period">week</parameter>
+		</parameters>
+	</constraint>
+</rule>
+
+
+<rule >
+	<selector generator="(class, *)" filters="course[label='M1'],course[label='Informatique']"/>
+	<constraint name="forbiddenPeriod" type="hard">
+		<parameters> <!-- Lundi 11h-12h20 -->
+			<parameter name="first">1020</parameter>
+			<parameter name="last">1440</parameter>
+            <parameter name="period">day</parameter>
+		</parameters>
+	</constraint>
+</rule>
+
+<!--<rule >
+	<selector generator="(class, *)" filters="course[label='M1'],course[label='Informatique']"/>
+	<constraint name="forbiddenPeriod" type="hard">
+		<parameters>
+			<parameter name="first">480</parameter>
+			<parameter name="last">540</parameter>
+            <parameter name="period">day</parameter>
+		</parameters>
+	</constraint>
+</rule>-->
