@@ -1,0 +1,17 @@
+getSeed​;0
+getNbCstrs;​73736
+getCreationTime;​1,569
+getNbIntVar​;14204
+getNbBoolVar;​73706
+getNbRealVar​;0
+getSetVar​;0
+getNbVar​s;87910
+getResolutionTime;18,376
+getNrSolutions;1
+getNodeCount;2693
+getFailCount;933
+getBackTrackCount​;1118
+getBackjumpCount;0
+getCurrentDepth;2508
+getDecisionCount;2692
+getRestartCount;0

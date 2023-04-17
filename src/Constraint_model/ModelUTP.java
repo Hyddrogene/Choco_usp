@@ -2,10 +2,13 @@ package Constraint_model;
 
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.nio.file.Files;
+import java.text.DecimalFormat;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Vector;
@@ -45,6 +48,7 @@ public class ModelUTP {
 	private IntVar[] x_room;
 	//private SetVar[] x_room;
 	private IntVar[] x_slot;
+	private IntVar[] y_slot;
 	private Solution solution;
 	//private StatisticUtils statistics;
 	private Solver solver;
@@ -65,6 +69,7 @@ public class ModelUTP {
 		this.strategie_choice = 1;//TODO
 		this.instanceUTP = instanceUTP;
 		x_slot = new IntVar[instanceUTP.nr_sessions];
+		y_slot = new IntVar[instanceUTP.nr_sessions];
 		x_room = new IntVar[instanceUTP.nr_classes];
 		x_teacher = new IntVar[instanceUTP.nr_sessions];
 		
@@ -138,6 +143,49 @@ public class ModelUTP {
 			val += this.instanceUTP.part_session_teacher_count[this.instanceUTP.class_part[this.instanceUTP.class_multiple_teacher[c]-1]-1];
 		}
 	}//FinMethod
+	public IntVar[] t;
+	public void testgcc() {
+		int y =4;//instanceUTP.nr_days_per_week * (instanceUTP.nr_weeks-17);
+		
+		Vector<Integer> ts = new Vector<Integer>();
+		int cunt= 0;
+		for(int  i = 0; i < instanceUTP.nr_classes ; i++) {
+			int u = 1;
+			int p = instanceUTP.class_part[i]-1;
+			if (!labelExist(p) && this.instanceUTP.part_weeks.get(p).get(0) == 1) {
+				if (instanceUTP.class_sessions.get(i).size() < u) {
+					u = instanceUTP.class_sessions.get(i).size();
+				}
+				if(instanceUTP.class_sessions.get(i).get(0) >= 763) {
+					for(int yi = 0; yi < u ;yi++ ){
+						ts.add(instanceUTP.class_sessions.get(i).get(yi)-1);
+						cunt++;
+					}
+				}
+
+			}
+		}
+		t = new IntVar[cunt];
+		System.out.println(cunt+"i willbeback");
+		for(int i = 0 ; i < cunt ;i++) {
+			t[i] = model.intVar(1,120);
+			
+			model.arithm(t[i], "=", x_slot[ts.get(i)].sub(1).div(instanceUTP.nr_slots_per_day).add(1).intVar()).post();;
+		}
+		int[] kk = new int[y];
+		int[] kk0 = new int[y];
+		IntVar[] kkmax = new IntVar[y];
+		for(int i = 0 ; i < y ; i++) {
+			kk[i] = i+1; 
+			kk0[i] = 0;
+			kkmax[i] = model.intVar(34);
+		}
+		kk[y-1] = 4; 
+		
+		model.globalCardinality(t, kk, kkmax, false).post();;
+		
+		
+	}//FinMethod
 	
 	public void initMultpileVariables() {
 		int j = 0;
@@ -185,11 +233,35 @@ public class ModelUTP {
 		
 	}//FinMethod
 	
+	public void decalage() {
+		int d = instanceUTP.nr_days_per_week;
+		int s = instanceUTP.nr_slots_per_day;
+		for(int cl = 0 ; cl < this.instanceUTP.nr_classes ; cl++) {
+			if(!labelExist(this.instanceUTP.class_part[cl]-1) && this.instanceUTP.class_sessions.get(cl).size() >=4) {
+				for(int j = 0 ; j < 4 ;j++) {
+					model.arithm(
+							x_slot[this.instanceUTP.class_sessions.get(cl).get(j)-1].sub(1).div(s).mod(d).add(1).intVar(),
+							"=",
+							y_slot[this.instanceUTP.class_sessions.get(cl).get(j)-1].sub(1).div(s).mod(d).add(j).mod(d).add(1).intVar()).post();;;
+				
+				}
+			}
+			
+		}
+		
+	}//FinMethod
+	
 	public void initVariables() {
 		for(int i = 0; i < instanceUTP.nr_sessions ;i++ ) {
 			//x_slot[i] = model.intVar("x_slot_"+i,1,this.instanceUTP.nr_slot());
 			//Integer[] t = this.instanceUTP.part_slots.get(i).toArray(new Integer[this.instanceUTP.part_slots.get(i).size()]);
 			x_slot[i] = model.intVar("x_slot_"+(i+1),part_i_slots(this.instanceUTP.part_slots.get(this.instanceUTP.class_part[this.instanceUTP.session_class[i]-1]-1)));
+		}
+		
+		for(int i = 0; i < instanceUTP.nr_sessions ;i++ ) {
+			//x_slot[i] = model.intVar("x_slot_"+i,1,this.instanceUTP.nr_slot());
+			//Integer[] t = this.instanceUTP.part_slots.get(i).toArray(new Integer[this.instanceUTP.part_slots.get(i).size()]);
+			y_slot[i] = model.intVar("y_slot_"+(i+1),part_i_slots(this.instanceUTP.part_slots.get(this.instanceUTP.class_part[this.instanceUTP.session_class[i]-1]-1)));
 		}
 		
 		for(int i = 0; i < instanceUTP.nr_sessions ;i++ ) {
@@ -206,7 +278,7 @@ public class ModelUTP {
 				x_room[i] = model.intVar("x_room_"+i,0);
 			}
 			else {
-				x_room[i] = model.intVar("x_room_"+i,part_i_slots(this.instanceUTP.part_rooms.get(this.instanceUTP.class_part[i]-1)));
+				x_room[i] = model.intVar("x_room_"+instanceUTP.class_name[i]+"_"+i,part_i_slots(this.instanceUTP.part_rooms.get(this.instanceUTP.class_part[i]-1)));
 			}
 			
 		}
@@ -230,7 +302,8 @@ public class ModelUTP {
 	public void constraint_day_share(int part) {
 		if(this.instanceUTP.group_of_classes_eq.get(part).size() == 3) {
 			//int[] day = new int[]{1,2,4};
-			int[] day = new int[]{1,1250,2500};
+			//int[] day = new int[]{1,1250,2500};
+			int[] day = new int[]{1,1250,3000};
 			//int[] day = new int[]{1,3000,6000};
 
 			for(int p_bench = 0; p_bench < day.length ;p_bench++) {
@@ -309,6 +382,8 @@ public class ModelUTP {
 		//cardinal_x_rooms();
 		flatten_constraint();
 		bench_class_equilibrate();
+		//decalage();
+		//testgcc();
 		//search_strategie();
 	}//FinMethod
 	
@@ -644,19 +719,63 @@ public class ModelUTP {
 	//======================
 	
 	//======================
-	
+	public IntVar[] tttt;
 	public Task[] sessions_of_group_disjun_v2(int t) {
 		int max_size = this.instanceUTP.group_sessions.get(t).size();
 		Task[] tab = new Task[max_size];
+		tttt = new IntVar[max_size];
 		int it = 0;
 		for(int i = 0; i < this.instanceUTP.group_sessions.get(t).size() ;i++) {
 			tab[it] = model.taskVar(x_slot[this.instanceUTP.group_sessions.get(t).get(i)-1],this.instanceUTP.part_session_length[this.instanceUTP.class_part[this.instanceUTP.session_class[this.instanceUTP.group_sessions.get(t).get(i)-1]-1]-1]);
+			tttt[it] = tab[it].getStart();
 			it++;
 		}
 		//System.out.println("y : "+it);
 		return tab;
 		
 	}//FinMethod
+	
+	public IntVar[] sessions_of_group_disjun_v2_intvar(int t) {
+		int max_size = this.instanceUTP.group_sessions.get(t).size();
+		IntVar[] tab = new IntVar[max_size];
+		int it = 0;
+		for(int i = 0; i < this.instanceUTP.group_sessions.get(t).size() ;i++) {
+			tab[it] = x_slot[this.instanceUTP.group_sessions.get(t).get(i)-1];
+			it++;
+		}
+		//System.out.println("y : "+it);
+		return tab;
+		
+	}//FinMethod
+
+	public IntVar[] sessions_of_group_disjun_v2_intvar_crtl(int t) {
+
+		int maxinterv = 50;
+		int mininterv = 30;
+		int intver = maxinterv-mininterv+1;
+		
+		int p = 0;
+		int max_size = this.instanceUTP.group_sessions.get(t).size();
+		IntVar[] tab = new IntVar[max_size-intver];
+		int it = 0;
+		System.out.println("maxsize = "+max_size);
+		String out = "";
+		
+		for(int i = p; i < max_size ;i++) {
+			if(i < mininterv || i > maxinterv) {
+				tab[it] = x_slot[this.instanceUTP.group_sessions.get(t).get(i)-1];
+				it++;
+			}
+			else {
+				out+=this.instanceUTP.group_sessions.get(t).get(i)+" ";
+			}
+		}
+		//System.out.println("y : "+it);
+		System.out.println("problem = "+out);
+		return tab;
+		
+	}//FinMethod
+	
 	
 	public void disjunctive_group_v2() {
 		for(int g = 0; g < this.instanceUTP.nr_groups ;g++) {
@@ -667,8 +786,24 @@ public class ModelUTP {
 				//System.out.println("heigh : "+generate_heigth(t).length);
 				//Disjunctive
 				model.cumulative(sessions_of_group_disjun_v2(g),heights,model.intVar(1)).post();
+				if(g < 7 || g > 12) {
+					System.out.println(g);
+					//model.allDifferent(tttt,"BC").post();;
+					//model.allDifferent(sessions_of_group_disjun_v2_intvar(g)).post();;
+				}
+				else {
+				String out = "";
+				for(int i = 0; i < this.instanceUTP.group_sessions.get(g).size() ;i++) {
+					out+=this.instanceUTP.group_sessions.get(g).get(i)+" ";
+				}
+				System.out.println(out);
+				//model.allDifferent(sessions_of_group_disjun_v2_intvar_crtl(g)).post();;
+
+				}
+				//model.allDifferent(tttt,"BC").post();;
 			}
 		}
+		
 		
 	}//FinMethod
 	
@@ -880,15 +1015,22 @@ public class ModelUTP {
 	
 	public void sameTeachers(ConstraintUTP constraint) {
 		IntVar[] tab = new IntVar[constraint.getSessions().get(0).size()];
+		IntVar[] tabDiff = new IntVar[constraint.getSessions().get(0).size()];
 		for(int i = 0; i < constraint.getSessions().get(0).size() ;i++) {
 			tab[i] = x_teacher[constraint.getSessions().get(0).get(i)-1];
+			tabDiff[i] = x_slot[constraint.getSessions().get(0).get(i)-1];
 		}
+		//model.allDifferent(tabDiff).post();
 		model.allEqual(tab).post();
 		//System.out.println();
 	}//FinMethod
 	
 	public void sameRooms(ConstraintUTP constraint) {
-		
+		IntVar[] tabDiff = new IntVar[constraint.getSessions().get(0).size()];
+		for(int i = 0; i < constraint.getSessions().get(0).size() ;i++) {
+			tabDiff[i] = x_slot[constraint.getSessions().get(0).get(i)-1];
+		}
+		//model.allDifferent(tabDiff).post();
 		//System.out.println();
 	}//FinMethod
 	
@@ -900,12 +1042,17 @@ public class ModelUTP {
 		  int value = Integer.parseInt(this.instanceUTP.parameter_value.get(value_num).get(0));
 		  int unite = unit_value(this.instanceUTP.parameter_value.get(unite_num).get(0));
 		  int sum_val = value * unite;
+		  IntVar[] tabDiff = new IntVar[constraint.getSessions().get(0).size()];
+		  tabDiff[0] = x_slot[constraint.getSessions().get(0).get(0)-1];
 		  
 		  if(constraint.getSessions().get(0).size()>1) {
 			  for(int i = 1; i < constraint.getSessions().get(0).size() ;i++) {
+				  tabDiff[i] = x_slot[constraint.getSessions().get(0).get(i)-1];
 				  model.arithm(x_slot[constraint.getSessions().get(0).get(i)-1], "=", x_slot[constraint.getSessions().get(0).get(0)-1],"+",sum_val*i).post();
 			  }
+			  //model.allDifferent(tabDiff).post();
 		  }
+		  
 		//System.out.println();
 	}//FinMethod
 	
@@ -1431,8 +1578,11 @@ public class ModelUTP {
 			boolean ff = ff1 && ff2;
 					
 			if(ff) {
-				
+				//vec.add(this.y_slot[i-1]);
 				vec.add(this.x_slot[i-1]);
+				//vec.add(this.t[i-1]);
+				
+				
 				//System.out.println("-> session "+(i-1)+" class "+ this.instanceUTP.class_name[this.instanceUTP.session_class[i-1]-1]+" rank "+this.instanceUTP.session_rank[i-1]+" b:"+ff+" b1:"+ff1+" b2:"+ff2);
 			}
 		}
@@ -1447,7 +1597,10 @@ public class ModelUTP {
 		}
 		for(int i = 1; i <= this.instanceUTP.nr_sessions ;i++) {
 			if(labelVectorExist(i-1,label)) {
+				//vec.add(this.y_slot[i-1]);
 				vec.add(this.x_slot[i-1]);
+				//vec.add(this.t[i-1]);
+				
 				//System.out.println("-> session "+(i-1)+" class "+ this.instanceUTP.class_name[this.instanceUTP.session_class[i-1]-1]+" rank "+this.instanceUTP.session_rank[i-1]);
 
 			}
@@ -1480,21 +1633,53 @@ public class ModelUTP {
 		return convertVecToTab(vec);
 	}//FinMethod
 	
-	public IntVar[] getRoomStrategieLabelForbidden(Vector<String> forbiddenLabel) {
+	public IntVar[] getRoomStrategieLabelForbidden(Vector<String> forbiddenLabel,boolean is_x_room) {
 		
 		Vector<IntVar> vec = new Vector<IntVar>();
 		for(int i = 1; i <= this.instanceUTP.nr_classes ;i++) {
 			if(!labelVectorExistClass(i-1,forbiddenLabel)) {
 				int part = this.instanceUTP.class_part[i-1];
-				if(this.instanceUTP.part_room_use[part-1].equals("single")) {
-					vec.add(this.x_room[i-1]);
-				}
-				else {
-					//vec.add(this.x_room[i-1]);
-					for(int h = 0; h < this.instanceUTP.part_room_worst_case[part-1] ;h++) {
-						vec.add(this.x_rooms[this.instanceUTP.class_position_multiple_room[i-1]+h]);
+				if(is_x_room){
+					if(this.instanceUTP.part_room_use[part-1].equals("single")) {
+						vec.add(this.x_room[i-1]);
+					}
+					else {
+						vec.add(this.x_room[i-1]);
 					}
 				}
+				else {
+					if(this.instanceUTP.part_room_use[part-1].equals("multiple")) {
+						//vec.add(this.x_room[i-1]);
+						for(int h = 0; h < this.instanceUTP.part_room_worst_case[part-1] ;h++) {
+							vec.add(this.x_rooms[this.instanceUTP.class_position_multiple_room[i-1]+h]);
+						}
+				}
+				
+				
+
+
+				}
+				
+			}
+		}
+		return convertVecToTab(vec);
+	}//FinMethod
+	
+	public IntVar[] getRoomStrategieLabelForbiddenAll(Vector<String> forbiddenLabel) {
+		
+		Vector<IntVar> vec = new Vector<IntVar>();
+		for(int i = 1; i <= this.instanceUTP.nr_classes ;i++) {
+			if(!labelVectorExistClass(i-1,forbiddenLabel)) {
+				int part = this.instanceUTP.class_part[i-1];
+					if(this.instanceUTP.part_room_use[part-1].equals("single")) {
+						vec.add(this.x_room[i-1]);
+					}
+					else {
+						for(int h = 0; h < this.instanceUTP.part_room_worst_case[part-1] ;h++) {
+							vec.add(this.x_rooms[this.instanceUTP.class_position_multiple_room[i-1]+h]);
+						}
+					}
+
 			}
 		}
 		return convertVecToTab(vec);
@@ -1551,7 +1736,7 @@ public class ModelUTP {
 			return  new IntDomainMiddle(true);
 		}
 		else if(vo.equals("equilibrate_room_disposition")) {
-			return  new EquilibrateRoomDisposition(t,this.instanceUTP,this.instanceUTP.nr_rooms);
+			return  new EquilibrateRoomDisposition(t,this.instanceUTP);
 		}
 		else if (vo.equals("indomain_random")) {
 			return new IntDomainRandom((long) ran);
@@ -1635,6 +1820,7 @@ public class ModelUTP {
 		
 		
 		IntVar[] vars = new IntVar[0];
+		IntVar[] vars2 = new IntVar[0];
 		IntStrategy[] tst = new IntStrategy[this.strategie.strategies.length];
 		int uu = 0;
 		for(int i =0 ; i < this.strategie.strategies.length  ;i++) {
@@ -1658,7 +1844,7 @@ public class ModelUTP {
 					vars = getRoomStrategieLabel(this.strategie.strategies[i].filter.split(","));
 				}
 				else if(this.strategie.strategies[i].filterScope.equals("rank")) {
-					vars = getRoomStrategieLabelForbidden(label_x_room);
+					vars = getRoomStrategieLabelForbidden(label_x_room,true);
 				}
 			}
 			//x_teacher
@@ -1676,7 +1862,7 @@ public class ModelUTP {
 					vars = getRoomStrategieLabel(this.strategie.strategies[i].filter.split(","));
 				}
 				else if(this.strategie.strategies[i].filterScope.equals("rank")) {
-					vars = getRoomStrategieLabelForbidden(label_x_rooms);
+					vars = getRoomStrategieLabelForbidden(label_x_rooms,false);
 				}
 			}
 			//x_teachers
@@ -1686,6 +1872,15 @@ public class ModelUTP {
 				}
 				else if(this.strategie.strategies[i].filterScope.equals("rank")) {
 					vars = getTeacherStrategieLabelForbidden(label_x_teachers);
+				}
+			}
+			//x_rooms/x_room
+			else if(this.strategie.strategies[i].var.equals("x_room*")){
+				if(this.strategie.strategies[i].filterScope.equals("label")) {
+					vars = getRoomStrategieLabel(this.strategie.strategies[i].filter.split(","));
+				}
+				else if(this.strategie.strategies[i].filterScope.equals("rank")) {
+					vars = getRoomStrategieLabelForbiddenAll(label_x_room);
 				}
 			}
 			
@@ -1724,7 +1919,7 @@ public class ModelUTP {
 				Search.intVarSearch(
                 //new FirstFail(model),
                 new AntiFirstFail(model),
-                new EquilibrateRoomDisposition(x_room,this.instanceUTP,this.instanceUTP.nr_rooms),
+                new EquilibrateRoomDisposition(x_room,this.instanceUTP),
                 //new IntDomainRandom((long) ran),
                 x_room
 				),
@@ -1941,8 +2136,8 @@ public class ModelUTP {
 		//this.solver.limitTime("20s");
 		//search_strategie();
 		strategie_choice();
-		//this.solver.showContradiction();
-		//this.solver.verboseSolving(100);
+		this.solver.showContradiction();
+		//this.solver.verboseSolving(1);
 		//this.solver.showStatisticsDuringResolution(1000);
 		this.solver.setNoLearning();
 		
@@ -1954,7 +2149,7 @@ public class ModelUTP {
 		this.solver.printStatistics();
 		
 		return this.solution;
-	}//FinMethod
+	}//FinMethod 
 	
 	public String print_group_solution(int session) {
 		String out = "";
@@ -2041,6 +2236,17 @@ public class ModelUTP {
 		if(this.solution == null) {
 			return "<!-- UNSAT ->";
 		}
+		int u = instanceUTP.nr_days_per_week*instanceUTP.nr_weeks;
+		int[] day_charge = new int[u];
+		int[] week_charge = new int [instanceUTP.nr_weeks];
+		for(int i = 0;  i <  instanceUTP.nr_weeks ;i++) {
+			week_charge[i] = 0;
+		}
+		for(int i = 0;  i <  u ;i++) {
+			day_charge[i] = 0;
+		}
+		getStatistics();//show statitics
+		getStatistics_rooms();//show rooms statistics
 		String out = "<classes>\n";
 		for(int i = 0; i<this.instanceUTP.nr_classes;i++) {
 			out += "<class refId = \""+this.instanceUTP.class_name[i]+"\">\n";
@@ -2051,6 +2257,7 @@ public class ModelUTP {
 		}
 		out +="</classes>\n";
 		out += "<sessions>\n";
+		
 		for(int i = 0; i<this.instanceUTP.nr_sessions;i++) {
 			int[] slot2time = slot2Time(this.solution.getIntVal(x_slot[i]));
 			out +=  "<session rank=\""+(this.instanceUTP.session_rank[i]-1)+"\" class=\""+this.instanceUTP.class_name[this.instanceUTP.session_class[i]-1]+"\">\n";
@@ -2059,9 +2266,45 @@ public class ModelUTP {
 			out += "    <teachers>\n"+print_xml_teacher_solution(i)+"    </teachers>\n";
 			out += "</session>\n";
 			//out +=  x_s[i]+" ";
+			//System.out.println("i = "+i+" xw "+ (slot2time[1]-1));
+			week_charge[slot2time[1]-1]++;
+			day_charge[slot2time[2]+(instanceUTP.nr_days_per_week*(slot2time[1]-1))-1]++;
 		}
 		out +="</sessions>\n";
-		
+		int cunt = 0;
+		String stat_eq = "";
+		String stat_eq_csv = instanceUTP.nr_weeks+";"+instanceUTP.nr_days_per_week+";"+u+"\n";
+		for(int i = 0; i < instanceUTP.nr_weeks ;i++) {
+			stat_eq+= "week "+(i+1)+" : "+week_charge[i]+"\n";
+			stat_eq_csv+= "w"+";"+(i+1)+";"+week_charge[i]+"\n";
+			for(int j = 0; j < instanceUTP.nr_days_per_week ; j++){
+				stat_eq+= "   -day "+(cunt+1)+" : "+day_charge[cunt]+"\n";
+				stat_eq_csv+= "d"+";"+(cunt+1)+";"+day_charge[cunt]+"\n";
+				cunt++;
+			}
+		}
+		FileOutputStream outputStream = null;
+		FileOutputStream outputStream2 = null;
+		String file_log_stat_eq = ModelUTP.filename_solution.substring(0,filename_solution.length()-4)+".txt";
+		@SuppressWarnings("static-access")
+		String file_log_stat_eq_csv = this.filename_solution.substring(0,filename_solution.length()-4)+".csv";
+		try {
+			outputStream = new FileOutputStream(file_log_stat_eq);
+			outputStream2 = new FileOutputStream(file_log_stat_eq_csv);
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	    byte[] strToBytes = stat_eq.getBytes();
+	    byte[] strToBytes2 = stat_eq_csv.getBytes();
+	    try {
+			outputStream.write(strToBytes);
+			outputStream.close();
+			outputStream2.write(strToBytes2);
+			outputStream2.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 		return out;
 	}//FinMethod
 	
@@ -2069,6 +2312,16 @@ public class ModelUTP {
 	public String print_xml2() {
 		if(this.solution == null) {
 			return "<!-- UNSAT ->";
+		}
+		getStatistics();
+		int u = instanceUTP.nr_days_per_week*instanceUTP.nr_weeks;
+		int[] day_charge = new int[u];
+		int[] week_charge = new int [instanceUTP.nr_weeks];
+		for(int i = 0;  i <  instanceUTP.nr_weeks ;i++) {
+			week_charge[i] = 0;
+		}
+		for(int i = 0;  i <  u ;i++) {
+			day_charge[i] = 0;
 		}
 		String out ="";
 		out += "<sessions>\n";
@@ -2083,10 +2336,45 @@ public class ModelUTP {
 				out += "    <teachers>\n"+print_xml_teacher_solution(i)+"    </teachers>\n";
 			}
 			out += "</session>\n";
+			week_charge[slot2time[1]-1]++;
+			day_charge[slot2time[2]+(instanceUTP.nr_days_per_week*(slot2time[1]-1))-1]++;
 			//out +=  x_s[i]+" ";
 		}
 		out +="</sessions>\n";
-		
+		int cunt = 0;
+		String stat_eq = "";
+		String stat_eq_csv = instanceUTP.nr_weeks+";"+instanceUTP.nr_days_per_week+";"+u+"\n";
+		for(int i = 0; i < instanceUTP.nr_weeks ;i++) {
+			stat_eq+= "week "+(i+1)+" : "+week_charge[i]+"\n";
+			stat_eq_csv+= "w"+";"+(i+1)+";"+week_charge[i]+"\n";
+			for(int j = 0; j < instanceUTP.nr_days_per_week ; j++){
+				stat_eq+= "   -day "+(cunt+1)+" : "+day_charge[cunt]+"\n";
+				stat_eq_csv+= "d"+";"+(cunt+1)+";"+day_charge[cunt]+"\n";
+				cunt++;
+			}
+		}
+		FileOutputStream outputStream = null;
+		FileOutputStream outputStream2 = null;
+		String file_log_stat_eq = ModelUTP.filename_solution.substring(0,filename_solution.length()-4)+".txt";
+		@SuppressWarnings("static-access")
+		String file_log_stat_eq_csv = this.filename_solution.substring(0,filename_solution.length()-4)+".csv";
+		try {
+			outputStream = new FileOutputStream(file_log_stat_eq);
+			outputStream2 = new FileOutputStream(file_log_stat_eq_csv);
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	    byte[] strToBytes = stat_eq.getBytes();
+	    byte[] strToBytes2 = stat_eq_csv.getBytes();
+	    try {
+			outputStream.write(strToBytes);
+			outputStream.close();
+			outputStream2.write(strToBytes2);
+			outputStream2.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 		return out;
 	}//FinMethod
 	
@@ -2218,6 +2506,99 @@ public class ModelUTP {
 		out +="</sessions>\n";
 		
 		return out;
+	}//FinMethod
+	
+	public void  getStatistics() {
+		DecimalFormat df = new DecimalFormat("0.000");
+		String out_statistics = "";
+		out_statistics += "getSeed​;"+model.getSeed()+"\n";
+		out_statistics += "getNbCstrs;​"+model.getNbCstrs()+"\n";
+		out_statistics += "getCreationTime;​"+df.format(solver.getReadingTimeCount())+"\n";
+		out_statistics += "getNbIntVar​;"+model.getNbIntVar(false)+"\n";
+		out_statistics += "getNbBoolVar;​"+model.getNbBoolVar()+"\n";
+		out_statistics += "getNbRealVar​;"+model.getNbRealVar()+"\n";
+		out_statistics += "getSetVar​;"+model.getNbSetVar()+"\n";
+		out_statistics += "getNbVar​s;"+model.getNbVars()+"\n";
+		//Solver stats
+		out_statistics += "getResolutionTime;"+df.format(solver.getTimeCount())+"\n";
+		out_statistics += "getNrSolutions;1"+"\n";
+		out_statistics += "getNodeCount;"+solver.getNodeCount()+"\n";
+		out_statistics += "getFailCount;"+solver.getFailCount()+"\n";
+		out_statistics += "getBackTrackCount​;"+solver.getBackTrackCount()+"\n";
+		out_statistics += "getBackjumpCount;"+solver.getBackjumpCount()+"\n";
+		out_statistics += "getCurrentDepth;"+solver.getCurrentDepth()+"\n";
+		out_statistics += "getDecisionCount;"+solver.getDecisionCount()+"\n";
+		out_statistics += "getRestartCount;"+solver.getRestartCount()+"\n";
+		FileOutputStream outputStream = null;
+		String file_write_statistics = ModelUTP.filename_solution.substring(0,filename_solution.length()-4)+"-statistics_solver.csv";
+		try {
+			outputStream = new FileOutputStream(file_write_statistics);
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	    byte[] strToBytes = out_statistics.getBytes();
+	    try {
+			outputStream.write(strToBytes);
+			outputStream.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		//System.out.println(out_statistics);
+		
+		
+	}//FinMethod
+	
+	public void getStatistics_rooms() {
+		int[] room_use = new int[instanceUTP.nr_rooms+1];
+		Arrays.fill(room_use, 0);
+		for(int i  = 0; i < instanceUTP.nr_sessions ;i++) {
+			int part = instanceUTP.class_part[instanceUTP.session_class[i]-1];
+			int cl = instanceUTP.session_class[i];
+			
+			if(this.instanceUTP.part_room_use[part-1].equals("multiple")) {
+				
+				for(int j = 0; j < this.instanceUTP.part_room_worst_case[part-1] ;j++) { 
+					
+					int cl_p = this.instanceUTP.class_position_multiple_room[cl-1];
+					
+					int t_room = this.solution.getIntVal(x_rooms[j+cl_p]);
+					
+					//if(t_room > 0) {
+						room_use[t_room] += instanceUTP.part_session_length[part-1];
+					//}
+
+				}
+			}
+			else {
+				//if(this.solution.getIntVal(this.x_room[cl-1]) > 0) {
+					room_use[this.solution.getIntVal(this.x_room[cl-1])] += instanceUTP.part_session_length[part-1];
+				//}
+				
+			}
+		}
+		String out_statistics = "";
+		for(int i = 0; i < room_use.length;i++) {
+			int convert = room_use[i] /60;
+			int convertmn = room_use[i] % 60;
+			out_statistics+= this.instanceUTP.room_name[i]+";"+convert+"h"+convertmn+";"+room_use[i]+"\n";
+		}
+		
+		FileOutputStream outputStream = null;
+		String file_write_statistics = ModelUTP.filename_solution.substring(0,filename_solution.length()-4)+"-statistics_rooms.csv";
+		try {
+			outputStream = new FileOutputStream(file_write_statistics);
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	    byte[] strToBytes = out_statistics.getBytes();
+	    try {
+			outputStream.write(strToBytes);
+			outputStream.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}//FinMethod
 	
 }//FinClass

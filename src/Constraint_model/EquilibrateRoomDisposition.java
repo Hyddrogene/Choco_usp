@@ -26,9 +26,11 @@ public class EquilibrateRoomDisposition implements IntValueSelector {
 		return minimum;
 	}//FinMethod
 	
-	public EquilibrateRoomDisposition(IntVar[] vars,InstanceUTPArray  utp,int nrRooms) {
+	public EquilibrateRoomDisposition(IntVar[] vars,InstanceUTPArray  utp) {
 		super();
-		this.nrRooms = nrRooms;
+		this.nrRooms = utp.nr_rooms;
+		//System.out.println("ALOOOORS"+vars.length+" class "+utp.nr_classes);
+		//System.exit(0);
 		this.nrVars = vars.length;
 		this.tabu_room = new Vector<Vector<Integer>>();
 		this.utp = utp;
@@ -68,8 +70,8 @@ public class EquilibrateRoomDisposition implements IntValueSelector {
 		//var.getDomainSize();
 		
 		
-		int part_cl = utp.part_classes.get(utp.class_part[getSessionForVar(var)]-1).size();
-		part_cl = utp.class_part[getSessionForVar(var)];
+		//int part_cl = utp.part_classes.get(utp.class_part[getSessionForVar(var)]-1).size();
+		int part_cl = utp.class_part[getSessionForVar(var)];
 		
 		int u = chooseMinimum(linear_room(part_cl));
 		//System.out.println(Arrays.toString(linear_room(part_cl)));

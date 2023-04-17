@@ -12,7 +12,7 @@ public class Solution_file_generator {
 	public Solution_file_generator(String filename, boolean isXML ) {
 		Date date = new Date();
 		SimpleDateFormat formater1 = new SimpleDateFormat("ddMMyy");
-		SimpleDateFormat formater2 = new SimpleDateFormat("hh_mm_ss");
+		SimpleDateFormat formater2 = new SimpleDateFormat("HH_mm_ss");
 		SimpleDateFormat formater3 = new SimpleDateFormat("dd-MM-yy");
 
 		String date_formated1 = formater1.format(date).toString();

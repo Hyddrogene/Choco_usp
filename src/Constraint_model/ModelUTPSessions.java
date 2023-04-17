@@ -1364,7 +1364,7 @@ public class ModelUTPSessions {
                 new FirstFail(model),
 				//new Smallest(),
                 //new AntiFirstFail(model),
-                new EquilibrateRoomDisposition(x_room,this.instanceUTP,this.instanceUTP.nr_rooms),
+                new EquilibrateRoomDisposition(x_room,this.instanceUTP),
                 //new IntDomainRandom((long) ran),
                 x_room
 				),

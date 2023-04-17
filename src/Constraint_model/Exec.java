@@ -11,9 +11,9 @@ public class Exec {
 		boolean isXML = true;
 		//String filename = "/home/etud/timetabling/instances/benchmarks/ua_l1_p1-p2/ua_l1_p1_extension_v2.json"; 
 		//String filename = "/home/etud/timetabling/instances/benchmarks/ua_l1_p1-p2/ua_l1_p1_v4_extension_v2.json";
-		String filename = "/home/etud/eclipse-workspace/Constraint_model/instance/ua_l1-l2_p1-p6_extension_v5.json";
-		String filenamexml = "/home/etud/eclipse-workspace/Constraint_model/instance/ua_l1-l2_p1-p6_bis.xml";
-		//filename = "/home/etud/eclipse-workspace/Constraint_model/instance/ua_l1-l2_p1-p6_l3info_v2_extension_v2.json";
+		String filename = "";// = "/home/etud/eclipse-workspace/Constraint_model/instance/ua_l1-l2_p1-p6_extension_v5.json";
+		String filenamexml = "";// = "/home/etud/eclipse-workspace/Constraint_model/instance/ua_l1-l2_p1-p6_bis.xml";
+		/*//filename = "/home/etud/eclipse-workspace/Constraint_model/instance/ua_l1-l2_p1-p6_l3info_v2_extension_v2.json";
 		//filenamexml = "/home/etud/eclipse-workspace/Constraint_model/instance/ua_l1-l2_p1-p6_l3info_v2.xml";
 		filename = "/home/etud/eclipse-workspace/Constraint_model/instance/ua_l1-l2_p1-p6_l3info_v3_extension_v2.json";
 		filenamexml = "/home/etud/eclipse-workspace/Constraint_model/instance/ua_l1-l2_p1-p6_l3info_v3.xml";
@@ -36,15 +36,31 @@ public class Exec {
 		filename = "/home/etud/timetabling/tools/tools_php/ua_l1-l2_p1-p6_l3info_m1info-s1_m2info-s1-s2_v1_extension_v2.json";
 		filenamexml = "/home/etud/eclipse-workspace/Constraint_model/instance/ua_l1-l2_p1-p6_l3info_m1info-s1_m2info-s1-s2_v1_bis.xml";
 		filenamexml = "/home/etud/timetabling/tools/tools_php/ua_l1-l2_p1-p6_l3info_m1info-s1_m2info-s1-s2_v1.xml";
-		
+		*/
 		//filename = "/home/etud/eclipse-workspace/Constraint_model/instance/ua_l3info_2021_bdd_dw-noPR_opt_plf_anglais_extension_v2.json";
 		//filenamexml = "/home/etud/eclipse-workspace/Constraint_model/instance/ua_l3info_2021_bdd_dw-noPR_opt_plf_anglais.xml";
 		
-		String strategie1 = "/home/etud/testdestratégie.json";
-		strategie1 = "/home/etud/test_strategie_v2.json";
+		String strategie1 ="";// "/home/etud/testdestratégie.json";
+		//strategie1 = "/home/etud/test_strategie_v2.json";
 		//strategie1 = "/home/etud/strategie_master.json";
 		//strategie1 = "/home/etud/test_strategie_v3.json";
-
+		if(args.length < 2 ) {
+			System.out.println("Argument problem");
+			System.exit(0);
+		}
+		else if(args.length == 2) {
+			filename = args[0];
+			filenamexml = args[1];
+		}
+		else if(args.length == 3){
+			filename = args[0];
+			filenamexml = args[1];
+			strategie1 = args[2];
+		}
+		else {
+			
+		}
+		
 		TestCreator tc = new TestCreator(filename,filenamexml,isXML);
 		tc.runTest(strategie1);
 		
