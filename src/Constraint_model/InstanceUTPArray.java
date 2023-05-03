@@ -144,6 +144,13 @@ public class InstanceUTPArray {
 	public Vector<Vector<Integer>> group_sessions;
 	//public int[][] class_groups;
 	public Vector<Vector<Integer>> class_groups;
+		//SESSIONS
+	public int[] session_week;
+	public int[] session_day;
+	public int[] session_slot;
+	public Vector<Vector<Integer>> session_teachers;
+	public Vector<Vector<Integer>> session_rooms;
+	
 	//CONSTRAINTS
 	public Vector<ConstraintUTP> constraints;
 	

@@ -1,0 +1,19 @@
+= : ======================= : = 
+name : /home/etud/eclipse-workspace/Constraint_model/tmp/experiment_03-05-23/solution_ua_l1-l2_p1-p6_l3info_m1info-s1_m2info-s1-s2_v1_extension_v2_030523_17_59_50.xml 
+nr_courses : 70 
+nr_part : 154 
+nr_classe : 371 
+nr_sessions : 2473 
+mean_sessions_per_classe : 6.6657681940701 
+nr_group : 60 
+nr_student : 768 
+mean_classes_per_groups : 17.25 
+nr_slot : 172800 
+nr_room : 139 
+nr_room_used : 91 
+nr_teacher : 95 
+nr_teacher_used : 95 
+nr_rules : 510 
+nr_flatten_constraint : 1940 
+different_occurence_constraint : sameWeeklySlot 67, sequenced 231, forbiddenPeriod 432, allowedPeriod 32, differentWeek 22, sameWeekDay 6, periodic 414, sameRooms 342, sameTeachers 175, sameWeek 34, sameSlot 39, differentWeekDay 100, assignRoom 18, forbiddenRooms 18, disjunct 10 
+nr_different_constraint : 15 

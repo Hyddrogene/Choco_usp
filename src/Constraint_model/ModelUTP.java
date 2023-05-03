@@ -17,6 +17,7 @@ import org.chocosolver.solver.Model;
 import org.chocosolver.solver.Solution;
 import org.chocosolver.solver.Solver;
 import org.chocosolver.solver.constraints.Constraint;
+import org.chocosolver.solver.constraints.nary.cumulative.Cumulative;
 import org.chocosolver.solver.exception.ContradictionException;
 import org.chocosolver.solver.search.strategy.Search;
 import org.chocosolver.solver.search.strategy.selectors.values.IntDomainMax;
@@ -27,6 +28,7 @@ import org.chocosolver.solver.search.strategy.selectors.values.IntValueSelector;
 import org.chocosolver.solver.search.strategy.selectors.variables.AntiFirstFail;
 import org.chocosolver.solver.search.strategy.selectors.variables.DomOverWDeg;
 import org.chocosolver.solver.search.strategy.selectors.variables.FirstFail;
+import org.chocosolver.solver.search.strategy.selectors.variables.ImpactBased;
 import org.chocosolver.solver.search.strategy.selectors.variables.InputOrder;
 import org.chocosolver.solver.search.strategy.selectors.variables.Largest;
 import org.chocosolver.solver.search.strategy.selectors.variables.Smallest;
@@ -48,6 +50,7 @@ public class ModelUTP {
 	private IntVar[] x_room;
 	//private SetVar[] x_room;
 	private IntVar[] x_slot;
+	private IntVar[][] x_slot2d;
 	private IntVar[] y_slot;
 	private Solution solution;
 	//private StatisticUtils statistics;
@@ -69,6 +72,7 @@ public class ModelUTP {
 		this.strategie_choice = 1;//TODO
 		this.instanceUTP = instanceUTP;
 		x_slot = new IntVar[instanceUTP.nr_sessions];
+		x_slot2d = new IntVar[1][instanceUTP.nr_sessions];
 		y_slot = new IntVar[instanceUTP.nr_sessions];
 		x_room = new IntVar[instanceUTP.nr_classes];
 		x_teacher = new IntVar[instanceUTP.nr_sessions];
@@ -256,6 +260,7 @@ public class ModelUTP {
 			//x_slot[i] = model.intVar("x_slot_"+i,1,this.instanceUTP.nr_slot());
 			//Integer[] t = this.instanceUTP.part_slots.get(i).toArray(new Integer[this.instanceUTP.part_slots.get(i).size()]);
 			x_slot[i] = model.intVar("x_slot_"+(i+1),part_i_slots(this.instanceUTP.part_slots.get(this.instanceUTP.class_part[this.instanceUTP.session_class[i]-1]-1)));
+			x_slot2d[0][i] = x_slot[i];
 		}
 		
 		for(int i = 0; i < instanceUTP.nr_sessions ;i++ ) {
@@ -375,7 +380,8 @@ public class ModelUTP {
 	public void constraint() {
 		implicite_sequenced_sessions();
 		teacher_service_v2();
-		disjunctive_teacher_v2();
+		//disjunctive_teacher_v2();
+		disjunctive_teacher_ags();
 		disjunctive_group_v2();
 		disjunctive_room_v2();
 		size_of_multiroom();
@@ -553,7 +559,7 @@ public class ModelUTP {
 				//System.out.println("tasks : "+sessions_of_teacher_disjun_v2(t).length);
 				//System.out.println("heigh : "+generate_heigth(t).length);
 				//Disjunctive
-				model.cumulative(sessions_of_teacher_disjun_v2(t),generate_heigth_teacher_v2(t),model.intVar(1)).post();
+				model.cumulative(sessions_of_teacher_disjun_v2(t),generate_heigth_teacher_v2(t),model.intVar(1),true,Cumulative.Filter.DISJUNCTIVE_TASK_INTERVAL).post();
 			}
 		}
 		
@@ -697,7 +703,7 @@ public class ModelUTP {
 				//System.out.println("tasks : "+sessions_of_teacher_disjun_v2(t).length);
 				//System.out.println("heigh : "+generate_heigth(t).length);
 				//Disjunctive
-				Constraint cons = model.cumulative(sessions_of_room_disjun_v2(t),generate_heigth_room_v2(t),model.intVar(1));
+				Constraint cons = model.cumulative(sessions_of_room_disjun_v2(t),generate_heigth_room_v2(t),model.intVar(1),true,Cumulative.Filter.DISJUNCTIVE_TASK_INTERVAL);
 				cons.post();
 				cons.setName("cumulative_"+(t+1));
 				//System.out.println("room "+this.instanceUTP.room_name[t+1]+" constId "+cons.getName());
@@ -785,7 +791,7 @@ public class ModelUTP {
 				//System.out.println("tasks : "+sessions_of_teacher_disjun_v2(t).length);
 				//System.out.println("heigh : "+generate_heigth(t).length);
 				//Disjunctive
-				model.cumulative(sessions_of_group_disjun_v2(g),heights,model.intVar(1)).post();
+				model.cumulative(sessions_of_group_disjun_v2(g),heights,model.intVar(1),false,Cumulative.Filter.DEFAULT).post();
 				if(g < 7 || g > 12) {
 					System.out.println(g);
 					//model.allDifferent(tttt,"BC").post();;
@@ -1197,9 +1203,10 @@ public class ModelUTP {
 	public void sameWeekDay(ConstraintUTP constraint) {
 		 //int unite = this.instanceUTP.nr_weeks;
 		 int unite2 = this.instanceUTP.nr_days_per_week;
+		 int unite3 = this.instanceUTP.nr_slots_per_day;
 		for (int i = 0; i < constraint.getSessions().get(0).size()-1 ;i++) {
 			for(int j = i+1; j < constraint.getSessions().get(0).size() ;j++) {
-				model.arithm(x_slot[constraint.getSessions().get(0).get(j)-1].mod(unite2).intVar(), "=", x_slot[constraint.getSessions().get(0).get(i)-1].mod(unite2).intVar()).post();
+				model.arithm(x_slot[constraint.getSessions().get(0).get(j)-1].div(unite3).mod(unite2).intVar(), "=", x_slot[constraint.getSessions().get(0).get(i)-1].div(unite3).mod(unite2).intVar()).post();
 				//precedence()
 			}
 		}
@@ -1269,6 +1276,106 @@ public class ModelUTP {
 		//System.out.println();
 	}//FinMethod
 	
+	public IntVar[] arg_sort(IntVar[] tab,int part) {
+		IntVar[] j = new IntVar[tab.length];
+		IntVar[][] tab2 = new IntVar[1][tab.length];
+		IntVar[][] tab3 = new IntVar[1][tab.length];
+		for(int i = 0; i < tab.length;i++) {
+			j[i] = model.intVar("j_"+part+"_"+i,0,tab.length);
+			tab2[0][i] = tab[i];
+			//tab3[0][i] = model.intVar(1,200000);
+		}
+
+		
+		//j = model.intVarArray("j",tab.length,1,tab.length);
+		//forall(j in 1..length(x)-1)
+	       //(x[p[j]] <= x[p[j+1]] /\ (x[p[j]] == x[p[j+1]] -> p[j] < p[j+1]));
+		model.allDifferent(j).post();
+		//model.keySort(tab2, j, tab3, 0).post();
+		for(int i = 0 ; i < tab.length-1 ;i++) {
+			IntVar var1 = model.intVar("tmp1",this.part_i_slots(instanceUTP.part_teachers.get(part)));
+			IntVar var2 = model.intVar("tmp2",this.part_i_slots(instanceUTP.part_teachers.get(part)));
+			model.element(var1,tab2,model.intVar(0),0,j[i],0);
+			model.element(var2,tab2,model.intVar(0),0,j[i+1],0);
+			model.arithm(var1,"<=", var2).post();
+			//var1.eq(var2).imp(tab[i].ge(tab[i+1])).post();;
+		}
+		return j;
+	}
+	
+	public IntVar[] generate_x_slot_arg_sort(int p,int t) {
+		int uu = 0;
+		for (int j = 0; j < instanceUTP.part_classes.get(p).size() ;j++) {
+			uu += instanceUTP.class_sessions.get(instanceUTP.part_classes.get(p).get(j)-1).size();
+		}
+		IntVar[] tab = new IntVar[uu];
+		int count = 0;
+		int minSess = instanceUTP.class_sessions.get(instanceUTP.part_classes.get(p).get(0)-1).get(0);
+		for (int j = 0; j < instanceUTP.part_classes.get(p).size() ;j++) {
+			for(int ji = 0; ji < instanceUTP.class_sessions.get(instanceUTP.part_classes.get(p).get(j)-1).size() ;ji++) {
+				tab[count] = x_teacher[instanceUTP.class_sessions.get(instanceUTP.part_classes.get(p).get(j)-1).get(ji)-1];
+				count++;
+			}
+		}
+		//IntVar[] tab_res = arg_sort(tab,p);
+		int cumul_serv_t = 0;
+		for(int i = 0; i < instanceUTP.part_teachers.get(p).size() ;i++) {
+			if(instanceUTP.part_teachers.get(p).get(i) < t) {
+				cumul_serv_t += instanceUTP.part_teacher_sessions_count[p][instanceUTP.part_teachers.get(p).get(i)-1] ;	
+			}
+			
+		}
+		int serv_t = instanceUTP.part_teacher_sessions_count[p][t];
+		int offset = cumul_serv_t+minSess-1;
+		IntVar[] res_var = new IntVar[serv_t];
+		for(int i = 0; i < serv_t ;i++) {
+			res_var[i] = model.intVar("x_slot_sorted["+i+"]_"+p+"_t_"+t,0,200000);//part_i_slots(this.instanceUTP.part_slots.get(this.instanceUTP.class_part[this.instanceUTP.session_class[p]-1]-1)));
+			//model.element(res_var[i],x_slot2d,model.intVar(0),0,tab_res[i].add(offset).intVar(),0);
+			
+		}
+		model.allDifferent(res_var).post();
+		Constraint ags = new constraint_arg_sort(x_teacher,x_slot,res_var,t,serv_t,instanceUTP);
+		ags.post();
+		//model.addConstructiveDisjunction(ags);
+		return res_var;
+	}//FinMethod
+	
+	//======================
+	
+	public Task[] sessions_of_teacher_disjun_ags_v2(int teacher) {
+		int cumul_service = 0;
+		for(int pi = 0;pi < instanceUTP.teacher_parts.get(teacher).size();pi++) {
+			cumul_service += instanceUTP.part_teacher_sessions_count[instanceUTP.teacher_parts.get(teacher).get(pi)-1][teacher];
+		}
+		
+		Task[] t = new Task[cumul_service];
+		int g = 0;
+		for(int pi = 0;pi < instanceUTP.teacher_parts.get(teacher).size();pi++) {
+			IntVar[] tmp_tab = generate_x_slot_arg_sort(instanceUTP.teacher_parts.get(teacher).get(pi)-1,teacher);
+			for(int i = 0 ;i < tmp_tab.length; i++) {
+				t[g] = model.taskVar(tmp_tab[i], 80);
+				g++;
+			}
+		}
+		
+		return t;
+	}
+	
+	
+	public void disjunctive_teacher_ags() {
+		for(int t = 0; t < this.instanceUTP.nr_teachers ;t++) {
+			if(this.instanceUTP.teacher_parts.get(t).size() > 0) {
+				//System.out.println("tasks : "+sessions_of_teacher_disjun_v2(t).length);
+				//System.out.println("heigh : "+generate_heigth(t).length);
+				int cumul_service = 0;
+				for(int pi = 0;pi < instanceUTP.teacher_parts.get(t).size();pi++) {
+					cumul_service += instanceUTP.part_teacher_sessions_count[instanceUTP.teacher_parts.get(t).get(pi)-1][t];
+				}
+				//Disjunctive
+				model.cumulative(sessions_of_teacher_disjun_ags_v2(t),model.intVarArray(cumul_service, 1,1),model.intVar(1)).post();
+			}
+		}
+	}//FinMethod
 	
 	//======================
 	
@@ -1296,6 +1403,8 @@ public class ModelUTP {
 				else if(this.instanceUTP.constraints.get(i).getConstraint().equals("forbiddenRooms")) {forbiddenRooms(this.instanceUTP.constraints.get(i));}
 				else System.out.println("Constraint "+this.instanceUTP.constraints.get(i).getConstraint()+" is not implemented"+" provide from rule : "+this.instanceUTP.constraints.get(i).getRule());
 			}
+			if(i == 0) {}
+
 		}
 		
 	}//FinMethod
@@ -1891,12 +2000,94 @@ public class ModelUTP {
 		
 	}//FinMethod
 	
+	public IntVar[] all_x(){
+		IntVar[] tab_res = new IntVar[x_slot.length+x_rooms.length+ x_room.length+x_teacher.length+x_teachers.length];
+		int count = 0;
+		for(int i=0;i < x_slot.length ;i++) {
+			tab_res[count] = x_slot[i];
+			count++;
+		}
+		for(int i=0;i < x_rooms.length ;i++) {
+			tab_res[count] = x_rooms[i];
+			count++;
+		}
+		for(int i=0;i < x_room.length ;i++) {
+			tab_res[count] = x_room[i];
+			count++;
+		}
+		for(int i=0;i < x_teacher.length ;i++) {
+			tab_res[count] = x_teacher[i];
+			count++;
+		}
+		for(int i=0;i < x_teachers.length ;i++) {
+			tab_res[count] = x_teachers[i];
+			count++;
+		}
+		
+		return tab_res;
+	}
+	
+	public IntVar[] somme_variable_tab(IntVar[]...tabs) {
+		
+		int ksum = 0;
+		for(IntVar[] tab:tabs) {
+			ksum += tab.length;
+		}
+		IntVar[] tab_res = new IntVar[ksum];
+		int c = 0;
+		for(IntVar[] tab:tabs) {
+			for(IntVar t:tab) {
+				tab_res[c] = t;
+				c++;
+			}
+		}
+		return tab_res;
+	}//FinMethod
+	
+	public void search_strategie_min_min() {
+		double ran1 = Math.random();
+		double ran2 = Math.random();
+		System.out.println("str chelou : ran1 ="+ran1+" ran2 ="+ran2);
+		
+		this.solver.setSearch(
+				Search.intVarSearch(
+						//new Smallest(),
+						new Random<IntVar>((long) ran1),
+						//new FirstFail(model),
+		                //new IntDomainRandom((long) ran2),
+		                new EquilibrateRoomDisposition(x_room,this.instanceUTP),
+		                x_room
+						),
+				/*Search.intVarSearch(
+						new Smallest(),
+						//new Random<IntVar>((long) ran2),
+						//new FirstFail(model),
+		                //new IntDomainRandom((long) ran),
+		                //new EquilibrateRoomDisposition(x_room,this.instanceUTP),
+						new IntDomainMin(),
+		                x_teacher
+						),*/
+				//Search.activityBasedSearch(x_room),
+				//Search.activityBasedSearch(all_x()));
+				Search.intVarSearch(
+						//new Smallest(),
+						new FirstFail(model),
+						//new Random<IntVar>((long) ran2),
+		                new IntDomainMin(),
+		                //new decisionWeekEquilibrate(t, sort_xslot1(),this.x_slot,this.instanceUTP),
+		                all_x()
+						)
+				);
+	}//FinMethod
+	
 	public void strategie_choice() {
+		this.strategie_choice = 4;
 		switch(this.strategie_choice) {
 		case 0: search_strategie();break;
 		case 1: search_strategie_2();break;
 		case 2: search_strategie_3();break;
 		case 3: search_strategie_set();break;
+		case 4: search_strategie_min_min();break;
 		default :System.out.println("Strategie not referenced");
 		}
 	}//FinMethod
@@ -2139,11 +2330,11 @@ public class ModelUTP {
 		this.solver.showContradiction();
 		//this.solver.verboseSolving(1);
 		//this.solver.showStatisticsDuringResolution(1000);
-		this.solver.setNoLearning();
+		//this.solver.setNoLearning();//OFF
 		
 		//this.solver.showDecisions();
 		//this.solver.showDashboard();
-		this.solver.isLearnOff();
+		//this.solver.isLearnOff();//OFF
 		//this.solver.showShortStatistics();
 		this.solution = this.solver.findSolution();
 		this.solver.printStatistics();

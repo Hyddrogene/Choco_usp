@@ -61,6 +61,9 @@ public class Exec {
 			
 		}
 		
+		//ConverterJsonEvenement x = new ConverterJsonEvenement("/home/etud/exemple_evenement.json");
+		//System.out.println("AAAAA");
+		//System.exit(1);
 		TestCreator tc = new TestCreator(filename,filenamexml,isXML);
 		tc.runTest(strategie1);
 		

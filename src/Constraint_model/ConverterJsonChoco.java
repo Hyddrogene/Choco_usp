@@ -86,8 +86,10 @@ public class ConverterJsonChoco {
 		this.instanceUTPArray.max_parameter_size = convertToInt(RULES,"max_parameter_size");
 		JSONObject SOLUTION = (JSONObject)jsonObject.get("SOLUTION");
 		JSONObject GROUPS = (JSONObject)SOLUTION.get("GROUPS");
+		//JSONObject SESSIONS = (JSONObject)SOLUTION.get("SESSIONS");
 		this.instanceUTPArray.nr_groups = convertToInt(GROUPS,"nr_groups");
 		this.instanceUTPArray.max_group_headcount = convertToInt(GROUPS,"max_group_headcount");
+		
 		createArray(DATA,RULES,SOLUTION);
 		createConstraints();
 		return this.instanceUTPArray;
@@ -332,6 +334,16 @@ public class ConverterJsonChoco {
 		JSONObject CLASS = (JSONObject)SOLUTION.get("CLASS");
 		this.instanceUTPArray.class_groups = createSetIntArray2d(CLASS,"class_groups");
 		//print(this.instanceUTPArray.class_groups);
+		
+			//Array SESSIONS
+		JSONObject SESSIONS = (JSONObject)SOLUTION.get("SESSIONS");
+		this.instanceUTPArray.session_slot = createIntArray(SESSIONS,"session_dailyslot");
+		this.instanceUTPArray.session_day = createIntArray(SESSIONS,"session_day");
+		this.instanceUTPArray.session_week = createIntArray(SESSIONS,"session_week");
+
+		this.instanceUTPArray.session_teachers = createSetArray(SESSIONS,"session_teachers");
+		this.instanceUTPArray.session_rooms = createSetArray(SESSIONS,"session_rooms");
+
 		
 		//this.instanceUTPArray.course_parts
 		return this.instanceUTPArray;

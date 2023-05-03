@@ -1,0 +1,144 @@
+week 1 : 365
+   -day 1 : 126
+   -day 2 : 68
+   -day 3 : 66
+   -day 4 : 65
+   -day 5 : 40
+week 2 : 374
+   -day 6 : 121
+   -day 7 : 87
+   -day 8 : 69
+   -day 9 : 61
+   -day 10 : 36
+week 3 : 394
+   -day 11 : 135
+   -day 12 : 88
+   -day 13 : 69
+   -day 14 : 62
+   -day 15 : 40
+week 4 : 382
+   -day 16 : 126
+   -day 17 : 83
+   -day 18 : 69
+   -day 19 : 65
+   -day 20 : 39
+week 5 : 412
+   -day 21 : 149
+   -day 22 : 87
+   -day 23 : 68
+   -day 24 : 65
+   -day 25 : 43
+week 6 : 142
+   -day 26 : 54
+   -day 27 : 26
+   -day 28 : 28
+   -day 29 : 25
+   -day 30 : 9
+week 7 : 48
+   -day 31 : 8
+   -day 32 : 9
+   -day 33 : 11
+   -day 34 : 11
+   -day 35 : 9
+week 8 : 47
+   -day 36 : 11
+   -day 37 : 9
+   -day 38 : 9
+   -day 39 : 10
+   -day 40 : 8
+week 9 : 54
+   -day 41 : 12
+   -day 42 : 9
+   -day 43 : 12
+   -day 44 : 13
+   -day 45 : 8
+week 10 : 53
+   -day 46 : 11
+   -day 47 : 10
+   -day 48 : 13
+   -day 49 : 11
+   -day 50 : 8
+week 11 : 54
+   -day 51 : 11
+   -day 52 : 10
+   -day 53 : 13
+   -day 54 : 11
+   -day 55 : 9
+week 12 : 50
+   -day 56 : 10
+   -day 57 : 9
+   -day 58 : 9
+   -day 59 : 12
+   -day 60 : 10
+week 13 : 15
+   -day 61 : 3
+   -day 62 : 3
+   -day 63 : 4
+   -day 64 : 3
+   -day 65 : 2
+week 14 : 13
+   -day 66 : 3
+   -day 67 : 3
+   -day 68 : 3
+   -day 69 : 3
+   -day 70 : 1
+week 15 : 3
+   -day 71 : 1
+   -day 72 : 1
+   -day 73 : 0
+   -day 74 : 1
+   -day 75 : 0
+week 16 : 3
+   -day 76 : 1
+   -day 77 : 1
+   -day 78 : 0
+   -day 79 : 1
+   -day 80 : 0
+week 17 : 3
+   -day 81 : 1
+   -day 82 : 1
+   -day 83 : 0
+   -day 84 : 1
+   -day 85 : 0
+week 18 : 11
+   -day 86 : 2
+   -day 87 : 3
+   -day 88 : 4
+   -day 89 : 2
+   -day 90 : 0
+week 19 : 13
+   -day 91 : 4
+   -day 92 : 5
+   -day 93 : 4
+   -day 94 : 0
+   -day 95 : 0
+week 20 : 12
+   -day 96 : 4
+   -day 97 : 4
+   -day 98 : 4
+   -day 99 : 0
+   -day 100 : 0
+week 21 : 10
+   -day 101 : 4
+   -day 102 : 3
+   -day 103 : 3
+   -day 104 : 0
+   -day 105 : 0
+week 22 : 7
+   -day 106 : 4
+   -day 107 : 2
+   -day 108 : 1
+   -day 109 : 0
+   -day 110 : 0
+week 23 : 6
+   -day 111 : 3
+   -day 112 : 2
+   -day 113 : 1
+   -day 114 : 0
+   -day 115 : 0
+week 24 : 2
+   -day 116 : 2
+   -day 117 : 0
+   -day 118 : 0
+   -day 119 : 0
+   -day 120 : 0
